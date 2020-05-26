@@ -1,0 +1,14 @@
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.exe.config
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.exe
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.pdb
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.csprojAssemblyReference.cache
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Properties.Resources.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.SupplierMaster.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.csproj.GenerateResource.cache
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.csproj.CoreCompileInputs.cache
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.exe
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.pdb
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateSupplier.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateCustomer.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.CustomerMaster.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.KomponenSupplier.resources
