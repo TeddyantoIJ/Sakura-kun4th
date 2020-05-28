@@ -165,7 +165,7 @@ namespace CRUD
 
                 //btnUpdate.Enabled = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 
                 //btnUpdate.Enabled = false;
@@ -233,7 +233,7 @@ namespace CRUD
 
                 //btnUpdate.Enabled = true;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 //MessageBox.Show(ex.ToString());
                 //btnUpdate.Enabled = false;
@@ -505,7 +505,7 @@ namespace CRUD
             if (benar)
             {
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
-                    "ID Customer\t: " + txtnama_komponen.Text + "\n" +
+                    "Nama Komponen\t: " + txtnama_komponen.Text + "\n" +
                     "Nama Supplier\t: " + txtnama_supplier.Text + "\n" +
                     "Harga \t\t: Rp " + string.Format(CultureInfo.GetCultureInfo("de-DE"), "{0:n}", Int32.Parse(txtharga.Text))
                     , "Informasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -680,7 +680,7 @@ namespace CRUD
 
                 //btnUpdate.Enabled = true;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 //MessageBox.Show(ex.ToString());
                 //btnUpdate.Enabled = false;

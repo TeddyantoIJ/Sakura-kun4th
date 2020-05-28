@@ -46,17 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlatKerjaMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlatKerjaMaster.Designer.cs">
+      <DependentUpon>AlatKerjaMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlatSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlatSupplier.Designer.cs">
+      <DependentUpon>AlatSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerMaster.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomerMaster.Designer.cs">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="KomponenSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KomponenSupplier.Designer.cs">
       <DependentUpon>KomponenSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="komponenSupplier1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>komponenSupplier.xsd</DependentUpon>
     </Compile>
     <Compile Include="SakuraDataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -68,6 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SakuraDataDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SakuraDataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SakuraDataDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SupplierMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +104,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateAlatKerja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAlatKerja.Designer.cs">
+      <DependentUpon>UpdateAlatKerja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAlatKomponenSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAlatKomponenSupplier.Designer.cs">
+      <DependentUpon>UpdateAlatKomponenSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +128,17 @@
     <Compile Include="UpdateSupplier.Designer.cs">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlatKerjaMaster.resx">
+      <DependentUpon>AlatKerjaMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlatSupplier.resx">
+      <DependentUpon>AlatSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerMaster.resx">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KomponenSupplier.resx">
       <DependentUpon>KomponenSupplier.cs</DependentUpon>
@@ -106,12 +155,29 @@
     <EmbeddedResource Include="SupplierMaster.resx">
       <DependentUpon>SupplierMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAlatKerja.resx">
+      <DependentUpon>UpdateAlatKerja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAlatKomponenSupplier.resx">
+      <DependentUpon>UpdateAlatKomponenSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateCustomer.resx">
       <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateSupplier.resx">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="komponenSupplier.xsc">
+      <DependentUpon>komponenSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="komponenSupplier.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>komponenSupplier1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="komponenSupplier.xss">
+      <DependentUpon>komponenSupplier.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +208,17 @@
     </None>
     <None Include="SakuraDataDataSet1.xss">
       <DependentUpon>SakuraDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SakuraDataDataSet2.xsc">
+      <DependentUpon>SakuraDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SakuraDataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SakuraDataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SakuraDataDataSet2.xss">
+      <DependentUpon>SakuraDataDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -156,7 +156,7 @@ namespace CRUD
 
         private void btnBatal_Click(object sender, EventArgs e)
         {
-            Environment.Exit(1);
+            this.Close();
         }
         private void addSource()
         {

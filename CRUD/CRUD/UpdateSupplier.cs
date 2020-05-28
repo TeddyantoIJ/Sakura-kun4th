@@ -364,7 +364,7 @@ namespace CRUD
                 txtketerangan.Text = data.Rows[0][5].ToString();
 
                 by = 1;
-                
+                connection.Close();
                 btnUpdate.Enabled = true;
             }
             catch (Exception)

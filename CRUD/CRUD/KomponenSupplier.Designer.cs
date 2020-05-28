@@ -53,81 +53,82 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(167, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 21);
+            this.label1.Size = new System.Drawing.Size(265, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tambah Komponen Supplier";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 61);
+            this.label2.Location = new System.Drawing.Point(24, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama Komponen";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 127);
+            this.label3.Location = new System.Drawing.Point(27, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nama Supplier";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 183);
+            this.label4.Location = new System.Drawing.Point(27, 239);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.Size = new System.Drawing.Size(44, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Harga";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(106, 61);
+            this.label5.Location = new System.Drawing.Point(124, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(10, 13);
+            this.label5.Size = new System.Drawing.Size(11, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = ":";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(105, 127);
+            this.label6.Location = new System.Drawing.Point(122, 166);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(10, 13);
+            this.label6.Size = new System.Drawing.Size(11, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = ":";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(105, 183);
+            this.label7.Location = new System.Drawing.Point(122, 239);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 13);
+            this.label7.Size = new System.Drawing.Size(11, 17);
             this.label7.TabIndex = 1;
             this.label7.Text = ":";
             // 
             // txtid_komponen
             // 
             this.txtid_komponen.AutoSize = true;
-            this.txtid_komponen.Location = new System.Drawing.Point(124, 91);
+            this.txtid_komponen.Location = new System.Drawing.Point(145, 119);
             this.txtid_komponen.Name = "txtid_komponen";
-            this.txtid_komponen.Size = new System.Drawing.Size(0, 13);
+            this.txtid_komponen.Size = new System.Drawing.Size(0, 17);
             this.txtid_komponen.TabIndex = 1;
             this.txtid_komponen.TextChanged += new System.EventHandler(this.txtid_komponen_TextChanged);
             // 
             // txtharga
             // 
-            this.txtharga.Location = new System.Drawing.Point(156, 179);
+            this.txtharga.Location = new System.Drawing.Point(182, 234);
+            this.txtharga.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtharga.Name = "txtharga";
-            this.txtharga.Size = new System.Drawing.Size(162, 20);
+            this.txtharga.Size = new System.Drawing.Size(188, 25);
             this.txtharga.TabIndex = 3;
             this.txtharga.TextChanged += new System.EventHandler(this.txtharga_TextChanged);
             this.txtharga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtharga_KeyPress);
@@ -136,17 +137,18 @@
             // txtid_supplier
             // 
             this.txtid_supplier.AutoSize = true;
-            this.txtid_supplier.Location = new System.Drawing.Point(124, 154);
+            this.txtid_supplier.Location = new System.Drawing.Point(145, 201);
             this.txtid_supplier.Name = "txtid_supplier";
-            this.txtid_supplier.Size = new System.Drawing.Size(0, 13);
+            this.txtid_supplier.Size = new System.Drawing.Size(0, 17);
             this.txtid_supplier.TabIndex = 1;
             this.txtid_supplier.TextChanged += new System.EventHandler(this.txtid_supplier_TextChanged);
             // 
             // txtnama_supplier
             // 
-            this.txtnama_supplier.Location = new System.Drawing.Point(124, 123);
+            this.txtnama_supplier.Location = new System.Drawing.Point(145, 161);
+            this.txtnama_supplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtnama_supplier.Name = "txtnama_supplier";
-            this.txtnama_supplier.Size = new System.Drawing.Size(194, 20);
+            this.txtnama_supplier.Size = new System.Drawing.Size(226, 25);
             this.txtnama_supplier.TabIndex = 1;
             this.txtnama_supplier.TextChanged += new System.EventHandler(this.txtnama_supplier_TextChanged);
             this.txtnama_supplier.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnama_supplier_KeyPress);
@@ -156,9 +158,10 @@
             // btnBaruSupplier
             // 
             this.btnBaruSupplier.Enabled = false;
-            this.btnBaruSupplier.Location = new System.Drawing.Point(243, 149);
+            this.btnBaruSupplier.Location = new System.Drawing.Point(283, 195);
+            this.btnBaruSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBaruSupplier.Name = "btnBaruSupplier";
-            this.btnBaruSupplier.Size = new System.Drawing.Size(75, 23);
+            this.btnBaruSupplier.Size = new System.Drawing.Size(87, 30);
             this.btnBaruSupplier.TabIndex = 2;
             this.btnBaruSupplier.Text = "&Baru";
             this.btnBaruSupplier.UseVisualStyleBackColor = true;
@@ -167,16 +170,17 @@
             // infonama_supplier
             // 
             this.infonama_supplier.AutoSize = true;
-            this.infonama_supplier.Location = new System.Drawing.Point(329, 127);
+            this.infonama_supplier.Location = new System.Drawing.Point(384, 166);
             this.infonama_supplier.Name = "infonama_supplier";
-            this.infonama_supplier.Size = new System.Drawing.Size(0, 13);
+            this.infonama_supplier.Size = new System.Drawing.Size(0, 17);
             this.infonama_supplier.TabIndex = 1;
             // 
             // txtnama_komponen
             // 
-            this.txtnama_komponen.Location = new System.Drawing.Point(124, 58);
+            this.txtnama_komponen.Location = new System.Drawing.Point(145, 76);
+            this.txtnama_komponen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtnama_komponen.Name = "txtnama_komponen";
-            this.txtnama_komponen.Size = new System.Drawing.Size(194, 20);
+            this.txtnama_komponen.Size = new System.Drawing.Size(226, 25);
             this.txtnama_komponen.TabIndex = 0;
             this.txtnama_komponen.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtnama_komponen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnama_komponen_KeyPress);
@@ -186,9 +190,10 @@
             // btnBaruKomponen
             // 
             this.btnBaruKomponen.Enabled = false;
-            this.btnBaruKomponen.Location = new System.Drawing.Point(243, 86);
+            this.btnBaruKomponen.Location = new System.Drawing.Point(283, 112);
+            this.btnBaruKomponen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBaruKomponen.Name = "btnBaruKomponen";
-            this.btnBaruKomponen.Size = new System.Drawing.Size(75, 23);
+            this.btnBaruKomponen.Size = new System.Drawing.Size(87, 30);
             this.btnBaruKomponen.TabIndex = 4;
             this.btnBaruKomponen.Text = "&Baru";
             this.btnBaruKomponen.UseVisualStyleBackColor = true;
@@ -196,26 +201,27 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(124, 182);
+            this.label8.Location = new System.Drawing.Point(145, 238);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 13);
+            this.label8.Size = new System.Drawing.Size(27, 17);
             this.label8.TabIndex = 1;
             this.label8.Text = "Rp.";
             // 
             // infonamakomponen
             // 
             this.infonamakomponen.AutoSize = true;
-            this.infonamakomponen.Location = new System.Drawing.Point(329, 61);
+            this.infonamakomponen.Location = new System.Drawing.Point(384, 80);
             this.infonamakomponen.Name = "infonamakomponen";
-            this.infonamakomponen.Size = new System.Drawing.Size(0, 13);
+            this.infonamakomponen.Size = new System.Drawing.Size(0, 17);
             this.infonamakomponen.TabIndex = 1;
             // 
             // btnSimpan
             // 
             this.btnSimpan.Enabled = false;
-            this.btnSimpan.Location = new System.Drawing.Point(105, 235);
+            this.btnSimpan.Location = new System.Drawing.Point(122, 307);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btnSimpan.Size = new System.Drawing.Size(87, 30);
             this.btnSimpan.TabIndex = 5;
             this.btnSimpan.Text = "&Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
@@ -223,9 +229,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(243, 235);
+            this.button2.Location = new System.Drawing.Point(283, 307);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(87, 30);
             this.button2.TabIndex = 5;
             this.button2.Text = "&Batal";
             this.button2.UseVisualStyleBackColor = true;
@@ -234,16 +241,16 @@
             // info_harga
             // 
             this.info_harga.AutoSize = true;
-            this.info_harga.Location = new System.Drawing.Point(329, 186);
+            this.info_harga.Location = new System.Drawing.Point(384, 243);
             this.info_harga.Name = "info_harga";
-            this.info_harga.Size = new System.Drawing.Size(0, 13);
+            this.info_harga.Size = new System.Drawing.Size(0, 17);
             this.info_harga.TabIndex = 1;
             // 
             // KomponenSupplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 299);
+            this.ClientSize = new System.Drawing.Size(598, 391);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.btnBaruKomponen);
@@ -264,6 +271,8 @@
             this.Controls.Add(this.infonamakomponen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "KomponenSupplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KomponenSupplier";
