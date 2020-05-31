@@ -46,40 +46,106 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlatKerjaMaster.cs">
+    <Compile Include="MasterAlatElektronik\AlatElektronik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlatKerjaMaster.Designer.cs">
+    <Compile Include="MasterAlatElektronik\AlatElektronik.Designer.cs">
+      <DependentUpon>AlatElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAlatElektronik\DataAlatElektronik.Designer.cs" />
+    <Compile Include="MasterAlatElektronik\DataAlatElektronik1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataAlatElektronik.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAlatElektronik\UpdateAlatElektronik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterAlatElektronik\UpdateAlatElektronik.Designer.cs">
+      <DependentUpon>UpdateAlatElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAlatKerja\AlatKerjaMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterAlatKerja\AlatKerjaMaster.Designer.cs">
       <DependentUpon>AlatKerjaMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlatSupplier.cs">
+    <Compile Include="MasterKomponenAlatSupplier\AlatSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlatSupplier.Designer.cs">
+    <Compile Include="MasterKomponenAlatSupplier\AlatSupplier.Designer.cs">
       <DependentUpon>AlatSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerMaster.cs">
+    <Compile Include="MasterCustomer\CustomerMaster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerMaster.Designer.cs">
+    <Compile Include="MasterCustomer\CustomerMaster.Designer.cs">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="MasterMain\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="MasterMain\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="KomponenSupplier.cs">
+    <Compile Include="MasterJenisElektronik\DataJenisElektronik.Designer.cs" />
+    <Compile Include="MasterJenisElektronik\DataJenisElektronik1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataJenisElektronik.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterJenisElektronik\JenisAlatElektronik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KomponenSupplier.Designer.cs">
+    <Compile Include="MasterJenisElektronik\JenisAlatElektronik.Designer.cs">
+      <DependentUpon>JenisAlatElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterJenisElektronik\UpdateJenisElektronik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterJenisElektronik\UpdateJenisElektronik.Designer.cs">
+      <DependentUpon>UpdateJenisElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKomponenAlatSupplier\KomponenSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterKomponenAlatSupplier\KomponenSupplier.Designer.cs">
       <DependentUpon>KomponenSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="komponenSupplier1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>komponenSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKomponen\DataKomponen.Designer.cs" />
+    <Compile Include="MasterKomponen\DataKomponen1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataKomponen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKomponen\Komponen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterKomponen\Komponen.Designer.cs">
+      <DependentUpon>Komponen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKomponen\UpdateKomponen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterKomponen\UpdateKomponen.Designer.cs">
+      <DependentUpon>UpdateKomponen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPekerja\TambahPekerja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPekerja\TambahPekerja.Designer.cs">
+      <DependentUpon>TambahPekerja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPekerja\UpdatePekerja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPekerja\UpdatePekerja.Designer.cs">
+      <DependentUpon>UpdatePekerja.cs</DependentUpon>
     </Compile>
     <Compile Include="SakuraDataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,52 +162,73 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SakuraDataDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SupplierMaster.cs">
+    <Compile Include="MasterSupplier\SupplierMaster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SupplierMaster.Designer.cs">
+    <Compile Include="MasterSupplier\SupplierMaster.Designer.cs">
       <DependentUpon>SupplierMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateAlatKerja.cs">
+    <Compile Include="MasterAlatKerja\UpdateAlatKerja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateAlatKerja.Designer.cs">
+    <Compile Include="MasterAlatKerja\UpdateAlatKerja.Designer.cs">
       <DependentUpon>UpdateAlatKerja.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateAlatKomponenSupplier.cs">
+    <Compile Include="MasterKomponenAlatSupplier\UpdateAlatKomponenSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateAlatKomponenSupplier.Designer.cs">
+    <Compile Include="MasterKomponenAlatSupplier\UpdateAlatKomponenSupplier.Designer.cs">
       <DependentUpon>UpdateAlatKomponenSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateCustomer.cs">
+    <Compile Include="MasterCustomer\UpdateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateCustomer.Designer.cs">
+    <Compile Include="MasterCustomer\UpdateCustomer.Designer.cs">
       <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateSupplier.cs">
+    <Compile Include="MasterSupplier\UpdateSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateSupplier.Designer.cs">
+    <Compile Include="MasterSupplier\UpdateSupplier.Designer.cs">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AlatKerjaMaster.resx">
+    <EmbeddedResource Include="MasterAlatElektronik\AlatElektronik.resx">
+      <DependentUpon>AlatElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterAlatElektronik\UpdateAlatElektronik.resx">
+      <DependentUpon>UpdateAlatElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterAlatKerja\AlatKerjaMaster.resx">
       <DependentUpon>AlatKerjaMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlatSupplier.resx">
+    <EmbeddedResource Include="MasterKomponenAlatSupplier\AlatSupplier.resx">
       <DependentUpon>AlatSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerMaster.resx">
+    <EmbeddedResource Include="MasterCustomer\CustomerMaster.resx">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="MasterMain\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KomponenSupplier.resx">
+    <EmbeddedResource Include="MasterJenisElektronik\JenisAlatElektronik.resx">
+      <DependentUpon>JenisAlatElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterJenisElektronik\UpdateJenisElektronik.resx">
+      <DependentUpon>UpdateJenisElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKomponenAlatSupplier\KomponenSupplier.resx">
       <DependentUpon>KomponenSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKomponen\Komponen.resx">
+      <DependentUpon>Komponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKomponen\UpdateKomponen.resx">
+      <DependentUpon>UpdateKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPekerja\TambahPekerja.resx">
+      <DependentUpon>TambahPekerja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,21 +239,43 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SupplierMaster.resx">
+    <EmbeddedResource Include="MasterSupplier\SupplierMaster.resx">
       <DependentUpon>SupplierMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateAlatKerja.resx">
+    <EmbeddedResource Include="MasterAlatKerja\UpdateAlatKerja.resx">
       <DependentUpon>UpdateAlatKerja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateAlatKomponenSupplier.resx">
+    <EmbeddedResource Include="MasterKomponenAlatSupplier\UpdateAlatKomponenSupplier.resx">
       <DependentUpon>UpdateAlatKomponenSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateCustomer.resx">
+    <EmbeddedResource Include="MasterCustomer\UpdateCustomer.resx">
       <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateSupplier.resx">
+    <EmbeddedResource Include="MasterSupplier\UpdateSupplier.resx">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="MasterAlatElektronik\DataAlatElektronik.xsc">
+      <DependentUpon>DataAlatElektronik.xsd</DependentUpon>
+    </None>
+    <None Include="MasterAlatElektronik\DataAlatElektronik.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataAlatElektronik1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MasterAlatElektronik\DataAlatElektronik.xss">
+      <DependentUpon>DataAlatElektronik.xsd</DependentUpon>
+    </None>
+    <None Include="MasterJenisElektronik\DataJenisElektronik.xsc">
+      <DependentUpon>DataJenisElektronik.xsd</DependentUpon>
+    </None>
+    <None Include="MasterJenisElektronik\DataJenisElektronik.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataJenisElektronik1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MasterJenisElektronik\DataJenisElektronik.xss">
+      <DependentUpon>DataJenisElektronik.xsd</DependentUpon>
+    </None>
     <None Include="komponenSupplier.xsc">
       <DependentUpon>komponenSupplier.xsd</DependentUpon>
     </None>
@@ -177,6 +286,17 @@
     </None>
     <None Include="komponenSupplier.xss">
       <DependentUpon>komponenSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="MasterKomponen\DataKomponen.xsc">
+      <DependentUpon>DataKomponen.xsd</DependentUpon>
+    </None>
+    <None Include="MasterKomponen\DataKomponen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataKomponen1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MasterKomponen\DataKomponen.xss">
+      <DependentUpon>DataKomponen.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -223,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MasterDataset\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

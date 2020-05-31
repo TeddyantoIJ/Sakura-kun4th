@@ -95,7 +95,7 @@ namespace CRUD
             SqlConnection connection = new SqlConnection(connectionString);
 
             //membuat table dengan jumlah data saja
-            SqlDataAdapter adapter = new SqlDataAdapter("select nama_komponen from mspenyimpananx", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter("select nama_komponen from mskomponen", connection);
             //memasukkan ke dataset
             DataSet msdata = new DataSet();
             adapter.Fill(msdata);
@@ -143,7 +143,7 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand myCommand = new SqlCommand("sp_cariPenyimpananx", connection);
+                SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
 
 
                 myCommand.CommandType = CommandType.StoredProcedure;
@@ -151,7 +151,12 @@ namespace CRUD
                 connection.Open();
                 string pencarian = txtnama_komponen.Text;
 
+                myCommand.Parameters.AddWithValue("id_komponen", "XXX");
                 myCommand.Parameters.AddWithValue("nama_komponen", pencarian);
+                myCommand.Parameters.AddWithValue("jumlah", -1);
+                myCommand.Parameters.AddWithValue("harga_jual", 0);
+                myCommand.Parameters.AddWithValue("id_alat", "XXX");
+                myCommand.Parameters.AddWithValue("tempat", pencarian);
 
 
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);

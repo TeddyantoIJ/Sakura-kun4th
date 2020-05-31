@@ -61,9 +61,9 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select [mspenyimpananx].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier,"+
-                    " convert(numeric(10,2), harga)  as [Harga(Satuan)] from[mskomponensupplier] inner join[mspenyimpananx]"+
-                    " on [mskomponensupplier].id_komponen = [mspenyimpananx].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter("select [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier,"+
+                    " convert(numeric(10,2), harga)  as [Harga(Satuan)] from[mskomponensupplier] inner join[mskomponen]"+
+                    " on [mskomponensupplier].id_komponen = [mskomponen].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
 
                 DataTable data = new DataTable();
                 adapter.Fill(data);
@@ -74,8 +74,9 @@ namespace CRUD
                 connection.Close();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 //btnUpdate.Enabled = false;
                 //this.msalatkerjaTableAdapter.Fill(this.sakuraDataDataSet2.msalatkerja);
                 //clear();
@@ -173,9 +174,9 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_alat", pencarian);
                 myCommand.Parameters.AddWithValue("nama_alat", pencarian);
-                myCommand.Parameters.AddWithValue("jumlah", 999);
-                myCommand.Parameters.AddWithValue("bagus", 999);
-                myCommand.Parameters.AddWithValue("rusak", 999);
+                myCommand.Parameters.AddWithValue("jumlah", -1);
+                myCommand.Parameters.AddWithValue("bagus", -1);
+                myCommand.Parameters.AddWithValue("rusak", -1);
 
 
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
@@ -504,7 +505,7 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand myCommand = new SqlCommand("sp_cariPenyimpananx", connection);
+                SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
 
 
                 myCommand.CommandType = CommandType.StoredProcedure;
@@ -512,7 +513,12 @@ namespace CRUD
                 connection.Open();
                 string pencarian = txtnama_komponen.Text;
 
+                myCommand.Parameters.AddWithValue("id_komponen", "XXX");
                 myCommand.Parameters.AddWithValue("nama_komponen", pencarian);
+                myCommand.Parameters.AddWithValue("jumlah", -1);
+                myCommand.Parameters.AddWithValue("harga_jual", 0);
+                myCommand.Parameters.AddWithValue("id_alat", "XXX");
+                myCommand.Parameters.AddWithValue("tempat", pencarian);
 
 
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);

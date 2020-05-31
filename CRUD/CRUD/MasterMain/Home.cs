@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,7 @@ namespace CRUD
         {
             InitializeComponent();
             //FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
-            
+            WindowState = FormWindowState.Maximized;            
         }
 
         private void Home_Resize(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace CRUD
         private void clearPanel2()
         {
             clearPanel3();
-            panelPenyimpanan.Visible = false;
+            panelKomponen.Visible = false;
             panelSupplier.Visible = false;
             panelCustomer.Visible = false;
             panelKaryawan.Visible = false;
@@ -165,7 +165,7 @@ namespace CRUD
         {
             clearPanelAll();
             SupplierMaster supplierMaster = new SupplierMaster();
-            supplierMaster.ShowDialog(this);
+            supplierMaster.ShowDialog(this.panelHome);
         }
 
         private void btnTambahKomponenSupplier_Click(object sender, EventArgs e)
@@ -232,14 +232,14 @@ namespace CRUD
 
         private void btnPenyimpanan_Click(object sender, EventArgs e)
         {
-            if(panelPenyimpanan.Visible == true)
+            if(panelKomponen.Visible == true)
             {
-                panelPenyimpanan.Visible = false;
+                panelKomponen.Visible = false;
             }
             else
             {
                 clearPanel2();
-                panelPenyimpanan.Visible = true;
+                panelKomponen.Visible = true;
             }
         }
 
@@ -324,13 +324,64 @@ namespace CRUD
 
         private void btnTambahAlatElektronik_Click(object sender, EventArgs e)
         {
-            
+            clearPanelAll();
+            AlatElektronik alatElektronik = new AlatElektronik();
+            alatElektronik.ShowDialog(this);
         }
 
         private void menu5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terimakasih telah menggunakan aplikasi kami\nHormat kami\nFiorenta Jihad Wibowo dan Teddyanto Idrus J", "Terima Kasih", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Environment.Exit(1);
+        }
+
+        private void btnPerbaruiAlatElektronik_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            UpdateAlatElektronik alatElektronik = new UpdateAlatElektronik();
+            alatElektronik.ShowDialog(this);
+        }
+
+        private void btnTambahJenisElektronik_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            JenisAlatElektronik alatElektronik = new JenisAlatElektronik();
+            alatElektronik.Show(this);
+        }
+
+        private void btnPerbaruiJenisElektronik_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            UpdateJenisElektronik updateJenisElektronik = new UpdateJenisElektronik();
+            updateJenisElektronik.ShowDialog(this);
+        }
+
+        private void btnTambahPenyimpanan_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            Komponen komponen = new Komponen();
+            komponen.ShowDialog(this);
+        }
+
+        private void btnPerbaruiPenyimpanan_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            UpdateKomponen komponen = new UpdateKomponen();
+            komponen.ShowDialog(this);
+        }
+
+        private void btnTambahKaryawan_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            TambahPekerja tambahPekerja = new TambahPekerja();
+            tambahPekerja.ShowDialog(this);
+        }
+
+        private void btnPerbaruiPelayan_Click(object sender, EventArgs e)
+        {
+            clearPanelAll();
+            UpdatePekerja updatePekerja = new UpdatePekerja();
+            updatePekerja.ShowDialog(this);
         }
     }
 }

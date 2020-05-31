@@ -57,6 +57,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(176, 44);
@@ -67,6 +68,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(40, 118);
             this.label2.Name = "label2";
@@ -76,6 +78,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(40, 170);
             this.label3.Name = "label3";
@@ -85,6 +88,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(40, 222);
             this.label4.Name = "label4";
@@ -94,6 +98,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(40, 275);
             this.label5.Name = "label5";
@@ -103,6 +108,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(40, 327);
             this.label6.Name = "label6";
@@ -112,6 +118,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(40, 416);
             this.label7.Name = "label7";
@@ -121,6 +128,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(174, 118);
             this.label8.Name = "label8";
@@ -130,6 +138,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(174, 170);
             this.label9.Name = "label9";
@@ -139,6 +148,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(174, 222);
             this.label10.Name = "label10";
@@ -148,6 +158,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(174, 275);
             this.label11.Name = "label11";
@@ -157,6 +168,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(174, 327);
             this.label12.Name = "label12";
@@ -166,6 +178,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(174, 416);
             this.label13.Name = "label13";
@@ -175,6 +188,7 @@
             // 
             // txtid_supplier
             // 
+            this.txtid_supplier.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtid_supplier.AutoSize = true;
             this.txtid_supplier.Location = new System.Drawing.Point(198, 118);
             this.txtid_supplier.Name = "txtid_supplier";
@@ -184,6 +198,7 @@
             // 
             // txtnama_supplier
             // 
+            this.txtnama_supplier.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtnama_supplier.Location = new System.Drawing.Point(202, 161);
             this.txtnama_supplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtnama_supplier.MaxLength = 25;
@@ -194,6 +209,7 @@
             // 
             // txtcontact_person
             // 
+            this.txtcontact_person.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtcontact_person.Location = new System.Drawing.Point(202, 213);
             this.txtcontact_person.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtcontact_person.MaxLength = 25;
@@ -205,6 +221,7 @@
             // 
             // txtno_telepon
             // 
+            this.txtno_telepon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtno_telepon.Location = new System.Drawing.Point(202, 265);
             this.txtno_telepon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtno_telepon.MaxLength = 15;
@@ -216,6 +233,7 @@
             // 
             // txtalamat
             // 
+            this.txtalamat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtalamat.Location = new System.Drawing.Point(202, 323);
             this.txtalamat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtalamat.MaxLength = 100;
@@ -227,6 +245,7 @@
             // 
             // txtketerangan
             // 
+            this.txtketerangan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtketerangan.Location = new System.Drawing.Point(202, 416);
             this.txtketerangan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtketerangan.MaxLength = 100;
@@ -237,6 +256,7 @@
             // 
             // btnSimpan
             // 
+            this.btnSimpan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSimpan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimpan.Location = new System.Drawing.Point(198, 543);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -249,6 +269,7 @@
             // 
             // btnBatal
             // 
+            this.btnBatal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBatal.Location = new System.Drawing.Point(344, 543);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -261,6 +282,7 @@
             // 
             // infonama_supplier
             // 
+            this.infonama_supplier.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infonama_supplier.AutoSize = true;
             this.infonama_supplier.Location = new System.Drawing.Point(443, 165);
             this.infonama_supplier.Name = "infonama_supplier";
@@ -269,6 +291,7 @@
             // 
             // infocontact_person
             // 
+            this.infocontact_person.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infocontact_person.AutoSize = true;
             this.infocontact_person.Location = new System.Drawing.Point(443, 217);
             this.infocontact_person.Name = "infocontact_person";
@@ -277,6 +300,7 @@
             // 
             // infono_telepon
             // 
+            this.infono_telepon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infono_telepon.AutoSize = true;
             this.infono_telepon.Location = new System.Drawing.Point(443, 269);
             this.infono_telepon.Name = "infono_telepon";
@@ -285,6 +309,7 @@
             // 
             // infoalamat
             // 
+            this.infoalamat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.infoalamat.AutoSize = true;
             this.infoalamat.Location = new System.Drawing.Point(443, 348);
             this.infoalamat.Name = "infoalamat";
@@ -324,11 +349,9 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(646, 627);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(646, 627);
             this.Name = "SupplierMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Supplier";
             this.Load += new System.EventHandler(this.SupplierMaster_Load);
             this.ResumeLayout(false);

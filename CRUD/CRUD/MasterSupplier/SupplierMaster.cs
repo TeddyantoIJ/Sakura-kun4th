@@ -287,6 +287,7 @@ namespace CRUD
             {
                 txtnama_supplier.Text = Thread.CurrentPrincipal.Identity.Name;
             }
+            //this.Size = new System.Drawing.Size(Parent.Width, Parent.Height);
         }
     }
 }

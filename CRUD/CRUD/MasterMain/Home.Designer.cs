@@ -43,12 +43,12 @@
             this.btnCustomer = new System.Windows.Forms.Button();
             this.panelKelolaData = new System.Windows.Forms.Panel();
             this.panelSupplier = new System.Windows.Forms.Panel();
-            this.btnDataSupplier = new System.Windows.Forms.Button();
-            this.btnKomponenSupplier = new System.Windows.Forms.Button();
             this.btnAlatSupplier = new System.Windows.Forms.Button();
+            this.btnKomponenSupplier = new System.Windows.Forms.Button();
+            this.btnDataSupplier = new System.Windows.Forms.Button();
             this.panelDataSupplier = new System.Windows.Forms.Panel();
-            this.btnTambahSupplier = new System.Windows.Forms.Button();
             this.btnEditSupplier = new System.Windows.Forms.Button();
+            this.btnTambahSupplier = new System.Windows.Forms.Button();
             this.panelKomponenSupplier = new System.Windows.Forms.Panel();
             this.btnPerbaruiKomponenSupplier = new System.Windows.Forms.Button();
             this.btnTambahKomponenSupplier = new System.Windows.Forms.Button();
@@ -58,13 +58,12 @@
             this.panelCustomer = new System.Windows.Forms.Panel();
             this.btnPerbaruiCustomer = new System.Windows.Forms.Button();
             this.btnTambahCustomer = new System.Windows.Forms.Button();
-            this.panelPenyimpanan = new System.Windows.Forms.Panel();
-            this.btnPerbaruiPenyimpanan = new System.Windows.Forms.Button();
-            this.btnTambahPenyimpanan = new System.Windows.Forms.Button();
+            this.panelKomponen = new System.Windows.Forms.Panel();
+            this.btnPerbaruiKomponen = new System.Windows.Forms.Button();
+            this.btnTambahKomponen = new System.Windows.Forms.Button();
             this.panelKaryawan = new System.Windows.Forms.Panel();
             this.btnPerbaruiPelayan = new System.Windows.Forms.Button();
             this.btnTambahKaryawan = new System.Windows.Forms.Button();
-            this.btnPerbaruiPerbaikan = new System.Windows.Forms.Button();
             this.panelAlatKerja = new System.Windows.Forms.Panel();
             this.btnPerbaruiAlatKerja = new System.Windows.Forms.Button();
             this.btnTambahAlatKerja = new System.Windows.Forms.Button();
@@ -77,6 +76,7 @@
             this.panelJenisElektronik = new System.Windows.Forms.Panel();
             this.btnPerbaruiJenisElektronik = new System.Windows.Forms.Button();
             this.btnTambahJenisElektronik = new System.Windows.Forms.Button();
+            this.panelHome = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelKelolaData.SuspendLayout();
             this.panelSupplier.SuspendLayout();
@@ -84,12 +84,13 @@
             this.panelKomponenSupplier.SuspendLayout();
             this.panelAlatSupplier.SuspendLayout();
             this.panelCustomer.SuspendLayout();
-            this.panelPenyimpanan.SuspendLayout();
+            this.panelKomponen.SuspendLayout();
             this.panelKaryawan.SuspendLayout();
             this.panelAlatKerja.SuspendLayout();
             this.panelAlatElektronik.SuspendLayout();
             this.panelNamaAlatElektronik.SuspendLayout();
             this.panelJenisElektronik.SuspendLayout();
+            this.panelHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPop
@@ -210,7 +211,7 @@
             this.btnPenyimpanan.Name = "btnPenyimpanan";
             this.btnPenyimpanan.Size = new System.Drawing.Size(149, 26);
             this.btnPenyimpanan.TabIndex = 3;
-            this.btnPenyimpanan.Text = "Penyimpanan";
+            this.btnPenyimpanan.Text = "Komponen";
             this.btnPenyimpanan.UseVisualStyleBackColor = true;
             this.btnPenyimpanan.Click += new System.EventHandler(this.btnPenyimpanan_Click);
             // 
@@ -255,11 +256,31 @@
             this.panelSupplier.Controls.Add(this.btnAlatSupplier);
             this.panelSupplier.Controls.Add(this.btnKomponenSupplier);
             this.panelSupplier.Controls.Add(this.btnDataSupplier);
-            this.panelSupplier.Location = new System.Drawing.Point(331, 105);
+            this.panelSupplier.Location = new System.Drawing.Point(170, 104);
             this.panelSupplier.Name = "panelSupplier";
             this.panelSupplier.Size = new System.Drawing.Size(157, 100);
             this.panelSupplier.TabIndex = 4;
             this.panelSupplier.Visible = false;
+            // 
+            // btnAlatSupplier
+            // 
+            this.btnAlatSupplier.Location = new System.Drawing.Point(5, 67);
+            this.btnAlatSupplier.Name = "btnAlatSupplier";
+            this.btnAlatSupplier.Size = new System.Drawing.Size(149, 26);
+            this.btnAlatSupplier.TabIndex = 6;
+            this.btnAlatSupplier.Text = "Alat Supplier";
+            this.btnAlatSupplier.UseVisualStyleBackColor = true;
+            this.btnAlatSupplier.Click += new System.EventHandler(this.btnAlatSupplier_Click);
+            // 
+            // btnKomponenSupplier
+            // 
+            this.btnKomponenSupplier.Location = new System.Drawing.Point(4, 34);
+            this.btnKomponenSupplier.Name = "btnKomponenSupplier";
+            this.btnKomponenSupplier.Size = new System.Drawing.Size(149, 26);
+            this.btnKomponenSupplier.TabIndex = 5;
+            this.btnKomponenSupplier.Text = "Komponen Supplier";
+            this.btnKomponenSupplier.UseVisualStyleBackColor = true;
+            this.btnKomponenSupplier.Click += new System.EventHandler(this.btnKomponenSupplier_Click);
             // 
             // btnDataSupplier
             // 
@@ -270,26 +291,6 @@
             this.btnDataSupplier.Text = "Data Supplier";
             this.btnDataSupplier.UseVisualStyleBackColor = true;
             this.btnDataSupplier.Click += new System.EventHandler(this.btnDataSupplier_Click);
-            // 
-            // btnKomponenSupplier
-            // 
-            this.btnKomponenSupplier.Location = new System.Drawing.Point(4, 37);
-            this.btnKomponenSupplier.Name = "btnKomponenSupplier";
-            this.btnKomponenSupplier.Size = new System.Drawing.Size(149, 26);
-            this.btnKomponenSupplier.TabIndex = 5;
-            this.btnKomponenSupplier.Text = "Komponen Supplier";
-            this.btnKomponenSupplier.UseVisualStyleBackColor = true;
-            this.btnKomponenSupplier.Click += new System.EventHandler(this.btnKomponenSupplier_Click);
-            // 
-            // btnAlatSupplier
-            // 
-            this.btnAlatSupplier.Location = new System.Drawing.Point(5, 69);
-            this.btnAlatSupplier.Name = "btnAlatSupplier";
-            this.btnAlatSupplier.Size = new System.Drawing.Size(149, 26);
-            this.btnAlatSupplier.TabIndex = 6;
-            this.btnAlatSupplier.Text = "Alat Supplier";
-            this.btnAlatSupplier.UseVisualStyleBackColor = true;
-            this.btnAlatSupplier.Click += new System.EventHandler(this.btnAlatSupplier_Click);
             // 
             // panelDataSupplier
             // 
@@ -302,6 +303,16 @@
             this.panelDataSupplier.TabIndex = 5;
             this.panelDataSupplier.Visible = false;
             // 
+            // btnEditSupplier
+            // 
+            this.btnEditSupplier.Location = new System.Drawing.Point(3, 34);
+            this.btnEditSupplier.Name = "btnEditSupplier";
+            this.btnEditSupplier.Size = new System.Drawing.Size(149, 26);
+            this.btnEditSupplier.TabIndex = 8;
+            this.btnEditSupplier.Text = "Perbarui Supplier";
+            this.btnEditSupplier.UseVisualStyleBackColor = true;
+            this.btnEditSupplier.Click += new System.EventHandler(this.btnEditSupplier_Click);
+            // 
             // btnTambahSupplier
             // 
             this.btnTambahSupplier.Location = new System.Drawing.Point(3, 3);
@@ -312,22 +323,12 @@
             this.btnTambahSupplier.UseVisualStyleBackColor = true;
             this.btnTambahSupplier.Click += new System.EventHandler(this.btnTambahSupplier_Click);
             // 
-            // btnEditSupplier
-            // 
-            this.btnEditSupplier.Location = new System.Drawing.Point(3, 36);
-            this.btnEditSupplier.Name = "btnEditSupplier";
-            this.btnEditSupplier.Size = new System.Drawing.Size(149, 26);
-            this.btnEditSupplier.TabIndex = 8;
-            this.btnEditSupplier.Text = "Perbarui Supplier";
-            this.btnEditSupplier.UseVisualStyleBackColor = true;
-            this.btnEditSupplier.Click += new System.EventHandler(this.btnEditSupplier_Click);
-            // 
             // panelKomponenSupplier
             // 
             this.panelKomponenSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelKomponenSupplier.Controls.Add(this.btnPerbaruiKomponenSupplier);
             this.panelKomponenSupplier.Controls.Add(this.btnTambahKomponenSupplier);
-            this.panelKomponenSupplier.Location = new System.Drawing.Point(494, 143);
+            this.panelKomponenSupplier.Location = new System.Drawing.Point(333, 136);
             this.panelKomponenSupplier.Name = "panelKomponenSupplier";
             this.panelKomponenSupplier.Size = new System.Drawing.Size(157, 71);
             this.panelKomponenSupplier.TabIndex = 9;
@@ -335,7 +336,7 @@
             // 
             // btnPerbaruiKomponenSupplier
             // 
-            this.btnPerbaruiKomponenSupplier.Location = new System.Drawing.Point(3, 36);
+            this.btnPerbaruiKomponenSupplier.Location = new System.Drawing.Point(3, 34);
             this.btnPerbaruiKomponenSupplier.Name = "btnPerbaruiKomponenSupplier";
             this.btnPerbaruiKomponenSupplier.Size = new System.Drawing.Size(149, 26);
             this.btnPerbaruiKomponenSupplier.TabIndex = 8;
@@ -358,7 +359,7 @@
             this.panelAlatSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAlatSupplier.Controls.Add(this.btnPerbaruiAlatSupplier);
             this.panelAlatSupplier.Controls.Add(this.btnTambahAlatSupplier);
-            this.panelAlatSupplier.Location = new System.Drawing.Point(494, 173);
+            this.panelAlatSupplier.Location = new System.Drawing.Point(333, 168);
             this.panelAlatSupplier.Name = "panelAlatSupplier";
             this.panelAlatSupplier.Size = new System.Drawing.Size(157, 71);
             this.panelAlatSupplier.TabIndex = 10;
@@ -366,7 +367,7 @@
             // 
             // btnPerbaruiAlatSupplier
             // 
-            this.btnPerbaruiAlatSupplier.Location = new System.Drawing.Point(3, 36);
+            this.btnPerbaruiAlatSupplier.Location = new System.Drawing.Point(3, 34);
             this.btnPerbaruiAlatSupplier.Name = "btnPerbaruiAlatSupplier";
             this.btnPerbaruiAlatSupplier.Size = new System.Drawing.Size(149, 26);
             this.btnPerbaruiAlatSupplier.TabIndex = 8;
@@ -389,7 +390,7 @@
             this.panelCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCustomer.Controls.Add(this.btnPerbaruiCustomer);
             this.panelCustomer.Controls.Add(this.btnTambahCustomer);
-            this.panelCustomer.Location = new System.Drawing.Point(331, 138);
+            this.panelCustomer.Location = new System.Drawing.Point(170, 136);
             this.panelCustomer.Name = "panelCustomer";
             this.panelCustomer.Size = new System.Drawing.Size(157, 71);
             this.panelCustomer.TabIndex = 11;
@@ -397,7 +398,7 @@
             // 
             // btnPerbaruiCustomer
             // 
-            this.btnPerbaruiCustomer.Location = new System.Drawing.Point(3, 36);
+            this.btnPerbaruiCustomer.Location = new System.Drawing.Point(3, 34);
             this.btnPerbaruiCustomer.Name = "btnPerbaruiCustomer";
             this.btnPerbaruiCustomer.Size = new System.Drawing.Size(149, 26);
             this.btnPerbaruiCustomer.TabIndex = 8;
@@ -415,87 +416,80 @@
             this.btnTambahCustomer.UseVisualStyleBackColor = true;
             this.btnTambahCustomer.Click += new System.EventHandler(this.btnTambahCustomer_Click);
             // 
-            // panelPenyimpanan
+            // panelKomponen
             // 
-            this.panelPenyimpanan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPenyimpanan.Controls.Add(this.btnPerbaruiPenyimpanan);
-            this.panelPenyimpanan.Controls.Add(this.btnTambahPenyimpanan);
-            this.panelPenyimpanan.Location = new System.Drawing.Point(331, 169);
-            this.panelPenyimpanan.Name = "panelPenyimpanan";
-            this.panelPenyimpanan.Size = new System.Drawing.Size(157, 71);
-            this.panelPenyimpanan.TabIndex = 12;
-            this.panelPenyimpanan.Visible = false;
+            this.panelKomponen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelKomponen.Controls.Add(this.btnPerbaruiKomponen);
+            this.panelKomponen.Controls.Add(this.btnTambahKomponen);
+            this.panelKomponen.Location = new System.Drawing.Point(170, 167);
+            this.panelKomponen.Name = "panelKomponen";
+            this.panelKomponen.Size = new System.Drawing.Size(157, 71);
+            this.panelKomponen.TabIndex = 12;
+            this.panelKomponen.Visible = false;
             // 
-            // btnPerbaruiPenyimpanan
+            // btnPerbaruiKomponen
             // 
-            this.btnPerbaruiPenyimpanan.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPerbaruiPenyimpanan.ForeColor = System.Drawing.Color.Red;
-            this.btnPerbaruiPenyimpanan.Location = new System.Drawing.Point(3, 36);
-            this.btnPerbaruiPenyimpanan.Name = "btnPerbaruiPenyimpanan";
-            this.btnPerbaruiPenyimpanan.Size = new System.Drawing.Size(149, 26);
-            this.btnPerbaruiPenyimpanan.TabIndex = 8;
-            this.btnPerbaruiPenyimpanan.Text = "Perbarui Penyimpanan";
-            this.btnPerbaruiPenyimpanan.UseVisualStyleBackColor = false;
+            this.btnPerbaruiKomponen.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPerbaruiKomponen.ForeColor = System.Drawing.Color.Black;
+            this.btnPerbaruiKomponen.Location = new System.Drawing.Point(3, 36);
+            this.btnPerbaruiKomponen.Name = "btnPerbaruiKomponen";
+            this.btnPerbaruiKomponen.Size = new System.Drawing.Size(149, 26);
+            this.btnPerbaruiKomponen.TabIndex = 8;
+            this.btnPerbaruiKomponen.Text = "Perbarui Komponen";
+            this.btnPerbaruiKomponen.UseVisualStyleBackColor = false;
+            this.btnPerbaruiKomponen.Click += new System.EventHandler(this.btnPerbaruiPenyimpanan_Click);
             // 
-            // btnTambahPenyimpanan
+            // btnTambahKomponen
             // 
-            this.btnTambahPenyimpanan.BackColor = System.Drawing.SystemColors.Control;
-            this.btnTambahPenyimpanan.ForeColor = System.Drawing.Color.Red;
-            this.btnTambahPenyimpanan.Location = new System.Drawing.Point(3, 3);
-            this.btnTambahPenyimpanan.Name = "btnTambahPenyimpanan";
-            this.btnTambahPenyimpanan.Size = new System.Drawing.Size(149, 26);
-            this.btnTambahPenyimpanan.TabIndex = 7;
-            this.btnTambahPenyimpanan.Text = "Tambah Penyimpanan";
-            this.btnTambahPenyimpanan.UseVisualStyleBackColor = false;
+            this.btnTambahKomponen.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTambahKomponen.ForeColor = System.Drawing.Color.Black;
+            this.btnTambahKomponen.Location = new System.Drawing.Point(3, 3);
+            this.btnTambahKomponen.Name = "btnTambahKomponen";
+            this.btnTambahKomponen.Size = new System.Drawing.Size(149, 26);
+            this.btnTambahKomponen.TabIndex = 7;
+            this.btnTambahKomponen.Text = "Tambah Komponen";
+            this.btnTambahKomponen.UseVisualStyleBackColor = false;
+            this.btnTambahKomponen.Click += new System.EventHandler(this.btnTambahPenyimpanan_Click);
             // 
             // panelKaryawan
             // 
             this.panelKaryawan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelKaryawan.Controls.Add(this.btnPerbaruiPerbaikan);
             this.panelKaryawan.Controls.Add(this.btnPerbaruiPelayan);
             this.panelKaryawan.Controls.Add(this.btnTambahKaryawan);
-            this.panelKaryawan.Location = new System.Drawing.Point(331, 234);
+            this.panelKaryawan.Location = new System.Drawing.Point(170, 233);
             this.panelKaryawan.Name = "panelKaryawan";
-            this.panelKaryawan.Size = new System.Drawing.Size(157, 105);
+            this.panelKaryawan.Size = new System.Drawing.Size(157, 71);
             this.panelKaryawan.TabIndex = 13;
             this.panelKaryawan.Visible = false;
             // 
             // btnPerbaruiPelayan
             // 
-            this.btnPerbaruiPelayan.ForeColor = System.Drawing.Color.Red;
+            this.btnPerbaruiPelayan.ForeColor = System.Drawing.Color.Black;
             this.btnPerbaruiPelayan.Location = new System.Drawing.Point(3, 36);
             this.btnPerbaruiPelayan.Name = "btnPerbaruiPelayan";
             this.btnPerbaruiPelayan.Size = new System.Drawing.Size(149, 26);
             this.btnPerbaruiPelayan.TabIndex = 8;
-            this.btnPerbaruiPelayan.Text = "Perbarui Pelayan";
+            this.btnPerbaruiPelayan.Text = "Perbarui Karyawan";
             this.btnPerbaruiPelayan.UseVisualStyleBackColor = true;
+            this.btnPerbaruiPelayan.Click += new System.EventHandler(this.btnPerbaruiPelayan_Click);
             // 
             // btnTambahKaryawan
             // 
-            this.btnTambahKaryawan.ForeColor = System.Drawing.Color.Red;
+            this.btnTambahKaryawan.ForeColor = System.Drawing.Color.Black;
             this.btnTambahKaryawan.Location = new System.Drawing.Point(3, 3);
             this.btnTambahKaryawan.Name = "btnTambahKaryawan";
             this.btnTambahKaryawan.Size = new System.Drawing.Size(149, 26);
             this.btnTambahKaryawan.TabIndex = 7;
             this.btnTambahKaryawan.Text = "Tambah Karyawan";
             this.btnTambahKaryawan.UseVisualStyleBackColor = true;
-            // 
-            // btnPerbaruiPerbaikan
-            // 
-            this.btnPerbaruiPerbaikan.ForeColor = System.Drawing.Color.Red;
-            this.btnPerbaruiPerbaikan.Location = new System.Drawing.Point(3, 68);
-            this.btnPerbaruiPerbaikan.Name = "btnPerbaruiPerbaikan";
-            this.btnPerbaruiPerbaikan.Size = new System.Drawing.Size(149, 26);
-            this.btnPerbaruiPerbaikan.TabIndex = 14;
-            this.btnPerbaruiPerbaikan.Text = "Perbarui Perbaikan";
-            this.btnPerbaruiPerbaikan.UseVisualStyleBackColor = true;
+            this.btnTambahKaryawan.Click += new System.EventHandler(this.btnTambahKaryawan_Click);
             // 
             // panelAlatKerja
             // 
             this.panelAlatKerja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAlatKerja.Controls.Add(this.btnPerbaruiAlatKerja);
             this.panelAlatKerja.Controls.Add(this.btnTambahAlatKerja);
-            this.panelAlatKerja.Location = new System.Drawing.Point(331, 201);
+            this.panelAlatKerja.Location = new System.Drawing.Point(170, 200);
             this.panelAlatKerja.Name = "panelAlatKerja";
             this.panelAlatKerja.Size = new System.Drawing.Size(157, 71);
             this.panelAlatKerja.TabIndex = 14;
@@ -535,6 +529,7 @@
             // 
             // btnJenisAlatElektronik
             // 
+            this.btnJenisAlatElektronik.ForeColor = System.Drawing.Color.Black;
             this.btnJenisAlatElektronik.Location = new System.Drawing.Point(3, 36);
             this.btnJenisAlatElektronik.Name = "btnJenisAlatElektronik";
             this.btnJenisAlatElektronik.Size = new System.Drawing.Size(149, 26);
@@ -545,6 +540,7 @@
             // 
             // btnNamaAlatElektronik
             // 
+            this.btnNamaAlatElektronik.ForeColor = System.Drawing.Color.Black;
             this.btnNamaAlatElektronik.Location = new System.Drawing.Point(3, 3);
             this.btnNamaAlatElektronik.Name = "btnNamaAlatElektronik";
             this.btnNamaAlatElektronik.Size = new System.Drawing.Size(149, 26);
@@ -558,8 +554,8 @@
             this.panelNamaAlatElektronik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNamaAlatElektronik.Controls.Add(this.btnPerbaruiAlatElektronik);
             this.panelNamaAlatElektronik.Controls.Add(this.btnTambahAlatElektronik);
-            this.panelNamaAlatElektronik.ForeColor = System.Drawing.Color.Red;
-            this.panelNamaAlatElektronik.Location = new System.Drawing.Point(494, 267);
+            this.panelNamaAlatElektronik.ForeColor = System.Drawing.Color.Black;
+            this.panelNamaAlatElektronik.Location = new System.Drawing.Point(333, 266);
             this.panelNamaAlatElektronik.Name = "panelNamaAlatElektronik";
             this.panelNamaAlatElektronik.Size = new System.Drawing.Size(157, 71);
             this.panelNamaAlatElektronik.TabIndex = 16;
@@ -573,9 +569,11 @@
             this.btnPerbaruiAlatElektronik.TabIndex = 8;
             this.btnPerbaruiAlatElektronik.Text = "Perbarui Alat Elektronik";
             this.btnPerbaruiAlatElektronik.UseVisualStyleBackColor = true;
+            this.btnPerbaruiAlatElektronik.Click += new System.EventHandler(this.btnPerbaruiAlatElektronik_Click);
             // 
             // btnTambahAlatElektronik
             // 
+            this.btnTambahAlatElektronik.ForeColor = System.Drawing.Color.Black;
             this.btnTambahAlatElektronik.Location = new System.Drawing.Point(3, 3);
             this.btnTambahAlatElektronik.Name = "btnTambahAlatElektronik";
             this.btnTambahAlatElektronik.Size = new System.Drawing.Size(149, 26);
@@ -590,7 +588,7 @@
             this.panelJenisElektronik.Controls.Add(this.btnPerbaruiJenisElektronik);
             this.panelJenisElektronik.Controls.Add(this.btnTambahJenisElektronik);
             this.panelJenisElektronik.ForeColor = System.Drawing.Color.Red;
-            this.panelJenisElektronik.Location = new System.Drawing.Point(494, 302);
+            this.panelJenisElektronik.Location = new System.Drawing.Point(333, 299);
             this.panelJenisElektronik.Name = "panelJenisElektronik";
             this.panelJenisElektronik.Size = new System.Drawing.Size(157, 71);
             this.panelJenisElektronik.TabIndex = 17;
@@ -598,21 +596,41 @@
             // 
             // btnPerbaruiJenisElektronik
             // 
+            this.btnPerbaruiJenisElektronik.ForeColor = System.Drawing.Color.Black;
             this.btnPerbaruiJenisElektronik.Location = new System.Drawing.Point(3, 36);
             this.btnPerbaruiJenisElektronik.Name = "btnPerbaruiJenisElektronik";
             this.btnPerbaruiJenisElektronik.Size = new System.Drawing.Size(149, 26);
             this.btnPerbaruiJenisElektronik.TabIndex = 8;
             this.btnPerbaruiJenisElektronik.Text = "Perbarui Jenis Elektronik";
             this.btnPerbaruiJenisElektronik.UseVisualStyleBackColor = true;
+            this.btnPerbaruiJenisElektronik.Click += new System.EventHandler(this.btnPerbaruiJenisElektronik_Click);
             // 
             // btnTambahJenisElektronik
             // 
+            this.btnTambahJenisElektronik.ForeColor = System.Drawing.Color.Black;
             this.btnTambahJenisElektronik.Location = new System.Drawing.Point(3, 3);
             this.btnTambahJenisElektronik.Name = "btnTambahJenisElektronik";
             this.btnTambahJenisElektronik.Size = new System.Drawing.Size(149, 26);
             this.btnTambahJenisElektronik.TabIndex = 7;
             this.btnTambahJenisElektronik.Text = "Tambah Jenis Elektronik";
             this.btnTambahJenisElektronik.UseVisualStyleBackColor = true;
+            this.btnTambahJenisElektronik.Click += new System.EventHandler(this.btnTambahJenisElektronik_Click);
+            // 
+            // panelHome
+            // 
+            this.panelHome.Controls.Add(this.panelJenisElektronik);
+            this.panelHome.Controls.Add(this.panelKaryawan);
+            this.panelHome.Controls.Add(this.panelAlatKerja);
+            this.panelHome.Controls.Add(this.panelNamaAlatElektronik);
+            this.panelHome.Controls.Add(this.panelKomponen);
+            this.panelHome.Controls.Add(this.panelKomponenSupplier);
+            this.panelHome.Controls.Add(this.panelCustomer);
+            this.panelHome.Controls.Add(this.panelSupplier);
+            this.panelHome.Controls.Add(this.panelAlatSupplier);
+            this.panelHome.Location = new System.Drawing.Point(161, 1);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(1013, 572);
+            this.panelHome.TabIndex = 18;
             // 
             // Home
             // 
@@ -620,19 +638,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1174, 573);
-            this.Controls.Add(this.panelJenisElektronik);
-            this.Controls.Add(this.panelNamaAlatElektronik);
             this.Controls.Add(this.panelAlatElektronik);
-            this.Controls.Add(this.panelAlatKerja);
-            this.Controls.Add(this.panelKaryawan);
-            this.Controls.Add(this.panelPenyimpanan);
-            this.Controls.Add(this.panelCustomer);
-            this.Controls.Add(this.panelAlatSupplier);
-            this.Controls.Add(this.panelKomponenSupplier);
             this.Controls.Add(this.panelDataSupplier);
-            this.Controls.Add(this.panelSupplier);
             this.Controls.Add(this.panelKelolaData);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelHome);
             this.Name = "Home";
             this.Text = "Home";
             this.Resize += new System.EventHandler(this.Home_Resize);
@@ -643,12 +653,13 @@
             this.panelKomponenSupplier.ResumeLayout(false);
             this.panelAlatSupplier.ResumeLayout(false);
             this.panelCustomer.ResumeLayout(false);
-            this.panelPenyimpanan.ResumeLayout(false);
+            this.panelKomponen.ResumeLayout(false);
             this.panelKaryawan.ResumeLayout(false);
             this.panelAlatKerja.ResumeLayout(false);
             this.panelAlatElektronik.ResumeLayout(false);
             this.panelNamaAlatElektronik.ResumeLayout(false);
             this.panelJenisElektronik.ResumeLayout(false);
+            this.panelHome.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -685,11 +696,10 @@
         private System.Windows.Forms.Panel panelCustomer;
         private System.Windows.Forms.Button btnPerbaruiCustomer;
         private System.Windows.Forms.Button btnTambahCustomer;
-        private System.Windows.Forms.Panel panelPenyimpanan;
-        private System.Windows.Forms.Button btnPerbaruiPenyimpanan;
-        private System.Windows.Forms.Button btnTambahPenyimpanan;
+        private System.Windows.Forms.Panel panelKomponen;
+        private System.Windows.Forms.Button btnPerbaruiKomponen;
+        private System.Windows.Forms.Button btnTambahKomponen;
         private System.Windows.Forms.Panel panelKaryawan;
-        private System.Windows.Forms.Button btnPerbaruiPerbaikan;
         private System.Windows.Forms.Button btnPerbaruiPelayan;
         private System.Windows.Forms.Button btnTambahKaryawan;
         private System.Windows.Forms.Panel panelAlatKerja;
@@ -704,5 +714,6 @@
         private System.Windows.Forms.Panel panelJenisElektronik;
         private System.Windows.Forms.Button btnPerbaruiJenisElektronik;
         private System.Windows.Forms.Button btnTambahJenisElektronik;
+        private System.Windows.Forms.Panel panelHome;
     }
 }
