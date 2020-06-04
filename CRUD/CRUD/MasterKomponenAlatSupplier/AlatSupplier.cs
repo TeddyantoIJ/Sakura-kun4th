@@ -357,7 +357,7 @@ namespace CRUD
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (benar && cekSamaID())
+            if (benar && cekSamaIDAlat())
             {
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
                     "Nama Alat\t: " + txtnama_alat.Text + "\n" +
@@ -374,7 +374,8 @@ namespace CRUD
                 }
             }
         }
-        private bool cekSamaID()
+
+        private bool cekSamaIDAlat()
         {
             try
             {

@@ -62,7 +62,7 @@ namespace CRUD
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlDataAdapter adapter = new SqlDataAdapter("select [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier,"+
-                    " convert(numeric(10,2), harga)  as [Harga(Satuan)] from[mskomponensupplier] inner join[mskomponen]"+
+                    " convert(numeric(10,2), harga)  as [Harga(Rp)] from[mskomponensupplier] inner join[mskomponen]"+
                     " on [mskomponensupplier].id_komponen = [mskomponen].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
 
                 DataTable data = new DataTable();

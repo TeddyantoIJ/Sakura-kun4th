@@ -503,11 +503,52 @@ namespace CRUD
                 btnBaruSupplier.Enabled = false;
             }
         }
+        private bool cekSamaIDKomponen()
+        {
+            try
+            {
+                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                //membuat table dengan jumlah data saja
+                //SqlDataAdapter adapter = new SqlDataAdapter("select nama_alat from msalatsupplier", connection);
+                SqlCommand myCommand = new SqlCommand("sp_cariSamaKomponenSupplier", connection);
+                //memasukkan ke dataset
+
+                myCommand.CommandType = CommandType.StoredProcedure;
+
+                connection.Open();
+                string id_komponen = txtid_komponen.Text;
+                string id_supplier = txtid_supplier.Text;
+
+                myCommand.Parameters.AddWithValue("id_komponen", id_komponen);
+                myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
+                MessageBox.Show(id_komponen.ToString() + id_supplier.ToString());
+
+                SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
+                DataSet data = new DataSet();
+
+                connection.Close();
+                adapter.Fill(data);
+
+                string n = data.Tables[0].Rows[0][0].ToString();
+
+                MessageBox.Show("Data sudah ada!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+
+            }
+            catch (Exception)
+            {
+                return true;
+            }
+
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             cekAll();
-            if (benar)
+            if (benar && cekSamaIDKomponen())
             {
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
                     "Nama Komponen\t: " + txtnama_komponen.Text + "\n" +

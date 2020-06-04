@@ -103,9 +103,11 @@ namespace CRUD
         private void refresh()
         {
             this.mskomponenTableAdapter.Fill(this.dataKomponen.mskomponen);
-            for (int i = 0; i < dgKomponen.Rows.Count - 1; i++)
+            for (int i = 0; i <= dgKomponen.Rows.Count - 1; i++)
             {
                 dgKomponen.Rows[i].Cells[4].Value = converterAlat(dgKomponen.Rows[i].Cells[4].Value.ToString());
+                int n = (dgKomponen.Rows[i].Cells[3].Value).ToString().Length - 2;
+                dgKomponen.Rows[i].Cells[3].Value = (dgKomponen.Rows[i].Cells[3].Value.ToString()).Substring(0, n);
             }
         }
 

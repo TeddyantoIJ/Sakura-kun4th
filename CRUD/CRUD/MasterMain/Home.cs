@@ -22,7 +22,7 @@ namespace CRUD
 
         private void Home_Resize(object sender, EventArgs e)
         {
-            
+      
 
         }
         bool menuAktif = false;
@@ -35,6 +35,7 @@ namespace CRUD
                 
                 panelMenu.Size = new System.Drawing.Size(161, 704);
                 btnPop.Location = new Point(127, 11);
+                Clock.Location = new Point(167, 9); 
             }
             else
             {
@@ -42,6 +43,7 @@ namespace CRUD
                 clearPanelAll();
                 panelMenu.Size = new System.Drawing.Size(39, 704);
                 btnPop.Location = new Point(5, 11);
+                Clock.Location = new Point(167-122, 9);
             }
         }
         private void enterMenu()
@@ -165,7 +167,7 @@ namespace CRUD
         {
             clearPanelAll();
             SupplierMaster supplierMaster = new SupplierMaster();
-            supplierMaster.ShowDialog(this.panelHome);
+            supplierMaster.ShowDialog(this);
         }
 
         private void btnTambahKomponenSupplier_Click(object sender, EventArgs e)
@@ -382,6 +384,54 @@ namespace CRUD
             clearPanelAll();
             UpdatePekerja updatePekerja = new UpdatePekerja();
             updatePekerja.ShowDialog(this);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Clock.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            Tanggal.Text = DateTime.Now.ToString("dd-MMM-yyyy");
+            if(txtInfo.Location.X > -1342)
+            {
+                txtInfo.Location = new Point(txtInfo.Location.X-1, 680);
+            }
+            else
+            {
+                txtInfo.Location = new Point(1360, 680);
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDataSupplier_Click_1(object sender, EventArgs e)
+        {
+            clearPanel3();
+            panelDataSupplier.Visible = true;
+        }
+
+        private void btnKomponenSupplier_Click_1(object sender, EventArgs e)
+        {
+            clearPanel3();
+            panelKomponenSupplier.Visible = true;
+        }
+
+        private void btnAlatSupplier_Click_1(object sender, EventArgs e)
+        {
+            clearPanel3();
+            panelAlatSupplier.Visible = true;
+        }
+
+        private void Clock_TextChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }
