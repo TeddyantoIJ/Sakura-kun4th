@@ -34,8 +34,8 @@ namespace CRUD
             }
             else
             {
-                infonama_supplier.ForeColor = System.Drawing.Color.Green;
-                infonama_supplier.Text = "Sesuai";
+                infonama_supplier.ForeColor = System.Drawing.Color.Transparent;
+                
             }
         }
 
@@ -50,8 +50,8 @@ namespace CRUD
             else
             {
 
-                infocontact_person.ForeColor = System.Drawing.Color.Green;
-                infocontact_person.Text = "Sesuai";
+                infocontact_person.ForeColor = System.Drawing.Color.Transparent;
+                
             }
 
         }
@@ -67,8 +67,8 @@ namespace CRUD
             else
             {
 
-                infono_telepon.ForeColor = System.Drawing.Color.Green;
-                infono_telepon.Text = "Sesuai";
+                infono_telepon.ForeColor = System.Drawing.Color.Transparent;
+                
             }
 
         }
@@ -84,8 +84,8 @@ namespace CRUD
             else
             {
 
-                infoalamat.ForeColor = System.Drawing.Color.Green;
-                infoalamat.Text = "Sesuai";
+                infoalamat.ForeColor = System.Drawing.Color.Transparent;
+                
             }
         }
 
@@ -150,8 +150,8 @@ namespace CRUD
             }
             else
             {
-                infonama_supplier.ForeColor = System.Drawing.Color.Green;
-                infonama_supplier.Text = "Sesuai";
+                infonama_supplier.ForeColor = System.Drawing.Color.Transparent;
+                
             }
             if (txtcontact_person.Text == "")
             {
@@ -162,8 +162,8 @@ namespace CRUD
             else
             {
 
-                infocontact_person.ForeColor = System.Drawing.Color.Green;
-                infocontact_person.Text = "Sesuai";
+                infocontact_person.ForeColor = System.Drawing.Color.Transparent;
+                
             }
             if (txtno_telepon.Text == "")
             {
@@ -174,8 +174,8 @@ namespace CRUD
             else
             {
 
-                infono_telepon.ForeColor = System.Drawing.Color.Green;
-                infono_telepon.Text = "Sesuai";
+                infono_telepon.ForeColor = System.Drawing.Color.Transparent;
+                
             }
             if (txtalamat.Text == "")
             {
@@ -186,8 +186,8 @@ namespace CRUD
             else
             {
 
-                infoalamat.ForeColor = System.Drawing.Color.Green;
-                infoalamat.Text = "Sesuai";
+                infoalamat.ForeColor = System.Drawing.Color.Transparent;
+                
             }
 
             if (benar)

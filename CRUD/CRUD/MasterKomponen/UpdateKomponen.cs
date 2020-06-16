@@ -103,16 +103,18 @@ namespace CRUD
         private void refresh()
         {
             this.mskomponenTableAdapter.Fill(this.dataKomponen.mskomponen);
-            for (int i = 0; i <= dgKomponen.Rows.Count - 1; i++)
+            for (int i = 0; i < dgKomponen.Rows.Count; i++)
             {
-                dgKomponen.Rows[i].Cells[4].Value = converterAlat(dgKomponen.Rows[i].Cells[4].Value.ToString());
+                string nama = converterAlat((dgKomponen.Rows[i].Cells[4].Value).ToString(), true);
+                dgKomponen.Rows[i].Cells[4].Value = nama;
                 int n = (dgKomponen.Rows[i].Cells[3].Value).ToString().Length - 2;
                 dgKomponen.Rows[i].Cells[3].Value = (dgKomponen.Rows[i].Cells[3].Value.ToString()).Substring(0, n);
             }
         }
 
-        private string converterAlat(String search)
+        private string converterAlat(String search, Boolean refresh)
         {
+            MessageBox.Show(search.ToString());
             string nama_alat = null;
             try
             {
@@ -127,7 +129,14 @@ namespace CRUD
 
                 connection.Open();
 
-                myCommand.Parameters.AddWithValue("id_alat", search);
+                if (refresh)
+                {
+                    myCommand.Parameters.AddWithValue("id_alat", search);
+                }
+                else
+                {
+                    myCommand.Parameters.AddWithValue("id_alat", "xxxx");
+                }
                 myCommand.Parameters.AddWithValue("nama_alat", search);
                 myCommand.Parameters.AddWithValue("id_jenis", search);
 
@@ -139,7 +148,7 @@ namespace CRUD
             }
             catch (Exception ex)
             {
-                //cek = false;
+                MessageBox.Show(ex.ToString());
             }
             return nama_alat;
         }
@@ -258,7 +267,7 @@ namespace CRUD
                 myCommand.Parameters.AddWithValue("id_komponen", lblId.Text);
                 myCommand.Parameters.AddWithValue("nama_komponen", txtNama.Text);
                 myCommand.Parameters.AddWithValue("jumlah", int.Parse(txtJumlah.Text));
-                myCommand.Parameters.AddWithValue("harga_jual", int.Parse(txtHarga.Text));
+                myCommand.Parameters.AddWithValue("harga_jual", txtHarga.Text);
                 myCommand.Parameters.AddWithValue("id_alat", idAlat);
                 myCommand.Parameters.AddWithValue("tempat", txtTempat.Text);
 
@@ -362,7 +371,7 @@ namespace CRUD
                 txtNama.Text = data.Rows[0][1].ToString();
                 txtJumlah.Text = data.Rows[0][2].ToString();
                 txtHarga.Text = data.Rows[0][3].ToString();
-                txtAlat.Text = converterAlat(data.Rows[0][4].ToString());
+                txtAlat.Text = converterAlat(data.Rows[0][4].ToString(),false);
                 txtTempat.Text = data.Rows[0][5].ToString();
 
                 connection.Close();
@@ -447,7 +456,7 @@ namespace CRUD
                     txtNama.Text = row.Cells[1].Value.ToString();
                     txtJumlah.Text = row.Cells[2].Value.ToString();
                     txtHarga.Text = row.Cells[3].Value.ToString();
-                    txtAlat.Text = converterAlat(row.Cells[4].Value.ToString());
+                    txtAlat.Text = converterAlat(row.Cells[4].Value.ToString(),false);
                     txtTempat.Text = row.Cells[5].Value.ToString();
 
                     btnPerbarui.Enabled = true;
@@ -463,5 +472,7 @@ namespace CRUD
                 btnPerbarui.Enabled = false;
             }
         }
+
+        
     }
 }

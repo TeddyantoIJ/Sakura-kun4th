@@ -135,6 +135,12 @@
     <Compile Include="MasterKomponen\UpdateKomponen.Designer.cs">
       <DependentUpon>UpdateKomponen.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterMain\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMain\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterPekerja\TambahPekerja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterKomponen\UpdateKomponen.resx">
       <DependentUpon>UpdateKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMain\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterPekerja\TambahPekerja.resx">
       <DependentUpon>TambahPekerja.cs</DependentUpon>

@@ -27,7 +27,16 @@ namespace CRUD
             addSourceAlat();
             clear();
         }
-
+        public Komponen(string x)
+        {
+            InitializeComponent();
+            txtNama.Text = x;
+            txtNama.MaxLength = 30;
+            txtAlat.MaxLength = 30;
+            txtTempat.MaxLength = 4;
+            addSourceAlat();
+            clear();
+        }
         private void addSourceAlat()
         {
 

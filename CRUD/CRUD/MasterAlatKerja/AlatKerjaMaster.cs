@@ -19,6 +19,12 @@ namespace CRUD
             InitializeComponent();
             txtid_alat_kerja.Text = "AKRJ-" + getLastID();
         }
+        public AlatKerjaMaster(string x)
+        {
+            txtnama_alat_kerja.Text = x;
+            InitializeComponent();
+            txtid_alat_kerja.Text = "AKRJ-" + getLastID();
+        }
         private string getLastID()
         {
             string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";

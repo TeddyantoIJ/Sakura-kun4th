@@ -20,7 +20,12 @@ namespace CRUD
 
             txtid_supplier.Text = "SUPP-"+getLastID();
         }
-
+        public SupplierMaster(string x)
+        {
+            InitializeComponent();
+            txtnama_supplier.Text = x;
+            txtid_supplier.Text = "SUPP-" + getLastID();
+        }
         private void txtcontact_person_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))

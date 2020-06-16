@@ -34,13 +34,19 @@ namespace CRUD
                 menuAktif = false;
                 
                 panelMenu.Size = new System.Drawing.Size(161, 704);
+
+                
+
                 btnPop.Location = new Point(127, 11);
-                Clock.Location = new Point(167, 9); 
+                Clock.Location = new Point(167, 9);
             }
             else
             {
                 menuAktif = true;
                 clearPanelAll();
+
+               
+
                 panelMenu.Size = new System.Drawing.Size(39, 704);
                 btnPop.Location = new Point(5, 11);
                 Clock.Location = new Point(167-122, 9);
@@ -334,7 +340,7 @@ namespace CRUD
         private void menu5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terimakasih telah menggunakan aplikasi kami\nHormat kami\nFiorenta Jihad Wibowo dan Teddyanto Idrus J", "Terima Kasih", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Environment.Exit(1);
+            this.Close();
         }
 
         private void btnPerbaruiAlatElektronik_Click(object sender, EventArgs e)

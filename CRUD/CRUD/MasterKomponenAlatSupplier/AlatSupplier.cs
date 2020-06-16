@@ -490,28 +490,28 @@ namespace CRUD
 
         private void btnBaruSupplier_Click(object sender, EventArgs e)
         {
-            GenericIdentity myIdentity = new GenericIdentity(txtnama_supplier.Text);
-            string[] myRole = new string[10];
+ //           GenericIdentity myIdentity = new GenericIdentity(txtnama_supplier.Text);
+//            string[] myRole = new string[10];
 
-            GenericPrincipal mynewSupplier = new GenericPrincipal(myIdentity, myRole);
+//            GenericPrincipal mynewSupplier = new GenericPrincipal(myIdentity, myRole);
 
-            Thread.CurrentPrincipal = mynewSupplier;
+            //Thread.CurrentPrincipal = mynewSupplier;
 
-            SupplierMaster supplier = new SupplierMaster();
+            SupplierMaster supplier = new SupplierMaster(txtnama_supplier.Text);
 
             supplier.ShowDialog(this);
         }
 
         private void btnBaruKomponen_Click(object sender, EventArgs e)
         {
-            GenericIdentity myIdentity = new GenericIdentity(txtnama_alat.Text);
-            string[] myRole = new string[10];
+    //        GenericIdentity myIdentity = new GenericIdentity(txtnama_alat.Text);
+  //          string[] myRole = new string[10];
 
-            GenericPrincipal mynewAlat = new GenericPrincipal(myIdentity, myRole);
+//            GenericPrincipal mynewAlat = new GenericPrincipal(myIdentity, myRole);
 
-            Thread.CurrentPrincipal = mynewAlat;
+            //Thread.CurrentPrincipal = mynewAlat
 
-            AlatKerjaMaster alatKerja = new AlatKerjaMaster();
+            AlatKerjaMaster alatKerja = new AlatKerjaMaster(txtnama_alat.Text);
 
             alatKerja.ShowDialog(this);
         }

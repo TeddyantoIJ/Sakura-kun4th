@@ -63,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 80);
+            this.label2.Location = new System.Drawing.Point(12, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 1;
@@ -72,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 166);
+            this.label3.Location = new System.Drawing.Point(12, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 1;
@@ -81,7 +81,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 239);
+            this.label4.Location = new System.Drawing.Point(12, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 17);
             this.label4.TabIndex = 1;
@@ -197,6 +197,7 @@
             this.btnBaruKomponen.TabIndex = 4;
             this.btnBaruKomponen.Text = "&Baru";
             this.btnBaruKomponen.UseVisualStyleBackColor = true;
+            this.btnBaruKomponen.Click += new System.EventHandler(this.btnBaruKomponen_Click);
             // 
             // label8
             // 

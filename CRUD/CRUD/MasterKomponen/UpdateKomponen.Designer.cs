@@ -104,6 +104,7 @@
             this.dgKomponen.ReadOnly = true;
             this.dgKomponen.Size = new System.Drawing.Size(544, 243);
             this.dgKomponen.TabIndex = 1;
+            
             this.dgKomponen.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgKomponen_CellEnter);
             // 
             // idkomponenDataGridViewTextBoxColumn

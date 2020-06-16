@@ -360,8 +360,7 @@ namespace CRUD
             }
             else
             {
-                infonama_alat_kerja.ForeColor = System.Drawing.Color.Green;
-                infonama_alat_kerja.Text = "Sesuai";
+                infonama_alat_kerja.ForeColor = System.Drawing.Color.Transparent;
             }
         }
 
@@ -437,6 +436,9 @@ namespace CRUD
             }
         }
 
-     
+        private void txtnama_alat_kerja_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

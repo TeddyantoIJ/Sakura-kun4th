@@ -680,14 +680,14 @@ namespace CRUD
         private void btnBaruSupplier_Click(object sender, EventArgs e)
         {
             
-            GenericIdentity myIdentity = new GenericIdentity(txtnama_supplier.Text);
-            string[] myRole = new string[10];
+            //GenericIdentity myIdentity = new GenericIdentity();
+            //string[] myRole = new string[10];
 
-            GenericPrincipal myPrincipal = new GenericPrincipal(myIdentity,myRole);
+//            GenericPrincipal myPrincipal = new GenericPrincipal(myIdentity,myRole);
 
-            Thread.CurrentPrincipal = myPrincipal;
+            //Thread.CurrentPrincipal = myPrincipal;
 
-            SupplierMaster supplier = new SupplierMaster();
+            SupplierMaster supplier = new SupplierMaster(txtnama_supplier.Text);
             
             supplier.ShowDialog(this);
         }
@@ -732,6 +732,12 @@ namespace CRUD
                 //btnUpdate.Enabled = false;
                 //clear();
             }
+        }
+
+        private void btnBaruKomponen_Click(object sender, EventArgs e)
+        {
+            Komponen komponen = new Komponen(txtnama_komponen.Text);
+            komponen.ShowDialog(this);
         }
     }
 }

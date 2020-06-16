@@ -371,6 +371,7 @@
             this.txtnama_alat_kerja.Name = "txtnama_alat_kerja";
             this.txtnama_alat_kerja.Size = new System.Drawing.Size(187, 25);
             this.txtnama_alat_kerja.TabIndex = 7;
+            this.txtnama_alat_kerja.TextChanged += new System.EventHandler(this.txtnama_alat_kerja_TextChanged);
             this.txtnama_alat_kerja.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtnama_alat_kerja_KeyUp);
             // 
             // infonama_alat_kerja
