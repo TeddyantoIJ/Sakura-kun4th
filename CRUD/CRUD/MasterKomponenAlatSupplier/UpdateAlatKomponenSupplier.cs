@@ -19,6 +19,7 @@ namespace CRUD
             InitializeComponent();
             addSourceViewAlat();
             addSourceViewKomponen();
+            
         }
 
         private void UpdateAlatKomponenSupplier_Load(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select [msalatkerja].nama_alat as [Nama Alat], [mssupplier].nama_supplier as [Nama Supplier], convert(numeric(10,2), harga)  as [Harga(Rp)] from[msalatsupplier] " +
+                SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_alat asc) No, [msalatkerja].nama_alat as [Nama Alat], [mssupplier].nama_supplier as [Nama Supplier], convert(numeric(10,2), harga)  as [Harga(Rp)] from[msalatsupplier] " +
                     "inner join[msalatkerja] on[msalatkerja].id_alat = [msalatsupplier].id_alat " +
                     "inner join[mssupplier] on [mssupplier].id_supplier = [msalatsupplier].id_supplier", connection);
                 
@@ -42,7 +43,13 @@ namespace CRUD
                 adapter.Fill(data);
 
                 viewAlatSupplier.DataSource = data;
-         
+
+                this.viewAlatSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.viewAlatSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.viewAlatSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.viewAlatSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                this.viewAlatSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 //by = 1;
                 connection.Close();
                
@@ -61,7 +68,7 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier,"+
+                SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_komponen asc) No, [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier," +
                     " convert(numeric(10,2), harga)  as [Harga(Rp)] from[mskomponensupplier] inner join[mskomponen]"+
                     " on [mskomponensupplier].id_komponen = [mskomponen].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
 
@@ -69,7 +76,13 @@ namespace CRUD
                 adapter.Fill(data);
 
                 viewKomponenSupplier.DataSource = data;
-                
+
+                this.viewKomponenSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.viewKomponenSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.viewKomponenSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.viewKomponenSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                this.viewKomponenSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 //by = 1;
                 connection.Close();
 
@@ -128,6 +141,7 @@ namespace CRUD
             
             Int32 selectedRowCount =
             viewAlatSupplier.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            
             if (selectedRowCount > 0 && selectedRowCount <= 1)
             {
                 btnUpdate.Enabled = true;
@@ -141,11 +155,11 @@ namespace CRUD
                     selectedRow = Int32.Parse(viewAlatSupplier.SelectedRows[i].Index.ToString());
                 }
                 DataGridViewRow row = viewAlatSupplier.Rows[selectedRow];
-                txtnama_alat.Text = row.Cells[0].Value.ToString();
-                txtnama_supplier.Text = row.Cells[1].Value.ToString();
-                int harga = (row.Cells[2].Value.ToString()).Length;
+                txtnama_alat.Text = row.Cells[1].Value.ToString();
+                txtnama_supplier.Text = row.Cells[2].Value.ToString();
+                int harga = (row.Cells[3].Value.ToString()).Length;
 
-                txtharga.Text = (row.Cells[2].Value.ToString()).Substring(0,(harga-3));
+                txtharga.Text = (row.Cells[3].Value.ToString()).Substring(0,(harga-3));
             }
             else if (btnUpdate.Enabled == true)
             {
@@ -274,6 +288,7 @@ namespace CRUD
 
             Int32 selectedRowCount =
             viewKomponenSupplier.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            
             if (selectedRowCount > 0 && selectedRowCount <= 1)
             {
                 btnUpdate.Enabled = true;
@@ -287,12 +302,12 @@ namespace CRUD
                     selectedRow = Int32.Parse(viewKomponenSupplier.SelectedRows[i].Index.ToString());
                 }
                 DataGridViewRow row = viewKomponenSupplier.Rows[selectedRow];
-                txtnama_komponen.Text = row.Cells[0].Value.ToString();
-                txtnama_supplier1.Text = row.Cells[1].Value.ToString();
+                txtnama_komponen.Text = row.Cells[1].Value.ToString();
+                txtnama_supplier1.Text = row.Cells[2].Value.ToString();
 
-                int harga = (row.Cells[2].Value.ToString()).Length;
+                int harga = (row.Cells[3].Value.ToString()).Length;
 
-                txtharga1.Text = (row.Cells[2].Value.ToString()).Substring(0, (harga - 3));
+                txtharga1.Text = (row.Cells[3].Value.ToString()).Substring(0, (harga - 3));
             }
             else if (btnUpdate.Enabled == true)
             {

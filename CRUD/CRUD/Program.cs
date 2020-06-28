@@ -19,7 +19,7 @@ namespace CRUD
             //Application.Run(new SupplierMaster());
             //Application.Run(new CustomerMaster());
             //Application.Run(new AlatKerjaMaster());
-            Application.Run(new KomponenSupplier());
+            //Application.Run(new KomponenSupplier());
             //Application.Run(new AlatSupplier());
 
             //Application.Run(new UpdateSupplier());
@@ -29,6 +29,7 @@ namespace CRUD
 
             //Application.Run(new Home());
             //Application.Run(new MasterMain.Login());
+            Application.Run(new testing());
         }
     }
 }

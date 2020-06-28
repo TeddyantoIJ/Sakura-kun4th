@@ -13,11 +13,20 @@ namespace CRUD
 {
     public partial class CustomerMaster : Form
     {
+        private string sFileName = "";
         public CustomerMaster()
         {
             InitializeComponent();
 
             txtid_customer.Text = "CUST-" + getLastID();
+            addSource();
+        }
+        public CustomerMaster(string inn)
+        {
+            InitializeComponent();
+
+            txtid_customer.Text = "CUST-" + getLastID();
+            txtnama_customer.Text = inn;
             addSource();
         }
 
@@ -101,7 +110,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_customer", id_customer);
                 myCommand.Parameters.AddWithValue("nama_customer", nama_customer);
-                
+                myCommand.Parameters.AddWithValue("path", sFileName);
 
 
                 //myCommand.Connection = myConnection;
@@ -183,7 +192,21 @@ namespace CRUD
             txtnama_customer.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
         }
-
-       
+        
+        private void btnFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog choofdlog = new OpenFileDialog();
+            choofdlog.Filter = "All Files (*.*)|*.*";
+            choofdlog.FilterIndex = 1;
+            choofdlog.Multiselect = true;
+            
+            if (choofdlog.ShowDialog() == DialogResult.OK)
+            {
+                sFileName = choofdlog.FileName;
+            }
+            picCustomer.Image = Image.FromFile(sFileName);
+            MessageBox.Show(sFileName);
+            picCustomer.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
     }
 }

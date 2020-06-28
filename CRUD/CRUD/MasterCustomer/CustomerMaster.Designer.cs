@@ -38,6 +38,9 @@
             this.infonama_customer = new System.Windows.Forms.Label();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
+            this.btnFoto = new System.Windows.Forms.Button();
+            this.picCustomer = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,11 +140,31 @@
             this.btnBatal.UseVisualStyleBackColor = true;
             this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
+            // btnFoto
+            // 
+            this.btnFoto.Location = new System.Drawing.Point(315, 94);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(75, 31);
+            this.btnFoto.TabIndex = 7;
+            this.btnFoto.Text = "Pilih foto";
+            this.btnFoto.UseVisualStyleBackColor = true;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // picCustomer
+            // 
+            this.picCustomer.Location = new System.Drawing.Point(402, 94);
+            this.picCustomer.Name = "picCustomer";
+            this.picCustomer.Size = new System.Drawing.Size(100, 88);
+            this.picCustomer.TabIndex = 8;
+            this.picCustomer.TabStop = false;
+            // 
             // CustomerMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 282);
+            this.Controls.Add(this.picCustomer);
+            this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.infonama_customer);
@@ -157,6 +180,7 @@
             this.Name = "CustomerMaster";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MasterCustomer";
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +198,7 @@
         private System.Windows.Forms.Label infonama_customer;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnBatal;
+        private System.Windows.Forms.Button btnFoto;
+        private System.Windows.Forms.PictureBox picCustomer;
     }
 }

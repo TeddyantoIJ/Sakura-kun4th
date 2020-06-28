@@ -96,7 +96,6 @@
             this.Tanggal = new System.Windows.Forms.Label();
             this.txtInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panelUtama = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelKelolaData.SuspendLayout();
             this.panelDataSupplier.SuspendLayout();
@@ -834,14 +833,6 @@
             this.label3.TabIndex = 52;
             this.label3.Text = resources.GetString("label3.Text");
             // 
-            // panelUtama
-            // 
-            this.panelUtama.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelUtama.Location = new System.Drawing.Point(6, 35);
-            this.panelUtama.Name = "panelUtama";
-            this.panelUtama.Size = new System.Drawing.Size(1362, 642);
-            this.panelUtama.TabIndex = 53;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -867,7 +858,6 @@
             this.Controls.Add(this.panelKelolaData);
             this.Controls.Add(this.panelKaryawan);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panelUtama);
             this.Name = "Home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
@@ -962,6 +952,5 @@
         private System.Windows.Forms.Label Tanggal;
         private System.Windows.Forms.Label txtInfo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panelUtama;
     }
 }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserControl\beliKomponen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\beliKomponen.Designer.cs">
+      <DependentUpon>beliKomponen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\barangmasuk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\barangmasuk.Designer.cs">
+      <DependentUpon>barangmasuk.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterAlatElektronik\AlatElektronik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     <Compile Include="MasterPekerja\UpdatePekerja.Designer.cs">
       <DependentUpon>UpdatePekerja.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\restockKomponen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\restockKomponen.Designer.cs">
+      <DependentUpon>restockKomponen.cs</DependentUpon>
+    </Compile>
     <Compile Include="SakuraDataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +218,18 @@
     <Compile Include="MasterSupplier\UpdateSupplier.Designer.cs">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testing.Designer.cs">
+      <DependentUpon>testing.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl\beliKomponen.resx">
+      <DependentUpon>beliKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\barangmasuk.resx">
+      <DependentUpon>barangmasuk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MasterAlatElektronik\AlatElektronik.resx">
       <DependentUpon>AlatElektronik.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +292,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSupplier\UpdateSupplier.resx">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\restockKomponen.resx">
+      <DependentUpon>restockKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testing.resx">
+      <DependentUpon>testing.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MasterAlatElektronik\DataAlatElektronik.xsc">
       <DependentUpon>DataAlatElektronik.xsd</DependentUpon>
