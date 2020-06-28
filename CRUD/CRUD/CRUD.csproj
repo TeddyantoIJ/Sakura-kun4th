@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembayaran.Designer.cs">
+      <DependentUpon>Pembayaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\beliKomponen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pembayaran.resx">
+      <DependentUpon>Pembayaran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\beliKomponen.resx">
       <DependentUpon>beliKomponen.cs</DependentUpon>
     </EmbeddedResource>

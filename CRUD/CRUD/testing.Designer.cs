@@ -121,7 +121,7 @@
             // beliKomponen1
             // 
             this.beliKomponen1.BackColor = System.Drawing.Color.MediumPurple;
-            this.beliKomponen1.Location = new System.Drawing.Point(2, 119);
+            this.beliKomponen1.Location = new System.Drawing.Point(2, 128);
             this.beliKomponen1.Name = "beliKomponen1";
             this.beliKomponen1.Size = new System.Drawing.Size(1362, 528);
             this.beliKomponen1.TabIndex = 3;

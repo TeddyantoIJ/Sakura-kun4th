@@ -155,6 +155,7 @@ namespace CRUD
             txtJumlah.Text = "0";
             txtTotal.Text = "0";
         }
+
         private void btnCari_Click(object sender, EventArgs e)
         {
             
@@ -190,8 +191,6 @@ namespace CRUD
             Int32 selectedRow = tableSupplier.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if(selectedRow > 0 && selectedRow <= 1)
             {
-                
-
                 for(int i = 0; i < selectedRow; i++)
                 {
                     selected = Int32.Parse(tableSupplier.SelectedRows[i].Index.ToString());
