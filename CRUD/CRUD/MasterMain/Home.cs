@@ -439,5 +439,32 @@ namespace CRUD
         {
           
         }
+
+        private void menu2_Click(object sender, EventArgs e)
+        {
+            menuShow(ucTransaksi);
+            clearPanelAll();
+            HomeLogo.Visible = true;
+        }
+
+        private void menu1_Click(object sender, EventArgs e)
+        {
+            menuShow(dashBoard);
+            clearPanelAll();
+            HomeLogo.Visible = false;
+        }
+        private void menuShow(UserControl show)
+        {
+            ucTransaksi.Visible = false;
+            dashBoard.Visible = false;
+            if (show.Equals(ucTransaksi))
+            {
+                ucTransaksi.Visible = true;
+            }
+            if (show.Equals(dashBoard))
+            {
+                dashBoard.Visible = true;
+            }
+        }
     }
 }

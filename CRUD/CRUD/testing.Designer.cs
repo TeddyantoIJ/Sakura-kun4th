@@ -35,7 +35,7 @@
             this.menu1 = new System.Windows.Forms.Button();
             this.menu3 = new System.Windows.Forms.Button();
             this.menu2 = new System.Windows.Forms.Button();
-            this.beliKomponen1 = new CRUD.beliKomponen();
+            this.dashBoard1 = new CRUD.DashBoard();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,20 +118,19 @@
             this.menu2.Text = "Transaksi";
             this.menu2.UseVisualStyleBackColor = true;
             // 
-            // beliKomponen1
+            // dashBoard1
             // 
-            this.beliKomponen1.BackColor = System.Drawing.Color.MediumPurple;
-            this.beliKomponen1.Location = new System.Drawing.Point(2, 128);
-            this.beliKomponen1.Name = "beliKomponen1";
-            this.beliKomponen1.Size = new System.Drawing.Size(1362, 528);
-            this.beliKomponen1.TabIndex = 3;
+            this.dashBoard1.Location = new System.Drawing.Point(163, 70);
+            this.dashBoard1.Name = "dashBoard1";
+            this.dashBoard1.Size = new System.Drawing.Size(1203, 564);
+            this.dashBoard1.TabIndex = 3;
             // 
             // testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.beliKomponen1);
+            this.Controls.Add(this.dashBoard1);
             this.Controls.Add(this.panelMenu);
             this.Name = "testing";
             this.Text = "testing";
@@ -150,6 +149,6 @@
         private System.Windows.Forms.Button menu1;
         private System.Windows.Forms.Button menu3;
         private System.Windows.Forms.Button menu2;
-        private beliKomponen beliKomponen1;
+        private DashBoard dashBoard1;
     }
 }

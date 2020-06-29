@@ -47,6 +47,7 @@
             this.cmbSortir = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblNomor = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tableRestock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDetail)).BeginInit();
             this.SuspendLayout();
@@ -233,11 +234,22 @@
             this.lblNomor.TabIndex = 35;
             this.lblNomor.Text = "[NOMOR]";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(621, 39);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(24, 20);
+            this.btnRefresh.TabIndex = 36;
+            this.btnRefresh.Text = "R";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // barangmasuk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblNomor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbSortir);
@@ -277,5 +289,6 @@
         private System.Windows.Forms.ComboBox cmbSortir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblNomor;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

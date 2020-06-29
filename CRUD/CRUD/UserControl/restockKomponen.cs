@@ -74,7 +74,7 @@ namespace CRUD
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select distinct ROW_NUMBER() over(order by harga asc) No, [mssupplier].nama_supplier, "+
+                SqlDataAdapter adapter = new SqlDataAdapter("select distinct ROW_NUMBER() over(order by harga asc) No, [mssupplier].nama_supplier Supplier, "+
                     "convert(numeric(10, 2), harga) as [Harga(Rp)] from[mskomponensupplier] ks inner join[mskomponen] k "+
                     "on ks.id_komponen = k.id_komponen inner join[mssupplier] on[mssupplier].id_supplier = ks.id_supplier where k.nama_komponen = '" + komponen+"'", connection);
 
@@ -86,7 +86,7 @@ namespace CRUD
                 foreach (DataGridViewColumn col in tableSupplier.Columns)
                 {
                     col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                    col.HeaderCell.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
+                    col.HeaderCell.Style.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
                 }
 
                 this.tableSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;

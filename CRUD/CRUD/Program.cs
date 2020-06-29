@@ -27,9 +27,9 @@ namespace CRUD
             //Application.Run(new UpdateAlatKerja());
             //Application.Run(new UpdateAlatKomponenSupplier());
 
-            //Application.Run(new Home());
+            Application.Run(new Home());
             //Application.Run(new MasterMain.Login());
-            Application.Run(new testing());
+            //Application.Run(new testing());
         }
     }
 }

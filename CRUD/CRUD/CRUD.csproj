@@ -46,10 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pembayaran.cs">
+    <Compile Include="DashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCTransaksi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCTransaksi.Designer.cs">
+      <DependentUpon>UCTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ReparasiAlatElektronik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ReparasiAlatElektronik.designer.cs">
+      <DependentUpon>ReparasiAlatElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\RestockAlatkerja.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\RestockAlatkerja.designer.cs">
+      <DependentUpon>RestockAlatkerja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Pembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pembayaran.Designer.cs">
+    <Compile Include="UserControl\Pembayaran.Designer.cs">
       <DependentUpon>Pembayaran.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\beliKomponen.cs">
@@ -230,7 +254,19 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Pembayaran.resx">
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCTransaksi.resx">
+      <DependentUpon>UCTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ReparasiAlatElektronik.resx">
+      <DependentUpon>ReparasiAlatElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\RestockAlatkerja.resx">
+      <DependentUpon>RestockAlatkerja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Pembayaran.resx">
       <DependentUpon>Pembayaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\beliKomponen.resx">
@@ -398,6 +434,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Baru\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

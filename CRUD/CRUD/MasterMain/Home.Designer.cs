@@ -96,6 +96,9 @@
             this.Tanggal = new System.Windows.Forms.Label();
             this.txtInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.ucTransaksi = new CRUD.UCTransaksi();
+            this.HomeLogo = new System.Windows.Forms.PictureBox();
+            this.dashBoard = new CRUD.DashBoard();
             this.panelMenu.SuspendLayout();
             this.panelKelolaData.SuspendLayout();
             this.panelDataSupplier.SuspendLayout();
@@ -112,11 +115,13 @@
             this.panelCustomer.SuspendLayout();
             this.panelSupplier.SuspendLayout();
             this.panelAlatSupplier.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HomeLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPop
             // 
             this.btnPop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPop.Enabled = false;
             this.btnPop.Location = new System.Drawing.Point(127, 11);
             this.btnPop.Name = "btnPop";
             this.btnPop.Size = new System.Drawing.Size(28, 23);
@@ -127,7 +132,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panelMenu.BackColor = System.Drawing.Color.Indigo;
             this.panelMenu.Controls.Add(this.menu5);
             this.panelMenu.Controls.Add(this.btnPop);
             this.panelMenu.Controls.Add(this.menu4);
@@ -166,13 +171,14 @@
             // menu1
             // 
             this.menu1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu1.ForeColor = System.Drawing.Color.Red;
+            this.menu1.ForeColor = System.Drawing.Color.Black;
             this.menu1.Location = new System.Drawing.Point(6, 40);
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(149, 26);
             this.menu1.TabIndex = 2;
             this.menu1.Text = "Menu Utama";
             this.menu1.UseVisualStyleBackColor = true;
+            this.menu1.Click += new System.EventHandler(this.menu1_Click);
             // 
             // menu3
             // 
@@ -188,13 +194,14 @@
             // menu2
             // 
             this.menu2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu2.ForeColor = System.Drawing.Color.Red;
+            this.menu2.ForeColor = System.Drawing.Color.Black;
             this.menu2.Location = new System.Drawing.Point(6, 72);
             this.menu2.Name = "menu2";
             this.menu2.Size = new System.Drawing.Size(149, 26);
             this.menu2.TabIndex = 2;
             this.menu2.Text = "Transaksi";
             this.menu2.UseVisualStyleBackColor = true;
+            this.menu2.Click += new System.EventHandler(this.menu2_Click);
             // 
             // btnAlatElektronik
             // 
@@ -765,11 +772,11 @@
             // Clock
             // 
             this.Clock.AutoSize = true;
-            this.Clock.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Clock.BackColor = System.Drawing.Color.Indigo;
             this.Clock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clock.ForeColor = System.Drawing.Color.White;
-            this.Clock.Location = new System.Drawing.Point(167, 9);
+            this.Clock.Location = new System.Drawing.Point(167, 1);
             this.Clock.Name = "Clock";
             this.Clock.Size = new System.Drawing.Size(106, 22);
             this.Clock.TabIndex = 40;
@@ -798,11 +805,11 @@
             // Tanggal
             // 
             this.Tanggal.AutoSize = true;
-            this.Tanggal.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Tanggal.BackColor = System.Drawing.Color.Indigo;
             this.Tanggal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Tanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tanggal.ForeColor = System.Drawing.Color.White;
-            this.Tanggal.Location = new System.Drawing.Point(1240, 9);
+            this.Tanggal.Location = new System.Drawing.Point(1258, 1);
             this.Tanggal.Name = "Tanggal";
             this.Tanggal.Size = new System.Drawing.Size(106, 22);
             this.Tanggal.TabIndex = 50;
@@ -812,10 +819,10 @@
             // txtInfo
             // 
             this.txtInfo.AutoSize = true;
-            this.txtInfo.BackColor = System.Drawing.Color.White;
+            this.txtInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtInfo.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInfo.ForeColor = System.Drawing.Color.Black;
-            this.txtInfo.Location = new System.Drawing.Point(1360, 681);
+            this.txtInfo.Location = new System.Drawing.Point(1362, 680);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(1503, 21);
             this.txtInfo.TabIndex = 51;
@@ -824,22 +831,52 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(2, 680);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1503, 21);
             this.label3.TabIndex = 52;
             this.label3.Text = resources.GetString("label3.Text");
             // 
+            // ucTransaksi
+            // 
+            this.ucTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucTransaksi.Location = new System.Drawing.Point(6, 92);
+            this.ucTransaksi.Name = "ucTransaksi";
+            this.ucTransaksi.Size = new System.Drawing.Size(1358, 564);
+            this.ucTransaksi.TabIndex = 53;
+            this.ucTransaksi.Visible = false;
+            // 
+            // HomeLogo
+            // 
+            this.HomeLogo.Image = ((System.Drawing.Image)(resources.GetObject("HomeLogo.Image")));
+            this.HomeLogo.Location = new System.Drawing.Point(675, 1);
+            this.HomeLogo.Name = "HomeLogo";
+            this.HomeLogo.Size = new System.Drawing.Size(170, 85);
+            this.HomeLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.HomeLogo.TabIndex = 55;
+            this.HomeLogo.TabStop = false;
+            this.HomeLogo.Visible = false;
+            // 
+            // dashBoard
+            // 
+            this.dashBoard.Location = new System.Drawing.Point(161, 20);
+            this.dashBoard.MaximumSize = new System.Drawing.Size(1203, 651);
+            this.dashBoard.MinimumSize = new System.Drawing.Size(1203, 651);
+            this.dashBoard.Name = "dashBoard";
+            this.dashBoard.Size = new System.Drawing.Size(1203, 651);
+            this.dashBoard.TabIndex = 56;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1364, 705);
+            this.Controls.Add(this.HomeLogo);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.Tanggal);
@@ -858,8 +895,10 @@
             this.Controls.Add(this.panelKelolaData);
             this.Controls.Add(this.panelKaryawan);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.ucTransaksi);
+            this.Controls.Add(this.dashBoard);
             this.Name = "Home";
-            this.Text = "Home";
+            this.Text = "Sakura Reparation";
             this.Load += new System.EventHandler(this.Home_Load);
             this.Resize += new System.EventHandler(this.Home_Resize);
             this.panelMenu.ResumeLayout(false);
@@ -879,6 +918,7 @@
             this.panelCustomer.ResumeLayout(false);
             this.panelSupplier.ResumeLayout(false);
             this.panelAlatSupplier.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HomeLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -952,5 +992,8 @@
         private System.Windows.Forms.Label Tanggal;
         private System.Windows.Forms.Label txtInfo;
         private System.Windows.Forms.Label label3;
+        private UCTransaksi ucTransaksi;
+        private System.Windows.Forms.PictureBox HomeLogo;
+        private DashBoard dashBoard;
     }
 }

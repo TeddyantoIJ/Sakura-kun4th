@@ -468,6 +468,11 @@ namespace CRUD
                 lblNomor.Text = (Int32.Parse(tableDetail.SelectedRows[i].Index.ToString())+1).ToString();
             }
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            addDataTransaksi();
+        }
     }
     
 }
