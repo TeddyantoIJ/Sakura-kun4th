@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD", "CRUD\CRUD.csproj", "{9E726D8E-2C84-4E01-8E66-E7FF1ECD6A86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakura", "CRUD\Sakura.csproj", "{9E726D8E-2C84-4E01-8E66-E7FF1ECD6A86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

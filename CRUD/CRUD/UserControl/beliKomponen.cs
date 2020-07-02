@@ -338,45 +338,45 @@ namespace CRUD
                 return;
             }
 
-            try
-            {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                try
+                {
+                    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
-                SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand myCommand = new SqlCommand("sp_inputTBeliKomponen", connection);
+                    SqlConnection connection = new SqlConnection(connectionString);
+                    SqlCommand myCommand = new SqlCommand("sp_inputTBeliKomponen", connection);
 
 
-                myCommand.CommandType = CommandType.StoredProcedure;
+                    myCommand.CommandType = CommandType.StoredProcedure;
 
-                connection.Open();
+                    connection.Open();
 
                 
-                id_transaksi = "tbk-" + getLastID();
-                myCommand.Parameters.AddWithValue("no_transaksi_pembelian", id_transaksi);
-                myCommand.Parameters.AddWithValue("tanggal_transaksi", DateTime.Now.ToString("yyyyMMdd"));
-                myCommand.Parameters.AddWithValue("jumlah_komponen", hitungJumlahKomponen());
-                myCommand.Parameters.AddWithValue("total_jenis", tableDaftarBeli.RowCount);
-                myCommand.Parameters.AddWithValue("total_harga", txtTotal.Text);
-                myCommand.Parameters.AddWithValue("id_pelayan", getIDPelayan(txtPelayan.Text));
-                myCommand.Parameters.AddWithValue("id_customer", getIDPelanggan(txtPelanggan.Text));
+                    id_transaksi = "tbk-" + getLastID();
+                    myCommand.Parameters.AddWithValue("no_transaksi_pembelian", id_transaksi);
+                    myCommand.Parameters.AddWithValue("tanggal_transaksi", DateTime.Now.ToString("yyyyMMdd"));
+                    myCommand.Parameters.AddWithValue("jumlah_komponen", hitungJumlahKomponen());
+                    myCommand.Parameters.AddWithValue("total_jenis", tableDaftarBeli.RowCount);
+                    myCommand.Parameters.AddWithValue("total_harga", txtTotal.Text);
+                    myCommand.Parameters.AddWithValue("id_pelayan", getIDPelayan(txtPelayan.Text));
+                    myCommand.Parameters.AddWithValue("id_customer", getIDPelanggan(txtPelanggan.Text));
 
 
-                myCommand.ExecuteNonQuery();
-                connection.Close();
+                    myCommand.ExecuteNonQuery();
+                    connection.Close();
 
-                detailtransaksi();
-                //by = 1;
+                    detailtransaksi();
+                    //by = 1;
 
-                //btnUpdate.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error btnBayar_Click : " + ex.ToString());
+                    //btnUpdate.Enabled = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error btnBayar_Click : " + ex.ToString());
 
 
-                //btnUpdate.Enabled = false;
-                //clear();
-            }
+                    //btnUpdate.Enabled = false;
+                    //clear();
+                }
         }
         private void detailtransaksi()
         {
