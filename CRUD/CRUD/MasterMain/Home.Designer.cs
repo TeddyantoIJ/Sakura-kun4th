@@ -96,8 +96,8 @@
             this.Tanggal = new System.Windows.Forms.Label();
             this.txtInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.ucTransaksi = new CRUD.UCTransaksi();
             this.HomeLogo = new System.Windows.Forms.PictureBox();
+            this.ucTransaksi = new CRUD.UCTransaksi();
             this.dashBoard = new CRUD.DashBoard();
             this.panelMenu.SuspendLayout();
             this.panelKelolaData.SuspendLayout();
@@ -122,11 +122,11 @@
             // 
             this.btnPop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPop.Enabled = false;
-            this.btnPop.Location = new System.Drawing.Point(127, 11);
+            this.btnPop.Location = new System.Drawing.Point(6, 0);
             this.btnPop.Name = "btnPop";
-            this.btnPop.Size = new System.Drawing.Size(28, 23);
+            this.btnPop.Size = new System.Drawing.Size(149, 119);
             this.btnPop.TabIndex = 0;
-            this.btnPop.Text = "=";
+            this.btnPop.Text = "INFO LOG IN";
             this.btnPop.UseVisualStyleBackColor = true;
             this.btnPop.Click += new System.EventHandler(this.btnPop_Click);
             // 
@@ -139,17 +139,18 @@
             this.panelMenu.Controls.Add(this.menu1);
             this.panelMenu.Controls.Add(this.menu3);
             this.panelMenu.Controls.Add(this.menu2);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.panelMenu.Location = new System.Drawing.Point(0, 1);
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(161, 704);
+            this.panelMenu.Size = new System.Drawing.Size(161, 705);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.TabStop = false;
             // 
             // menu5
             // 
             this.menu5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu5.Location = new System.Drawing.Point(6, 168);
+            this.menu5.Location = new System.Drawing.Point(6, 264);
             this.menu5.Name = "menu5";
             this.menu5.Size = new System.Drawing.Size(149, 26);
             this.menu5.TabIndex = 2;
@@ -161,7 +162,7 @@
             // 
             this.menu4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu4.ForeColor = System.Drawing.Color.Red;
-            this.menu4.Location = new System.Drawing.Point(6, 136);
+            this.menu4.Location = new System.Drawing.Point(6, 232);
             this.menu4.Name = "menu4";
             this.menu4.Size = new System.Drawing.Size(149, 26);
             this.menu4.TabIndex = 2;
@@ -172,7 +173,7 @@
             // 
             this.menu1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu1.ForeColor = System.Drawing.Color.Black;
-            this.menu1.Location = new System.Drawing.Point(6, 40);
+            this.menu1.Location = new System.Drawing.Point(6, 136);
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(149, 26);
             this.menu1.TabIndex = 2;
@@ -183,7 +184,7 @@
             // menu3
             // 
             this.menu3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu3.Location = new System.Drawing.Point(6, 104);
+            this.menu3.Location = new System.Drawing.Point(6, 200);
             this.menu3.Name = "menu3";
             this.menu3.Size = new System.Drawing.Size(149, 26);
             this.menu3.TabIndex = 2;
@@ -195,7 +196,7 @@
             // 
             this.menu2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu2.ForeColor = System.Drawing.Color.Black;
-            this.menu2.Location = new System.Drawing.Point(6, 72);
+            this.menu2.Location = new System.Drawing.Point(6, 168);
             this.menu2.Name = "menu2";
             this.menu2.Size = new System.Drawing.Size(149, 26);
             this.menu2.TabIndex = 2;
@@ -807,13 +808,15 @@
             this.Tanggal.AutoSize = true;
             this.Tanggal.BackColor = System.Drawing.Color.Indigo;
             this.Tanggal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Tanggal.Dock = System.Windows.Forms.DockStyle.Right;
             this.Tanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tanggal.ForeColor = System.Drawing.Color.White;
-            this.Tanggal.Location = new System.Drawing.Point(1258, 1);
+            this.Tanggal.Location = new System.Drawing.Point(1205, 0);
             this.Tanggal.Name = "Tanggal";
-            this.Tanggal.Size = new System.Drawing.Size(106, 22);
+            this.Tanggal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Tanggal.Size = new System.Drawing.Size(159, 22);
             this.Tanggal.TabIndex = 50;
-            this.Tanggal.Text = "dd-MMM-yyyy";
+            this.Tanggal.Text = "dddd dd-MMMM-yyyy";
             this.Tanggal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtInfo
@@ -840,15 +843,6 @@
             this.label3.TabIndex = 52;
             this.label3.Text = resources.GetString("label3.Text");
             // 
-            // ucTransaksi
-            // 
-            this.ucTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ucTransaksi.Location = new System.Drawing.Point(6, 92);
-            this.ucTransaksi.Name = "ucTransaksi";
-            this.ucTransaksi.Size = new System.Drawing.Size(1358, 564);
-            this.ucTransaksi.TabIndex = 53;
-            this.ucTransaksi.Visible = false;
-            // 
             // HomeLogo
             // 
             this.HomeLogo.Image = ((System.Drawing.Image)(resources.GetObject("HomeLogo.Image")));
@@ -859,6 +853,15 @@
             this.HomeLogo.TabIndex = 55;
             this.HomeLogo.TabStop = false;
             this.HomeLogo.Visible = false;
+            // 
+            // ucTransaksi
+            // 
+            this.ucTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ucTransaksi.Location = new System.Drawing.Point(6, 92);
+            this.ucTransaksi.Name = "ucTransaksi";
+            this.ucTransaksi.Size = new System.Drawing.Size(1358, 564);
+            this.ucTransaksi.TabIndex = 53;
+            this.ucTransaksi.Visible = false;
             // 
             // dashBoard
             // 
@@ -897,6 +900,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ucTransaksi);
             this.Controls.Add(this.dashBoard);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Sakura Reparation";
             this.Load += new System.EventHandler(this.Home_Load);

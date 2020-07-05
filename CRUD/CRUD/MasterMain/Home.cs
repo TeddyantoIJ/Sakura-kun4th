@@ -395,7 +395,7 @@ namespace CRUD
         private void timer1_Tick(object sender, EventArgs e)
         {
             Clock.Text = DateTime.Now.ToString("HH:mm:ss WIB");
-            Tanggal.Text = DateTime.Now.ToString("dd-MMM-yyyy");
+            Tanggal.Text = DateTime.Now.ToString("dddd dd-MMMM-yyyy");
             if(txtInfo.Location.X > -1342)
             {
                 txtInfo.Location = new Point(txtInfo.Location.X-1, 680);

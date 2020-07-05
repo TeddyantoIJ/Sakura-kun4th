@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CRUD.Baru;
+using CRUD.MasterMain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,9 +29,11 @@ namespace CRUD
             //Application.Run(new UpdateAlatKerja());
             //Application.Run(new UpdateAlatKomponenSupplier());
 
-            Application.Run(new Home());
-            //Application.Run(new MasterMain.Login());
+            //Application.Run(new Home());
+            Application.Run(new Login());
             //Application.Run(new testing());
+
+            //Application.Run(new Menu_Utama());
         }
     }
 }

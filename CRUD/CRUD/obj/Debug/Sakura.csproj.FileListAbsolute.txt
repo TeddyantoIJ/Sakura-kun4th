@@ -34,3 +34,7 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csproj.CoreCompileInputs.cache
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.exe
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.pdb
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csproj.CopyComplete
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Baru.Menu_Utama.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UCBaru.Pemasokan_v2.resources

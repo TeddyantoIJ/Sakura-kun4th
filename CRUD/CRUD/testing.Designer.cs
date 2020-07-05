@@ -28,127 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelMenu = new System.Windows.Forms.GroupBox();
-            this.menu5 = new System.Windows.Forms.Button();
-            this.btnPop = new System.Windows.Forms.Button();
-            this.menu4 = new System.Windows.Forms.Button();
-            this.menu1 = new System.Windows.Forms.Button();
-            this.menu3 = new System.Windows.Forms.Button();
-            this.menu2 = new System.Windows.Forms.Button();
-            this.dashBoard1 = new CRUD.DashBoard();
-            this.panelMenu.SuspendLayout();
+            this.pemasokan_v21 = new CRUD.UCBaru.Pemasokan_v2();
             this.SuspendLayout();
             // 
-            // panelMenu
+            // pemasokan_v21
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panelMenu.Controls.Add(this.menu5);
-            this.panelMenu.Controls.Add(this.btnPop);
-            this.panelMenu.Controls.Add(this.menu4);
-            this.panelMenu.Controls.Add(this.menu1);
-            this.panelMenu.Controls.Add(this.menu3);
-            this.panelMenu.Controls.Add(this.menu2);
-            this.panelMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.panelMenu.Location = new System.Drawing.Point(2, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(161, 704);
-            this.panelMenu.TabIndex = 2;
-            this.panelMenu.TabStop = false;
-            // 
-            // menu5
-            // 
-            this.menu5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu5.Location = new System.Drawing.Point(6, 168);
-            this.menu5.Name = "menu5";
-            this.menu5.Size = new System.Drawing.Size(149, 26);
-            this.menu5.TabIndex = 2;
-            this.menu5.Text = "Keluar";
-            this.menu5.UseVisualStyleBackColor = true;
-            // 
-            // btnPop
-            // 
-            this.btnPop.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPop.Location = new System.Drawing.Point(127, 11);
-            this.btnPop.Name = "btnPop";
-            this.btnPop.Size = new System.Drawing.Size(28, 23);
-            this.btnPop.TabIndex = 0;
-            this.btnPop.Text = "=";
-            this.btnPop.UseVisualStyleBackColor = true;
-            // 
-            // menu4
-            // 
-            this.menu4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu4.ForeColor = System.Drawing.Color.Red;
-            this.menu4.Location = new System.Drawing.Point(6, 136);
-            this.menu4.Name = "menu4";
-            this.menu4.Size = new System.Drawing.Size(149, 26);
-            this.menu4.TabIndex = 2;
-            this.menu4.Text = "Laporan";
-            this.menu4.UseVisualStyleBackColor = true;
-            // 
-            // menu1
-            // 
-            this.menu1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu1.ForeColor = System.Drawing.Color.Red;
-            this.menu1.Location = new System.Drawing.Point(6, 40);
-            this.menu1.Name = "menu1";
-            this.menu1.Size = new System.Drawing.Size(149, 26);
-            this.menu1.TabIndex = 2;
-            this.menu1.Text = "Menu Utama";
-            this.menu1.UseVisualStyleBackColor = true;
-            // 
-            // menu3
-            // 
-            this.menu3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu3.Location = new System.Drawing.Point(6, 104);
-            this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(149, 26);
-            this.menu3.TabIndex = 2;
-            this.menu3.Text = "Kelola Data";
-            this.menu3.UseVisualStyleBackColor = true;
-            // 
-            // menu2
-            // 
-            this.menu2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu2.ForeColor = System.Drawing.Color.Red;
-            this.menu2.Location = new System.Drawing.Point(6, 72);
-            this.menu2.Name = "menu2";
-            this.menu2.Size = new System.Drawing.Size(149, 26);
-            this.menu2.TabIndex = 2;
-            this.menu2.Text = "Transaksi";
-            this.menu2.UseVisualStyleBackColor = true;
-            // 
-            // dashBoard1
-            // 
-            this.dashBoard1.Location = new System.Drawing.Point(163, 70);
-            this.dashBoard1.Name = "dashBoard1";
-            this.dashBoard1.Size = new System.Drawing.Size(1203, 564);
-            this.dashBoard1.TabIndex = 3;
+            this.pemasokan_v21.BackColor = System.Drawing.Color.Silver;
+            this.pemasokan_v21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pemasokan_v21.Location = new System.Drawing.Point(2, 12);
+            this.pemasokan_v21.Name = "pemasokan_v21";
+            this.pemasokan_v21.Size = new System.Drawing.Size(1201, 675);
+            this.pemasokan_v21.TabIndex = 0;
             // 
             // testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.dashBoard1);
-            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.pemasokan_v21);
             this.Name = "testing";
             this.Text = "testing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox panelMenu;
-        private System.Windows.Forms.Button menu5;
-        private System.Windows.Forms.Button btnPop;
-        private System.Windows.Forms.Button menu4;
-        private System.Windows.Forms.Button menu1;
-        private System.Windows.Forms.Button menu3;
-        private System.Windows.Forms.Button menu2;
-        private DashBoard dashBoard1;
+        private UCBaru.Pemasokan_v2 pemasokan_v21;
     }
 }

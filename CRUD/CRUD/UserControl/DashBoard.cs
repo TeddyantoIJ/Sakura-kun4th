@@ -19,23 +19,28 @@ namespace CRUD
 
         private void btnKonfirmasiBarang_Click(object sender, EventArgs e)
         {
-            if(barangmasuk.Visible == false)
-            {
-                barangmasuk.Visible = true;
-                barangmasuk.BringToFront();
-            }
-            else
-            {
-                barangmasuk.Visible = false;
-                barangmasuk.SendToBack();
-            }
-            
+            //if (barangmasuk.Visible == false)
+            //{
+            //    barangmasuk.Visible = true;
+            //    barangmasuk.BringToFront();
+            //}
+            //else
+            //{
+            //    barangmasuk.Visible = false;
+            //    barangmasuk.SendToBack();
+            //}
+
         }
 
         private void DashBoard_VisibleChanged(object sender, EventArgs e)
         {
-            barangmasuk.Visible = false;
-            barangmasuk.SendToBack();
+            //barangmasuk.Visible = false;
+            //barangmasuk.SendToBack();
+        }
+
+        private void barangmasuk_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
