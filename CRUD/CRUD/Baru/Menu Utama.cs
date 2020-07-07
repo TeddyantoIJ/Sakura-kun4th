@@ -76,12 +76,16 @@ namespace CRUD.Baru
             //frame
             dashBoard.Visible = false;
             pemasokan_v2.Visible = false;
+            bKomponen.Visible = false;
 
-            masuk.Visible = true;
-
+            //masuk.Visible = true;
+            bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
+            
+            
             //button
             btnMenuUtama.BackColor = panelKiri.BackColor;
-            btnRestock.BackColor = panelKiri.BackColor;
+            btnRestockKomponen.BackColor = panelKiri.BackColor;
+            btnBeliKomponen.BackColor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -100,7 +104,7 @@ namespace CRUD.Baru
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            show(pemasokan_v2,btnRestock);
+            show(pemasokan_v2,btnRestockKomponen);
         }
 
         private void btnKelolaData_Click(object sender, EventArgs e)
@@ -131,6 +135,11 @@ namespace CRUD.Baru
         private void bunifuFlatButton1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBeliKomponen_Click(object sender, EventArgs e)
+        {
+            show(bKomponen, btnBeliKomponen);
         }
     }
 }

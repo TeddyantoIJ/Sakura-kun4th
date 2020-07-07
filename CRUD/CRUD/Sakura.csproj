@@ -56,6 +56,12 @@
     <Compile Include="Baru\Menu Utama.Designer.cs">
       <DependentUpon>Menu Utama.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCBaru\BKomponen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\BKomponen.Designer.cs">
+      <DependentUpon>BKomponen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCBaru\Pemasokan_v2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </Compile>
     <EmbeddedResource Include="Baru\Menu Utama.resx">
       <DependentUpon>Menu Utama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\BKomponen.resx">
+      <DependentUpon>BKomponen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCBaru\Pemasokan_v2.resx">
       <DependentUpon>Pemasokan_v2.cs</DependentUpon>

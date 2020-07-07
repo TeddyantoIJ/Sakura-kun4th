@@ -1,6 +1,6 @@
 ﻿namespace CRUD.UCBaru
 {
-    partial class Pemasokan_v2
+    partial class BKomponen
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,25 +32,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pemasokan_v2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BKomponen));
+            this.panelKomponen = new System.Windows.Forms.Panel();
+            this.txtCari = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableKomponen = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelKomponen = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelTransaksi = new System.Windows.Forms.Panel();
-            this.panelDetail = new System.Windows.Forms.Panel();
+            this.foto_pelanggan = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.n = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelKerajang = new System.Windows.Forms.Panel();
             this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,35 +61,87 @@
             this.blbHargaTotal = new System.Windows.Forms.Label();
             this.txtJenis = new System.Windows.Forms.Label();
             this.txtBarang = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableTransaksi = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.panelTengah = new System.Windows.Forms.Panel();
+            this.panelTengah1 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.panelSupplier = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.tableSupplier = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
+            this.nama_pelanggan = new System.Windows.Forms.TextBox();
+            this.lblFoto = new System.Windows.Forms.Label();
+            this.btnCari = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnNewPelanggan = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSegarkan = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelKomponen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
             this.panelTransaksi.SuspendLayout();
-            this.panelDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).BeginInit();
+            this.panelKerajang.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).BeginInit();
-            this.panelSupplier.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tableSupplier)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panelKomponen
+            // 
+            this.panelKomponen.BackColor = System.Drawing.Color.White;
+            this.panelKomponen.Controls.Add(this.btnSegarkan);
+            this.panelKomponen.Controls.Add(this.btnCari);
+            this.panelKomponen.Controls.Add(this.txtCari);
+            this.panelKomponen.Controls.Add(this.bunifuMaterialTextbox3);
+            this.panelKomponen.Controls.Add(this.tableKomponen);
+            this.panelKomponen.Location = new System.Drawing.Point(3, 3);
+            this.panelKomponen.Name = "panelKomponen";
+            this.panelKomponen.Size = new System.Drawing.Size(577, 669);
+            this.panelKomponen.TabIndex = 29;
+            // 
+            // txtCari
+            // 
+            this.txtCari.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCari.BackColor = System.Drawing.Color.White;
+            this.txtCari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCari.BackgroundImage")));
+            this.txtCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtCari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.txtCari.Icon = ((System.Drawing.Image)(resources.GetObject("txtCari.Icon")));
+            this.txtCari.Location = new System.Drawing.Point(312, 58);
+            this.txtCari.Name = "txtCari";
+            this.txtCari.Size = new System.Drawing.Size(166, 35);
+            this.txtCari.TabIndex = 30;
+            this.txtCari.text = "Komponen";
+            // 
+            // bunifuMaterialTextbox3
+            // 
+            this.bunifuMaterialTextbox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox3.Enabled = false;
+            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox3.HintText = "";
+            this.bunifuMaterialTextbox3.isPassword = false;
+            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox3.LineThickness = 4;
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(11, 7);
+            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
+            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(551, 40);
+            this.bunifuMaterialTextbox3.TabIndex = 28;
+            this.bunifuMaterialTextbox3.Text = "Data Komponen";
+            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // tableKomponen
             // 
@@ -97,7 +151,7 @@
             this.tableKomponen.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tableKomponen.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.tableKomponen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableKomponen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableKomponen.BackgroundColor = System.Drawing.Color.White;
             this.tableKomponen.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -130,15 +184,14 @@
             this.tableKomponen.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
             this.tableKomponen.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
             this.tableKomponen.HeaderForeColor = System.Drawing.Color.White;
-            this.tableKomponen.Location = new System.Drawing.Point(11, 57);
+            this.tableKomponen.Location = new System.Drawing.Point(11, 99);
             this.tableKomponen.Name = "tableKomponen";
             this.tableKomponen.ReadOnly = true;
             this.tableKomponen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tableKomponen.RowHeadersVisible = false;
-            this.tableKomponen.Size = new System.Drawing.Size(600, 279);
+            this.tableKomponen.Size = new System.Drawing.Size(551, 567);
             this.tableKomponen.TabIndex = 27;
             this.tableKomponen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableKomponen_CellClick);
-            this.tableKomponen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableKomponen_CellContentClick);
             // 
             // Column6
             // 
@@ -171,42 +224,80 @@
             this.Column9.ReadOnly = true;
             this.Column9.Width = 73;
             // 
-            // panelKomponen
-            // 
-            this.panelKomponen.BackColor = System.Drawing.Color.White;
-            this.panelKomponen.Controls.Add(this.bunifuMaterialTextbox3);
-            this.panelKomponen.Controls.Add(this.tableKomponen);
-            this.panelKomponen.Location = new System.Drawing.Point(3, 144);
-            this.panelKomponen.Name = "panelKomponen";
-            this.panelKomponen.Size = new System.Drawing.Size(626, 335);
-            this.panelKomponen.TabIndex = 28;
-            // 
-            // bunifuMaterialTextbox3
-            // 
-            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Enabled = false;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(11, 7);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(598, 40);
-            this.bunifuMaterialTextbox3.TabIndex = 28;
-            this.bunifuMaterialTextbox3.Text = "Data Komponen";
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // bunifuElipse
             // 
             this.bunifuElipse.ElipseRadius = 5;
             this.bunifuElipse.TargetControl = this;
+            // 
+            // panelTransaksi
+            // 
+            this.panelTransaksi.BackColor = System.Drawing.Color.White;
+            this.panelTransaksi.Controls.Add(this.btnNewPelanggan);
+            this.panelTransaksi.Controls.Add(this.lblFoto);
+            this.panelTransaksi.Controls.Add(this.nama_pelanggan);
+            this.panelTransaksi.Controls.Add(this.foto_pelanggan);
+            this.panelTransaksi.Controls.Add(this.label3);
+            this.panelTransaksi.Controls.Add(this.n);
+            this.panelTransaksi.Controls.Add(this.label2);
+            this.panelTransaksi.Controls.Add(this.bunifuMaterialTextbox4);
+            this.panelTransaksi.Controls.Add(this.txtTanggal);
+            this.panelTransaksi.Controls.Add(this.label1);
+            this.panelTransaksi.Location = new System.Drawing.Point(586, 3);
+            this.panelTransaksi.Name = "panelTransaksi";
+            this.panelTransaksi.Size = new System.Drawing.Size(612, 145);
+            this.panelTransaksi.TabIndex = 34;
+            // 
+            // foto_pelanggan
+            // 
+            this.foto_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.foto_pelanggan.Location = new System.Drawing.Point(480, 56);
+            this.foto_pelanggan.Name = "foto_pelanggan";
+            this.foto_pelanggan.Size = new System.Drawing.Size(116, 80);
+            this.foto_pelanggan.TabIndex = 38;
+            this.foto_pelanggan.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(420, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 18);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Foto";
+            // 
+            // n
+            // 
+            this.n.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.n.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.n.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n.ForeColor = System.Drawing.Color.White;
+            this.n.HintForeColor = System.Drawing.Color.Empty;
+            this.n.HintText = "";
+            this.n.isPassword = false;
+            this.n.LineFocusedColor = System.Drawing.Color.Gray;
+            this.n.LineIdleColor = System.Drawing.Color.Gray;
+            this.n.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.n.LineThickness = 4;
+            this.n.Location = new System.Drawing.Point(158, 84);
+            this.n.Margin = new System.Windows.Forms.Padding(5);
+            this.n.Name = "n";
+            this.n.Size = new System.Drawing.Size(197, 33);
+            this.n.TabIndex = 36;
+            this.n.Text = "ex : 27-09-2020";
+            this.n.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(14, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Nama";
             // 
             // bunifuMaterialTextbox4
             // 
@@ -225,21 +316,10 @@
             this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(12, 5);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(598, 39);
+            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(596, 39);
             this.bunifuMaterialTextbox4.TabIndex = 0;
-            this.bunifuMaterialTextbox4.Text = "Restock komponen";
+            this.bunifuMaterialTextbox4.Text = "Detail Transaksi";
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(14, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tanggal Transaksi";
             // 
             // txtTanggal
             // 
@@ -254,44 +334,44 @@
             this.txtTanggal.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTanggal.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txtTanggal.LineThickness = 4;
-            this.txtTanggal.Location = new System.Drawing.Point(17, 88);
+            this.txtTanggal.Location = new System.Drawing.Point(158, 41);
             this.txtTanggal.Margin = new System.Windows.Forms.Padding(5);
             this.txtTanggal.Name = "txtTanggal";
-            this.txtTanggal.Size = new System.Drawing.Size(133, 33);
+            this.txtTanggal.Size = new System.Drawing.Size(118, 33);
             this.txtTanggal.TabIndex = 2;
             this.txtTanggal.Text = "ex : 27-09-2020";
             this.txtTanggal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // panelTransaksi
+            // label1
             // 
-            this.panelTransaksi.BackColor = System.Drawing.Color.White;
-            this.panelTransaksi.Controls.Add(this.bunifuMaterialTextbox4);
-            this.panelTransaksi.Controls.Add(this.txtTanggal);
-            this.panelTransaksi.Controls.Add(this.label1);
-            this.panelTransaksi.Location = new System.Drawing.Point(3, 3);
-            this.panelTransaksi.Name = "panelTransaksi";
-            this.panelTransaksi.Size = new System.Drawing.Size(626, 135);
-            this.panelTransaksi.TabIndex = 33;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(14, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tanggal Transaksi";
             // 
-            // panelDetail
+            // panelKerajang
             // 
-            this.panelDetail.BackColor = System.Drawing.Color.White;
-            this.panelDetail.Controls.Add(this.btnTambah);
-            this.panelDetail.Controls.Add(this.btnReset);
-            this.panelDetail.Controls.Add(this.panel1);
-            this.panelDetail.Controls.Add(this.txtJenis);
-            this.panelDetail.Controls.Add(this.txtBarang);
-            this.panelDetail.Controls.Add(this.label3);
-            this.panelDetail.Controls.Add(this.label2);
-            this.panelDetail.Controls.Add(this.bunifuSeparator1);
-            this.panelDetail.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panelDetail.Controls.Add(this.tableTransaksi);
-            this.panelDetail.Controls.Add(this.bunifuMaterialTextbox5);
-            this.panelDetail.Controls.Add(this.bunifuMaterialTextbox6);
-            this.panelDetail.Location = new System.Drawing.Point(635, 3);
-            this.panelDetail.Name = "panelDetail";
-            this.panelDetail.Size = new System.Drawing.Size(563, 669);
-            this.panelDetail.TabIndex = 34;
+            this.panelKerajang.BackColor = System.Drawing.Color.White;
+            this.panelKerajang.Controls.Add(this.btnTambah);
+            this.panelKerajang.Controls.Add(this.btnReset);
+            this.panelKerajang.Controls.Add(this.panel1);
+            this.panelKerajang.Controls.Add(this.txtJenis);
+            this.panelKerajang.Controls.Add(this.txtBarang);
+            this.panelKerajang.Controls.Add(this.label4);
+            this.panelKerajang.Controls.Add(this.label5);
+            this.panelKerajang.Controls.Add(this.bunifuSeparator1);
+            this.panelKerajang.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panelKerajang.Controls.Add(this.tableTransaksi);
+            this.panelKerajang.Controls.Add(this.bunifuMaterialTextbox5);
+            this.panelKerajang.Controls.Add(this.bunifuMaterialTextbox6);
+            this.panelKerajang.Location = new System.Drawing.Point(635, 152);
+            this.panelKerajang.Name = "panelKerajang";
+            this.panelKerajang.Size = new System.Drawing.Size(509, 517);
+            this.panelKerajang.TabIndex = 36;
             // 
             // btnTambah
             // 
@@ -314,7 +394,7 @@
             this.btnTambah.IconVisible = true;
             this.btnTambah.IconZoom = 90D;
             this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(403, 628);
+            this.btnTambah.Location = new System.Drawing.Point(354, 467);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
             this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
@@ -349,7 +429,7 @@
             this.btnReset.IconVisible = true;
             this.btnReset.IconZoom = 90D;
             this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(448, 8);
+            this.btnReset.Location = new System.Drawing.Point(399, 8);
             this.btnReset.Name = "btnReset";
             this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
             this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -369,9 +449,9 @@
             this.panel1.Controls.Add(this.tulisanTotal);
             this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.blbHargaTotal);
-            this.panel1.Location = new System.Drawing.Point(12, 532);
+            this.panel1.Location = new System.Drawing.Point(4, 368);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(543, 93);
+            this.panel1.Size = new System.Drawing.Size(498, 93);
             this.panel1.TabIndex = 42;
             // 
             // tulisanTotal
@@ -399,13 +479,12 @@
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(56, 57);
+            this.txtTotal.Location = new System.Drawing.Point(68, 57);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(482, 22);
+            this.txtTotal.Size = new System.Drawing.Size(425, 22);
             this.txtTotal.TabIndex = 37;
             this.txtTotal.Text = "0";
             this.txtTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtTotal.Click += new System.EventHandler(this.txtTotal_Click);
             // 
             // blbHargaTotal
             // 
@@ -416,13 +495,12 @@
             this.blbHargaTotal.Size = new System.Drawing.Size(45, 22);
             this.blbHargaTotal.TabIndex = 36;
             this.blbHargaTotal.Text = "Rp. ";
-            this.blbHargaTotal.Click += new System.EventHandler(this.blbHargaTotal_Click);
             // 
             // txtJenis
             // 
             this.txtJenis.AutoSize = true;
             this.txtJenis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJenis.Location = new System.Drawing.Point(515, 495);
+            this.txtJenis.Location = new System.Drawing.Point(467, 331);
             this.txtJenis.Name = "txtJenis";
             this.txtJenis.Size = new System.Drawing.Size(35, 20);
             this.txtJenis.TabIndex = 41;
@@ -433,41 +511,41 @@
             // 
             this.txtBarang.AutoSize = true;
             this.txtBarang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarang.Location = new System.Drawing.Point(249, 495);
+            this.txtBarang.Location = new System.Drawing.Point(220, 331);
             this.txtBarang.Name = "txtBarang";
             this.txtBarang.Size = new System.Drawing.Size(35, 20);
             this.txtBarang.TabIndex = 40;
             this.txtBarang.Text = "[10]";
             this.txtBarang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 495);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Jumlah jenis";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(261, 331);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 20);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Jumlah jenis";
             // 
-            // label2
+            // label5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 495);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 20);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Jumlah barang";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(19, 331);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Jumlah barang";
             // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 465);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(-4, 302);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(567, 35);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(510, 35);
             this.bunifuSeparator1.TabIndex = 35;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -488,7 +566,7 @@
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(15, 8);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(426, 39);
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(361, 39);
             this.bunifuMaterialTextbox1.TabIndex = 32;
             this.bunifuMaterialTextbox1.Text = "Keranjang";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -499,24 +577,23 @@
             this.tableTransaksi.AllowUserToDeleteRows = false;
             this.tableTransaksi.AllowUserToResizeColumns = false;
             this.tableTransaksi.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.tableTransaksi.BackgroundColor = System.Drawing.Color.White;
             this.tableTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tableTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3,
             this.Column4,
             this.Column5,
             this.Column10,
@@ -533,9 +610,67 @@
             this.tableTransaksi.ReadOnly = true;
             this.tableTransaksi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tableTransaksi.RowHeadersVisible = false;
-            this.tableTransaksi.Size = new System.Drawing.Size(532, 413);
+            this.tableTransaksi.Size = new System.Drawing.Size(483, 255);
             this.tableTransaksi.TabIndex = 33;
             this.tableTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableTransaksi_CellClick);
+            // 
+            // bunifuMaterialTextbox5
+            // 
+            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox5.Enabled = false;
+            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox5.HintText = "";
+            this.bunifuMaterialTextbox5.isPassword = false;
+            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineThickness = 3;
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(12, 317);
+            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(242, 44);
+            this.bunifuMaterialTextbox5.TabIndex = 36;
+            this.bunifuMaterialTextbox5.Text = " ";
+            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox6
+            // 
+            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox6.Enabled = false;
+            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox6.HintText = "";
+            this.bunifuMaterialTextbox6.isPassword = false;
+            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineThickness = 3;
+            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(262, 317);
+            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
+            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(240, 44);
+            this.bunifuMaterialTextbox6.TabIndex = 37;
+            this.bunifuMaterialTextbox6.Text = " ";
+            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // panelTengah
+            // 
+            this.panelTengah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelTengah.Location = new System.Drawing.Point(586, 154);
+            this.panelTengah.Name = "panelTengah";
+            this.panelTengah.Size = new System.Drawing.Size(43, 515);
+            this.panelTengah.TabIndex = 37;
+            // 
+            // panelTengah1
+            // 
+            this.panelTengah1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelTengah1.Location = new System.Drawing.Point(1151, 152);
+            this.panelTengah1.Name = "panelTengah1";
+            this.panelTengah1.Size = new System.Drawing.Size(43, 515);
+            this.panelTengah1.TabIndex = 38;
             // 
             // Column1
             // 
@@ -551,13 +686,6 @@
             this.Column2.HeaderText = "Komponen";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Supplier";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -615,226 +743,209 @@
             this.Column13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column13.Width = 17;
             // 
-            // bunifuMaterialTextbox5
+            // nama_pelanggan
             // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Enabled = false;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(15, 481);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(266, 44);
-            this.bunifuMaterialTextbox5.TabIndex = 36;
-            this.bunifuMaterialTextbox5.Text = " ";
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.nama_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nama_pelanggan.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.nama_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nama_pelanggan.Location = new System.Drawing.Point(159, 91);
+            this.nama_pelanggan.Name = "nama_pelanggan";
+            this.nama_pelanggan.Size = new System.Drawing.Size(196, 19);
+            this.nama_pelanggan.TabIndex = 39;
+            this.nama_pelanggan.TextChanged += new System.EventHandler(this.nama_pelanggan_TextChanged);
             // 
-            // bunifuMaterialTextbox6
+            // lblFoto
             // 
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Enabled = false;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox6.HintText = "";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineThickness = 3;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(301, 481);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(254, 44);
-            this.bunifuMaterialTextbox6.TabIndex = 37;
-            this.bunifuMaterialTextbox6.Text = " ";
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox6.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox6_OnValueChanged);
+            this.lblFoto.AutoSize = true;
+            this.lblFoto.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.lblFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblFoto.Location = new System.Drawing.Point(503, 84);
+            this.lblFoto.Name = "lblFoto";
+            this.lblFoto.Size = new System.Drawing.Size(55, 20);
+            this.lblFoto.TabIndex = 40;
+            this.lblFoto.Text = "lblfoto";
+            this.lblFoto.Visible = false;
             // 
-            // panelSupplier
+            // btnCari
             // 
-            this.panelSupplier.BackColor = System.Drawing.Color.White;
-            this.panelSupplier.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panelSupplier.Controls.Add(this.btnKeranjang);
-            this.panelSupplier.Controls.Add(this.tableSupplier);
-            this.panelSupplier.Location = new System.Drawing.Point(3, 485);
-            this.panelSupplier.Name = "panelSupplier";
-            this.panelSupplier.Size = new System.Drawing.Size(626, 187);
-            this.panelSupplier.TabIndex = 35;
+            this.btnCari.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCari.BorderRadius = 0;
+            this.btnCari.ButtonText = "Cari";
+            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCari.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCari.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCari.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCari.Iconimage")));
+            this.btnCari.Iconimage_right = null;
+            this.btnCari.Iconimage_right_Selected = null;
+            this.btnCari.Iconimage_Selected = null;
+            this.btnCari.IconMarginLeft = 0;
+            this.btnCari.IconMarginRight = 0;
+            this.btnCari.IconRightVisible = true;
+            this.btnCari.IconRightZoom = 0D;
+            this.btnCari.IconVisible = true;
+            this.btnCari.IconZoom = 90D;
+            this.btnCari.IsTab = false;
+            this.btnCari.Location = new System.Drawing.Point(484, 58);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCari.selected = false;
+            this.btnCari.Size = new System.Drawing.Size(78, 35);
+            this.btnCari.TabIndex = 44;
+            this.btnCari.Text = "Cari";
+            this.btnCari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCari.Textcolor = System.Drawing.Color.White;
+            this.btnCari.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
             // 
-            // bunifuMaterialTextbox2
+            // btnNewPelanggan
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.bunifuMaterialTextbox2.Enabled = false;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(11, 5);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(473, 43);
-            this.bunifuMaterialTextbox2.TabIndex = 32;
-            this.bunifuMaterialTextbox2.Text = "Data Pemasok";
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNewPelanggan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewPelanggan.BorderRadius = 0;
+            this.btnNewPelanggan.ButtonText = "Baru";
+            this.btnNewPelanggan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewPelanggan.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNewPelanggan.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNewPelanggan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNewPelanggan.Iconimage")));
+            this.btnNewPelanggan.Iconimage_right = null;
+            this.btnNewPelanggan.Iconimage_right_Selected = null;
+            this.btnNewPelanggan.Iconimage_Selected = null;
+            this.btnNewPelanggan.IconMarginLeft = 0;
+            this.btnNewPelanggan.IconMarginRight = 0;
+            this.btnNewPelanggan.IconRightVisible = true;
+            this.btnNewPelanggan.IconRightZoom = 0D;
+            this.btnNewPelanggan.IconVisible = true;
+            this.btnNewPelanggan.IconZoom = 90D;
+            this.btnNewPelanggan.IsTab = false;
+            this.btnNewPelanggan.Location = new System.Drawing.Point(378, 78);
+            this.btnNewPelanggan.Name = "btnNewPelanggan";
+            this.btnNewPelanggan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnNewPelanggan.selected = false;
+            this.btnNewPelanggan.Size = new System.Drawing.Size(96, 39);
+            this.btnNewPelanggan.TabIndex = 45;
+            this.btnNewPelanggan.Text = "Baru";
+            this.btnNewPelanggan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewPelanggan.Textcolor = System.Drawing.Color.White;
+            this.btnNewPelanggan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewPelanggan.Click += new System.EventHandler(this.btnNewPelanggan_Click);
             // 
-            // btnKeranjang
+            // btnSegarkan
             // 
-            this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKeranjang.BorderRadius = 0;
-            this.btnKeranjang.ButtonText = "Masukkan keranjang";
-            this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
-            this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKeranjang.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKeranjang.Iconimage")));
-            this.btnKeranjang.Iconimage_right = null;
-            this.btnKeranjang.Iconimage_right_Selected = null;
-            this.btnKeranjang.Iconimage_Selected = null;
-            this.btnKeranjang.IconMarginLeft = 0;
-            this.btnKeranjang.IconMarginRight = 0;
-            this.btnKeranjang.IconRightVisible = true;
-            this.btnKeranjang.IconRightZoom = 0D;
-            this.btnKeranjang.IconVisible = true;
-            this.btnKeranjang.IconZoom = 90D;
-            this.btnKeranjang.IsTab = false;
-            this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
-            this.btnKeranjang.Name = "btnKeranjang";
-            this.btnKeranjang.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnKeranjang.selected = false;
-            this.btnKeranjang.Size = new System.Drawing.Size(130, 48);
-            this.btnKeranjang.TabIndex = 34;
-            this.btnKeranjang.Text = "Masukkan keranjang";
-            this.btnKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKeranjang.Textcolor = System.Drawing.Color.White;
-            this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
+            this.btnSegarkan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSegarkan.BorderRadius = 0;
+            this.btnSegarkan.ButtonText = "Segarkan";
+            this.btnSegarkan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSegarkan.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSegarkan.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSegarkan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSegarkan.Iconimage")));
+            this.btnSegarkan.Iconimage_right = null;
+            this.btnSegarkan.Iconimage_right_Selected = null;
+            this.btnSegarkan.Iconimage_Selected = null;
+            this.btnSegarkan.IconMarginLeft = 0;
+            this.btnSegarkan.IconMarginRight = 0;
+            this.btnSegarkan.IconRightVisible = true;
+            this.btnSegarkan.IconRightZoom = 0D;
+            this.btnSegarkan.IconVisible = true;
+            this.btnSegarkan.IconZoom = 90D;
+            this.btnSegarkan.IsTab = false;
+            this.btnSegarkan.Location = new System.Drawing.Point(11, 58);
+            this.btnSegarkan.Name = "btnSegarkan";
+            this.btnSegarkan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSegarkan.selected = false;
+            this.btnSegarkan.Size = new System.Drawing.Size(130, 35);
+            this.btnSegarkan.TabIndex = 45;
+            this.btnSegarkan.Text = "Segarkan";
+            this.btnSegarkan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSegarkan.Textcolor = System.Drawing.Color.White;
+            this.btnSegarkan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSegarkan.Click += new System.EventHandler(this.btnSegarkan_Click);
             // 
-            // tableSupplier
-            // 
-            this.tableSupplier.AllowUserToDeleteRows = false;
-            this.tableSupplier.AllowUserToResizeColumns = false;
-            this.tableSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.tableSupplier.BackgroundColor = System.Drawing.Color.White;
-            this.tableSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableSupplier.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.tableSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.tableSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableSupplier.DefaultCellStyle = dataGridViewCellStyle6;
-            this.tableSupplier.DoubleBuffered = true;
-            this.tableSupplier.EnableHeadersVisualStyles = false;
-            this.tableSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.tableSupplier.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.tableSupplier.HeaderForeColor = System.Drawing.Color.White;
-            this.tableSupplier.Location = new System.Drawing.Point(11, 57);
-            this.tableSupplier.Name = "tableSupplier";
-            this.tableSupplier.ReadOnly = true;
-            this.tableSupplier.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.tableSupplier.RowHeadersVisible = false;
-            this.tableSupplier.Size = new System.Drawing.Size(599, 126);
-            this.tableSupplier.TabIndex = 33;
-            this.tableSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableSupplier_CellClick);
-            // 
-            // Pemasokan_v2
+            // BKomponen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.panelSupplier);
-            this.Controls.Add(this.panelDetail);
+            this.Controls.Add(this.panelTengah1);
+            this.Controls.Add(this.panelTengah);
+            this.Controls.Add(this.panelKerajang);
             this.Controls.Add(this.panelTransaksi);
             this.Controls.Add(this.panelKomponen);
-            this.Name = "Pemasokan_v2";
+            this.Name = "BKomponen";
             this.Size = new System.Drawing.Size(1201, 675);
-            ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).EndInit();
             this.panelKomponen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).EndInit();
             this.panelTransaksi.ResumeLayout(false);
             this.panelTransaksi.PerformLayout();
-            this.panelDetail.ResumeLayout(false);
-            this.panelDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).EndInit();
+            this.panelKerajang.ResumeLayout(false);
+            this.panelKerajang.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).EndInit();
-            this.panelSupplier.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tableSupplier)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelKomponen;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuCustomDataGrid tableKomponen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Panel panelKomponen;
+        private Bunifu.Framework.UI.BunifuTextbox txtCari;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse;
+        private System.Windows.Forms.Panel panelTransaksi;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTanggal;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private System.Windows.Forms.Panel panelSupplier;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuFlatButton btnKeranjang;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid tableSupplier;
-        private System.Windows.Forms.Panel panelDetail;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid tableTransaksi;
-        private System.Windows.Forms.Panel panelTransaksi;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox n;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox foto_pelanggan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panelTengah;
+        private System.Windows.Forms.Panel panelKerajang;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTambah;
+        private Bunifu.Framework.UI.BunifuFlatButton btnReset;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox tulisanTotal;
+        private System.Windows.Forms.Label txtTotal;
+        private System.Windows.Forms.Label blbHargaTotal;
         private System.Windows.Forms.Label txtJenis;
         private System.Windows.Forms.Label txtBarang;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label blbHargaTotal;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox tulisanTotal;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid tableTransaksi;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
+        private System.Windows.Forms.Panel panelTengah1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewButtonColumn Column11;
         private System.Windows.Forms.DataGridViewButtonColumn Column12;
         private System.Windows.Forms.DataGridViewButtonColumn Column13;
-        private System.Windows.Forms.Label txtTotal;
-        private Bunifu.Framework.UI.BunifuFlatButton btnReset;
-        private Bunifu.Framework.UI.BunifuFlatButton btnTambah;
+        private System.Windows.Forms.TextBox nama_pelanggan;
+        private System.Windows.Forms.Label lblFoto;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCari;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNewPelanggan;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSegarkan;
     }
 }

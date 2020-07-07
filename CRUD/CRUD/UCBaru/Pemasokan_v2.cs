@@ -241,8 +241,10 @@ namespace CRUD.UCBaru
             this.tableTransaksi.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.tableTransaksi.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            tableTransaksi.Rows.Add(no + 1, komponen, supp, harga, jumlah, total, plus, minus, batal);
-
+            tableTransaksi.Rows.Add(no + 1, komponen, supp, harga, jumlah, harga, plus, minus, batal);
+            countTotal();
+            countBarang();
+            countJenis();
         }
         private void AddButtonColumn()
         {

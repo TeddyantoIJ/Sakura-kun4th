@@ -320,7 +320,7 @@ namespace CRUD
                 return;
             }
 
-            Pembayaran pembayaran = new Pembayaran();
+            Pembayaran pembayaran = new Pembayaran("AAA");
             pembayaran.txtTagihan.Text = txtTotal.Text;
             pembayaran.ShowDialog(this);
             

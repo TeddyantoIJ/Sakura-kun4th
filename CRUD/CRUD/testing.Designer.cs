@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pemasokan_v21 = new CRUD.UCBaru.Pemasokan_v2();
+            this.bKomponen1 = new CRUD.UCBaru.BKomponen();
             this.SuspendLayout();
             // 
-            // pemasokan_v21
+            // bKomponen1
             // 
-            this.pemasokan_v21.BackColor = System.Drawing.Color.Silver;
-            this.pemasokan_v21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pemasokan_v21.Location = new System.Drawing.Point(2, 12);
-            this.pemasokan_v21.Name = "pemasokan_v21";
-            this.pemasokan_v21.Size = new System.Drawing.Size(1201, 675);
-            this.pemasokan_v21.TabIndex = 0;
+            this.bKomponen1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bKomponen1.Location = new System.Drawing.Point(0, 0);
+            this.bKomponen1.Name = "bKomponen1";
+            this.bKomponen1.Size = new System.Drawing.Size(1201, 675);
+            this.bKomponen1.TabIndex = 0;
             // 
             // testing
             // 
@@ -46,7 +45,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.pemasokan_v21);
+            this.Controls.Add(this.bKomponen1);
             this.Name = "testing";
             this.Text = "testing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -56,6 +55,6 @@
 
         #endregion
 
-        private UCBaru.Pemasokan_v2 pemasokan_v21;
+        private UCBaru.BKomponen bKomponen1;
     }
 }

@@ -524,8 +524,8 @@ namespace CRUD
 
             if (cek)
             {
-                Pembayaran pembayaran = new Pembayaran();
-                pembayaran.txtTagihan.Text = lblTotal.Text;
+                Pembayaran pembayaran = new Pembayaran(lblTotal.Text);
+                //pembayaran.txtTagihan.Text = lblTotal.Text;
                 pembayaran.ShowDialog(this);
 
                 if (pembayaran.berhasil)
