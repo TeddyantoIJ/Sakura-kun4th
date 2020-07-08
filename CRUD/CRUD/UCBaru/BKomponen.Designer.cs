@@ -36,8 +36,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BKomponen));
             this.panelKomponen = new System.Windows.Forms.Panel();
-            this.txtCari = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableKomponen = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +43,8 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelTransaksi = new System.Windows.Forms.Panel();
-            this.foto_pelanggan = new System.Windows.Forms.PictureBox();
+            this.lblFoto = new System.Windows.Forms.Label();
+            this.nama_pelanggan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.n = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,8 +52,6 @@
             this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelKerajang = new System.Windows.Forms.Panel();
-            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tulisanTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTotal = new System.Windows.Forms.Label();
@@ -66,10 +63,6 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableTransaksi = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.panelTengah = new System.Windows.Forms.Panel();
-            this.panelTengah1 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,18 +71,24 @@
             this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.nama_pelanggan = new System.Windows.Forms.TextBox();
-            this.lblFoto = new System.Windows.Forms.Label();
-            this.btnCari = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.panelTengah = new System.Windows.Forms.Panel();
+            this.panelTengah1 = new System.Windows.Forms.Panel();
+            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNewPelanggan = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.foto_pelanggan = new System.Windows.Forms.PictureBox();
             this.btnSegarkan = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCari = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtCari = new Bunifu.Framework.UI.BunifuTextbox();
             this.panelKomponen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
             this.panelTransaksi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).BeginInit();
             this.panelKerajang.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).BeginInit();
             this.SuspendLayout();
             // 
             // panelKomponen
@@ -98,50 +97,11 @@
             this.panelKomponen.Controls.Add(this.btnSegarkan);
             this.panelKomponen.Controls.Add(this.btnCari);
             this.panelKomponen.Controls.Add(this.txtCari);
-            this.panelKomponen.Controls.Add(this.bunifuMaterialTextbox3);
             this.panelKomponen.Controls.Add(this.tableKomponen);
             this.panelKomponen.Location = new System.Drawing.Point(3, 3);
             this.panelKomponen.Name = "panelKomponen";
             this.panelKomponen.Size = new System.Drawing.Size(577, 669);
             this.panelKomponen.TabIndex = 29;
-            // 
-            // txtCari
-            // 
-            this.txtCari.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCari.BackColor = System.Drawing.Color.White;
-            this.txtCari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCari.BackgroundImage")));
-            this.txtCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtCari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.txtCari.Icon = ((System.Drawing.Image)(resources.GetObject("txtCari.Icon")));
-            this.txtCari.Location = new System.Drawing.Point(312, 58);
-            this.txtCari.Name = "txtCari";
-            this.txtCari.Size = new System.Drawing.Size(166, 35);
-            this.txtCari.TabIndex = 30;
-            this.txtCari.text = "Komponen";
-            // 
-            // bunifuMaterialTextbox3
-            // 
-            this.bunifuMaterialTextbox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Enabled = false;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(11, 7);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(551, 40);
-            this.bunifuMaterialTextbox3.TabIndex = 28;
-            this.bunifuMaterialTextbox3.Text = "Data Komponen";
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // tableKomponen
             // 
@@ -247,14 +207,28 @@
             this.panelTransaksi.Size = new System.Drawing.Size(612, 145);
             this.panelTransaksi.TabIndex = 34;
             // 
-            // foto_pelanggan
+            // lblFoto
             // 
-            this.foto_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.foto_pelanggan.Location = new System.Drawing.Point(480, 56);
-            this.foto_pelanggan.Name = "foto_pelanggan";
-            this.foto_pelanggan.Size = new System.Drawing.Size(116, 80);
-            this.foto_pelanggan.TabIndex = 38;
-            this.foto_pelanggan.TabStop = false;
+            this.lblFoto.AutoSize = true;
+            this.lblFoto.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.lblFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblFoto.Location = new System.Drawing.Point(503, 84);
+            this.lblFoto.Name = "lblFoto";
+            this.lblFoto.Size = new System.Drawing.Size(55, 20);
+            this.lblFoto.TabIndex = 40;
+            this.lblFoto.Text = "lblfoto";
+            this.lblFoto.Visible = false;
+            // 
+            // nama_pelanggan
+            // 
+            this.nama_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nama_pelanggan.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.nama_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nama_pelanggan.Location = new System.Drawing.Point(159, 91);
+            this.nama_pelanggan.Name = "nama_pelanggan";
+            this.nama_pelanggan.Size = new System.Drawing.Size(196, 19);
+            this.nama_pelanggan.TabIndex = 39;
+            this.nama_pelanggan.TextChanged += new System.EventHandler(this.nama_pelanggan_TextChanged);
             // 
             // label3
             // 
@@ -372,76 +346,6 @@
             this.panelKerajang.Name = "panelKerajang";
             this.panelKerajang.Size = new System.Drawing.Size(509, 517);
             this.panelKerajang.TabIndex = 36;
-            // 
-            // btnTambah
-            // 
-            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTambah.BorderRadius = 0;
-            this.btnTambah.ButtonText = "Tambah";
-            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
-            this.btnTambah.Iconimage_right = null;
-            this.btnTambah.Iconimage_right_Selected = null;
-            this.btnTambah.Iconimage_Selected = null;
-            this.btnTambah.IconMarginLeft = 0;
-            this.btnTambah.IconMarginRight = 0;
-            this.btnTambah.IconRightVisible = true;
-            this.btnTambah.IconRightZoom = 0D;
-            this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 90D;
-            this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(354, 467);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTambah.selected = false;
-            this.btnTambah.Size = new System.Drawing.Size(152, 37);
-            this.btnTambah.TabIndex = 44;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTambah.Textcolor = System.Drawing.Color.White;
-            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReset.BorderRadius = 0;
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
-            this.btnReset.Iconimage_right = null;
-            this.btnReset.Iconimage_right_Selected = null;
-            this.btnReset.Iconimage_Selected = null;
-            this.btnReset.IconMarginLeft = 0;
-            this.btnReset.IconMarginRight = 0;
-            this.btnReset.IconRightVisible = true;
-            this.btnReset.IconRightZoom = 0D;
-            this.btnReset.IconVisible = true;
-            this.btnReset.IconZoom = 90D;
-            this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(399, 8);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnReset.selected = false;
-            this.btnReset.Size = new System.Drawing.Size(99, 39);
-            this.btnReset.TabIndex = 43;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Textcolor = System.Drawing.Color.White;
-            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -614,64 +518,6 @@
             this.tableTransaksi.TabIndex = 33;
             this.tableTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableTransaksi_CellClick);
             // 
-            // bunifuMaterialTextbox5
-            // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Enabled = false;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(12, 317);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(242, 44);
-            this.bunifuMaterialTextbox5.TabIndex = 36;
-            this.bunifuMaterialTextbox5.Text = " ";
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox6
-            // 
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Enabled = false;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox6.HintText = "";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineThickness = 3;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(262, 317);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(240, 44);
-            this.bunifuMaterialTextbox6.TabIndex = 37;
-            this.bunifuMaterialTextbox6.Text = " ";
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // panelTengah
-            // 
-            this.panelTengah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.panelTengah.Location = new System.Drawing.Point(586, 154);
-            this.panelTengah.Name = "panelTengah";
-            this.panelTengah.Size = new System.Drawing.Size(43, 515);
-            this.panelTengah.TabIndex = 37;
-            // 
-            // panelTengah1
-            // 
-            this.panelTengah1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.panelTengah1.Location = new System.Drawing.Point(1151, 152);
-            this.panelTengah1.Name = "panelTengah1";
-            this.panelTengah1.Size = new System.Drawing.Size(43, 515);
-            this.panelTengah1.TabIndex = 38;
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -743,63 +589,133 @@
             this.Column13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column13.Width = 17;
             // 
-            // nama_pelanggan
+            // bunifuMaterialTextbox5
             // 
-            this.nama_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nama_pelanggan.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.nama_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nama_pelanggan.Location = new System.Drawing.Point(159, 91);
-            this.nama_pelanggan.Name = "nama_pelanggan";
-            this.nama_pelanggan.Size = new System.Drawing.Size(196, 19);
-            this.nama_pelanggan.TabIndex = 39;
-            this.nama_pelanggan.TextChanged += new System.EventHandler(this.nama_pelanggan_TextChanged);
+            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox5.Enabled = false;
+            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox5.HintText = "";
+            this.bunifuMaterialTextbox5.isPassword = false;
+            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox5.LineThickness = 3;
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(12, 317);
+            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(242, 44);
+            this.bunifuMaterialTextbox5.TabIndex = 36;
+            this.bunifuMaterialTextbox5.Text = " ";
+            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // lblFoto
+            // bunifuMaterialTextbox6
             // 
-            this.lblFoto.AutoSize = true;
-            this.lblFoto.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.lblFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblFoto.Location = new System.Drawing.Point(503, 84);
-            this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(55, 20);
-            this.lblFoto.TabIndex = 40;
-            this.lblFoto.Text = "lblfoto";
-            this.lblFoto.Visible = false;
+            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox6.Enabled = false;
+            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox6.HintText = "";
+            this.bunifuMaterialTextbox6.isPassword = false;
+            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox6.LineThickness = 3;
+            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(262, 317);
+            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
+            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(240, 44);
+            this.bunifuMaterialTextbox6.TabIndex = 37;
+            this.bunifuMaterialTextbox6.Text = " ";
+            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btnCari
+            // panelTengah
             // 
-            this.btnCari.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCari.BorderRadius = 0;
-            this.btnCari.ButtonText = "Cari";
-            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCari.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCari.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCari.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCari.Iconimage")));
-            this.btnCari.Iconimage_right = null;
-            this.btnCari.Iconimage_right_Selected = null;
-            this.btnCari.Iconimage_Selected = null;
-            this.btnCari.IconMarginLeft = 0;
-            this.btnCari.IconMarginRight = 0;
-            this.btnCari.IconRightVisible = true;
-            this.btnCari.IconRightZoom = 0D;
-            this.btnCari.IconVisible = true;
-            this.btnCari.IconZoom = 90D;
-            this.btnCari.IsTab = false;
-            this.btnCari.Location = new System.Drawing.Point(484, 58);
-            this.btnCari.Name = "btnCari";
-            this.btnCari.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCari.selected = false;
-            this.btnCari.Size = new System.Drawing.Size(78, 35);
-            this.btnCari.TabIndex = 44;
-            this.btnCari.Text = "Cari";
-            this.btnCari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCari.Textcolor = System.Drawing.Color.White;
-            this.btnCari.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            this.panelTengah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelTengah.Location = new System.Drawing.Point(586, 154);
+            this.panelTengah.Name = "panelTengah";
+            this.panelTengah.Size = new System.Drawing.Size(43, 515);
+            this.panelTengah.TabIndex = 37;
+            // 
+            // panelTengah1
+            // 
+            this.panelTengah1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelTengah1.Location = new System.Drawing.Point(1151, 152);
+            this.panelTengah1.Name = "panelTengah1";
+            this.panelTengah1.Size = new System.Drawing.Size(43, 515);
+            this.panelTengah1.TabIndex = 38;
+            // 
+            // btnTambah
+            // 
+            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTambah.BorderRadius = 0;
+            this.btnTambah.ButtonText = "Tambah";
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
+            this.btnTambah.Iconimage_right = null;
+            this.btnTambah.Iconimage_right_Selected = null;
+            this.btnTambah.Iconimage_Selected = null;
+            this.btnTambah.IconMarginLeft = 0;
+            this.btnTambah.IconMarginRight = 0;
+            this.btnTambah.IconRightVisible = true;
+            this.btnTambah.IconRightZoom = 0D;
+            this.btnTambah.IconVisible = true;
+            this.btnTambah.IconZoom = 90D;
+            this.btnTambah.IsTab = false;
+            this.btnTambah.Location = new System.Drawing.Point(354, 467);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTambah.selected = false;
+            this.btnTambah.Size = new System.Drawing.Size(152, 37);
+            this.btnTambah.TabIndex = 44;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTambah.Textcolor = System.Drawing.Color.White;
+            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.BorderRadius = 0;
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
+            this.btnReset.Iconimage_right = null;
+            this.btnReset.Iconimage_right_Selected = null;
+            this.btnReset.Iconimage_Selected = null;
+            this.btnReset.IconMarginLeft = 0;
+            this.btnReset.IconMarginRight = 0;
+            this.btnReset.IconRightVisible = true;
+            this.btnReset.IconRightZoom = 0D;
+            this.btnReset.IconVisible = true;
+            this.btnReset.IconZoom = 90D;
+            this.btnReset.IsTab = false;
+            this.btnReset.Location = new System.Drawing.Point(399, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReset.selected = false;
+            this.btnReset.Size = new System.Drawing.Size(99, 39);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Textcolor = System.Drawing.Color.White;
+            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnNewPelanggan
             // 
@@ -836,6 +752,15 @@
             this.btnNewPelanggan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewPelanggan.Click += new System.EventHandler(this.btnNewPelanggan_Click);
             // 
+            // foto_pelanggan
+            // 
+            this.foto_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.foto_pelanggan.Location = new System.Drawing.Point(480, 56);
+            this.foto_pelanggan.Name = "foto_pelanggan";
+            this.foto_pelanggan.Size = new System.Drawing.Size(116, 80);
+            this.foto_pelanggan.TabIndex = 38;
+            this.foto_pelanggan.TabStop = false;
+            // 
             // btnSegarkan
             // 
             this.btnSegarkan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -871,6 +796,55 @@
             this.btnSegarkan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSegarkan.Click += new System.EventHandler(this.btnSegarkan_Click);
             // 
+            // btnCari
+            // 
+            this.btnCari.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCari.BorderRadius = 0;
+            this.btnCari.ButtonText = "Cari";
+            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCari.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCari.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCari.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCari.Iconimage")));
+            this.btnCari.Iconimage_right = null;
+            this.btnCari.Iconimage_right_Selected = null;
+            this.btnCari.Iconimage_Selected = null;
+            this.btnCari.IconMarginLeft = 0;
+            this.btnCari.IconMarginRight = 0;
+            this.btnCari.IconRightVisible = true;
+            this.btnCari.IconRightZoom = 0D;
+            this.btnCari.IconVisible = true;
+            this.btnCari.IconZoom = 90D;
+            this.btnCari.IsTab = false;
+            this.btnCari.Location = new System.Drawing.Point(484, 58);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCari.selected = false;
+            this.btnCari.Size = new System.Drawing.Size(78, 35);
+            this.btnCari.TabIndex = 44;
+            this.btnCari.Text = "Cari";
+            this.btnCari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCari.Textcolor = System.Drawing.Color.White;
+            this.btnCari.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            // 
+            // txtCari
+            // 
+            this.txtCari.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCari.BackColor = System.Drawing.Color.White;
+            this.txtCari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCari.BackgroundImage")));
+            this.txtCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtCari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.txtCari.Icon = ((System.Drawing.Image)(resources.GetObject("txtCari.Icon")));
+            this.txtCari.Location = new System.Drawing.Point(312, 58);
+            this.txtCari.Name = "txtCari";
+            this.txtCari.Size = new System.Drawing.Size(166, 35);
+            this.txtCari.TabIndex = 30;
+            this.txtCari.text = "Komponen";
+            // 
             // BKomponen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,12 +861,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).EndInit();
             this.panelTransaksi.ResumeLayout(false);
             this.panelTransaksi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).EndInit();
             this.panelKerajang.ResumeLayout(false);
             this.panelKerajang.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -900,7 +874,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelKomponen;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuCustomDataGrid tableKomponen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;

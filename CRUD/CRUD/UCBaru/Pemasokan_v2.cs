@@ -498,7 +498,7 @@ namespace CRUD.UCBaru
                     myCommand.Parameters.AddWithValue("id_komponen", getIDKomponen(tableTransaksi[1, i].Value.ToString()));
                     myCommand.Parameters.AddWithValue("id_supplier", getIDSupplier(tableTransaksi[2, i].Value.ToString()));
                     myCommand.Parameters.AddWithValue("jumlah", tableTransaksi[4, i].Value);
-                    myCommand.Parameters.AddWithValue("total_harga", tableTransaksi[5, i].Value);
+                    myCommand.Parameters.AddWithValue("total_harga", toAngka((String)tableTransaksi[5, i].Value));
 
                     myCommand.ExecuteNonQuery();
                     connection.Close();

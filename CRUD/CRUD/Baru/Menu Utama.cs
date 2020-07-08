@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,8 @@ namespace CRUD.Baru
         public Menu_Utama()
         {
             InitializeComponent();
-            
+            dashBoard.Visible = true;
+            btnMenuUtama.Normalcolor = btnMenuUtama.Activecolor;
             WindowState = FormWindowState.Maximized;
             
         }
@@ -71,12 +73,13 @@ namespace CRUD.Baru
             show(dashBoard,btnMenuUtama);
         }
 
-        private void show(UserControl masuk, Bunifu.Framework.UI.BunifuFlatButton btn)
+        private void show(Panel masuk, Bunifu.Framework.UI.BunifuFlatButton btn)
         {
             //frame
             dashBoard.Visible = false;
             pemasokan_v2.Visible = false;
             bKomponen.Visible = false;
+            panelReport.Visible = false;
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
@@ -86,6 +89,27 @@ namespace CRUD.Baru
             btnMenuUtama.BackColor = panelKiri.BackColor;
             btnRestockKomponen.BackColor = panelKiri.BackColor;
             btnBeliKomponen.BackColor = panelKiri.BackColor;
+            btnLaporan.BackColor = panelKiri.BackColor;
+
+            btn.Normalcolor = btn.Activecolor;
+        }
+        private void show(UserControl masuk, Bunifu.Framework.UI.BunifuFlatButton btn)
+        {
+            //frame
+            dashBoard.Visible = false;
+            pemasokan_v2.Visible = false;
+            bKomponen.Visible = false;
+            panelReport.Visible = false;
+
+            //masuk.Visible = true;
+            bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
+
+
+            //button
+            btnMenuUtama.BackColor = panelKiri.BackColor;
+            btnRestockKomponen.BackColor = panelKiri.BackColor;
+            btnBeliKomponen.BackColor = panelKiri.BackColor;
+            btnLaporan.BackColor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -114,7 +138,8 @@ namespace CRUD.Baru
 
         private void btnLaporan_Click(object sender, EventArgs e)
         {
-
+            
+            show(panelReport,btnLaporan);
         }
 
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
@@ -139,7 +164,57 @@ namespace CRUD.Baru
 
         private void btnBeliKomponen_Click(object sender, EventArgs e)
         {
+            
             show(bKomponen, btnBeliKomponen);
+        }
+
+        private void Menu_Utama_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'Report.lrestock1' table. You can move, or remove it, as needed.
+            
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void showReport(ReportViewer a)
+        {
+            reportRestock.Visible = false;
+            reportBeliKomponen.Visible = false;
+
+            a.Visible = true;
+        }
+        private void btnCari_Click(object sender, EventArgs e)
+        {
+            if (rbReparasi.Checked)
+            {
+                
+            }
+            if (rbBeliKomponen.Checked)
+            {
+                showReport(reportBeliKomponen);
+                // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
+                this.lbelikomponenTableAdapter.Fill(this.Report.lbelikomponen, cmbBulan.SelectedIndex + 1, Convert.ToInt32(cmbTahun.Text));
+                // TODO: This line of code loads data into the 'Report.lrestock1' table. You can move, or remove it, as needed.
+
+                this.reportBeliKomponen.RefreshReport();
+            }
+            if (rbRestockKomponen.Checked)
+            {
+                showReport(reportRestock);
+                this.lrestock1TableAdapter.Fill(this.Report.lrestock1, cmbBulan.SelectedIndex + 1, Convert.ToInt32(cmbTahun.Text));
+                this.reportRestock.RefreshReport();
+            }
+            if (rbRestockAlat.Checked)
+            {
+
+            }
+            
+            
+
+            
         }
     }
 }
