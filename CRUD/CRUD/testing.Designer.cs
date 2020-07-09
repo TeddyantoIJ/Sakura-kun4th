@@ -39,12 +39,10 @@
             this.lreparasialatTableAdapter = new CRUD.ReportTableAdapters.lreparasialatTableAdapter();
             this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lrestockalatTableAdapter = new CRUD.ReportTableAdapters.lrestockalatTableAdapter();
-            this.bKomponen1 = new CRUD.UCBaru.BKomponen();
             ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).BeginInit();
-            this.panelReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +69,6 @@
             // panelReport
             // 
             this.panelReport.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelReport.Controls.Add(this.bKomponen1);
             this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReport.Location = new System.Drawing.Point(0, 0);
             this.panelReport.Name = "panelReport";
@@ -99,14 +96,6 @@
             // 
             this.lrestockalatTableAdapter.ClearBeforeFill = true;
             // 
-            // bKomponen1
-            // 
-            this.bKomponen1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bKomponen1.Location = new System.Drawing.Point(46, 18);
-            this.bKomponen1.Name = "bKomponen1";
-            this.bKomponen1.Size = new System.Drawing.Size(1201, 675);
-            this.bKomponen1.TabIndex = 0;
-            // 
             // testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,7 +111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Report)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).EndInit();
-            this.panelReport.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -139,6 +127,5 @@
         private ReportTableAdapters.lreparasialatTableAdapter lreparasialatTableAdapter;
         private System.Windows.Forms.BindingSource lrestockalatBindingSource;
         private ReportTableAdapters.lrestockalatTableAdapter lrestockalatTableAdapter;
-        private UCBaru.BKomponen bKomponen1;
     }
 }

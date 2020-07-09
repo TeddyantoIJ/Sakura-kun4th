@@ -303,6 +303,7 @@
     <EmbeddedResource Include="Baru\Menu Utama.resx">
       <DependentUpon>Menu Utama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FIO\rwRestockAlatKerja.rdlc" />
     <EmbeddedResource Include="Report\reportReparasi.rdlc" />
     <EmbeddedResource Include="Report\ReportBeliKomponen.rdlc" />
     <EmbeddedResource Include="Report\ReportRestock1.rdlc" />

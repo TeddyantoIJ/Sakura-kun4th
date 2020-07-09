@@ -38,6 +38,7 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.lbelikomponenBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Report = new CRUD.Report();
+            this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lrestock1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lreparasialatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtHello = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -59,7 +60,6 @@
             this.karyawan_nama = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelUtama = new System.Windows.Forms.Panel();
             this.panelBawah = new System.Windows.Forms.Panel();
-            this.bKomponen = new CRUD.UCBaru.BKomponen();
             this.pemasokan_v2 = new CRUD.UCBaru.Pemasokan_v2();
             this.dashBoard = new CRUD.DashBoard();
             this.panelReport = new System.Windows.Forms.Panel();
@@ -78,11 +78,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.rbRestockAlat = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.reportBeliKomponen = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.reportRestockAlat = new Microsoft.Reporting.WinForms.ReportViewer();
             this.reportRestock = new Microsoft.Reporting.WinForms.ReportViewer();
             this.reportReparasi = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.reportBeliKomponen = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.bKomponen = new CRUD.UCBaru.BKomponen();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -90,9 +91,9 @@
             this.lbelikomponenTableAdapter = new CRUD.ReportTableAdapters.lbelikomponenTableAdapter();
             this.lreparasialatTableAdapter = new CRUD.ReportTableAdapters.lreparasialatTableAdapter();
             this.lrestockalatTableAdapter = new CRUD.ReportTableAdapters.lrestockalatTableAdapter();
-            this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).BeginInit();
@@ -105,7 +106,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lbelikomponenBindingSource
@@ -117,6 +117,11 @@
             // 
             this.Report.DataSetName = "Report";
             this.Report.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lrestockalatBindingSource
+            // 
+            this.lrestockalatBindingSource.DataMember = "lrestockalat";
+            this.lrestockalatBindingSource.DataSource = this.Report;
             // 
             // lrestock1BindingSource
             // 
@@ -223,7 +228,7 @@
             this.btnBeliAlat.TabIndex = 20;
             this.btnBeliAlat.Text = "Restock Alat Kerja";
             this.btnBeliAlat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBeliAlat.Textcolor = System.Drawing.Color.White;
+            this.btnBeliAlat.Textcolor = System.Drawing.Color.DarkRed;
             this.btnBeliAlat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnBeliKomponen
@@ -294,7 +299,7 @@
             this.btnReparasi.TabIndex = 3;
             this.btnReparasi.Text = "Reparasi Alat";
             this.btnReparasi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReparasi.Textcolor = System.Drawing.Color.White;
+            this.btnReparasi.Textcolor = System.Drawing.Color.DarkRed;
             this.btnReparasi.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReparasi.Click += new System.EventHandler(this.bunifuFlatButton1_Click_2);
             // 
@@ -450,7 +455,7 @@
             this.btnKelolaData.TabIndex = 13;
             this.btnKelolaData.Text = "Kelola Data";
             this.btnKelolaData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKelolaData.Textcolor = System.Drawing.Color.White;
+            this.btnKelolaData.Textcolor = System.Drawing.Color.DarkRed;
             this.btnKelolaData.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKelolaData.Click += new System.EventHandler(this.btnKelolaData_Click);
             // 
@@ -587,10 +592,10 @@
             // panelUtama
             // 
             this.panelUtama.Controls.Add(this.panelBawah);
+            this.panelUtama.Controls.Add(this.pemasokan_v2);
             this.panelUtama.Controls.Add(this.dashBoard);
             this.panelUtama.Controls.Add(this.panelReport);
             this.panelUtama.Controls.Add(this.bKomponen);
-            this.panelUtama.Controls.Add(this.pemasokan_v2);
             this.bunifuTransition.SetDecoration(this.panelUtama, BunifuAnimatorNS.DecorationType.None);
             this.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelUtama.Location = new System.Drawing.Point(161, 38);
@@ -607,17 +612,6 @@
             this.panelBawah.Name = "panelBawah";
             this.panelBawah.Size = new System.Drawing.Size(1203, 47);
             this.panelBawah.TabIndex = 2;
-            // 
-            // bKomponen
-            // 
-            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
-            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bKomponen.Location = new System.Drawing.Point(0, 0);
-            this.bKomponen.Name = "bKomponen";
-            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
-            this.bKomponen.TabIndex = 3;
-            this.bKomponen.Visible = false;
             // 
             // pemasokan_v2
             // 
@@ -649,11 +643,11 @@
             this.panelReport.Controls.Add(this.label6);
             this.panelReport.Controls.Add(this.cmbBulan);
             this.panelReport.Controls.Add(this.flowLayoutPanel1);
-            this.panelReport.Controls.Add(this.reportBeliKomponen);
+            this.panelReport.Controls.Add(this.bunifuMaterialTextbox1);
             this.panelReport.Controls.Add(this.reportRestockAlat);
             this.panelReport.Controls.Add(this.reportRestock);
             this.panelReport.Controls.Add(this.reportReparasi);
-            this.panelReport.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panelReport.Controls.Add(this.reportBeliKomponen);
             this.bunifuTransition.SetDecoration(this.panelReport, BunifuAnimatorNS.DecorationType.None);
             this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReport.Location = new System.Drawing.Point(0, 0);
@@ -858,61 +852,6 @@
             this.label5.Text = "Restock Alat";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // reportBeliKomponen
-            // 
-            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource1.Name = "BeliKomponen";
-            reportDataSource1.Value = this.lbelikomponenBindingSource;
-            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
-            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
-            this.reportBeliKomponen.Name = "reportBeliKomponen";
-            this.reportBeliKomponen.ServerReport.BearerToken = null;
-            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
-            this.reportBeliKomponen.TabIndex = 18;
-            this.reportBeliKomponen.Visible = false;
-            // 
-            // reportRestockAlat
-            // 
-            this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource2.Name = "BeliKomponen";
-            reportDataSource2.Value = this.lbelikomponenBindingSource;
-            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
-            this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
-            this.reportRestockAlat.Name = "reportRestockAlat";
-            this.reportRestockAlat.ServerReport.BearerToken = null;
-            this.reportRestockAlat.Size = new System.Drawing.Size(1203, 617);
-            this.reportRestockAlat.TabIndex = 20;
-            this.reportRestockAlat.Visible = false;
-            // 
-            // reportRestock
-            // 
-            this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource3.Name = "Restock";
-            reportDataSource3.Value = this.lrestock1BindingSource;
-            this.reportRestock.LocalReport.DataSources.Add(reportDataSource3);
-            this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
-            this.reportRestock.Location = new System.Drawing.Point(0, 57);
-            this.reportRestock.Name = "reportRestock";
-            this.reportRestock.ServerReport.BearerToken = null;
-            this.reportRestock.Size = new System.Drawing.Size(1203, 617);
-            this.reportRestock.TabIndex = 0;
-            // 
-            // reportReparasi
-            // 
-            this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource4.Name = "ReportReparasi";
-            reportDataSource4.Value = this.lreparasialatBindingSource;
-            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource4);
-            this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
-            this.reportReparasi.Location = new System.Drawing.Point(0, 57);
-            this.reportReparasi.Name = "reportReparasi";
-            this.reportReparasi.ServerReport.BearerToken = null;
-            this.reportReparasi.Size = new System.Drawing.Size(1203, 617);
-            this.reportReparasi.TabIndex = 19;
-            this.reportReparasi.Visible = false;
-            // 
             // bunifuMaterialTextbox1
             // 
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -935,6 +874,72 @@
             this.bunifuMaterialTextbox1.TabIndex = 2;
             this.bunifuMaterialTextbox1.TabStop = false;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // reportRestockAlat
+            // 
+            this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource1.Name = "restockAlatKerja";
+            reportDataSource1.Value = this.lrestockalatBindingSource;
+            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.RestockAlat.rdlc";
+            this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
+            this.reportRestockAlat.Name = "reportRestockAlat";
+            this.reportRestockAlat.ServerReport.BearerToken = null;
+            this.reportRestockAlat.Size = new System.Drawing.Size(1203, 617);
+            this.reportRestockAlat.TabIndex = 20;
+            this.reportRestockAlat.Visible = false;
+            // 
+            // reportRestock
+            // 
+            this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource2.Name = "Restock";
+            reportDataSource2.Value = this.lrestock1BindingSource;
+            this.reportRestock.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
+            this.reportRestock.Location = new System.Drawing.Point(0, 57);
+            this.reportRestock.Name = "reportRestock";
+            this.reportRestock.ServerReport.BearerToken = null;
+            this.reportRestock.Size = new System.Drawing.Size(1203, 617);
+            this.reportRestock.TabIndex = 0;
+            // 
+            // reportReparasi
+            // 
+            this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource3.Name = "ReportReparasi";
+            reportDataSource3.Value = this.lreparasialatBindingSource;
+            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource3);
+            this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
+            this.reportReparasi.Location = new System.Drawing.Point(0, 57);
+            this.reportReparasi.Name = "reportReparasi";
+            this.reportReparasi.ServerReport.BearerToken = null;
+            this.reportReparasi.Size = new System.Drawing.Size(1203, 617);
+            this.reportReparasi.TabIndex = 19;
+            this.reportReparasi.Visible = false;
+            // 
+            // reportBeliKomponen
+            // 
+            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource4.Name = "BeliKomponen";
+            reportDataSource4.Value = this.lbelikomponenBindingSource;
+            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource4);
+            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
+            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
+            this.reportBeliKomponen.Name = "reportBeliKomponen";
+            this.reportBeliKomponen.ServerReport.BearerToken = null;
+            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
+            this.reportBeliKomponen.TabIndex = 18;
+            this.reportBeliKomponen.Visible = false;
+            // 
+            // bKomponen
+            // 
+            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
+            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKomponen.Location = new System.Drawing.Point(0, 0);
+            this.bKomponen.Name = "bKomponen";
+            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
+            this.bKomponen.TabIndex = 3;
+            this.bKomponen.Visible = false;
             // 
             // bunifuTransition
             // 
@@ -997,11 +1002,6 @@
             // 
             this.lrestockalatTableAdapter.ClearBeforeFill = true;
             // 
-            // lrestockalatBindingSource
-            // 
-            this.lrestockalatBindingSource.DataMember = "lrestockalat";
-            this.lrestockalatBindingSource.DataSource = this.Report;
-            // 
             // Menu_Utama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1020,6 +1020,7 @@
             this.Load += new System.EventHandler(this.Menu_Utama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Report)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).EndInit();
@@ -1033,7 +1034,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

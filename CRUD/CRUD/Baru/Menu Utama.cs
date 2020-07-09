@@ -74,16 +74,19 @@ namespace CRUD.Baru
             pemasokan_v2.Visible = false;
             bKomponen.Visible = false;
             panelReport.Visible = false;
+            
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
-            
-            
+
+
             //button
             btnMenuUtama.BackColor = panelKiri.BackColor;
             btnRestockKomponen.BackColor = panelKiri.BackColor;
             btnBeliKomponen.BackColor = panelKiri.BackColor;
             btnLaporan.BackColor = panelKiri.BackColor;
+            btnReparasi.BackColor = panelKiri.BackColor;
+
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -94,6 +97,7 @@ namespace CRUD.Baru
             pemasokan_v2.Visible = false;
             bKomponen.Visible = false;
             panelReport.Visible = false;
+            
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
@@ -104,6 +108,7 @@ namespace CRUD.Baru
             btnRestockKomponen.BackColor = panelKiri.BackColor;
             btnBeliKomponen.BackColor = panelKiri.BackColor;
             btnLaporan.BackColor = panelKiri.BackColor;
+            btnReparasi.BackColor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -154,7 +159,7 @@ namespace CRUD.Baru
 
         private void bunifuFlatButton1_Click_2(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnBeliKomponen_Click(object sender, EventArgs e)
@@ -165,6 +170,8 @@ namespace CRUD.Baru
 
         private void Menu_Utama_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'Report.lrestockalat' table. You can move, or remove it, as needed.
+            //this.lrestockalatTableAdapter.Fill(this.Report.lrestockalat);
             // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
             //this.lbelikomponenTableAdapter.Fill(this.Report.lbelikomponen);
             // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
@@ -203,7 +210,6 @@ namespace CRUD.Baru
                 // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
                 this.lbelikomponenTableAdapter.Fill(this.Report.lbelikomponen, cmbBulan.SelectedIndex + 1, Convert.ToInt32(cmbTahun.Text));
                 // TODO: This line of code loads data into the 'Report.lrestock1' table. You can move, or remove it, as needed.
-
                 this.reportBeliKomponen.RefreshReport();
             }
             if (rbRestockKomponen.Checked)
