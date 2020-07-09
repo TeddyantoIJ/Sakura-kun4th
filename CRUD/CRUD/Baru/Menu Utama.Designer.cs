@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource8 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource9 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Utama));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource10 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.lbelikomponenBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Report = new CRUD.Report();
             this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -592,10 +592,10 @@
             // panelUtama
             // 
             this.panelUtama.Controls.Add(this.panelBawah);
-            this.panelUtama.Controls.Add(this.pemasokan_v2);
             this.panelUtama.Controls.Add(this.dashBoard);
             this.panelUtama.Controls.Add(this.panelReport);
             this.panelUtama.Controls.Add(this.bKomponen);
+            this.panelUtama.Controls.Add(this.pemasokan_v2);
             this.bunifuTransition.SetDecoration(this.panelUtama, BunifuAnimatorNS.DecorationType.None);
             this.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelUtama.Location = new System.Drawing.Point(161, 38);
@@ -878,9 +878,9 @@
             // reportRestockAlat
             // 
             this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource1.Name = "restockAlatKerja";
-            reportDataSource1.Value = this.lrestockalatBindingSource;
-            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource6.Name = "restockAlatKerja";
+            reportDataSource6.Value = this.lrestockalatBindingSource;
+            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource6);
             this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.RestockAlat.rdlc";
             this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
             this.reportRestockAlat.Name = "reportRestockAlat";
@@ -892,9 +892,9 @@
             // reportRestock
             // 
             this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource2.Name = "Restock";
-            reportDataSource2.Value = this.lrestock1BindingSource;
-            this.reportRestock.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource7.Name = "Restock";
+            reportDataSource7.Value = this.lrestock1BindingSource;
+            this.reportRestock.LocalReport.DataSources.Add(reportDataSource7);
             this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
             this.reportRestock.Location = new System.Drawing.Point(0, 57);
             this.reportRestock.Name = "reportRestock";
@@ -905,9 +905,9 @@
             // reportReparasi
             // 
             this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource3.Name = "ReportReparasi";
-            reportDataSource3.Value = this.lreparasialatBindingSource;
-            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource8.Name = "ReportReparasi";
+            reportDataSource8.Value = this.lreparasialatBindingSource;
+            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource8);
             this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
             this.reportReparasi.Location = new System.Drawing.Point(0, 57);
             this.reportReparasi.Name = "reportReparasi";
@@ -919,9 +919,9 @@
             // reportBeliKomponen
             // 
             this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource4.Name = "BeliKomponen";
-            reportDataSource4.Value = this.lbelikomponenBindingSource;
-            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource4);
+            reportDataSource9.Name = "BeliKomponen";
+            reportDataSource9.Value = this.lbelikomponenBindingSource;
+            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource9);
             this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
             this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
             this.reportBeliKomponen.Name = "reportBeliKomponen";
@@ -945,22 +945,22 @@
             // 
             this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition.DefaultAnimation = animation2;
             // 
             // panel1
             // 
@@ -976,9 +976,9 @@
             // reportViewer2
             // 
             this.bunifuTransition.SetDecoration(this.reportViewer2, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource5.Name = "Restock";
-            reportDataSource5.Value = null;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource5);
+            reportDataSource10.Name = "Restock";
+            reportDataSource10.Value = null;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource10);
             this.reportViewer2.LocalReport.ReportEmbeddedResource = "CRUD.ReportRestock1.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(0, 62);
             this.reportViewer2.Name = "reportViewer2";

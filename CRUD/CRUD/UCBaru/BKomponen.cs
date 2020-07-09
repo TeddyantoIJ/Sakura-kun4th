@@ -132,6 +132,10 @@ namespace CRUD.UCBaru
 
         private void tableKomponen_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (tableKomponen[4,e.RowIndex].Value.ToString().Equals("0"))
+            {
+                return;
+            }
             Int32 selectedRow = tableKomponen.SelectedCells.Count;
             int selectedrowindex = tableKomponen.SelectedCells[0].RowIndex;
             tableKomponen.Rows[selectedrowindex].Selected = true;
@@ -389,6 +393,7 @@ namespace CRUD.UCBaru
                 //btnUpdate.Enabled = false;
                 //clear();
             }
+            addDataKomponen();
         }
         private string getIDPelanggan(string inx)
         {
