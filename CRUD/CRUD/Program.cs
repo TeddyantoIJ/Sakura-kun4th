@@ -23,6 +23,7 @@ namespace CRUD
             //Application.Run(new AlatKerjaMaster());
             //Application.Run(new KomponenSupplier());
             //Application.Run(new AlatSupplier());
+            //Application.Run(new Komponen());
 
             //Application.Run(new UpdateSupplier());
             //Application.Run(new UpdateCustomer());

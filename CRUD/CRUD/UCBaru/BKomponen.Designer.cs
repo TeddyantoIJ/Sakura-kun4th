@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BKomponen));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BKomponen));
             this.panelKomponen = new System.Windows.Forms.Panel();
+            this.btnSegarkan = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCari = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtCari = new Bunifu.Framework.UI.BunifuTextbox();
             this.tableKomponen = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +46,10 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelTransaksi = new System.Windows.Forms.Panel();
+            this.btnNewPelanggan = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblFoto = new System.Windows.Forms.Label();
             this.nama_pelanggan = new System.Windows.Forms.TextBox();
+            this.foto_pelanggan = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.n = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +57,8 @@
             this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelKerajang = new System.Windows.Forms.Panel();
+            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tulisanTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTotal = new System.Windows.Forms.Label();
@@ -63,32 +70,26 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableTransaksi = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.panelTengah = new System.Windows.Forms.Panel();
+            this.panelTengah1 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.panelTengah = new System.Windows.Forms.Panel();
-            this.panelTengah1 = new System.Windows.Forms.Panel();
-            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnNewPelanggan = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.foto_pelanggan = new System.Windows.Forms.PictureBox();
-            this.btnSegarkan = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCari = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txtCari = new Bunifu.Framework.UI.BunifuTextbox();
             this.panelKomponen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
             this.panelTransaksi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).BeginInit();
             this.panelKerajang.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).BeginInit();
             this.SuspendLayout();
             // 
             // panelKomponen
@@ -102,6 +103,90 @@
             this.panelKomponen.Name = "panelKomponen";
             this.panelKomponen.Size = new System.Drawing.Size(577, 669);
             this.panelKomponen.TabIndex = 29;
+            // 
+            // btnSegarkan
+            // 
+            this.btnSegarkan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSegarkan.BorderRadius = 0;
+            this.btnSegarkan.ButtonText = "Segarkan";
+            this.btnSegarkan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSegarkan.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSegarkan.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSegarkan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSegarkan.Iconimage")));
+            this.btnSegarkan.Iconimage_right = null;
+            this.btnSegarkan.Iconimage_right_Selected = null;
+            this.btnSegarkan.Iconimage_Selected = null;
+            this.btnSegarkan.IconMarginLeft = 0;
+            this.btnSegarkan.IconMarginRight = 0;
+            this.btnSegarkan.IconRightVisible = true;
+            this.btnSegarkan.IconRightZoom = 0D;
+            this.btnSegarkan.IconVisible = true;
+            this.btnSegarkan.IconZoom = 90D;
+            this.btnSegarkan.IsTab = false;
+            this.btnSegarkan.Location = new System.Drawing.Point(11, 58);
+            this.btnSegarkan.Name = "btnSegarkan";
+            this.btnSegarkan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnSegarkan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSegarkan.selected = false;
+            this.btnSegarkan.Size = new System.Drawing.Size(130, 35);
+            this.btnSegarkan.TabIndex = 45;
+            this.btnSegarkan.Text = "Segarkan";
+            this.btnSegarkan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSegarkan.Textcolor = System.Drawing.Color.White;
+            this.btnSegarkan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSegarkan.Click += new System.EventHandler(this.btnSegarkan_Click);
+            // 
+            // btnCari
+            // 
+            this.btnCari.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCari.BorderRadius = 0;
+            this.btnCari.ButtonText = "Cari";
+            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCari.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCari.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCari.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCari.Iconimage")));
+            this.btnCari.Iconimage_right = null;
+            this.btnCari.Iconimage_right_Selected = null;
+            this.btnCari.Iconimage_Selected = null;
+            this.btnCari.IconMarginLeft = 0;
+            this.btnCari.IconMarginRight = 0;
+            this.btnCari.IconRightVisible = true;
+            this.btnCari.IconRightZoom = 0D;
+            this.btnCari.IconVisible = true;
+            this.btnCari.IconZoom = 90D;
+            this.btnCari.IsTab = false;
+            this.btnCari.Location = new System.Drawing.Point(484, 58);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnCari.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCari.selected = false;
+            this.btnCari.Size = new System.Drawing.Size(78, 35);
+            this.btnCari.TabIndex = 44;
+            this.btnCari.Text = "Cari";
+            this.btnCari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCari.Textcolor = System.Drawing.Color.White;
+            this.btnCari.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            // 
+            // txtCari
+            // 
+            this.txtCari.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCari.BackColor = System.Drawing.Color.White;
+            this.txtCari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCari.BackgroundImage")));
+            this.txtCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtCari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.txtCari.Icon = ((System.Drawing.Image)(resources.GetObject("txtCari.Icon")));
+            this.txtCari.Location = new System.Drawing.Point(312, 58);
+            this.txtCari.Name = "txtCari";
+            this.txtCari.Size = new System.Drawing.Size(166, 35);
+            this.txtCari.TabIndex = 30;
+            this.txtCari.text = "Komponen";
             // 
             // tableKomponen
             // 
@@ -207,6 +292,41 @@
             this.panelTransaksi.Size = new System.Drawing.Size(612, 145);
             this.panelTransaksi.TabIndex = 34;
             // 
+            // btnNewPelanggan
+            // 
+            this.btnNewPelanggan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewPelanggan.BorderRadius = 0;
+            this.btnNewPelanggan.ButtonText = "Baru";
+            this.btnNewPelanggan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewPelanggan.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNewPelanggan.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNewPelanggan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNewPelanggan.Iconimage")));
+            this.btnNewPelanggan.Iconimage_right = null;
+            this.btnNewPelanggan.Iconimage_right_Selected = null;
+            this.btnNewPelanggan.Iconimage_Selected = null;
+            this.btnNewPelanggan.IconMarginLeft = 0;
+            this.btnNewPelanggan.IconMarginRight = 0;
+            this.btnNewPelanggan.IconRightVisible = true;
+            this.btnNewPelanggan.IconRightZoom = 0D;
+            this.btnNewPelanggan.IconVisible = true;
+            this.btnNewPelanggan.IconZoom = 90D;
+            this.btnNewPelanggan.IsTab = false;
+            this.btnNewPelanggan.Location = new System.Drawing.Point(378, 78);
+            this.btnNewPelanggan.Name = "btnNewPelanggan";
+            this.btnNewPelanggan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnNewPelanggan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnNewPelanggan.selected = false;
+            this.btnNewPelanggan.Size = new System.Drawing.Size(96, 39);
+            this.btnNewPelanggan.TabIndex = 45;
+            this.btnNewPelanggan.Text = "Baru";
+            this.btnNewPelanggan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewPelanggan.Textcolor = System.Drawing.Color.White;
+            this.btnNewPelanggan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewPelanggan.Click += new System.EventHandler(this.btnNewPelanggan_Click);
+            // 
             // lblFoto
             // 
             this.lblFoto.AutoSize = true;
@@ -229,6 +349,15 @@
             this.nama_pelanggan.Size = new System.Drawing.Size(196, 19);
             this.nama_pelanggan.TabIndex = 39;
             this.nama_pelanggan.TextChanged += new System.EventHandler(this.nama_pelanggan_TextChanged);
+            // 
+            // foto_pelanggan
+            // 
+            this.foto_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.foto_pelanggan.Location = new System.Drawing.Point(480, 56);
+            this.foto_pelanggan.Name = "foto_pelanggan";
+            this.foto_pelanggan.Size = new System.Drawing.Size(116, 80);
+            this.foto_pelanggan.TabIndex = 38;
+            this.foto_pelanggan.TabStop = false;
             // 
             // label3
             // 
@@ -346,6 +475,76 @@
             this.panelKerajang.Name = "panelKerajang";
             this.panelKerajang.Size = new System.Drawing.Size(509, 517);
             this.panelKerajang.TabIndex = 36;
+            // 
+            // btnTambah
+            // 
+            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTambah.BorderRadius = 0;
+            this.btnTambah.ButtonText = "Tambah";
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
+            this.btnTambah.Iconimage_right = null;
+            this.btnTambah.Iconimage_right_Selected = null;
+            this.btnTambah.Iconimage_Selected = null;
+            this.btnTambah.IconMarginLeft = 0;
+            this.btnTambah.IconMarginRight = 0;
+            this.btnTambah.IconRightVisible = true;
+            this.btnTambah.IconRightZoom = 0D;
+            this.btnTambah.IconVisible = true;
+            this.btnTambah.IconZoom = 90D;
+            this.btnTambah.IsTab = false;
+            this.btnTambah.Location = new System.Drawing.Point(354, 467);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTambah.selected = false;
+            this.btnTambah.Size = new System.Drawing.Size(152, 37);
+            this.btnTambah.TabIndex = 44;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTambah.Textcolor = System.Drawing.Color.White;
+            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.BorderRadius = 0;
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
+            this.btnReset.Iconimage_right = null;
+            this.btnReset.Iconimage_right_Selected = null;
+            this.btnReset.Iconimage_Selected = null;
+            this.btnReset.IconMarginLeft = 0;
+            this.btnReset.IconMarginRight = 0;
+            this.btnReset.IconRightVisible = true;
+            this.btnReset.IconRightZoom = 0D;
+            this.btnReset.IconVisible = true;
+            this.btnReset.IconZoom = 90D;
+            this.btnReset.IsTab = false;
+            this.btnReset.Location = new System.Drawing.Point(399, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReset.selected = false;
+            this.btnReset.Size = new System.Drawing.Size(99, 39);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Textcolor = System.Drawing.Color.White;
+            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -498,6 +697,7 @@
             this.tableTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
+            this.Column3,
             this.Column4,
             this.Column5,
             this.Column10,
@@ -517,77 +717,6 @@
             this.tableTransaksi.Size = new System.Drawing.Size(483, 255);
             this.tableTransaksi.TabIndex = 33;
             this.tableTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableTransaksi_CellClick);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 48;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Komponen";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Harga";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column5.HeaderText = "Jumlah";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 73;
-            // 
-            // Column10
-            // 
-            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column10.HeaderText = "Total";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 60;
-            // 
-            // Column11
-            // 
-            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column11.HeaderText = "";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column11.Width = 17;
-            // 
-            // Column12
-            // 
-            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column12.HeaderText = "";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column12.Width = 17;
-            // 
-            // Column13
-            // 
-            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column13.HeaderText = "";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column13.Width = 17;
             // 
             // bunifuMaterialTextbox5
             // 
@@ -647,203 +776,83 @@
             this.panelTengah1.Size = new System.Drawing.Size(43, 515);
             this.panelTengah1.TabIndex = 38;
             // 
-            // btnTambah
+            // Column1
             // 
-            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTambah.BorderRadius = 0;
-            this.btnTambah.ButtonText = "Tambah";
-            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
-            this.btnTambah.Iconimage_right = null;
-            this.btnTambah.Iconimage_right_Selected = null;
-            this.btnTambah.Iconimage_Selected = null;
-            this.btnTambah.IconMarginLeft = 0;
-            this.btnTambah.IconMarginRight = 0;
-            this.btnTambah.IconRightVisible = true;
-            this.btnTambah.IconRightZoom = 0D;
-            this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 90D;
-            this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(354, 467);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTambah.selected = false;
-            this.btnTambah.Size = new System.Drawing.Size(152, 37);
-            this.btnTambah.TabIndex = 44;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTambah.Textcolor = System.Drawing.Color.White;
-            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 48;
             // 
-            // btnReset
+            // Column2
             // 
-            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReset.BorderRadius = 0;
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
-            this.btnReset.Iconimage_right = null;
-            this.btnReset.Iconimage_right_Selected = null;
-            this.btnReset.Iconimage_Selected = null;
-            this.btnReset.IconMarginLeft = 0;
-            this.btnReset.IconMarginRight = 0;
-            this.btnReset.IconRightVisible = true;
-            this.btnReset.IconRightZoom = 0D;
-            this.btnReset.IconVisible = true;
-            this.btnReset.IconZoom = 90D;
-            this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(399, 8);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnReset.selected = false;
-            this.btnReset.Size = new System.Drawing.Size(99, 39);
-            this.btnReset.TabIndex = 43;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Textcolor = System.Drawing.Color.White;
-            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Komponen";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // btnNewPelanggan
+            // Column3
             // 
-            this.btnNewPelanggan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnNewPelanggan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnNewPelanggan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNewPelanggan.BorderRadius = 0;
-            this.btnNewPelanggan.ButtonText = "Baru";
-            this.btnNewPelanggan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNewPelanggan.DisabledColor = System.Drawing.Color.Gray;
-            this.btnNewPelanggan.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnNewPelanggan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNewPelanggan.Iconimage")));
-            this.btnNewPelanggan.Iconimage_right = null;
-            this.btnNewPelanggan.Iconimage_right_Selected = null;
-            this.btnNewPelanggan.Iconimage_Selected = null;
-            this.btnNewPelanggan.IconMarginLeft = 0;
-            this.btnNewPelanggan.IconMarginRight = 0;
-            this.btnNewPelanggan.IconRightVisible = true;
-            this.btnNewPelanggan.IconRightZoom = 0D;
-            this.btnNewPelanggan.IconVisible = true;
-            this.btnNewPelanggan.IconZoom = 90D;
-            this.btnNewPelanggan.IsTab = false;
-            this.btnNewPelanggan.Location = new System.Drawing.Point(378, 78);
-            this.btnNewPelanggan.Name = "btnNewPelanggan";
-            this.btnNewPelanggan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnNewPelanggan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnNewPelanggan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnNewPelanggan.selected = false;
-            this.btnNewPelanggan.Size = new System.Drawing.Size(96, 39);
-            this.btnNewPelanggan.TabIndex = 45;
-            this.btnNewPelanggan.Text = "Baru";
-            this.btnNewPelanggan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewPelanggan.Textcolor = System.Drawing.Color.White;
-            this.btnNewPelanggan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewPelanggan.Click += new System.EventHandler(this.btnNewPelanggan_Click);
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Barang";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
-            // foto_pelanggan
+            // Column4
             // 
-            this.foto_pelanggan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.foto_pelanggan.Location = new System.Drawing.Point(480, 56);
-            this.foto_pelanggan.Name = "foto_pelanggan";
-            this.foto_pelanggan.Size = new System.Drawing.Size(116, 80);
-            this.foto_pelanggan.TabIndex = 38;
-            this.foto_pelanggan.TabStop = false;
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Harga";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
-            // btnSegarkan
+            // Column5
             // 
-            this.btnSegarkan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnSegarkan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnSegarkan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSegarkan.BorderRadius = 0;
-            this.btnSegarkan.ButtonText = "Segarkan";
-            this.btnSegarkan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSegarkan.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSegarkan.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSegarkan.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSegarkan.Iconimage")));
-            this.btnSegarkan.Iconimage_right = null;
-            this.btnSegarkan.Iconimage_right_Selected = null;
-            this.btnSegarkan.Iconimage_Selected = null;
-            this.btnSegarkan.IconMarginLeft = 0;
-            this.btnSegarkan.IconMarginRight = 0;
-            this.btnSegarkan.IconRightVisible = true;
-            this.btnSegarkan.IconRightZoom = 0D;
-            this.btnSegarkan.IconVisible = true;
-            this.btnSegarkan.IconZoom = 90D;
-            this.btnSegarkan.IsTab = false;
-            this.btnSegarkan.Location = new System.Drawing.Point(11, 58);
-            this.btnSegarkan.Name = "btnSegarkan";
-            this.btnSegarkan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnSegarkan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnSegarkan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSegarkan.selected = false;
-            this.btnSegarkan.Size = new System.Drawing.Size(130, 35);
-            this.btnSegarkan.TabIndex = 45;
-            this.btnSegarkan.Text = "Segarkan";
-            this.btnSegarkan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSegarkan.Textcolor = System.Drawing.Color.White;
-            this.btnSegarkan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSegarkan.Click += new System.EventHandler(this.btnSegarkan_Click);
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column5.HeaderText = "Jumlah";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 73;
             // 
-            // btnCari
+            // Column10
             // 
-            this.btnCari.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCari.BorderRadius = 0;
-            this.btnCari.ButtonText = "Cari";
-            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCari.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCari.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCari.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCari.Iconimage")));
-            this.btnCari.Iconimage_right = null;
-            this.btnCari.Iconimage_right_Selected = null;
-            this.btnCari.Iconimage_Selected = null;
-            this.btnCari.IconMarginLeft = 0;
-            this.btnCari.IconMarginRight = 0;
-            this.btnCari.IconRightVisible = true;
-            this.btnCari.IconRightZoom = 0D;
-            this.btnCari.IconVisible = true;
-            this.btnCari.IconZoom = 90D;
-            this.btnCari.IsTab = false;
-            this.btnCari.Location = new System.Drawing.Point(484, 58);
-            this.btnCari.Name = "btnCari";
-            this.btnCari.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnCari.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCari.selected = false;
-            this.btnCari.Size = new System.Drawing.Size(78, 35);
-            this.btnCari.TabIndex = 44;
-            this.btnCari.Text = "Cari";
-            this.btnCari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCari.Textcolor = System.Drawing.Color.White;
-            this.btnCari.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column10.HeaderText = "Total";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 60;
             // 
-            // txtCari
+            // Column11
             // 
-            this.txtCari.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCari.BackColor = System.Drawing.Color.White;
-            this.txtCari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCari.BackgroundImage")));
-            this.txtCari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtCari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.txtCari.Icon = ((System.Drawing.Image)(resources.GetObject("txtCari.Icon")));
-            this.txtCari.Location = new System.Drawing.Point(312, 58);
-            this.txtCari.Name = "txtCari";
-            this.txtCari.Size = new System.Drawing.Size(166, 35);
-            this.txtCari.TabIndex = 30;
-            this.txtCari.text = "Komponen";
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column11.HeaderText = "";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column11.Width = 17;
+            // 
+            // Column12
+            // 
+            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column12.HeaderText = "";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column12.Width = 17;
+            // 
+            // Column13
+            // 
+            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column13.HeaderText = "";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column13.Width = 17;
             // 
             // BKomponen
             // 
@@ -861,12 +870,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).EndInit();
             this.panelTransaksi.ResumeLayout(false);
             this.panelTransaksi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).EndInit();
             this.panelKerajang.ResumeLayout(false);
             this.panelKerajang.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableTransaksi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foto_pelanggan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -907,18 +916,19 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
         private System.Windows.Forms.Panel panelTengah1;
+        private System.Windows.Forms.TextBox nama_pelanggan;
+        private System.Windows.Forms.Label lblFoto;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCari;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNewPelanggan;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSegarkan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewButtonColumn Column11;
         private System.Windows.Forms.DataGridViewButtonColumn Column12;
         private System.Windows.Forms.DataGridViewButtonColumn Column13;
-        private System.Windows.Forms.TextBox nama_pelanggan;
-        private System.Windows.Forms.Label lblFoto;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCari;
-        private Bunifu.Framework.UI.BunifuFlatButton btnNewPelanggan;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSegarkan;
     }
 }

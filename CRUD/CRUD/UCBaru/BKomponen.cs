@@ -16,6 +16,7 @@ namespace CRUD.UCBaru
     public partial class BKomponen : UserControl
     {
         private String txtKomponen = "";
+        private String txtAlat = "";
         private String id_transaksi = "";
         public string id_karyawan = "";
 
@@ -137,6 +138,7 @@ namespace CRUD.UCBaru
             DataGridViewRow row = tableKomponen.Rows[selectedrowindex];
             
             txtKomponen = row.Cells[1].Value.ToString();
+            txtAlat = row.Cells[2].Value.ToString();
             insertKeranjang(row);
         }
         private void insertKeranjang(DataGridViewRow row)
@@ -144,6 +146,7 @@ namespace CRUD.UCBaru
             
             int no = Convert.ToInt32(tableTransaksi.Rows.Count.ToString());
             string komponen = txtKomponen;
+            string alat = txtAlat;
             string harga = row.Cells[3].Value.ToString();
             int total = 0;
             int jumlah = 1;
@@ -154,19 +157,19 @@ namespace CRUD.UCBaru
 
             for (int i = 0; i < tableTransaksi.RowCount; i++)
             {
-                if (tableTransaksi[1, i].Value.Equals(komponen))
+                if (tableTransaksi[1, i].Value.Equals(komponen) && tableTransaksi[2, i].Value.Equals(alat))
                 {
                     return;
                 }
             }
 
-            this.tableTransaksi.Columns[5].CellTemplate.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             this.tableTransaksi.Columns[6].CellTemplate.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             this.tableTransaksi.Columns[7].CellTemplate.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
+            this.tableTransaksi.Columns[8].CellTemplate.Style.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
 
-            this.tableTransaksi.Columns[5].CellTemplate.Style.BackColor = Color.Green;
             this.tableTransaksi.Columns[6].CellTemplate.Style.BackColor = Color.Green;
-            this.tableTransaksi.Columns[7].CellTemplate.Style.BackColor = Color.Red;
+            this.tableTransaksi.Columns[7].CellTemplate.Style.BackColor = Color.Green;
+            this.tableTransaksi.Columns[8].CellTemplate.Style.BackColor = Color.Red;
             foreach (DataGridViewColumn col in tableTransaksi.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -178,16 +181,17 @@ namespace CRUD.UCBaru
             this.tableTransaksi.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.tableTransaksi.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.tableTransaksi.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.tableTransaksi.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.tableTransaksi.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             this.tableTransaksi.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.tableTransaksi.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
 
-            this.tableTransaksi.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            this.tableTransaksi.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.tableTransaksi.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             this.tableTransaksi.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.tableTransaksi.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             
 
 
-            tableTransaksi.Rows.Add(no + 1, komponen, harga, jumlah, harga, plus, minus, batal);
+            tableTransaksi.Rows.Add(no + 1, komponen,alat, harga, jumlah, harga, plus, minus, batal);
             countTotal();
             countBarang();
             countJenis();
@@ -195,21 +199,32 @@ namespace CRUD.UCBaru
 
         private void tableTransaksi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex >= 0 && e.ColumnIndex == 5)
-            {
-                tableTransaksi[3, e.RowIndex].Value = (Convert.ToInt32(tableTransaksi[3, e.RowIndex].Value) + 1).ToString();
-            }
             if (e.ColumnIndex >= 0 && e.ColumnIndex == 6)
             {
-                if (tableTransaksi[3, e.RowIndex].Value.ToString() == "1")
+                //if (tableKomponen.SelectedRows.C) 
+                for (int i = 0; i < tableKomponen.RowCount; i++)
+                {
+                    if (tableKomponen[1, i].Value.Equals(tableTransaksi[1,e.RowIndex].Value) && tableKomponen[2, i].Value.Equals(tableTransaksi[2, e.RowIndex].Value))
+                    {
+                        if(tableTransaksi[4, e.RowIndex].Value.ToString().Equals(tableKomponen[4, i].Value.ToString()))
+                        {
+                            return;
+                        }
+                    }
+                }
+                tableTransaksi[4, e.RowIndex].Value = (Convert.ToInt32(tableTransaksi[4, e.RowIndex].Value) + 1).ToString();
+            }
+            if (e.ColumnIndex >= 0 && e.ColumnIndex == 7)
+            {
+                if (tableTransaksi[4, e.RowIndex].Value.ToString() == "1")
                 {
                     return;
                 }
-                tableTransaksi[3, e.RowIndex].Value = (Convert.ToInt32(tableTransaksi[3, e.RowIndex].Value) - 1).ToString();
+                tableTransaksi[4, e.RowIndex].Value = (Convert.ToInt32(tableTransaksi[4, e.RowIndex].Value) - 1).ToString();
             }
-            tableTransaksi[4, e.RowIndex].Value = toRupiah(Convert.ToInt32(toAngka((tableTransaksi[2, e.RowIndex].Value).ToString()) * Convert.ToInt32(toAngka((tableTransaksi[3, e.RowIndex].Value).ToString()).ToString())));
+            tableTransaksi[5, e.RowIndex].Value = toRupiah(Convert.ToInt32(toAngka((tableTransaksi[3, e.RowIndex].Value).ToString()) * Convert.ToInt32(toAngka((tableTransaksi[4, e.RowIndex].Value).ToString()).ToString())));
 
-            if (e.ColumnIndex >= 0 && e.ColumnIndex == 7)
+            if (e.ColumnIndex >= 0 && e.ColumnIndex == 8)
             {
                 tableTransaksi.Rows.RemoveAt(e.RowIndex);
             }
@@ -230,7 +245,7 @@ namespace CRUD.UCBaru
             int total = 0;
             for (int i = 0; i < tableTransaksi.RowCount; i++)
             {
-                total = total + Convert.ToInt32(tableTransaksi[3, i].Value);
+                total = total + Convert.ToInt32(tableTransaksi[4, i].Value);
             }
             txtBarang.Text = total.ToString();
         }
@@ -243,7 +258,7 @@ namespace CRUD.UCBaru
             int total = 0;
             for (int i = 0; i < tableTransaksi.RowCount; i++)
             {
-                total = total + Convert.ToInt32(toAngka((tableTransaksi[4, i].Value).ToString()));
+                total = total + Convert.ToInt32(toAngka((tableTransaksi[5, i].Value).ToString()));
             }
             txtTotal.Text = toRupiah(total);
         }
@@ -353,8 +368,8 @@ namespace CRUD.UCBaru
                 myCommand.Parameters.AddWithValue("jumlah_komponen", txtBarang.Text);
                 myCommand.Parameters.AddWithValue("total_jenis", txtJenis.Text);
                 myCommand.Parameters.AddWithValue("total_harga", toAngka(txtTotal.Text));
-                //myCommand.Parameters.AddWithValue("id_pelayan", id_karyawan);
-                myCommand.Parameters.AddWithValue("id_pelayan", "PLY-0001");
+                myCommand.Parameters.AddWithValue("id_pelayan", id_karyawan);
+                //myCommand.Parameters.AddWithValue("id_pelayan", "PLY-0001");
                 myCommand.Parameters.AddWithValue("id_customer", getIDPelanggan(nama_pelanggan.Text));
 
 
@@ -449,7 +464,8 @@ namespace CRUD.UCBaru
             for (int i = 0; i < tableTransaksi.Rows.Count; i++)
             {
                 try
-                {
+                {   //[sp_updateJumlahKomponen]
+
                     string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                     SqlConnection connection = new SqlConnection(connectionString);
@@ -465,19 +481,37 @@ namespace CRUD.UCBaru
                     connection.Open();
 
                     myCommand.Parameters.AddWithValue("no_transaksi_pembelian", id_transaksi);
-                    myCommand.Parameters.AddWithValue("id_komponen", getIDKomponen(tableTransaksi[1, i].Value.ToString()));
-                    myCommand.Parameters.AddWithValue("jumlah", tableTransaksi[3, i].Value);
-                    myCommand.Parameters.AddWithValue("total_harga", toAngka((String) tableTransaksi[4, i].Value));
+                    myCommand.Parameters.AddWithValue("id_komponen", getIDKomponenByNamaDanID(tableTransaksi[1, i].Value.ToString(),i));
+                    myCommand.Parameters.AddWithValue("jumlah", tableTransaksi[4, i].Value);
+                    myCommand.Parameters.AddWithValue("total_harga", toAngka((String) tableTransaksi[5, i].Value));
 
+                    //MessageBox.Show("ID Komponen : " + getIDKomponenByNamaDanID(tableTransaksi[1, i].Value.ToString(), i) + "\n" +
+                    //            "ID Alat : " + getIDAlat(tableTransaksi[2, i].Value.ToString()) + "\n"+
+                    //            "Nama Komponen : "+ tableTransaksi[1, i].Value.ToString() + "\n"+
+                    //            "Nama Alat : " + tableTransaksi[2, i].Value.ToString());
                     myCommand.ExecuteNonQuery();
                     connection.Close();
 
+                    //========================= UPDATE JUMLAHHH =======================================
+                    string connectionString1 = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+
+                    SqlConnection connection1 = new SqlConnection(connectionString1);
+                    SqlCommand myCommand1 = new SqlCommand("sp_updateJumlahKomponen", connection1);
 
 
+                    myCommand1.CommandType = CommandType.StoredProcedure;
 
-                    //by = 1;
+                    
+                    connection1.Open();
 
-                    //btnUpdate.Enabled = true;
+                    
+                    myCommand1.Parameters.AddWithValue("id_komponen", getIDKomponenByNamaDanID(tableTransaksi[1, i].Value.ToString(),i));
+                    myCommand1.Parameters.AddWithValue("jumlah", tableTransaksi[4, i].Value);
+                    
+
+                    myCommand1.ExecuteNonQuery();
+                    connection1.Close();
+    
 
                 }
                 catch (Exception ex)
@@ -543,26 +577,64 @@ namespace CRUD.UCBaru
             clear();
             nama_pelanggan.Text = "";
         }
-        private string getIDKomponen(string inx)
+        private string getIDKomponenByNamaDanID(string inx,int i)
         {
             try
             {
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
+                SqlCommand myCommand = new SqlCommand("sp_cariKomponenByIDAlat", connection);
 
 
                 myCommand.CommandType = CommandType.StoredProcedure;
 
                 connection.Open();
 
-                myCommand.Parameters.AddWithValue("id_komponen", "XX");
+
                 myCommand.Parameters.AddWithValue("nama_komponen", inx);
-                myCommand.Parameters.AddWithValue("jumlah", -1);
-                myCommand.Parameters.AddWithValue("harga_jual", -1);
-                myCommand.Parameters.AddWithValue("id_alat", "x");
-                myCommand.Parameters.AddWithValue("tempat", "x");
+                myCommand.Parameters.AddWithValue("id_alat", getIDAlat(tableTransaksi[2,i].Value.ToString()));
+
+                SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
+                DataTable data = new DataTable();
+                adapter.Fill(data);
+
+                String output = data.Rows[0][0].ToString();
+
+                return output;
+                
+                //by = 1;
+
+                //btnUpdate.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error getIDKomponen : " + ex.ToString());
+
+                return null;
+                //btnUpdate.Enabled = false;
+                //clear();
+            }
+        }
+
+        private object getIDAlat(string v)
+        {
+            try
+            {
+                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
+                
+
+                myCommand.CommandType = CommandType.StoredProcedure;
+
+                connection.Open();
+
+                myCommand.Parameters.AddWithValue("id_alat", "XX");
+                myCommand.Parameters.AddWithValue("nama_alat", v);
+                myCommand.Parameters.AddWithValue("id_jenis", "XX");
+                
 
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
                 DataTable data = new DataTable();
@@ -577,7 +649,7 @@ namespace CRUD.UCBaru
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error getIDKomponen : " + ex.ToString());
+                MessageBox.Show("Error getIDAlat : " + ex.ToString());
 
                 return null;
                 //btnUpdate.Enabled = false;

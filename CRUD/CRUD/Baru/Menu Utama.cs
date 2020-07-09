@@ -30,18 +30,12 @@ namespace CRUD.Baru
             //Restock transaski
             pemasokan_v2.id_karyawan = id;
 
-
-
             karyawan_id = id;
             
-
-
-
-
-
-
             MessageBox.Show("Selamat datang " + nama);
             karyawan_nama.Text = nama;
+            dashBoard.Visible = true;
+            btnMenuUtama.Normalcolor = btnMenuUtama.Activecolor;
             WindowState = FormWindowState.Maximized;
 
         }
@@ -129,6 +123,7 @@ namespace CRUD.Baru
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
             show(pemasokan_v2,btnRestockKomponen);
+            pemasokan_v2.id_karyawan = this.karyawan_id;
         }
 
         private void btnKelolaData_Click(object sender, EventArgs e)
@@ -164,15 +159,21 @@ namespace CRUD.Baru
 
         private void btnBeliKomponen_Click(object sender, EventArgs e)
         {
-            
             show(bKomponen, btnBeliKomponen);
+            bKomponen.id_karyawan = this.karyawan_id;
         }
 
         private void Menu_Utama_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
+            //this.lbelikomponenTableAdapter.Fill(this.Report.lbelikomponen);
+            // TODO: This line of code loads data into the 'Report.lbelikomponen' table. You can move, or remove it, as needed.
+            //this.lbelikomponenTableAdapter.Fill(this.Report.lbelikomponen);
             // TODO: This line of code loads data into the 'Report.lrestock1' table. You can move, or remove it, as needed.
-            
 
+
+
+            this.reportRestockAlat.RefreshReport();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -183,6 +184,8 @@ namespace CRUD.Baru
         {
             reportRestock.Visible = false;
             reportBeliKomponen.Visible = false;
+            reportReparasi.Visible = false;
+            reportRestockAlat.Visible = false;
 
             a.Visible = true;
         }
@@ -190,7 +193,9 @@ namespace CRUD.Baru
         {
             if (rbReparasi.Checked)
             {
-                
+                showReport(reportReparasi);
+                this.lreparasialatTableAdapter.Fill(this.Report.lreparasialat, cmbBulan.SelectedIndex + 1, Convert.ToInt32(cmbTahun.Text));
+                this.reportReparasi.RefreshReport();
             }
             if (rbBeliKomponen.Checked)
             {
@@ -209,7 +214,9 @@ namespace CRUD.Baru
             }
             if (rbRestockAlat.Checked)
             {
-
+                showReport(reportRestockAlat);
+                this.lrestockalatTableAdapter.Fill(this.Report.lrestockalat, cmbBulan.SelectedIndex + 1, Convert.ToInt32(cmbTahun.Text));
+                this.reportRestockAlat.RefreshReport();
             }
             
             

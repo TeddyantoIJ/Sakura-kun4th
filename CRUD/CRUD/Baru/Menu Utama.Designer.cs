@@ -31,12 +31,15 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Utama));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.lrestock1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Report = new CRUD.Report();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.lbelikomponenBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Report = new CRUD.Report();
+            this.lrestock1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lreparasialatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtHello = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnPanelKiri = new Bunifu.Framework.UI.BunifuImageButton();
             this.clock = new System.Windows.Forms.Timer(this.components);
@@ -56,8 +59,10 @@
             this.karyawan_nama = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelUtama = new System.Windows.Forms.Panel();
             this.panelBawah = new System.Windows.Forms.Panel();
+            this.bKomponen = new CRUD.UCBaru.BKomponen();
+            this.pemasokan_v2 = new CRUD.UCBaru.Pemasokan_v2();
+            this.dashBoard = new CRUD.DashBoard();
             this.panelReport = new System.Windows.Forms.Panel();
-            this.reportBeliKomponen = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnCari = new Bunifu.Framework.UI.BunifuImageButton();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbTahun = new System.Windows.Forms.ComboBox();
@@ -73,19 +78,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.rbRestockAlat = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.reportBeliKomponen = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportRestockAlat = new Microsoft.Reporting.WinForms.ReportViewer();
             this.reportRestock = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportReparasi = new Microsoft.Reporting.WinForms.ReportViewer();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.lrestock1TableAdapter = new CRUD.ReportTableAdapters.lrestock1TableAdapter();
             this.lbelikomponenTableAdapter = new CRUD.ReportTableAdapters.lbelikomponenTableAdapter();
-            this.bKomponen = new CRUD.UCBaru.BKomponen();
-            this.pemasokan_v2 = new CRUD.UCBaru.Pemasokan_v2();
-            this.dashBoard = new CRUD.DashBoard();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
+            this.lreparasialatTableAdapter = new CRUD.ReportTableAdapters.lreparasialatTableAdapter();
+            this.lrestockalatTableAdapter = new CRUD.ReportTableAdapters.lrestockalatTableAdapter();
+            this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).BeginInit();
             this.panelKiri1.SuspendLayout();
             this.panelKiri.SuspendLayout();
@@ -96,22 +105,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // lrestock1BindingSource
+            // lbelikomponenBindingSource
             // 
-            this.lrestock1BindingSource.DataMember = "lrestock1";
-            this.lrestock1BindingSource.DataSource = this.Report;
+            this.lbelikomponenBindingSource.DataMember = "lbelikomponen";
+            this.lbelikomponenBindingSource.DataSource = this.Report;
             // 
             // Report
             // 
             this.Report.DataSetName = "Report";
             this.Report.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lbelikomponenBindingSource
+            // lrestock1BindingSource
             // 
-            this.lbelikomponenBindingSource.DataMember = "lbelikomponen";
-            this.lbelikomponenBindingSource.DataSource = this.Report;
+            this.lrestock1BindingSource.DataMember = "lrestock1";
+            this.lrestock1BindingSource.DataSource = this.Report;
+            // 
+            // lreparasialatBindingSource
+            // 
+            this.lreparasialatBindingSource.DataMember = "lreparasialat";
+            this.lreparasialatBindingSource.DataSource = this.Report;
             // 
             // txtHello
             // 
@@ -572,10 +587,10 @@
             // panelUtama
             // 
             this.panelUtama.Controls.Add(this.panelBawah);
+            this.panelUtama.Controls.Add(this.dashBoard);
             this.panelUtama.Controls.Add(this.panelReport);
             this.panelUtama.Controls.Add(this.bKomponen);
             this.panelUtama.Controls.Add(this.pemasokan_v2);
-            this.panelUtama.Controls.Add(this.dashBoard);
             this.bunifuTransition.SetDecoration(this.panelUtama, BunifuAnimatorNS.DecorationType.None);
             this.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelUtama.Location = new System.Drawing.Point(161, 38);
@@ -593,17 +608,51 @@
             this.panelBawah.Size = new System.Drawing.Size(1203, 47);
             this.panelBawah.TabIndex = 2;
             // 
+            // bKomponen
+            // 
+            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
+            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKomponen.Location = new System.Drawing.Point(0, 0);
+            this.bKomponen.Name = "bKomponen";
+            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
+            this.bKomponen.TabIndex = 3;
+            this.bKomponen.Visible = false;
+            // 
+            // pemasokan_v2
+            // 
+            this.pemasokan_v2.BackColor = System.Drawing.Color.Silver;
+            this.pemasokan_v2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuTransition.SetDecoration(this.pemasokan_v2, BunifuAnimatorNS.DecorationType.None);
+            this.pemasokan_v2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pemasokan_v2.Location = new System.Drawing.Point(0, 0);
+            this.pemasokan_v2.Name = "pemasokan_v2";
+            this.pemasokan_v2.Size = new System.Drawing.Size(1203, 727);
+            this.pemasokan_v2.TabIndex = 1;
+            // 
+            // dashBoard
+            // 
+            this.dashBoard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuTransition.SetDecoration(this.dashBoard, BunifuAnimatorNS.DecorationType.None);
+            this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashBoard.Location = new System.Drawing.Point(0, 0);
+            this.dashBoard.Name = "dashBoard";
+            this.dashBoard.Size = new System.Drawing.Size(1203, 727);
+            this.dashBoard.TabIndex = 0;
+            // 
             // panelReport
             // 
             this.panelReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.panelReport.Controls.Add(this.reportBeliKomponen);
             this.panelReport.Controls.Add(this.btnCari);
             this.panelReport.Controls.Add(this.label7);
             this.panelReport.Controls.Add(this.cmbTahun);
             this.panelReport.Controls.Add(this.label6);
             this.panelReport.Controls.Add(this.cmbBulan);
             this.panelReport.Controls.Add(this.flowLayoutPanel1);
+            this.panelReport.Controls.Add(this.reportBeliKomponen);
+            this.panelReport.Controls.Add(this.reportRestockAlat);
             this.panelReport.Controls.Add(this.reportRestock);
+            this.panelReport.Controls.Add(this.reportReparasi);
             this.panelReport.Controls.Add(this.bunifuMaterialTextbox1);
             this.bunifuTransition.SetDecoration(this.panelReport, BunifuAnimatorNS.DecorationType.None);
             this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -612,20 +661,6 @@
             this.panelReport.Size = new System.Drawing.Size(1203, 727);
             this.panelReport.TabIndex = 4;
             this.panelReport.Visible = false;
-            // 
-            // reportBeliKomponen
-            // 
-            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource1.Name = "BeliKomponen";
-            reportDataSource1.Value = this.lbelikomponenBindingSource;
-            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.ReportBeliKomponen.rdlc";
-            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
-            this.reportBeliKomponen.Name = "reportBeliKomponen";
-            this.reportBeliKomponen.ServerReport.BearerToken = null;
-            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
-            this.reportBeliKomponen.TabIndex = 18;
-            this.reportBeliKomponen.Visible = false;
             // 
             // btnCari
             // 
@@ -649,7 +684,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(1007, 3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 30);
+            this.label7.Size = new System.Drawing.Size(55, 30);
             this.label7.TabIndex = 16;
             this.label7.Text = "Tahun";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -662,9 +697,9 @@
             "2019",
             "2020",
             "2021"});
-            this.cmbTahun.Location = new System.Drawing.Point(1083, 9);
+            this.cmbTahun.Location = new System.Drawing.Point(1068, 8);
             this.cmbTahun.Name = "cmbTahun";
-            this.cmbTahun.Size = new System.Drawing.Size(62, 21);
+            this.cmbTahun.Size = new System.Drawing.Size(69, 21);
             this.cmbTahun.TabIndex = 15;
             this.cmbTahun.Text = "- Tahun -";
             // 
@@ -697,7 +732,7 @@
             "Oktober",
             "November",
             "Desember"});
-            this.cmbBulan.Location = new System.Drawing.Point(899, 9);
+            this.cmbBulan.Location = new System.Drawing.Point(899, 8);
             this.cmbBulan.Name = "cmbBulan";
             this.cmbBulan.Size = new System.Drawing.Size(102, 21);
             this.cmbBulan.TabIndex = 13;
@@ -823,18 +858,60 @@
             this.label5.Text = "Restock Alat";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // reportBeliKomponen
+            // 
+            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource1.Name = "BeliKomponen";
+            reportDataSource1.Value = this.lbelikomponenBindingSource;
+            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
+            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
+            this.reportBeliKomponen.Name = "reportBeliKomponen";
+            this.reportBeliKomponen.ServerReport.BearerToken = null;
+            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
+            this.reportBeliKomponen.TabIndex = 18;
+            this.reportBeliKomponen.Visible = false;
+            // 
+            // reportRestockAlat
+            // 
+            this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource2.Name = "BeliKomponen";
+            reportDataSource2.Value = this.lbelikomponenBindingSource;
+            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
+            this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
+            this.reportRestockAlat.Name = "reportRestockAlat";
+            this.reportRestockAlat.ServerReport.BearerToken = null;
+            this.reportRestockAlat.Size = new System.Drawing.Size(1203, 617);
+            this.reportRestockAlat.TabIndex = 20;
+            this.reportRestockAlat.Visible = false;
+            // 
             // reportRestock
             // 
             this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource2.Name = "Restock";
-            reportDataSource2.Value = this.lrestock1BindingSource;
-            this.reportRestock.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "Restock";
+            reportDataSource3.Value = this.lrestock1BindingSource;
+            this.reportRestock.LocalReport.DataSources.Add(reportDataSource3);
             this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
             this.reportRestock.Location = new System.Drawing.Point(0, 57);
             this.reportRestock.Name = "reportRestock";
             this.reportRestock.ServerReport.BearerToken = null;
             this.reportRestock.Size = new System.Drawing.Size(1203, 617);
             this.reportRestock.TabIndex = 0;
+            // 
+            // reportReparasi
+            // 
+            this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource4.Name = "ReportReparasi";
+            reportDataSource4.Value = this.lreparasialatBindingSource;
+            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource4);
+            this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
+            this.reportReparasi.Location = new System.Drawing.Point(0, 57);
+            this.reportReparasi.Name = "reportReparasi";
+            this.reportReparasi.ServerReport.BearerToken = null;
+            this.reportReparasi.Size = new System.Drawing.Size(1203, 617);
+            this.reportReparasi.TabIndex = 19;
+            this.reportReparasi.Visible = false;
             // 
             // bunifuMaterialTextbox1
             // 
@@ -894,9 +971,9 @@
             // reportViewer2
             // 
             this.bunifuTransition.SetDecoration(this.reportViewer2, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource3.Name = "Restock";
-            reportDataSource3.Value = null;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource5.Name = "Restock";
+            reportDataSource5.Value = null;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource5);
             this.reportViewer2.LocalReport.ReportEmbeddedResource = "CRUD.ReportRestock1.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(0, 62);
             this.reportViewer2.Name = "reportViewer2";
@@ -912,37 +989,18 @@
             // 
             this.lbelikomponenTableAdapter.ClearBeforeFill = true;
             // 
-            // bKomponen
+            // lreparasialatTableAdapter
             // 
-            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
-            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bKomponen.Location = new System.Drawing.Point(0, 0);
-            this.bKomponen.Name = "bKomponen";
-            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
-            this.bKomponen.TabIndex = 3;
-            this.bKomponen.Visible = false;
+            this.lreparasialatTableAdapter.ClearBeforeFill = true;
             // 
-            // pemasokan_v2
+            // lrestockalatTableAdapter
             // 
-            this.pemasokan_v2.BackColor = System.Drawing.Color.Silver;
-            this.pemasokan_v2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTransition.SetDecoration(this.pemasokan_v2, BunifuAnimatorNS.DecorationType.None);
-            this.pemasokan_v2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pemasokan_v2.Location = new System.Drawing.Point(0, 0);
-            this.pemasokan_v2.Name = "pemasokan_v2";
-            this.pemasokan_v2.Size = new System.Drawing.Size(1203, 727);
-            this.pemasokan_v2.TabIndex = 1;
+            this.lrestockalatTableAdapter.ClearBeforeFill = true;
             // 
-            // dashBoard
+            // lrestockalatBindingSource
             // 
-            this.dashBoard.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTransition.SetDecoration(this.dashBoard, BunifuAnimatorNS.DecorationType.None);
-            this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashBoard.Location = new System.Drawing.Point(0, 0);
-            this.dashBoard.Name = "dashBoard";
-            this.dashBoard.Size = new System.Drawing.Size(1203, 727);
-            this.dashBoard.TabIndex = 0;
+            this.lrestockalatBindingSource.DataMember = "lrestockalat";
+            this.lrestockalatBindingSource.DataSource = this.Report;
             // 
             // Menu_Utama
             // 
@@ -960,9 +1018,10 @@
             this.Text = "Menu_Utama";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Utama_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Report)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Report)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).EndInit();
             this.panelKiri1.ResumeLayout(false);
             this.panelKiri.ResumeLayout(false);
@@ -974,6 +1033,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1029,5 +1089,11 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportBeliKomponen;
         private System.Windows.Forms.BindingSource lbelikomponenBindingSource;
         private ReportTableAdapters.lbelikomponenTableAdapter lbelikomponenTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportReparasi;
+        private System.Windows.Forms.BindingSource lreparasialatBindingSource;
+        private ReportTableAdapters.lreparasialatTableAdapter lreparasialatTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportRestockAlat;
+        private ReportTableAdapters.lrestockalatTableAdapter lrestockalatTableAdapter;
+        private System.Windows.Forms.BindingSource lrestockalatBindingSource;
     }
 }
