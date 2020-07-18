@@ -20,6 +20,8 @@ namespace CRUD
         public DetailReparasi()
         {
             InitializeComponent();
+            addDataReparasi("Diproses");
+            customizetable();
         }
         private void perapihan()
         {
@@ -28,7 +30,7 @@ namespace CRUD
                 tableReparasi[0, i].Value = i+1;
             }
         }
-        public void addDataReparasi()
+        public void addDataReparasi(string status)
         {
             tableReparasi.DataSource = null;
             tableReparasi.Columns.Clear();
@@ -40,7 +42,7 @@ namespace CRUD
                 SqlCommand myCommand = new SqlCommand("sp_viewprosesreparasialat", connection);
                 myCommand.CommandType = CommandType.StoredProcedure;
 
-                myCommand.Parameters.AddWithValue("tanggal", DateTime.Today);
+                myCommand.Parameters.AddWithValue("status", status);
                 SqlDataAdapter adapter = new SqlDataAdapter();
 
                 DataTable data = new DataTable();
@@ -84,16 +86,71 @@ namespace CRUD
                 //clear();
             }
         }
+        public void addDataReparasi()
+        {
+            tableReparasi.DataSource = null;
+            tableReparasi.Columns.Clear();
+            try
+            {
+                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand myCommand = new SqlCommand("sp_viewprosesreparasialat1", connection);
+                myCommand.CommandType = CommandType.StoredProcedure;
+
+                //myCommand.Parameters.AddWithValue("status", status);
+                SqlDataAdapter adapter = new SqlDataAdapter();
+
+                DataTable data = new DataTable();
+                adapter.SelectCommand = myCommand;
+                adapter.Fill(data);
+
+
+                tableReparasi.DataSource = data;
+
+                foreach (DataGridViewColumn col in tableReparasi.Columns)
+                {
+                    col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    //    col.HeaderCell.Style.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Pixel);
+                    col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                }
+
+                this.tableReparasi.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.tableReparasi.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.tableReparasi.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.tableReparasi.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.tableReparasi.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.tableReparasi.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.tableReparasi.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                this.tableReparasi.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+
+
+                this.tableReparasi.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                this.tableReparasi.Columns[7].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                //by = 1;
+
+                connection.Close();
+                perapihan();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                //btnUpdate.Enabled = false;
+                //this.msalatkerjaTableAdapter.Fill(this.sakuraDataDataSet2.msalatkerja);
+                //clear();
+            }
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            addDataReparasi();
+            
         }
 
         private void DetailReparasi_Load(object sender, EventArgs e)
         {
-            addDataReparasi();
-            customizetable();
+            
+            
             //addSourceKomponen();
         }
         private string getIDKomponenByNamaDanID(string inx)
@@ -119,7 +176,7 @@ namespace CRUD
                 adapter.Fill(data);
 
                 String output = data.Rows[0][0].ToString();
-
+                connection.Close();
                 return output;
 
                 //by = 1;
@@ -227,13 +284,13 @@ namespace CRUD
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
                 DataTable data = new DataTable();
                 adapter.Fill(data);
-
+                connection.Close();
                 String output = data.Rows[0][0].ToString();
                 //MessageBox.Show(output.ToString());
                 return output;
                 MessageBox.Show(output.ToString());
                 //by = 1;
-
+                
                 //btnUpdate.Enabled = true;
             }
             catch (Exception ex)
@@ -441,7 +498,8 @@ namespace CRUD
                 myCommand.ExecuteNonQuery();
                 connection.Close();
                 MessageBox.Show("Berhasil menyimpan data","",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
-                addDataReparasi();
+
+                
 
                 //simpan detail
                 for(int i = 0; i < tableKomponen.RowCount; i++)
@@ -475,8 +533,15 @@ namespace CRUD
                     connection.Close();
                 }
 
-
-
+                if (cmbSortir.Text.Equals("Semua"))
+                {
+                    addDataReparasi();
+                }
+                else
+                {
+                    addDataReparasi(cmbSortir.Text);
+                }
+                
                 tableKomponen.Rows.Clear();
                 txtBiaya.Text = "0.00";
                 //hitungHarga();
@@ -506,6 +571,15 @@ namespace CRUD
             {
                 btnTambah.Enabled = false;
             }
+        }
+
+        private void cmbSortir_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSortir.Text.Equals("Semua"))
+            {
+                addDataReparasi();return;
+            }
+            addDataReparasi(cmbSortir.Text);
         }
     }
 }

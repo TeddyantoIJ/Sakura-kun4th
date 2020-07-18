@@ -68,10 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlatMasuk_v2.cs">
+    <Compile Include="UCBaru\AlatMasuk_v2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AlatMasuk_v2.Designer.cs">
+    <Compile Include="UCBaru\AlatMasuk_v2.Designer.cs">
       <DependentUpon>AlatMasuk_v2.cs</DependentUpon>
     </Compile>
     <Compile Include="UCBaru\RestockAlatKerja_v2.cs">
@@ -336,7 +336,7 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AlatMasuk_v2.resx">
+    <EmbeddedResource Include="UCBaru\AlatMasuk_v2.resx">
       <DependentUpon>AlatMasuk_v2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCBaru\RestockAlatKerja_v2.resx">
