@@ -127,3 +127,6 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Reparasi.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.BayarReparasi.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.DetailReparasi.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.barangmasuk_v2.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.RestockAlatKerja_v2.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.AlatMasuk_v2.resources

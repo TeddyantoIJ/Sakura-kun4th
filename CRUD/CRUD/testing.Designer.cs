@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bayarReparasi1 = new CRUD.BayarReparasi();
+            this.alatMasuk_v21 = new CRUD.AlatMasuk_v2();
             this.SuspendLayout();
             // 
-            // bayarReparasi1
+            // alatMasuk_v21
             // 
-            this.bayarReparasi1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bayarReparasi1.Location = new System.Drawing.Point(12, 12);
-            this.bayarReparasi1.Name = "bayarReparasi1";
-            this.bayarReparasi1.Size = new System.Drawing.Size(1201, 675);
-            this.bayarReparasi1.TabIndex = 0;
+            this.alatMasuk_v21.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.alatMasuk_v21.Location = new System.Drawing.Point(12, 12);
+            this.alatMasuk_v21.Name = "alatMasuk_v21";
+            this.alatMasuk_v21.Size = new System.Drawing.Size(1201, 675);
+            this.alatMasuk_v21.TabIndex = 0;
             // 
             // testing
             // 
@@ -45,7 +45,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.bayarReparasi1);
+            this.Controls.Add(this.alatMasuk_v21);
             this.Name = "testing";
             this.Text = "testing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private BayarReparasi bayarReparasi1;
+        private AlatMasuk_v2 alatMasuk_v21;
     }
 }

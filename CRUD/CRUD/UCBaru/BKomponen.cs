@@ -723,5 +723,10 @@ namespace CRUD.UCBaru
         {
             addDataKomponen();
         }
+
+        private void tableKomponen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

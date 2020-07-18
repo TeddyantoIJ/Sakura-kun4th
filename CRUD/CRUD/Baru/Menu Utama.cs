@@ -29,6 +29,9 @@ namespace CRUD.Baru
             InitializeComponent();
             //Restock transaski
             pemasokan_v2.id_karyawan = id;
+            reparasi.id_karyawan = id;
+            bKomponen.id_karyawan = id;
+            restockAlatKerja_v2.id_karyawan = id;
 
             karyawan_id = id;
             
@@ -74,7 +77,12 @@ namespace CRUD.Baru
             pemasokan_v2.Visible = false;
             bKomponen.Visible = false;
             panelReport.Visible = false;
-            
+            reparasi.Visible = false;
+            detailReparasi.Visible = false;
+            bayarReparasi.Visible = false;
+            barangmasuk_v2.Visible = false;
+            restockAlatKerja_v2.Visible = false;
+            alatMasuk_v2.Visible = false;
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
@@ -86,6 +94,12 @@ namespace CRUD.Baru
             btnBeliKomponen.BackColor = panelKiri.BackColor;
             btnLaporan.BackColor = panelKiri.BackColor;
             btnReparasi.BackColor = panelKiri.BackColor;
+            btnReparasiSelesai.BackColor = panelKiri.BackColor;
+            btnBarangMasuk.BackColor = panelKiri.BackColor;
+            btnBayarReparasi.BackColor = panelKiri.BackColor;
+            btnRestockKomponen.BackColor = panelKiri.BackColor;
+            btnBeliAlat.BackColor = panelKiri.BackColor;
+            btnAlatMasuk.BackColor = panelKiri.BackColor;
 
 
             btn.Normalcolor = btn.Activecolor;
@@ -100,6 +114,9 @@ namespace CRUD.Baru
             reparasi.Visible = false;
             detailReparasi.Visible = false;
             bayarReparasi.Visible = false;
+            barangmasuk_v2.Visible = false;
+            restockAlatKerja_v2.Visible = false;
+            alatMasuk_v2.Visible = false;
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
@@ -111,8 +128,12 @@ namespace CRUD.Baru
             btnBeliKomponen.BackColor = panelKiri.BackColor;
             btnLaporan.BackColor = panelKiri.BackColor;
             btnReparasi.BackColor = panelKiri.BackColor;
-
-
+            btnReparasiSelesai.BackColor = panelKiri.BackColor;
+            btnBarangMasuk.BackColor = panelKiri.BackColor;
+            btnBayarReparasi.BackColor = panelKiri.BackColor;
+            btnRestockKomponen.BackColor = panelKiri.BackColor;
+            btnBeliAlat.BackColor = panelKiri.BackColor;
+            btnAlatMasuk.BackColor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -241,7 +262,22 @@ namespace CRUD.Baru
 
         private void btnBayarReparasi_Click(object sender, EventArgs e)
         {
-            show(bayarReparasi, btnReparasi);
+            show(bayarReparasi, btnBayarReparasi);
+        }
+
+        private void btnBarangMasuk_Click(object sender, EventArgs e)
+        {
+            show(barangmasuk_v2,btnBarangMasuk);
+        }
+
+        private void btnBeliAlat_Click(object sender, EventArgs e)
+        {
+            show(restockAlatKerja_v2, btnBeliAlat);
+        }
+
+        private void btnAlatMasuk_Click(object sender, EventArgs e)
+        {
+            show(alatMasuk_v2, btnAlatMasuk);
         }
     }
 }

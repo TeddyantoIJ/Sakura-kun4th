@@ -52,5 +52,10 @@ namespace CRUD
         {
 
         }
+
+        private void restockAlatKerja1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -342,8 +342,8 @@ namespace CRUD
 
                 
                 myCommand.Parameters.AddWithValue("no_transaksi_reparasi", "TBA-" + getLastID());
-                //myCommand.Parameters.AddWithValue("id_pelayan", id_karyawan);
-                myCommand.Parameters.AddWithValue("id_pelayan", "PLY-0001");
+                myCommand.Parameters.AddWithValue("id_pelayan", id_karyawan);
+                //myCommand.Parameters.AddWithValue("id_pelayan", "PLY-0001");
                 myCommand.Parameters.AddWithValue("id_customer", getIDPelanggan(nama_pelanggan.Text));
                 myCommand.Parameters.AddWithValue("tanggal_reparasi", DateTime.Now.ToString("yyyyMMdd"));
                 myCommand.Parameters.AddWithValue("keluhan", txtKeluhan.Text);

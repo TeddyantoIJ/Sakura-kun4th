@@ -68,6 +68,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlatMasuk_v2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlatMasuk_v2.Designer.cs">
+      <DependentUpon>AlatMasuk_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\RestockAlatKerja_v2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\RestockAlatKerja_v2.Designer.cs">
+      <DependentUpon>RestockAlatKerja_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\barangmasuk_v2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\barangmasuk_v2.Designer.cs">
+      <DependentUpon>barangmasuk_v2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Baru\Menu Utama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +336,15 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlatMasuk_v2.resx">
+      <DependentUpon>AlatMasuk_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\RestockAlatKerja_v2.resx">
+      <DependentUpon>RestockAlatKerja_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\barangmasuk_v2.resx">
+      <DependentUpon>barangmasuk_v2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Baru\Menu Utama.resx">
       <DependentUpon>Menu Utama.cs</DependentUpon>
     </EmbeddedResource>

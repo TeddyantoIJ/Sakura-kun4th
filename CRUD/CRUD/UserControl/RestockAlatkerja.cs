@@ -18,9 +18,11 @@ namespace CRUD
         private int newJumlah = 0, newBagus = 0, newRusak = 0;
         private string id_restock = "";
 
+        public string id_karyawan = "";
         public RestockAlatKerja()
         {
             InitializeComponent();
+
             addDataAlatKerja();
             addSourcePelayan();
         }
