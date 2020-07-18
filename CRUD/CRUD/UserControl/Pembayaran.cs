@@ -31,7 +31,7 @@ namespace CRUD
         {
             if (!txtUang.Text.Equals("0"))
             {
-                if(Convert.ToInt32(txtUang.Text) < Convert.ToInt32(toAngka(txtTagihan.Text)))
+                if(Convert.ToInt32(toAngka(txtUang.Text)) < Convert.ToInt32(toAngka(txtTagihan.Text)))
                 {
                     MessageBox.Show("Uang tidak cukup","Peringatan",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
@@ -53,8 +53,42 @@ namespace CRUD
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)){
                 e.Handled = true;
             }
-            
-            
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; return;
+            }
+
+            e.Handled = true;
+            string angka = "";
+            try
+            {
+                angka = (toAngka(txtUang.Text)).ToString();
+            }
+            catch (Exception ex)
+            {
+            }
+
+            char n = e.KeyChar;
+
+            if (char.IsDigit(e.KeyChar))
+            {
+                angka = angka + n;
+            }
+            else
+            {
+                angka = angka.Substring(0, angka.Length - 1);
+            }
+
+
+            try
+            {
+                txtUang.Text = toRupiah(Convert.ToInt32(angka));
+            }
+            catch (Exception ex)
+            {
+                txtUang.Text = toRupiah(0);
+            }
+
         }
         public string toRupiah(Int32 angka)
         {
@@ -70,7 +104,7 @@ namespace CRUD
         {
             try
             {
-                bayar = Convert.ToInt32(txtUang.Text);
+                bayar = toAngka(txtUang.Text);
                 kembalian = bayar - tagihan;
                 txtKembalian.Text = toRupiah(kembalian);
             }

@@ -97,7 +97,9 @@ namespace CRUD.Baru
             pemasokan_v2.Visible = false;
             bKomponen.Visible = false;
             panelReport.Visible = false;
-            
+            reparasi.Visible = false;
+            detailReparasi.Visible = false;
+            bayarReparasi.Visible = false;
 
             //masuk.Visible = true;
             bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
@@ -109,6 +111,8 @@ namespace CRUD.Baru
             btnBeliKomponen.BackColor = panelKiri.BackColor;
             btnLaporan.BackColor = panelKiri.BackColor;
             btnReparasi.BackColor = panelKiri.BackColor;
+
+
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -159,7 +163,7 @@ namespace CRUD.Baru
 
         private void bunifuFlatButton1_Click_2(object sender, EventArgs e)
         {
-            
+            show(reparasi, btnReparasi);
         }
 
         private void btnBeliKomponen_Click(object sender, EventArgs e)
@@ -228,6 +232,16 @@ namespace CRUD.Baru
             
 
             
+        }
+
+        private void btnReparasiSelesai_Click(object sender, EventArgs e)
+        {
+            show(detailReparasi, btnReparasiSelesai);
+        }
+
+        private void btnBayarReparasi_Click(object sender, EventArgs e)
+        {
+            show(bayarReparasi, btnReparasi);
         }
     }
 }

@@ -76,7 +76,7 @@ namespace CRUD.UCBaru
                 this.tableKomponen.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 this.tableKomponen.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 this.tableKomponen.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.tableKomponen.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                this.tableKomponen.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 this.tableKomponen.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
 
                 this.tableKomponen.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;

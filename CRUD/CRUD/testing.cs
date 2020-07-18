@@ -47,5 +47,10 @@ namespace CRUD
             
             
         }
+
+        private void detailReparasi1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

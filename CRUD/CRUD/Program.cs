@@ -31,10 +31,10 @@ namespace CRUD
             //Application.Run(new UpdateAlatKomponenSupplier());
 
             //Application.Run(new Home());
-            Application.Run(new Login());
+            //Application.Run(new Login());
             //Application.Run(new testing());
 
-            //Application.Run(new Menu_Utama());
+            Application.Run(new Menu_Utama());
         }
     }
 }

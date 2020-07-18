@@ -74,6 +74,24 @@
     <Compile Include="Baru\Menu Utama.Designer.cs">
       <DependentUpon>Menu Utama.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCBaru\DetailReparasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\DetailReparasi.Designer.cs">
+      <DependentUpon>DetailReparasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\BayarReparasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\BayarReparasi.Designer.cs">
+      <DependentUpon>BayarReparasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\Reparasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\Reparasi.Designer.cs">
+      <DependentUpon>Reparasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -303,6 +321,12 @@
     <EmbeddedResource Include="Baru\Menu Utama.resx">
       <DependentUpon>Menu Utama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\DetailReparasi.resx">
+      <DependentUpon>DetailReparasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\BayarReparasi.resx">
+      <DependentUpon>BayarReparasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FIO\rwRestockAlatKerja.rdlc" />
     <EmbeddedResource Include="Report\reportReparasi.rdlc" />
     <EmbeddedResource Include="Report\ReportBeliKomponen.rdlc" />
@@ -313,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCBaru\Pemasokan_v2.resx">
       <DependentUpon>Pemasokan_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\Reparasi.resx">
+      <DependentUpon>Reparasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>

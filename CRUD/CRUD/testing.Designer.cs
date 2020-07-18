@@ -28,73 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.lreparasialatBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Report = new CRUD.Report();
-            this.lrestock1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lbelikomponenBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panelReport = new System.Windows.Forms.Panel();
-            this.lrestock1TableAdapter = new CRUD.ReportTableAdapters.lrestock1TableAdapter();
-            this.lbelikomponenTableAdapter = new CRUD.ReportTableAdapters.lbelikomponenTableAdapter();
-            this.lreparasialatTableAdapter = new CRUD.ReportTableAdapters.lreparasialatTableAdapter();
-            this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lrestockalatTableAdapter = new CRUD.ReportTableAdapters.lrestockalatTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
+            this.bayarReparasi1 = new CRUD.BayarReparasi();
             this.SuspendLayout();
             // 
-            // lreparasialatBindingSource
+            // bayarReparasi1
             // 
-            this.lreparasialatBindingSource.DataMember = "lreparasialat";
-            this.lreparasialatBindingSource.DataSource = this.Report;
-            // 
-            // Report
-            // 
-            this.Report.DataSetName = "Report";
-            this.Report.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lrestock1BindingSource
-            // 
-            this.lrestock1BindingSource.DataMember = "lrestock1";
-            this.lrestock1BindingSource.DataSource = this.Report;
-            // 
-            // lbelikomponenBindingSource
-            // 
-            this.lbelikomponenBindingSource.DataMember = "lbelikomponen";
-            this.lbelikomponenBindingSource.DataSource = this.Report;
-            // 
-            // panelReport
-            // 
-            this.panelReport.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelReport.Location = new System.Drawing.Point(0, 0);
-            this.panelReport.Name = "panelReport";
-            this.panelReport.Size = new System.Drawing.Size(1364, 705);
-            this.panelReport.TabIndex = 5;
-            // 
-            // lrestock1TableAdapter
-            // 
-            this.lrestock1TableAdapter.ClearBeforeFill = true;
-            // 
-            // lbelikomponenTableAdapter
-            // 
-            this.lbelikomponenTableAdapter.ClearBeforeFill = true;
-            // 
-            // lreparasialatTableAdapter
-            // 
-            this.lreparasialatTableAdapter.ClearBeforeFill = true;
-            // 
-            // lrestockalatBindingSource
-            // 
-            this.lrestockalatBindingSource.DataMember = "lrestockalat";
-            this.lrestockalatBindingSource.DataSource = this.Report;
-            // 
-            // lrestockalatTableAdapter
-            // 
-            this.lrestockalatTableAdapter.ClearBeforeFill = true;
+            this.bayarReparasi1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bayarReparasi1.Location = new System.Drawing.Point(12, 12);
+            this.bayarReparasi1.Name = "bayarReparasi1";
+            this.bayarReparasi1.Size = new System.Drawing.Size(1201, 675);
+            this.bayarReparasi1.TabIndex = 0;
             // 
             // testing
             // 
@@ -102,30 +45,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.panelReport);
+            this.Controls.Add(this.bayarReparasi1);
             this.Name = "testing";
             this.Text = "testing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.testing_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lreparasialatBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Report)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbelikomponenBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelReport;
-        private Report Report;
-        private System.Windows.Forms.BindingSource lrestock1BindingSource;
-        private ReportTableAdapters.lrestock1TableAdapter lrestock1TableAdapter;
-        private System.Windows.Forms.BindingSource lbelikomponenBindingSource;
-        private ReportTableAdapters.lbelikomponenTableAdapter lbelikomponenTableAdapter;
-        private System.Windows.Forms.BindingSource lreparasialatBindingSource;
-        private ReportTableAdapters.lreparasialatTableAdapter lreparasialatTableAdapter;
-        private System.Windows.Forms.BindingSource lrestockalatBindingSource;
-        private ReportTableAdapters.lrestockalatTableAdapter lrestockalatTableAdapter;
+
+        private BayarReparasi bayarReparasi1;
     }
 }
