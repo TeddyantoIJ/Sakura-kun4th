@@ -865,6 +865,7 @@
             // 
             // dashBoard
             // 
+            this.dashBoard.BackColor = System.Drawing.Color.White;
             this.dashBoard.Location = new System.Drawing.Point(161, 20);
             this.dashBoard.MaximumSize = new System.Drawing.Size(1203, 651);
             this.dashBoard.MinimumSize = new System.Drawing.Size(1203, 651);

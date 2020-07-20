@@ -1,37 +1,37 @@
-﻿using CRUD.Baru;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CRUD.Baru;
+using System.Data.SqlClient;
 
-namespace CRUD.MasterMain
+namespace CRUD
 {
-    public partial class Login : Form
+    public partial class UCMasuk : UserControl
     {
-        public Login()
+        private String nama;
+        private String id;
+        public UCMasuk()
         {
             InitializeComponent();
         }
-        private String nama;
-        private String id;
         private void btnMasuk_Click(object sender, EventArgs e)
         {
             if (!getAkun())
             {
-                MessageBox.Show("Username atau password tidak dapat ditemukan");
+                MessageBox.Show("Username atau password tidak dapat ditemukan","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
-            Menu_Utama home = new Menu_Utama(nama,id);
+            Menu_Utama home = new Menu_Utama(nama, id);
             this.Visible = false;
             home.ShowDialog(this);
             this.Visible = true;
-            
+
         }
         private bool getAkun()
         {
@@ -46,11 +46,11 @@ namespace CRUD.MasterMain
                 myCommand.CommandType = CommandType.StoredProcedure;
 
                 connection.Open();
-              
+
 
                 myCommand.Parameters.AddWithValue("@username", txtUsername.Text);
                 myCommand.Parameters.AddWithValue("@password", txtPassword.Text);
-               
+
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
                 DataTable data = new DataTable();
                 adapter.Fill(data);
@@ -70,13 +70,17 @@ namespace CRUD.MasterMain
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error getAkun : " + ex.ToString());
+                //MessageBox.Show("Error getAkun : " + ex.ToString());
 
                 return false;
                 //btnUpdate.Enabled = false;
                 //clear();
             }
         }
-       
+
+        private void btnLupa_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fungsi belum tersedia!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

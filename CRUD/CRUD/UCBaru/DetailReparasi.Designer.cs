@@ -355,7 +355,7 @@
             this.btnTambah.IconRightVisible = true;
             this.btnTambah.IconRightZoom = 0D;
             this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 75D;
+            this.btnTambah.IconZoom = 70D;
             this.btnTambah.IsTab = false;
             this.btnTambah.Location = new System.Drawing.Point(0, 169);
             this.btnTambah.Name = "btnTambah";

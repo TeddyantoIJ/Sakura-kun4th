@@ -193,6 +193,16 @@ namespace CRUD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Income {
+            get {
+                object obj = ResourceManager.GetObject("Income", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Komponen__2_ {
             get {
                 object obj = ResourceManager.GetObject("Komponen (2)", resourceCulture);
@@ -323,9 +333,39 @@ namespace CRUD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Teddy_01 {
+            get {
+                object obj = ResourceManager.GetObject("Teddy-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Teddy_02 {
+            get {
+                object obj = ResourceManager.GetObject("Teddy-02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2020_07_04_at_23_05_12 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2020-07-04 at 23.05.12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Work {
+            get {
+                object obj = ResourceManager.GetObject("Work", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

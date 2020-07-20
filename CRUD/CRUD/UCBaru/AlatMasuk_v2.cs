@@ -252,6 +252,8 @@ namespace CRUD
         private void tableDetail_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = e.RowIndex;
+            btnGagal.Enabled = true;
+            btnSukses.Enabled = true;
             if(i == -1)
             {
                 return;
@@ -497,7 +499,9 @@ namespace CRUD
             }
             else
             {
-                MessageBox.Show("Pilih pilihan konfirmasi yang ada \nSukses berarti transaksi berhasil\nGagal untuk transaksi tidak berhasil", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("|  Pilih pilihan konfirmasi yang ada     | \n" +
+                                "|  Sukses berarti transaksi berhasil     |\n" +
+                                "|  Gagal untuk transaksi tidak berhasil  |", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             enabledBtn(null);

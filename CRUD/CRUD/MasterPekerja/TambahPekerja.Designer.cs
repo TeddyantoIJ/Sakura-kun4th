@@ -60,8 +60,16 @@
             this.cmbBagian = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.gbAkun = new System.Windows.Forms.GroupBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.epSalah)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epBenar)).BeginInit();
+            this.gbAkun.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -130,7 +138,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(36, 304);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 6;
             this.label7.Text = "No Telepon";
             // 
@@ -290,7 +298,7 @@
             // 
             this.btnTambah.AutoSize = true;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Location = new System.Drawing.Point(117, 394);
+            this.btnTambah.Location = new System.Drawing.Point(109, 499);
             this.btnTambah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(87, 31);
@@ -305,7 +313,7 @@
             // 
             this.btnBatal.AutoSize = true;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBatal.Location = new System.Drawing.Point(282, 394);
+            this.btnBatal.Location = new System.Drawing.Point(274, 499);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 31);
@@ -360,6 +368,7 @@
             this.cmbBagian.Name = "cmbBagian";
             this.cmbBagian.Size = new System.Drawing.Size(83, 23);
             this.cmbBagian.TabIndex = 15;
+            this.cmbBagian.SelectedIndexChanged += new System.EventHandler(this.cmbBagian_SelectedIndexChanged_1);
             this.cmbBagian.TextChanged += new System.EventHandler(this.cmbBagian_TextChanged);
             // 
             // label16
@@ -382,11 +391,86 @@
             this.label17.TabIndex = 25;
             this.label17.Text = "Bagian";
             // 
+            // gbAkun
+            // 
+            this.gbAkun.Controls.Add(this.txtpassword);
+            this.gbAkun.Controls.Add(this.label18);
+            this.gbAkun.Controls.Add(this.label19);
+            this.gbAkun.Controls.Add(this.txtusername);
+            this.gbAkun.Controls.Add(this.label3);
+            this.gbAkun.Controls.Add(this.label2);
+            this.gbAkun.Enabled = false;
+            this.gbAkun.Location = new System.Drawing.Point(39, 364);
+            this.gbAkun.Name = "gbAkun";
+            this.gbAkun.Size = new System.Drawing.Size(378, 117);
+            this.gbAkun.TabIndex = 27;
+            this.gbAkun.TabStop = false;
+            this.gbAkun.Text = "Akun";
+            // 
+            // txtusername
+            // 
+            this.txtusername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(139, 31);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(214, 23);
+            this.txtusername.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(119, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 15);
+            this.label2.TabIndex = 29;
+            this.label2.Text = ":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Username";
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(139, 62);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(214, 23);
+            this.txtpassword.TabIndex = 33;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(119, 62);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(10, 15);
+            this.label18.TabIndex = 32;
+            this.label18.Text = ":";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(6, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 15);
+            this.label19.TabIndex = 31;
+            this.label19.Text = "Password";
+            // 
             // TambahPekerja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 456);
+            this.ClientSize = new System.Drawing.Size(470, 543);
+            this.Controls.Add(this.gbAkun);
             this.Controls.Add(this.cmbBagian);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -422,6 +506,8 @@
             this.Text = "Tambah Pekerja";
             ((System.ComponentModel.ISupportInitialize)(this.epSalah)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epBenar)).EndInit();
+            this.gbAkun.ResumeLayout(false);
+            this.gbAkun.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,5 +545,12 @@
         private System.Windows.Forms.ComboBox cmbBagian;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.GroupBox gbAkun;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

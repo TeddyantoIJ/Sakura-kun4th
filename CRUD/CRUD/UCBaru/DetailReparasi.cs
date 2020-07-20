@@ -239,8 +239,15 @@ namespace CRUD
         public int toAngka(string rupiah)
 
         {
-
-            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            try
+            {
+                return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            }
+            catch(Exception ex)
+            {
+                return 0;
+            }
+            
 
         }
         private void tableReparasi_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -544,6 +551,7 @@ namespace CRUD
                 
                 tableKomponen.Rows.Clear();
                 txtBiaya.Text = "0.00";
+                txtid_gudang.Text = "- ID GUDANG -";
                 //hitungHarga();
                 hitungTotalHarga();
                 //detailtransaksi();

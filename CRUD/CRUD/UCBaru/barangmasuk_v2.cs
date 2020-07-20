@@ -237,10 +237,15 @@ namespace CRUD
             }
             tableRestock.Rows[i].Selected = true;
             addDataDetail(tableRestock[1, i].Value.ToString());
+            tableDetail.Rows[0].Selected = true;
         }
 
         private void btnSukses_Click(object sender, EventArgs e)
         {
+            if (!tableDetail[5, tableDetail.CurrentRow.Index].Value.ToString().Equals("Proses"))
+            {
+                return;
+            }
             MessageBox.Show("Sukses transaksi dipilih", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             enabledBtn(btnSukses);
         }
@@ -336,6 +341,10 @@ namespace CRUD
         }
         private void btnGagal_Click(object sender, EventArgs e)
         {
+            if (!tableDetail[5, tableDetail.CurrentRow.Index].Value.ToString().Equals("Proses"))
+            {
+                return;
+            }
             MessageBox.Show("Gagal transaksi dipilih", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             enabledBtn(btnGagal);
         }
@@ -489,7 +498,7 @@ namespace CRUD
 
                 
             }
-            else
+            else if(!btnGagal.Enabled)
             {
                 Int32 selectedRow = tableDetail.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
@@ -506,6 +515,13 @@ namespace CRUD
                     setStatusDetail(0);
                     addDataDetail(tableRestock[1, selectedRestock].Value.ToString());
                 }
+            }
+            else
+            {
+                MessageBox.Show("|  Pilih pilihan konfirmasi yang ada     | \n" +
+                                "|  Sukses berarti transaksi berhasil     |\n" +
+                                "|  Gagal untuk transaksi tidak berhasil  |", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             enabledBtn(null);
             tableDetail.Rows[0].Selected = true;

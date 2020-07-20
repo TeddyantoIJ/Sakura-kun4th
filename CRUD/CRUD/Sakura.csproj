@@ -57,6 +57,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -151,6 +152,12 @@
     </Compile>
     <Compile Include="UCBaru\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMasuk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMasuk.Designer.cs">
+      <DependentUpon>UCMasuk.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UCTransaksi.cs">
       <SubType>UserControl</SubType>
@@ -277,10 +284,10 @@
     <Compile Include="MasterKomponen\UpdateKomponen.Designer.cs">
       <DependentUpon>UpdateKomponen.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMain\Login.cs">
+    <Compile Include="Baru\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMain\Login.Designer.cs">
+    <Compile Include="Baru\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterPekerja\TambahPekerja.cs">
@@ -398,6 +405,9 @@
     <EmbeddedResource Include="UCBaru\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCMasuk.resx">
+      <DependentUpon>UCMasuk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UCTransaksi.resx">
       <DependentUpon>UCTransaksi.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,7 +459,7 @@
     <EmbeddedResource Include="MasterKomponen\UpdateKomponen.resx">
       <DependentUpon>UpdateKomponen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMain\Login.resx">
+    <EmbeddedResource Include="Baru\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterPekerja\TambahPekerja.resx">
@@ -621,6 +631,10 @@
     <None Include="bin\Gambar\Ikon\Ceklist %282%29.png" />
     <None Include="bin\Gambar\Ikon\Exit %282%29.png" />
     <None Include="bin\Gambar\Ikon\Dashbord.png" />
+    <None Include="bin\Gambar\Teddy-01.png" />
+    <None Include="bin\Gambar\Teddy-02.png" />
+    <None Include="bin\Gambar\Ikon\Income.png" />
+    <None Include="bin\Gambar\Ikon\Work.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

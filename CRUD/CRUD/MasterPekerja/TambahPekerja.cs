@@ -151,6 +151,8 @@ namespace CRUD
                     myCommand.Parameters.AddWithValue("email", txtEmail.Text);
                     myCommand.Parameters.AddWithValue("no_telepon", txtTelepon.Text);
                     myCommand.Parameters.AddWithValue("status", cmbStatus.SelectedItem);
+                    myCommand.Parameters.AddWithValue("username", txtusername.Text);
+                    myCommand.Parameters.AddWithValue("password", txtpassword.Text);
                 }
                 else if (cmbBagian.Text == "Gudang")
                 {
@@ -221,6 +223,8 @@ namespace CRUD
             epBenar.SetError(txtEmail, "");
             epSalah.SetError(txtTelepon, "");
             epBenar.SetError(txtTelepon, "");
+            txtusername.Text = "";
+            txtpassword.Text = "";
         }
 
         private void enabler()
@@ -393,6 +397,20 @@ namespace CRUD
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && (e.KeyChar != '.') && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void cmbBagian_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cmbBagian.Text.Equals("Pelayan"))
+            {
+                gbAkun.Enabled = true;
+            }
+            else
+            {
+                gbAkun.Enabled = false;
+                txtNama.Text = "";
+                txtpassword.Text = "";
             }
         }
     }

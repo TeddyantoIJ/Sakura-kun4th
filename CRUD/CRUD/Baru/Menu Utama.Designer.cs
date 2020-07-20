@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource21 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource22 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource23 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource24 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource11 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource12 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource13 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource14 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Utama));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource25 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource15 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.lrestockalatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Report = new CRUD.Report();
             this.lrestock1BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -44,6 +44,17 @@
             this.txtHello = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.clock = new System.Windows.Forms.Timer(this.components);
             this.panelKiri1 = new System.Windows.Forms.Panel();
+            this.btnAlatMasuk = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBarangMasuk = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBayarReparasi = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReparasiSelesai = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBeliAlat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBeliKomponen = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReparasi = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnMenuUtama = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRestockKomponen = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLaporan = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnKelolaData = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -53,11 +64,14 @@
             this.panelAtas = new System.Windows.Forms.Panel();
             this.tanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.jam = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
+            this.karyawan_nama = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelUtama = new System.Windows.Forms.Panel();
             this.dashBoard = new CRUD.DashBoard();
             this.panelBawah = new System.Windows.Forms.Panel();
             this.pemasokan_v2 = new CRUD.UCBaru.Pemasokan_v2();
             this.panelReport = new System.Windows.Forms.Panel();
+            this.btnCari = new Bunifu.Framework.UI.BunifuImageButton();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbTahun = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -92,23 +106,6 @@
             this.lbelikomponenTableAdapter = new CRUD.ReportTableAdapters.lbelikomponenTableAdapter();
             this.lreparasialatTableAdapter = new CRUD.ReportTableAdapters.lreparasialatTableAdapter();
             this.lrestockalatTableAdapter = new CRUD.ReportTableAdapters.lrestockalatTableAdapter();
-            this.btnCari = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.karyawan_nama = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnPanelKiri = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnAlatMasuk = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBarangMasuk = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBayarReparasi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReparasiSelesai = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBeliAlat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBeliKomponen = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReparasi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMenuUtama = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRestockKomponen = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLaporan = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnKelolaData = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.lrestockalatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Report)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lrestock1BindingSource)).BeginInit();
@@ -117,15 +114,12 @@
             this.panelKiri1.SuspendLayout();
             this.panelKiri.SuspendLayout();
             this.panelAtas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panelUtama.SuspendLayout();
             this.panelReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCari)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCari)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).BeginInit();
             this.SuspendLayout();
             // 
             // lrestockalatBindingSource
@@ -208,735 +202,6 @@
             this.panelKiri1.Size = new System.Drawing.Size(161, 727);
             this.panelKiri1.TabIndex = 5;
             this.panelKiri1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKiri1_Paint);
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 3;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 62);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(161, 35);
-            this.bunifuSeparator1.TabIndex = 11;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator2.LineThickness = 3;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 138);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(161, 35);
-            this.bunifuSeparator2.TabIndex = 23;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator3.LineThickness = 3;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(-3, 179);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(161, 35);
-            this.bunifuSeparator3.TabIndex = 12;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = false;
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator4.LineThickness = 3;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(0, 253);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(161, 35);
-            this.bunifuSeparator4.TabIndex = 24;
-            this.bunifuSeparator4.Transparency = 255;
-            this.bunifuSeparator4.Vertical = false;
-            // 
-            // bunifuSeparator5
-            // 
-            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition.SetDecoration(this.bunifuSeparator5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator5.LineThickness = 3;
-            this.bunifuSeparator5.Location = new System.Drawing.Point(0, 369);
-            this.bunifuSeparator5.Name = "bunifuSeparator5";
-            this.bunifuSeparator5.Size = new System.Drawing.Size(161, 35);
-            this.bunifuSeparator5.TabIndex = 26;
-            this.bunifuSeparator5.Transparency = 255;
-            this.bunifuSeparator5.Vertical = false;
-            // 
-            // panelKiri
-            // 
-            this.panelKiri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.panelKiri.Controls.Add(this.bunifuImageButton2);
-            this.panelKiri.Controls.Add(this.bunifuImageButton1);
-            this.panelKiri.Controls.Add(this.btnPanelKiri);
-            this.panelKiri.Controls.Add(this.panelKiri1);
-            this.bunifuTransition.SetDecoration(this.panelKiri, BunifuAnimatorNS.DecorationType.None);
-            this.panelKiri.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelKiri.Location = new System.Drawing.Point(0, 0);
-            this.panelKiri.Name = "panelKiri";
-            this.panelKiri.Size = new System.Drawing.Size(161, 765);
-            this.panelKiri.TabIndex = 0;
-            this.panelKiri.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelKiri_MouseClick);
-            // 
-            // panelAtas
-            // 
-            this.panelAtas.AutoSize = true;
-            this.panelAtas.BackColor = System.Drawing.Color.White;
-            this.panelAtas.Controls.Add(this.tanggal);
-            this.panelAtas.Controls.Add(this.jam);
-            this.panelAtas.Controls.Add(this.btnExit);
-            this.panelAtas.Controls.Add(this.karyawan_nama);
-            this.bunifuTransition.SetDecoration(this.panelAtas, BunifuAnimatorNS.DecorationType.None);
-            this.panelAtas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelAtas.Location = new System.Drawing.Point(161, 0);
-            this.panelAtas.Name = "panelAtas";
-            this.panelAtas.Size = new System.Drawing.Size(1203, 38);
-            this.panelAtas.TabIndex = 8;
-            // 
-            // tanggal
-            // 
-            this.tanggal.AutoSize = true;
-            this.tanggal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition.SetDecoration(this.tanggal, BunifuAnimatorNS.DecorationType.None);
-            this.tanggal.Enabled = false;
-            this.tanggal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tanggal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.tanggal.HintForeColor = System.Drawing.Color.Empty;
-            this.tanggal.HintText = "";
-            this.tanggal.isPassword = false;
-            this.tanggal.LineFocusedColor = System.Drawing.Color.Blue;
-            this.tanggal.LineIdleColor = System.Drawing.Color.Gray;
-            this.tanggal.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.tanggal.LineThickness = 3;
-            this.tanggal.Location = new System.Drawing.Point(7, 3);
-            this.tanggal.Margin = new System.Windows.Forms.Padding(4);
-            this.tanggal.Name = "tanggal";
-            this.tanggal.Size = new System.Drawing.Size(174, 30);
-            this.tanggal.TabIndex = 10;
-            this.tanggal.Text = "Tanggal";
-            this.tanggal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // jam
-            // 
-            this.jam.AutoSize = true;
-            this.jam.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition.SetDecoration(this.jam, BunifuAnimatorNS.DecorationType.None);
-            this.jam.Enabled = false;
-            this.jam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.jam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.jam.HintForeColor = System.Drawing.Color.Empty;
-            this.jam.HintText = "";
-            this.jam.isPassword = false;
-            this.jam.LineFocusedColor = System.Drawing.Color.Blue;
-            this.jam.LineIdleColor = System.Drawing.Color.Gray;
-            this.jam.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.jam.LineThickness = 3;
-            this.jam.Location = new System.Drawing.Point(189, 4);
-            this.jam.Margin = new System.Windows.Forms.Padding(4);
-            this.jam.Name = "jam";
-            this.jam.Size = new System.Drawing.Size(107, 30);
-            this.jam.TabIndex = 9;
-            this.jam.Text = "Waktu";
-            this.jam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // panelUtama
-            // 
-            this.panelUtama.Controls.Add(this.dashBoard);
-            this.panelUtama.Controls.Add(this.panelBawah);
-            this.panelUtama.Controls.Add(this.pemasokan_v2);
-            this.panelUtama.Controls.Add(this.panelReport);
-            this.panelUtama.Controls.Add(this.bKomponen);
-            this.panelUtama.Controls.Add(this.detailReparasi);
-            this.panelUtama.Controls.Add(this.bayarReparasi);
-            this.panelUtama.Controls.Add(this.reparasi);
-            this.panelUtama.Controls.Add(this.barangmasuk_v2);
-            this.panelUtama.Controls.Add(this.alatMasuk_v2);
-            this.panelUtama.Controls.Add(this.restockAlatKerja_v2);
-            this.panelUtama.Controls.Add(this.cruD_v2);
-            this.bunifuTransition.SetDecoration(this.panelUtama, BunifuAnimatorNS.DecorationType.None);
-            this.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUtama.Location = new System.Drawing.Point(161, 38);
-            this.panelUtama.Name = "panelUtama";
-            this.panelUtama.Size = new System.Drawing.Size(1203, 727);
-            this.panelUtama.TabIndex = 9;
-            // 
-            // dashBoard
-            // 
-            this.dashBoard.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition.SetDecoration(this.dashBoard, BunifuAnimatorNS.DecorationType.None);
-            this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashBoard.Location = new System.Drawing.Point(0, 0);
-            this.dashBoard.Name = "dashBoard";
-            this.dashBoard.Size = new System.Drawing.Size(1203, 680);
-            this.dashBoard.TabIndex = 0;
-            // 
-            // panelBawah
-            // 
-            this.panelBawah.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition.SetDecoration(this.panelBawah, BunifuAnimatorNS.DecorationType.None);
-            this.panelBawah.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBawah.Location = new System.Drawing.Point(0, 680);
-            this.panelBawah.Name = "panelBawah";
-            this.panelBawah.Size = new System.Drawing.Size(1203, 47);
-            this.panelBawah.TabIndex = 2;
-            // 
-            // pemasokan_v2
-            // 
-            this.pemasokan_v2.BackColor = System.Drawing.Color.Silver;
-            this.pemasokan_v2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTransition.SetDecoration(this.pemasokan_v2, BunifuAnimatorNS.DecorationType.None);
-            this.pemasokan_v2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pemasokan_v2.Location = new System.Drawing.Point(0, 0);
-            this.pemasokan_v2.Name = "pemasokan_v2";
-            this.pemasokan_v2.Size = new System.Drawing.Size(1203, 727);
-            this.pemasokan_v2.TabIndex = 1;
-            // 
-            // panelReport
-            // 
-            this.panelReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.panelReport.Controls.Add(this.btnCari);
-            this.panelReport.Controls.Add(this.label7);
-            this.panelReport.Controls.Add(this.cmbTahun);
-            this.panelReport.Controls.Add(this.label6);
-            this.panelReport.Controls.Add(this.cmbBulan);
-            this.panelReport.Controls.Add(this.flowLayoutPanel1);
-            this.panelReport.Controls.Add(this.reportRestockAlat);
-            this.panelReport.Controls.Add(this.reportRestock);
-            this.panelReport.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panelReport.Controls.Add(this.reportReparasi);
-            this.panelReport.Controls.Add(this.reportBeliKomponen);
-            this.bunifuTransition.SetDecoration(this.panelReport, BunifuAnimatorNS.DecorationType.None);
-            this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelReport.Location = new System.Drawing.Point(0, 0);
-            this.panelReport.Name = "panelReport";
-            this.panelReport.Size = new System.Drawing.Size(1203, 727);
-            this.panelReport.TabIndex = 4;
-            this.panelReport.Visible = false;
-            // 
-            // label7
-            // 
-            this.bunifuTransition.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1007, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 30);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Tahun";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbTahun
-            // 
-            this.bunifuTransition.SetDecoration(this.cmbTahun, BunifuAnimatorNS.DecorationType.None);
-            this.cmbTahun.FormattingEnabled = true;
-            this.cmbTahun.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021"});
-            this.cmbTahun.Location = new System.Drawing.Point(1068, 8);
-            this.cmbTahun.Name = "cmbTahun";
-            this.cmbTahun.Size = new System.Drawing.Size(69, 21);
-            this.cmbTahun.TabIndex = 15;
-            this.cmbTahun.Text = "- Tahun -";
-            // 
-            // label6
-            // 
-            this.bunifuTransition.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(823, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 30);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Bulan";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbBulan
-            // 
-            this.bunifuTransition.SetDecoration(this.cmbBulan, BunifuAnimatorNS.DecorationType.None);
-            this.cmbBulan.FormattingEnabled = true;
-            this.cmbBulan.Items.AddRange(new object[] {
-            "Januari",
-            "Februari",
-            "Maret",
-            "April",
-            "Mei",
-            "Juni",
-            "Juli",
-            "Agustus",
-            "September",
-            "Oktober",
-            "November",
-            "Desember"});
-            this.cmbBulan.Location = new System.Drawing.Point(899, 8);
-            this.cmbBulan.Name = "cmbBulan";
-            this.cmbBulan.Size = new System.Drawing.Size(102, 21);
-            this.cmbBulan.TabIndex = 13;
-            this.cmbBulan.Text = "- Bulan -";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.rbReparasi);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.rbBeliKomponen);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.rbRestockKomponen);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.rbRestockAlat);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.bunifuTransition.SetDecoration(this.flowLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(615, 33);
-            this.flowLayoutPanel1.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.bunifuTransition.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 30);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Laporan :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rbReparasi
-            // 
-            this.rbReparasi.Checked = true;
-            this.bunifuTransition.SetDecoration(this.rbReparasi, BunifuAnimatorNS.DecorationType.None);
-            this.rbReparasi.Location = new System.Drawing.Point(79, 3);
-            this.rbReparasi.Name = "rbReparasi";
-            this.rbReparasi.Size = new System.Drawing.Size(18, 27);
-            this.rbReparasi.TabIndex = 13;
-            this.rbReparasi.TabStop = true;
-            this.rbReparasi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbReparasi.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.bunifuTransition.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 30);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Reparasi";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rbBeliKomponen
-            // 
-            this.bunifuTransition.SetDecoration(this.rbBeliKomponen, BunifuAnimatorNS.DecorationType.None);
-            this.rbBeliKomponen.Location = new System.Drawing.Point(179, 3);
-            this.rbBeliKomponen.Name = "rbBeliKomponen";
-            this.rbBeliKomponen.Size = new System.Drawing.Size(18, 27);
-            this.rbBeliKomponen.TabIndex = 14;
-            this.rbBeliKomponen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbBeliKomponen.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.bunifuTransition.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(203, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 30);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Beli Komponen";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // rbRestockKomponen
-            // 
-            this.bunifuTransition.SetDecoration(this.rbRestockKomponen, BunifuAnimatorNS.DecorationType.None);
-            this.rbRestockKomponen.Location = new System.Drawing.Point(321, 3);
-            this.rbRestockKomponen.Name = "rbRestockKomponen";
-            this.rbRestockKomponen.Size = new System.Drawing.Size(18, 27);
-            this.rbRestockKomponen.TabIndex = 15;
-            this.rbRestockKomponen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbRestockKomponen.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.bunifuTransition.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(345, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 30);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Restock Komponen";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rbRestockAlat
-            // 
-            this.bunifuTransition.SetDecoration(this.rbRestockAlat, BunifuAnimatorNS.DecorationType.None);
-            this.rbRestockAlat.Location = new System.Drawing.Point(489, 3);
-            this.rbRestockAlat.Name = "rbRestockAlat";
-            this.rbRestockAlat.Size = new System.Drawing.Size(18, 27);
-            this.rbRestockAlat.TabIndex = 16;
-            this.rbRestockAlat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbRestockAlat.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.bunifuTransition.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(513, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 30);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Restock Alat";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // reportRestockAlat
-            // 
-            this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource21.Name = "restockAlatKerja";
-            reportDataSource21.Value = this.lrestockalatBindingSource;
-            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource21);
-            this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.RestockAlat.rdlc";
-            this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
-            this.reportRestockAlat.Name = "reportRestockAlat";
-            this.reportRestockAlat.ServerReport.BearerToken = null;
-            this.reportRestockAlat.Size = new System.Drawing.Size(1203, 617);
-            this.reportRestockAlat.TabIndex = 20;
-            this.reportRestockAlat.Visible = false;
-            // 
-            // reportRestock
-            // 
-            this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource22.Name = "Restock";
-            reportDataSource22.Value = this.lrestock1BindingSource;
-            this.reportRestock.LocalReport.DataSources.Add(reportDataSource22);
-            this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
-            this.reportRestock.Location = new System.Drawing.Point(0, 57);
-            this.reportRestock.Name = "reportRestock";
-            this.reportRestock.ServerReport.BearerToken = null;
-            this.reportRestock.Size = new System.Drawing.Size(1203, 617);
-            this.reportRestock.TabIndex = 0;
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition.SetDecoration(this.bunifuMaterialTextbox1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuMaterialTextbox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(1203, 41);
-            this.bunifuMaterialTextbox1.TabIndex = 2;
-            this.bunifuMaterialTextbox1.TabStop = false;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // reportReparasi
-            // 
-            this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource23.Name = "ReportReparasi";
-            reportDataSource23.Value = this.lreparasialatBindingSource;
-            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource23);
-            this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
-            this.reportReparasi.Location = new System.Drawing.Point(0, 57);
-            this.reportReparasi.Name = "reportReparasi";
-            this.reportReparasi.ServerReport.BearerToken = null;
-            this.reportReparasi.Size = new System.Drawing.Size(1203, 617);
-            this.reportReparasi.TabIndex = 19;
-            this.reportReparasi.Visible = false;
-            // 
-            // reportBeliKomponen
-            // 
-            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource24.Name = "BeliKomponen";
-            reportDataSource24.Value = this.lbelikomponenBindingSource;
-            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource24);
-            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
-            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
-            this.reportBeliKomponen.Name = "reportBeliKomponen";
-            this.reportBeliKomponen.ServerReport.BearerToken = null;
-            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
-            this.reportBeliKomponen.TabIndex = 18;
-            this.reportBeliKomponen.Visible = false;
-            // 
-            // bKomponen
-            // 
-            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
-            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bKomponen.Location = new System.Drawing.Point(0, 0);
-            this.bKomponen.Name = "bKomponen";
-            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
-            this.bKomponen.TabIndex = 3;
-            this.bKomponen.Visible = false;
-            // 
-            // detailReparasi
-            // 
-            this.detailReparasi.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.detailReparasi, BunifuAnimatorNS.DecorationType.None);
-            this.detailReparasi.Location = new System.Drawing.Point(0, 0);
-            this.detailReparasi.Name = "detailReparasi";
-            this.detailReparasi.Size = new System.Drawing.Size(1201, 675);
-            this.detailReparasi.TabIndex = 6;
-            // 
-            // bayarReparasi
-            // 
-            this.bayarReparasi.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.bayarReparasi, BunifuAnimatorNS.DecorationType.None);
-            this.bayarReparasi.Location = new System.Drawing.Point(0, 0);
-            this.bayarReparasi.Name = "bayarReparasi";
-            this.bayarReparasi.Size = new System.Drawing.Size(1201, 675);
-            this.bayarReparasi.TabIndex = 7;
-            // 
-            // reparasi
-            // 
-            this.reparasi.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.reparasi, BunifuAnimatorNS.DecorationType.None);
-            this.reparasi.Location = new System.Drawing.Point(0, 0);
-            this.reparasi.Name = "reparasi";
-            this.reparasi.Size = new System.Drawing.Size(1201, 675);
-            this.reparasi.TabIndex = 5;
-            // 
-            // barangmasuk_v2
-            // 
-            this.barangmasuk_v2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.barangmasuk_v2, BunifuAnimatorNS.DecorationType.None);
-            this.barangmasuk_v2.Location = new System.Drawing.Point(0, 0);
-            this.barangmasuk_v2.Name = "barangmasuk_v2";
-            this.barangmasuk_v2.Size = new System.Drawing.Size(1201, 675);
-            this.barangmasuk_v2.TabIndex = 8;
-            // 
-            // alatMasuk_v2
-            // 
-            this.alatMasuk_v2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.alatMasuk_v2, BunifuAnimatorNS.DecorationType.None);
-            this.alatMasuk_v2.Location = new System.Drawing.Point(0, 0);
-            this.alatMasuk_v2.Name = "alatMasuk_v2";
-            this.alatMasuk_v2.Size = new System.Drawing.Size(1201, 675);
-            this.alatMasuk_v2.TabIndex = 10;
-            // 
-            // restockAlatKerja_v2
-            // 
-            this.restockAlatKerja_v2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.restockAlatKerja_v2, BunifuAnimatorNS.DecorationType.None);
-            this.restockAlatKerja_v2.Location = new System.Drawing.Point(0, 0);
-            this.restockAlatKerja_v2.Name = "restockAlatKerja_v2";
-            this.restockAlatKerja_v2.Size = new System.Drawing.Size(1201, 675);
-            this.restockAlatKerja_v2.TabIndex = 9;
-            // 
-            // cruD_v2
-            // 
-            this.cruD_v2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bunifuTransition.SetDecoration(this.cruD_v2, BunifuAnimatorNS.DecorationType.None);
-            this.cruD_v2.Location = new System.Drawing.Point(0, 0);
-            this.cruD_v2.Name = "cruD_v2";
-            this.cruD_v2.Size = new System.Drawing.Size(1200, 675);
-            this.cruD_v2.TabIndex = 11;
-            // 
-            // bunifuTransition
-            // 
-            this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.bunifuTransition.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.bunifuTransition.DefaultAnimation = animation5;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.reportViewer2);
-            this.bunifuTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(161, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 727);
-            this.panel1.TabIndex = 10;
-            // 
-            // reportViewer2
-            // 
-            this.bunifuTransition.SetDecoration(this.reportViewer2, BunifuAnimatorNS.DecorationType.None);
-            reportDataSource25.Name = "Restock";
-            reportDataSource25.Value = null;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource25);
-            this.reportViewer2.LocalReport.ReportEmbeddedResource = "CRUD.ReportRestock1.rdlc";
-            this.reportViewer2.Location = new System.Drawing.Point(0, 62);
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ServerReport.BearerToken = null;
-            this.reportViewer2.Size = new System.Drawing.Size(1203, 632);
-            this.reportViewer2.TabIndex = 0;
-            // 
-            // lrestock1TableAdapter
-            // 
-            this.lrestock1TableAdapter.ClearBeforeFill = true;
-            // 
-            // lbelikomponenTableAdapter
-            // 
-            this.lbelikomponenTableAdapter.ClearBeforeFill = true;
-            // 
-            // lreparasialatTableAdapter
-            // 
-            this.lreparasialatTableAdapter.ClearBeforeFill = true;
-            // 
-            // lrestockalatTableAdapter
-            // 
-            this.lrestockalatTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnCari
-            // 
-            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.bunifuTransition.SetDecoration(this.btnCari, BunifuAnimatorNS.DecorationType.None);
-            this.btnCari.Image = ((System.Drawing.Image)(resources.GetObject("btnCari.Image")));
-            this.btnCari.ImageActive = null;
-            this.btnCari.Location = new System.Drawing.Point(1159, 3);
-            this.btnCari.Name = "btnCari";
-            this.btnCari.Size = new System.Drawing.Size(32, 33);
-            this.btnCari.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCari.TabIndex = 17;
-            this.btnCari.TabStop = false;
-            this.btnCari.Zoom = 10;
-            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Red;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.btnExit, BunifuAnimatorNS.DecorationType.None);
-            this.btnExit.Image = global::CRUD.Properties.Resources.Exit__2_;
-            this.btnExit.ImageActive = null;
-            this.btnExit.Location = new System.Drawing.Point(1158, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(42, 30);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 8;
-            this.btnExit.TabStop = false;
-            this.btnExit.Zoom = 5;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // karyawan_nama
-            // 
-            this.karyawan_nama.Activecolor = System.Drawing.SystemColors.ActiveCaption;
-            this.karyawan_nama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.karyawan_nama.BackColor = System.Drawing.Color.Transparent;
-            this.karyawan_nama.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.karyawan_nama.BorderRadius = 0;
-            this.karyawan_nama.ButtonText = "Profil";
-            this.karyawan_nama.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.karyawan_nama, BunifuAnimatorNS.DecorationType.None);
-            this.karyawan_nama.DisabledColor = System.Drawing.Color.Gray;
-            this.karyawan_nama.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.karyawan_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
-            this.karyawan_nama.Iconcolor = System.Drawing.Color.Transparent;
-            this.karyawan_nama.Iconimage = ((System.Drawing.Image)(resources.GetObject("karyawan_nama.Iconimage")));
-            this.karyawan_nama.Iconimage_right = null;
-            this.karyawan_nama.Iconimage_right_Selected = null;
-            this.karyawan_nama.Iconimage_Selected = null;
-            this.karyawan_nama.IconMarginLeft = 0;
-            this.karyawan_nama.IconMarginRight = 0;
-            this.karyawan_nama.IconRightVisible = true;
-            this.karyawan_nama.IconRightZoom = 0D;
-            this.karyawan_nama.IconVisible = true;
-            this.karyawan_nama.IconZoom = 90D;
-            this.karyawan_nama.IsTab = false;
-            this.karyawan_nama.Location = new System.Drawing.Point(1002, 4);
-            this.karyawan_nama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.karyawan_nama.Name = "karyawan_nama";
-            this.karyawan_nama.Normalcolor = System.Drawing.Color.Transparent;
-            this.karyawan_nama.OnHovercolor = System.Drawing.Color.Transparent;
-            this.karyawan_nama.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.karyawan_nama.selected = false;
-            this.karyawan_nama.Size = new System.Drawing.Size(150, 30);
-            this.karyawan_nama.TabIndex = 7;
-            this.karyawan_nama.Text = "Profil";
-            this.karyawan_nama.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.karyawan_nama.Textcolor = System.Drawing.Color.DimGray;
-            this.karyawan_nama.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.bunifuTransition.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton2.Enabled = false;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(62, 4);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(36, 29);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 13;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.bunifuTransition.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Enabled = false;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(4, 5);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(36, 29);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 12;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
-            // btnPanelKiri
-            // 
-            this.btnPanelKiri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPanelKiri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
-            this.bunifuTransition.SetDecoration(this.btnPanelKiri, BunifuAnimatorNS.DecorationType.None);
-            this.btnPanelKiri.Enabled = false;
-            this.btnPanelKiri.Image = ((System.Drawing.Image)(resources.GetObject("btnPanelKiri.Image")));
-            this.btnPanelKiri.ImageActive = null;
-            this.btnPanelKiri.Location = new System.Drawing.Point(119, 5);
-            this.btnPanelKiri.Name = "btnPanelKiri";
-            this.btnPanelKiri.Size = new System.Drawing.Size(36, 29);
-            this.btnPanelKiri.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPanelKiri.TabIndex = 0;
-            this.btnPanelKiri.TabStop = false;
-            this.btnPanelKiri.Zoom = 10;
-            this.btnPanelKiri.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // btnAlatMasuk
             // 
@@ -1358,6 +623,684 @@
             this.btnKelolaData.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKelolaData.Click += new System.EventHandler(this.btnKelolaData_Click);
             // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 3;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 62);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(161, 35);
+            this.bunifuSeparator1.TabIndex = 11;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator2.LineThickness = 3;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 138);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(161, 35);
+            this.bunifuSeparator2.TabIndex = 23;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator3.LineThickness = 3;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(-3, 179);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(161, 35);
+            this.bunifuSeparator3.TabIndex = 12;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator4.LineThickness = 3;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(0, 253);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(161, 35);
+            this.bunifuSeparator4.TabIndex = 24;
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = false;
+            // 
+            // bunifuSeparator5
+            // 
+            this.bunifuSeparator5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition.SetDecoration(this.bunifuSeparator5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator5.LineThickness = 3;
+            this.bunifuSeparator5.Location = new System.Drawing.Point(0, 369);
+            this.bunifuSeparator5.Name = "bunifuSeparator5";
+            this.bunifuSeparator5.Size = new System.Drawing.Size(161, 35);
+            this.bunifuSeparator5.TabIndex = 26;
+            this.bunifuSeparator5.Transparency = 255;
+            this.bunifuSeparator5.Vertical = false;
+            // 
+            // panelKiri
+            // 
+            this.panelKiri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelKiri.Controls.Add(this.panelKiri1);
+            this.bunifuTransition.SetDecoration(this.panelKiri, BunifuAnimatorNS.DecorationType.None);
+            this.panelKiri.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelKiri.Location = new System.Drawing.Point(0, 0);
+            this.panelKiri.Name = "panelKiri";
+            this.panelKiri.Size = new System.Drawing.Size(161, 765);
+            this.panelKiri.TabIndex = 0;
+            this.panelKiri.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelKiri_MouseClick);
+            // 
+            // panelAtas
+            // 
+            this.panelAtas.AutoSize = true;
+            this.panelAtas.BackColor = System.Drawing.Color.White;
+            this.panelAtas.Controls.Add(this.tanggal);
+            this.panelAtas.Controls.Add(this.jam);
+            this.panelAtas.Controls.Add(this.btnExit);
+            this.panelAtas.Controls.Add(this.karyawan_nama);
+            this.bunifuTransition.SetDecoration(this.panelAtas, BunifuAnimatorNS.DecorationType.None);
+            this.panelAtas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelAtas.Location = new System.Drawing.Point(161, 0);
+            this.panelAtas.Name = "panelAtas";
+            this.panelAtas.Size = new System.Drawing.Size(1203, 38);
+            this.panelAtas.TabIndex = 8;
+            // 
+            // tanggal
+            // 
+            this.tanggal.AutoSize = true;
+            this.tanggal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition.SetDecoration(this.tanggal, BunifuAnimatorNS.DecorationType.None);
+            this.tanggal.Enabled = false;
+            this.tanggal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tanggal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.tanggal.HintForeColor = System.Drawing.Color.Empty;
+            this.tanggal.HintText = "";
+            this.tanggal.isPassword = false;
+            this.tanggal.LineFocusedColor = System.Drawing.Color.Blue;
+            this.tanggal.LineIdleColor = System.Drawing.Color.Gray;
+            this.tanggal.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.tanggal.LineThickness = 3;
+            this.tanggal.Location = new System.Drawing.Point(7, 3);
+            this.tanggal.Margin = new System.Windows.Forms.Padding(4);
+            this.tanggal.Name = "tanggal";
+            this.tanggal.Size = new System.Drawing.Size(174, 30);
+            this.tanggal.TabIndex = 10;
+            this.tanggal.Text = "Tanggal";
+            this.tanggal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // jam
+            // 
+            this.jam.AutoSize = true;
+            this.jam.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition.SetDecoration(this.jam, BunifuAnimatorNS.DecorationType.None);
+            this.jam.Enabled = false;
+            this.jam.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.jam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.jam.HintForeColor = System.Drawing.Color.Empty;
+            this.jam.HintText = "";
+            this.jam.isPassword = false;
+            this.jam.LineFocusedColor = System.Drawing.Color.Blue;
+            this.jam.LineIdleColor = System.Drawing.Color.Gray;
+            this.jam.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.jam.LineThickness = 3;
+            this.jam.Location = new System.Drawing.Point(189, 4);
+            this.jam.Margin = new System.Windows.Forms.Padding(4);
+            this.jam.Name = "jam";
+            this.jam.Size = new System.Drawing.Size(107, 30);
+            this.jam.TabIndex = 9;
+            this.jam.Text = "Waktu";
+            this.jam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.btnExit, BunifuAnimatorNS.DecorationType.None);
+            this.btnExit.Image = global::CRUD.Properties.Resources.Exit__2_;
+            this.btnExit.ImageActive = null;
+            this.btnExit.Location = new System.Drawing.Point(1158, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(42, 30);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 8;
+            this.btnExit.TabStop = false;
+            this.btnExit.Zoom = 5;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // karyawan_nama
+            // 
+            this.karyawan_nama.Activecolor = System.Drawing.SystemColors.ActiveCaption;
+            this.karyawan_nama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.karyawan_nama.BackColor = System.Drawing.Color.Transparent;
+            this.karyawan_nama.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.karyawan_nama.BorderRadius = 0;
+            this.karyawan_nama.ButtonText = "Profil";
+            this.karyawan_nama.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.karyawan_nama, BunifuAnimatorNS.DecorationType.None);
+            this.karyawan_nama.DisabledColor = System.Drawing.Color.Gray;
+            this.karyawan_nama.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.karyawan_nama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.karyawan_nama.Iconcolor = System.Drawing.Color.Transparent;
+            this.karyawan_nama.Iconimage = ((System.Drawing.Image)(resources.GetObject("karyawan_nama.Iconimage")));
+            this.karyawan_nama.Iconimage_right = null;
+            this.karyawan_nama.Iconimage_right_Selected = null;
+            this.karyawan_nama.Iconimage_Selected = null;
+            this.karyawan_nama.IconMarginLeft = 0;
+            this.karyawan_nama.IconMarginRight = 0;
+            this.karyawan_nama.IconRightVisible = true;
+            this.karyawan_nama.IconRightZoom = 0D;
+            this.karyawan_nama.IconVisible = true;
+            this.karyawan_nama.IconZoom = 90D;
+            this.karyawan_nama.IsTab = false;
+            this.karyawan_nama.Location = new System.Drawing.Point(1002, 4);
+            this.karyawan_nama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.karyawan_nama.Name = "karyawan_nama";
+            this.karyawan_nama.Normalcolor = System.Drawing.Color.Transparent;
+            this.karyawan_nama.OnHovercolor = System.Drawing.Color.Transparent;
+            this.karyawan_nama.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.karyawan_nama.selected = false;
+            this.karyawan_nama.Size = new System.Drawing.Size(150, 30);
+            this.karyawan_nama.TabIndex = 7;
+            this.karyawan_nama.Text = "Profil";
+            this.karyawan_nama.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.karyawan_nama.Textcolor = System.Drawing.Color.DimGray;
+            this.karyawan_nama.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // panelUtama
+            // 
+            this.panelUtama.Controls.Add(this.dashBoard);
+            this.panelUtama.Controls.Add(this.panelBawah);
+            this.panelUtama.Controls.Add(this.pemasokan_v2);
+            this.panelUtama.Controls.Add(this.panelReport);
+            this.panelUtama.Controls.Add(this.bKomponen);
+            this.panelUtama.Controls.Add(this.detailReparasi);
+            this.panelUtama.Controls.Add(this.bayarReparasi);
+            this.panelUtama.Controls.Add(this.reparasi);
+            this.panelUtama.Controls.Add(this.barangmasuk_v2);
+            this.panelUtama.Controls.Add(this.alatMasuk_v2);
+            this.panelUtama.Controls.Add(this.restockAlatKerja_v2);
+            this.panelUtama.Controls.Add(this.cruD_v2);
+            this.bunifuTransition.SetDecoration(this.panelUtama, BunifuAnimatorNS.DecorationType.None);
+            this.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelUtama.Location = new System.Drawing.Point(161, 38);
+            this.panelUtama.Name = "panelUtama";
+            this.panelUtama.Size = new System.Drawing.Size(1203, 727);
+            this.panelUtama.TabIndex = 9;
+            // 
+            // dashBoard
+            // 
+            this.dashBoard.BackColor = System.Drawing.Color.White;
+            this.dashBoard.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuTransition.SetDecoration(this.dashBoard, BunifuAnimatorNS.DecorationType.None);
+            this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashBoard.Location = new System.Drawing.Point(0, 0);
+            this.dashBoard.Name = "dashBoard";
+            this.dashBoard.Size = new System.Drawing.Size(1203, 680);
+            this.dashBoard.TabIndex = 0;
+            // 
+            // panelBawah
+            // 
+            this.panelBawah.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition.SetDecoration(this.panelBawah, BunifuAnimatorNS.DecorationType.None);
+            this.panelBawah.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBawah.Location = new System.Drawing.Point(0, 680);
+            this.panelBawah.Name = "panelBawah";
+            this.panelBawah.Size = new System.Drawing.Size(1203, 47);
+            this.panelBawah.TabIndex = 2;
+            // 
+            // pemasokan_v2
+            // 
+            this.pemasokan_v2.BackColor = System.Drawing.Color.Silver;
+            this.pemasokan_v2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuTransition.SetDecoration(this.pemasokan_v2, BunifuAnimatorNS.DecorationType.None);
+            this.pemasokan_v2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pemasokan_v2.Location = new System.Drawing.Point(0, 0);
+            this.pemasokan_v2.Name = "pemasokan_v2";
+            this.pemasokan_v2.Size = new System.Drawing.Size(1203, 727);
+            this.pemasokan_v2.TabIndex = 1;
+            // 
+            // panelReport
+            // 
+            this.panelReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(57)))), ((int)(((byte)(107)))));
+            this.panelReport.Controls.Add(this.btnCari);
+            this.panelReport.Controls.Add(this.label7);
+            this.panelReport.Controls.Add(this.cmbTahun);
+            this.panelReport.Controls.Add(this.label6);
+            this.panelReport.Controls.Add(this.cmbBulan);
+            this.panelReport.Controls.Add(this.flowLayoutPanel1);
+            this.panelReport.Controls.Add(this.reportRestockAlat);
+            this.panelReport.Controls.Add(this.reportRestock);
+            this.panelReport.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panelReport.Controls.Add(this.reportReparasi);
+            this.panelReport.Controls.Add(this.reportBeliKomponen);
+            this.bunifuTransition.SetDecoration(this.panelReport, BunifuAnimatorNS.DecorationType.None);
+            this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelReport.Location = new System.Drawing.Point(0, 0);
+            this.panelReport.Name = "panelReport";
+            this.panelReport.Size = new System.Drawing.Size(1203, 727);
+            this.panelReport.TabIndex = 4;
+            this.panelReport.Visible = false;
+            // 
+            // btnCari
+            // 
+            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.bunifuTransition.SetDecoration(this.btnCari, BunifuAnimatorNS.DecorationType.None);
+            this.btnCari.Image = ((System.Drawing.Image)(resources.GetObject("btnCari.Image")));
+            this.btnCari.ImageActive = null;
+            this.btnCari.Location = new System.Drawing.Point(1159, 3);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Size = new System.Drawing.Size(32, 33);
+            this.btnCari.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCari.TabIndex = 17;
+            this.btnCari.TabStop = false;
+            this.btnCari.Zoom = 10;
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            // 
+            // label7
+            // 
+            this.bunifuTransition.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(1007, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 30);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Tahun";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbTahun
+            // 
+            this.bunifuTransition.SetDecoration(this.cmbTahun, BunifuAnimatorNS.DecorationType.None);
+            this.cmbTahun.FormattingEnabled = true;
+            this.cmbTahun.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021"});
+            this.cmbTahun.Location = new System.Drawing.Point(1068, 8);
+            this.cmbTahun.Name = "cmbTahun";
+            this.cmbTahun.Size = new System.Drawing.Size(69, 21);
+            this.cmbTahun.TabIndex = 15;
+            this.cmbTahun.Text = "- Tahun -";
+            // 
+            // label6
+            // 
+            this.bunifuTransition.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(823, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 30);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Bulan";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbBulan
+            // 
+            this.bunifuTransition.SetDecoration(this.cmbBulan, BunifuAnimatorNS.DecorationType.None);
+            this.cmbBulan.FormattingEnabled = true;
+            this.cmbBulan.Items.AddRange(new object[] {
+            "Januari",
+            "Februari",
+            "Maret",
+            "April",
+            "Mei",
+            "Juni",
+            "Juli",
+            "Agustus",
+            "September",
+            "Oktober",
+            "November",
+            "Desember"});
+            this.cmbBulan.Location = new System.Drawing.Point(899, 8);
+            this.cmbBulan.Name = "cmbBulan";
+            this.cmbBulan.Size = new System.Drawing.Size(102, 21);
+            this.cmbBulan.TabIndex = 13;
+            this.cmbBulan.Text = "- Bulan -";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.rbReparasi);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.rbBeliKomponen);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.rbRestockKomponen);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.rbRestockAlat);
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.bunifuTransition.SetDecoration(this.flowLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(615, 33);
+            this.flowLayoutPanel1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.bunifuTransition.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 30);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Laporan :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rbReparasi
+            // 
+            this.rbReparasi.Checked = true;
+            this.bunifuTransition.SetDecoration(this.rbReparasi, BunifuAnimatorNS.DecorationType.None);
+            this.rbReparasi.Location = new System.Drawing.Point(79, 3);
+            this.rbReparasi.Name = "rbReparasi";
+            this.rbReparasi.Size = new System.Drawing.Size(18, 27);
+            this.rbReparasi.TabIndex = 13;
+            this.rbReparasi.TabStop = true;
+            this.rbReparasi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbReparasi.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.bunifuTransition.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(103, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 30);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Reparasi";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rbBeliKomponen
+            // 
+            this.bunifuTransition.SetDecoration(this.rbBeliKomponen, BunifuAnimatorNS.DecorationType.None);
+            this.rbBeliKomponen.Location = new System.Drawing.Point(179, 3);
+            this.rbBeliKomponen.Name = "rbBeliKomponen";
+            this.rbBeliKomponen.Size = new System.Drawing.Size(18, 27);
+            this.rbBeliKomponen.TabIndex = 14;
+            this.rbBeliKomponen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbBeliKomponen.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.bunifuTransition.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(203, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 30);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Beli Komponen";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // rbRestockKomponen
+            // 
+            this.bunifuTransition.SetDecoration(this.rbRestockKomponen, BunifuAnimatorNS.DecorationType.None);
+            this.rbRestockKomponen.Location = new System.Drawing.Point(321, 3);
+            this.rbRestockKomponen.Name = "rbRestockKomponen";
+            this.rbRestockKomponen.Size = new System.Drawing.Size(18, 27);
+            this.rbRestockKomponen.TabIndex = 15;
+            this.rbRestockKomponen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbRestockKomponen.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.bunifuTransition.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(345, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 30);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Restock Komponen";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rbRestockAlat
+            // 
+            this.bunifuTransition.SetDecoration(this.rbRestockAlat, BunifuAnimatorNS.DecorationType.None);
+            this.rbRestockAlat.Location = new System.Drawing.Point(489, 3);
+            this.rbRestockAlat.Name = "rbRestockAlat";
+            this.rbRestockAlat.Size = new System.Drawing.Size(18, 27);
+            this.rbRestockAlat.TabIndex = 16;
+            this.rbRestockAlat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbRestockAlat.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.bunifuTransition.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(513, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 30);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Restock Alat";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // reportRestockAlat
+            // 
+            this.bunifuTransition.SetDecoration(this.reportRestockAlat, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource11.Name = "restockAlatKerja";
+            reportDataSource11.Value = this.lrestockalatBindingSource;
+            this.reportRestockAlat.LocalReport.DataSources.Add(reportDataSource11);
+            this.reportRestockAlat.LocalReport.ReportEmbeddedResource = "CRUD.Report.RestockAlat.rdlc";
+            this.reportRestockAlat.Location = new System.Drawing.Point(0, 57);
+            this.reportRestockAlat.Name = "reportRestockAlat";
+            this.reportRestockAlat.ServerReport.BearerToken = null;
+            this.reportRestockAlat.Size = new System.Drawing.Size(1203, 617);
+            this.reportRestockAlat.TabIndex = 20;
+            this.reportRestockAlat.Visible = false;
+            // 
+            // reportRestock
+            // 
+            this.bunifuTransition.SetDecoration(this.reportRestock, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource12.Name = "Restock";
+            reportDataSource12.Value = this.lrestock1BindingSource;
+            this.reportRestock.LocalReport.DataSources.Add(reportDataSource12);
+            this.reportRestock.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportRestock1.rdlc";
+            this.reportRestock.Location = new System.Drawing.Point(0, 57);
+            this.reportRestock.Name = "reportRestock";
+            this.reportRestock.ServerReport.BearerToken = null;
+            this.reportRestock.Size = new System.Drawing.Size(1203, 617);
+            this.reportRestock.TabIndex = 0;
+            // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition.SetDecoration(this.bunifuMaterialTextbox1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuMaterialTextbox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox1.HintText = "";
+            this.bunifuMaterialTextbox1.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(1203, 41);
+            this.bunifuMaterialTextbox1.TabIndex = 2;
+            this.bunifuMaterialTextbox1.TabStop = false;
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // reportReparasi
+            // 
+            this.bunifuTransition.SetDecoration(this.reportReparasi, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource13.Name = "ReportReparasi";
+            reportDataSource13.Value = this.lreparasialatBindingSource;
+            this.reportReparasi.LocalReport.DataSources.Add(reportDataSource13);
+            this.reportReparasi.LocalReport.ReportEmbeddedResource = "CRUD.Report.reportReparasi.rdlc";
+            this.reportReparasi.Location = new System.Drawing.Point(0, 57);
+            this.reportReparasi.Name = "reportReparasi";
+            this.reportReparasi.ServerReport.BearerToken = null;
+            this.reportReparasi.Size = new System.Drawing.Size(1203, 617);
+            this.reportReparasi.TabIndex = 19;
+            this.reportReparasi.Visible = false;
+            // 
+            // reportBeliKomponen
+            // 
+            this.bunifuTransition.SetDecoration(this.reportBeliKomponen, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource14.Name = "BeliKomponen";
+            reportDataSource14.Value = this.lbelikomponenBindingSource;
+            this.reportBeliKomponen.LocalReport.DataSources.Add(reportDataSource14);
+            this.reportBeliKomponen.LocalReport.ReportEmbeddedResource = "CRUD.Report.ReportBeliKomponen.rdlc";
+            this.reportBeliKomponen.Location = new System.Drawing.Point(0, 57);
+            this.reportBeliKomponen.Name = "reportBeliKomponen";
+            this.reportBeliKomponen.ServerReport.BearerToken = null;
+            this.reportBeliKomponen.Size = new System.Drawing.Size(1203, 617);
+            this.reportBeliKomponen.TabIndex = 18;
+            this.reportBeliKomponen.Visible = false;
+            // 
+            // bKomponen
+            // 
+            this.bKomponen.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.bKomponen, BunifuAnimatorNS.DecorationType.None);
+            this.bKomponen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKomponen.Location = new System.Drawing.Point(0, 0);
+            this.bKomponen.Name = "bKomponen";
+            this.bKomponen.Size = new System.Drawing.Size(1203, 727);
+            this.bKomponen.TabIndex = 3;
+            this.bKomponen.Visible = false;
+            // 
+            // detailReparasi
+            // 
+            this.detailReparasi.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.detailReparasi, BunifuAnimatorNS.DecorationType.None);
+            this.detailReparasi.Location = new System.Drawing.Point(0, 0);
+            this.detailReparasi.Name = "detailReparasi";
+            this.detailReparasi.Size = new System.Drawing.Size(1201, 675);
+            this.detailReparasi.TabIndex = 6;
+            // 
+            // bayarReparasi
+            // 
+            this.bayarReparasi.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.bayarReparasi, BunifuAnimatorNS.DecorationType.None);
+            this.bayarReparasi.Location = new System.Drawing.Point(0, 0);
+            this.bayarReparasi.Name = "bayarReparasi";
+            this.bayarReparasi.Size = new System.Drawing.Size(1201, 675);
+            this.bayarReparasi.TabIndex = 7;
+            // 
+            // reparasi
+            // 
+            this.reparasi.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.reparasi, BunifuAnimatorNS.DecorationType.None);
+            this.reparasi.Location = new System.Drawing.Point(0, 0);
+            this.reparasi.Name = "reparasi";
+            this.reparasi.Size = new System.Drawing.Size(1201, 675);
+            this.reparasi.TabIndex = 5;
+            // 
+            // barangmasuk_v2
+            // 
+            this.barangmasuk_v2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.barangmasuk_v2, BunifuAnimatorNS.DecorationType.None);
+            this.barangmasuk_v2.Location = new System.Drawing.Point(0, 0);
+            this.barangmasuk_v2.Name = "barangmasuk_v2";
+            this.barangmasuk_v2.Size = new System.Drawing.Size(1201, 675);
+            this.barangmasuk_v2.TabIndex = 8;
+            // 
+            // alatMasuk_v2
+            // 
+            this.alatMasuk_v2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.alatMasuk_v2, BunifuAnimatorNS.DecorationType.None);
+            this.alatMasuk_v2.Location = new System.Drawing.Point(0, 0);
+            this.alatMasuk_v2.Name = "alatMasuk_v2";
+            this.alatMasuk_v2.Size = new System.Drawing.Size(1201, 675);
+            this.alatMasuk_v2.TabIndex = 10;
+            // 
+            // restockAlatKerja_v2
+            // 
+            this.restockAlatKerja_v2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.restockAlatKerja_v2, BunifuAnimatorNS.DecorationType.None);
+            this.restockAlatKerja_v2.Location = new System.Drawing.Point(0, 0);
+            this.restockAlatKerja_v2.Name = "restockAlatKerja_v2";
+            this.restockAlatKerja_v2.Size = new System.Drawing.Size(1201, 675);
+            this.restockAlatKerja_v2.TabIndex = 9;
+            // 
+            // cruD_v2
+            // 
+            this.cruD_v2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.bunifuTransition.SetDecoration(this.cruD_v2, BunifuAnimatorNS.DecorationType.None);
+            this.cruD_v2.Location = new System.Drawing.Point(0, 0);
+            this.cruD_v2.Name = "cruD_v2";
+            this.cruD_v2.Size = new System.Drawing.Size(1200, 675);
+            this.cruD_v2.TabIndex = 11;
+            // 
+            // bunifuTransition
+            // 
+            this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.bunifuTransition.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.bunifuTransition.DefaultAnimation = animation3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.reportViewer2);
+            this.bunifuTransition.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(161, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1203, 727);
+            this.panel1.TabIndex = 10;
+            // 
+            // reportViewer2
+            // 
+            this.bunifuTransition.SetDecoration(this.reportViewer2, BunifuAnimatorNS.DecorationType.None);
+            reportDataSource15.Name = "Restock";
+            reportDataSource15.Value = null;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource15);
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "CRUD.ReportRestock1.rdlc";
+            this.reportViewer2.Location = new System.Drawing.Point(0, 62);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.ServerReport.BearerToken = null;
+            this.reportViewer2.Size = new System.Drawing.Size(1203, 632);
+            this.reportViewer2.TabIndex = 0;
+            // 
+            // lrestock1TableAdapter
+            // 
+            this.lrestock1TableAdapter.ClearBeforeFill = true;
+            // 
+            // lbelikomponenTableAdapter
+            // 
+            this.lbelikomponenTableAdapter.ClearBeforeFill = true;
+            // 
+            // lreparasialatTableAdapter
+            // 
+            this.lreparasialatTableAdapter.ClearBeforeFill = true;
+            // 
+            // lrestockalatTableAdapter
+            // 
+            this.lrestockalatTableAdapter.ClearBeforeFill = true;
+            // 
             // Menu_Utama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1383,15 +1326,12 @@
             this.panelKiri.ResumeLayout(false);
             this.panelAtas.ResumeLayout(false);
             this.panelAtas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panelUtama.ResumeLayout(false);
             this.panelReport.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCari)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnCari)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPanelKiri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1468,8 +1408,5 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAlatMasuk;
         private AlatMasuk_v2 alatMasuk_v2;
         private CRUD_v2 cruD_v2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuImageButton btnPanelKiri;
     }
 }
