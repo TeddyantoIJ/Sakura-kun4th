@@ -83,24 +83,25 @@ namespace CRUD.Baru
             barangmasuk_v2.Visible = false;
             restockAlatKerja_v2.Visible = false;
             alatMasuk_v2.Visible = false;
+            cruD_v2.Visible = false;
 
-            //masuk.Visible = true;
-            bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
+            masuk.Visible = true;
+            //bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
 
 
             //button
-            btnMenuUtama.BackColor = panelKiri.BackColor;
-            btnRestockKomponen.BackColor = panelKiri.BackColor;
-            btnBeliKomponen.BackColor = panelKiri.BackColor;
-            btnLaporan.BackColor = panelKiri.BackColor;
-            btnReparasi.BackColor = panelKiri.BackColor;
-            btnReparasiSelesai.BackColor = panelKiri.BackColor;
-            btnBarangMasuk.BackColor = panelKiri.BackColor;
-            btnBayarReparasi.BackColor = panelKiri.BackColor;
-            btnRestockKomponen.BackColor = panelKiri.BackColor;
-            btnBeliAlat.BackColor = panelKiri.BackColor;
-            btnAlatMasuk.BackColor = panelKiri.BackColor;
-
+            btnMenuUtama.Normalcolor = panelKiri.BackColor;
+            btnRestockKomponen.Normalcolor = panelKiri.BackColor;
+            btnBeliKomponen.Normalcolor = panelKiri.BackColor;
+            btnLaporan.Normalcolor = panelKiri.BackColor;
+            btnReparasi.Normalcolor = panelKiri.BackColor;
+            btnReparasiSelesai.Normalcolor = panelKiri.BackColor;
+            btnBarangMasuk.Normalcolor = panelKiri.BackColor;
+            btnBayarReparasi.Normalcolor = panelKiri.BackColor;
+            btnRestockKomponen.Normalcolor = panelKiri.BackColor;
+            btnBeliAlat.Normalcolor = panelKiri.BackColor;
+            btnAlatMasuk.Normalcolor = panelKiri.BackColor;
+            btnKelolaData.Normalcolor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -117,23 +118,25 @@ namespace CRUD.Baru
             barangmasuk_v2.Visible = false;
             restockAlatKerja_v2.Visible = false;
             alatMasuk_v2.Visible = false;
+            cruD_v2.Visible = false;
 
-            //masuk.Visible = true;
-            bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
+            masuk.Visible = true;
+            //bunifuTransition.ShowSync(masuk, false, BunifuAnimatorNS.Animation.VertSlide);
 
 
             //button
-            btnMenuUtama.BackColor = panelKiri.BackColor;
-            btnRestockKomponen.BackColor = panelKiri.BackColor;
-            btnBeliKomponen.BackColor = panelKiri.BackColor;
-            btnLaporan.BackColor = panelKiri.BackColor;
-            btnReparasi.BackColor = panelKiri.BackColor;
-            btnReparasiSelesai.BackColor = panelKiri.BackColor;
-            btnBarangMasuk.BackColor = panelKiri.BackColor;
-            btnBayarReparasi.BackColor = panelKiri.BackColor;
-            btnRestockKomponen.BackColor = panelKiri.BackColor;
-            btnBeliAlat.BackColor = panelKiri.BackColor;
-            btnAlatMasuk.BackColor = panelKiri.BackColor;
+            btnMenuUtama.Normalcolor = panelKiri.BackColor;
+            btnRestockKomponen.Normalcolor = panelKiri.BackColor;
+            btnBeliKomponen.Normalcolor = panelKiri.BackColor;
+            btnLaporan.Normalcolor = panelKiri.BackColor;
+            btnReparasi.Normalcolor = panelKiri.BackColor;
+            btnReparasiSelesai.Normalcolor = panelKiri.BackColor;
+            btnBarangMasuk.Normalcolor = panelKiri.BackColor;
+            btnBayarReparasi.Normalcolor = panelKiri.BackColor;
+            btnRestockKomponen.Normalcolor = panelKiri.BackColor;
+            btnBeliAlat.Normalcolor = panelKiri.BackColor;
+            btnAlatMasuk.Normalcolor = panelKiri.BackColor;
+            btnKelolaData.Normalcolor = panelKiri.BackColor;
 
             btn.Normalcolor = btn.Activecolor;
         }
@@ -158,7 +161,7 @@ namespace CRUD.Baru
 
         private void btnKelolaData_Click(object sender, EventArgs e)
         {
-
+            show(cruD_v2, btnKelolaData);
         }
 
         private void btnLaporan_Click(object sender, EventArgs e)

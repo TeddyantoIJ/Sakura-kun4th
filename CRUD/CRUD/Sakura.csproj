@@ -68,6 +68,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Reportna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportna.Designer.cs">
+      <DependentUpon>Reportna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\CreateOrUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\CreateOrUpdate.Designer.cs">
+      <DependentUpon>CreateOrUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\CRUD_v2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\CRUD_v2.Designer.cs">
+      <DependentUpon>CRUD_v2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCBaru\AlatMasuk_v2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,10 +146,10 @@
     <Compile Include="UCBaru\Pemasokan_v2.Designer.cs">
       <DependentUpon>Pemasokan_v2.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\DashBoard.cs">
+    <Compile Include="UCBaru\DashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\DashBoard.Designer.cs">
+    <Compile Include="UCBaru\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UCTransaksi.cs">
@@ -336,6 +354,15 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportna.resx">
+      <DependentUpon>Reportna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\CreateOrUpdate.resx">
+      <DependentUpon>CreateOrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\CRUD_v2.resx">
+      <DependentUpon>CRUD_v2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCBaru\AlatMasuk_v2.resx">
       <DependentUpon>AlatMasuk_v2.cs</DependentUpon>
     </EmbeddedResource>
@@ -368,7 +395,7 @@
     <EmbeddedResource Include="UCBaru\Reparasi.resx">
       <DependentUpon>Reparasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\DashBoard.resx">
+    <EmbeddedResource Include="UCBaru\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UCTransaksi.resx">
@@ -571,6 +598,29 @@
     <None Include="bin\Gambar\WhatsApp Image 2020-07-04 at 23.05.12.jpeg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Gambar\Ikon\icons8-process-24.png" />
+    <None Include="bin\Gambar\Ikon\tambahKeranjang.png" />
+    <None Include="bin\Gambar\Ikon\icons8-buying-24.png" />
+    <None Include="bin\Gambar\Ikon\Exit.png" />
+    <None Include="bin\Gambar\Ikon\tambah.png" />
+    <None Include="bin\Gambar\Ikon\Ceklist.png" />
+    <None Include="bin\Gambar\Ikon\Pelanggan.png" />
+    <None Include="bin\Gambar\Ikon\Pelanggan %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Pemasok %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Pelayan %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Repairmen %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Komponen %282%29.png" />
+    <None Include="bin\Gambar\Ikon\AlatKerja.png" />
+    <None Include="bin\Gambar\Ikon\PemasokAlat.png" />
+    <None Include="bin\Gambar\Ikon\PemasokKomp.png" />
+    <None Include="bin\Gambar\Ikon\Laptop.png" />
+    <None Include="bin\Gambar\Ikon\Refresh.png" />
+    <None Include="bin\Gambar\Ikon\Cari.png" />
+    <None Include="bin\Gambar\Ikon\Bayar.png" />
+    <None Include="bin\Gambar\Ikon\Gagal.png" />
+    <None Include="bin\Gambar\Ikon\Ceklist %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Exit %282%29.png" />
+    <None Include="bin\Gambar\Ikon\Dashbord.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

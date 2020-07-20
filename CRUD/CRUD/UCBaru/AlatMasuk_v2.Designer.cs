@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlatMasuk_v2));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,15 +48,15 @@
             this.btnKonfirmasi = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableDetail = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSukses = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnGagal = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSukses = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnGagal = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.tableRestock)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableDetail)).BeginInit();
@@ -155,22 +154,22 @@
             this.tableRestock.AllowUserToDeleteRows = false;
             this.tableRestock.AllowUserToResizeColumns = false;
             this.tableRestock.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableRestock.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableRestock.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tableRestock.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableRestock.BackgroundColor = System.Drawing.Color.White;
             this.tableRestock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableRestock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tableRestock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableRestock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableRestock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tableRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableRestock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -179,14 +178,14 @@
             this.Column8,
             this.Column9,
             this.Column2});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableRestock.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableRestock.DefaultCellStyle = dataGridViewCellStyle3;
             this.tableRestock.DoubleBuffered = true;
             this.tableRestock.EnableHeadersVisualStyles = false;
             this.tableRestock.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -285,22 +284,22 @@
             this.tableDetail.AllowUserToDeleteRows = false;
             this.tableDetail.AllowUserToResizeColumns = false;
             this.tableDetail.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.tableDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableDetail.BackgroundColor = System.Drawing.Color.White;
             this.tableDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tableDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tableDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -309,14 +308,14 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableDetail.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableDetail.DefaultCellStyle = dataGridViewCellStyle6;
             this.tableDetail.DoubleBuffered = true;
             this.tableDetail.EnableHeadersVisualStyles = false;
             this.tableDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -330,89 +329,6 @@
             this.tableDetail.Size = new System.Drawing.Size(1189, 211);
             this.tableDetail.TabIndex = 29;
             this.tableDetail.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDetail_CellClick);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnKonfirmasi);
-            this.panel2.Controls.Add(this.btnSukses);
-            this.panel2.Controls.Add(this.btnGagal);
-            this.panel2.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panel2.Controls.Add(this.tableDetail);
-            this.panel2.Location = new System.Drawing.Point(3, 335);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1195, 337);
-            this.panel2.TabIndex = 3;
-            // 
-            // btnSukses
-            // 
-            this.btnSukses.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSukses.BorderRadius = 0;
-            this.btnSukses.ButtonText = "Sukses";
-            this.btnSukses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSukses.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSukses.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSukses.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSukses.Iconimage")));
-            this.btnSukses.Iconimage_right = null;
-            this.btnSukses.Iconimage_right_Selected = null;
-            this.btnSukses.Iconimage_Selected = null;
-            this.btnSukses.IconMarginLeft = 0;
-            this.btnSukses.IconMarginRight = 0;
-            this.btnSukses.IconRightVisible = true;
-            this.btnSukses.IconRightZoom = 0D;
-            this.btnSukses.IconVisible = true;
-            this.btnSukses.IconZoom = 90D;
-            this.btnSukses.IsTab = false;
-            this.btnSukses.Location = new System.Drawing.Point(601, 256);
-            this.btnSukses.Name = "btnSukses";
-            this.btnSukses.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSukses.selected = false;
-            this.btnSukses.Size = new System.Drawing.Size(591, 37);
-            this.btnSukses.TabIndex = 57;
-            this.btnSukses.Text = "Sukses";
-            this.btnSukses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSukses.Textcolor = System.Drawing.Color.White;
-            this.btnSukses.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSukses.Click += new System.EventHandler(this.btnSukses_Click);
-            // 
-            // btnGagal
-            // 
-            this.btnGagal.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGagal.BorderRadius = 0;
-            this.btnGagal.ButtonText = "Gagal";
-            this.btnGagal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGagal.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGagal.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGagal.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGagal.Iconimage")));
-            this.btnGagal.Iconimage_right = null;
-            this.btnGagal.Iconimage_right_Selected = null;
-            this.btnGagal.Iconimage_Selected = null;
-            this.btnGagal.IconMarginLeft = 0;
-            this.btnGagal.IconMarginRight = 0;
-            this.btnGagal.IconRightVisible = true;
-            this.btnGagal.IconRightZoom = 0D;
-            this.btnGagal.IconVisible = true;
-            this.btnGagal.IconZoom = 90D;
-            this.btnGagal.IsTab = false;
-            this.btnGagal.Location = new System.Drawing.Point(3, 256);
-            this.btnGagal.Name = "btnGagal";
-            this.btnGagal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnGagal.selected = false;
-            this.btnGagal.Size = new System.Drawing.Size(592, 37);
-            this.btnGagal.TabIndex = 56;
-            this.btnGagal.Text = "Gagal";
-            this.btnGagal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGagal.Textcolor = System.Drawing.Color.White;
-            this.btnGagal.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGagal.Click += new System.EventHandler(this.btnGagal_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -459,6 +375,89 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.Width = 68;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnKonfirmasi);
+            this.panel2.Controls.Add(this.btnSukses);
+            this.panel2.Controls.Add(this.btnGagal);
+            this.panel2.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel2.Controls.Add(this.tableDetail);
+            this.panel2.Location = new System.Drawing.Point(3, 335);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1195, 337);
+            this.panel2.TabIndex = 3;
+            // 
+            // btnSukses
+            // 
+            this.btnSukses.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSukses.BorderRadius = 0;
+            this.btnSukses.ButtonText = "Sukses";
+            this.btnSukses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSukses.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSukses.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSukses.Iconimage = global::CRUD.Properties.Resources.Ceklist__2_;
+            this.btnSukses.Iconimage_right = null;
+            this.btnSukses.Iconimage_right_Selected = null;
+            this.btnSukses.Iconimage_Selected = null;
+            this.btnSukses.IconMarginLeft = 0;
+            this.btnSukses.IconMarginRight = 0;
+            this.btnSukses.IconRightVisible = true;
+            this.btnSukses.IconRightZoom = 0D;
+            this.btnSukses.IconVisible = true;
+            this.btnSukses.IconZoom = 75D;
+            this.btnSukses.IsTab = false;
+            this.btnSukses.Location = new System.Drawing.Point(601, 256);
+            this.btnSukses.Name = "btnSukses";
+            this.btnSukses.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSukses.selected = false;
+            this.btnSukses.Size = new System.Drawing.Size(591, 37);
+            this.btnSukses.TabIndex = 57;
+            this.btnSukses.Text = "Sukses";
+            this.btnSukses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSukses.Textcolor = System.Drawing.Color.White;
+            this.btnSukses.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSukses.Click += new System.EventHandler(this.btnSukses_Click);
+            // 
+            // btnGagal
+            // 
+            this.btnGagal.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGagal.BorderRadius = 0;
+            this.btnGagal.ButtonText = "Gagal";
+            this.btnGagal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGagal.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGagal.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGagal.Iconimage = global::CRUD.Properties.Resources.Gagal;
+            this.btnGagal.Iconimage_right = null;
+            this.btnGagal.Iconimage_right_Selected = null;
+            this.btnGagal.Iconimage_Selected = null;
+            this.btnGagal.IconMarginLeft = 0;
+            this.btnGagal.IconMarginRight = 0;
+            this.btnGagal.IconRightVisible = true;
+            this.btnGagal.IconRightZoom = 0D;
+            this.btnGagal.IconVisible = true;
+            this.btnGagal.IconZoom = 75D;
+            this.btnGagal.IsTab = false;
+            this.btnGagal.Location = new System.Drawing.Point(3, 256);
+            this.btnGagal.Name = "btnGagal";
+            this.btnGagal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGagal.selected = false;
+            this.btnGagal.Size = new System.Drawing.Size(592, 37);
+            this.btnGagal.TabIndex = 56;
+            this.btnGagal.Text = "Gagal";
+            this.btnGagal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGagal.Textcolor = System.Drawing.Color.White;
+            this.btnGagal.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGagal.Click += new System.EventHandler(this.btnGagal_Click);
             // 
             // AlatMasuk_v2
             // 

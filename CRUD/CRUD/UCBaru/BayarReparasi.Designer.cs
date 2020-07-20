@@ -34,10 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BayarReparasi));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnBayar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tableKomponenBeli = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtKode = new System.Windows.Forms.TextBox();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnCari = new Bunifu.Framework.UI.BunifuImageButton();
             this.tableReparasi = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,13 +73,11 @@
             this.txtnama_pelanggan = new System.Windows.Forms.TextBox();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnBayar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCari = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponenBeli)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableReparasi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableReparasi)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,6 +130,41 @@
             this.label8.TabIndex = 56;
             this.label8.Text = "Rp";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnBayar
+            // 
+            this.btnBayar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnBayar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnBayar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBayar.BorderRadius = 0;
+            this.btnBayar.ButtonText = "Bayar";
+            this.btnBayar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBayar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnBayar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnBayar.Iconimage = global::CRUD.Properties.Resources.Bayar;
+            this.btnBayar.Iconimage_right = null;
+            this.btnBayar.Iconimage_right_Selected = null;
+            this.btnBayar.Iconimage_Selected = null;
+            this.btnBayar.IconMarginLeft = 0;
+            this.btnBayar.IconMarginRight = 0;
+            this.btnBayar.IconRightVisible = true;
+            this.btnBayar.IconRightZoom = 0D;
+            this.btnBayar.IconVisible = true;
+            this.btnBayar.IconZoom = 90D;
+            this.btnBayar.IsTab = false;
+            this.btnBayar.Location = new System.Drawing.Point(870, 208);
+            this.btnBayar.Name = "btnBayar";
+            this.btnBayar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnBayar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnBayar.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBayar.selected = false;
+            this.btnBayar.Size = new System.Drawing.Size(312, 37);
+            this.btnBayar.TabIndex = 55;
+            this.btnBayar.Text = "Bayar";
+            this.btnBayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBayar.Textcolor = System.Drawing.Color.White;
+            this.btnBayar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBayar.Click += new System.EventHandler(this.btnBayar_Click);
             // 
             // tableKomponenBeli
             // 
@@ -361,6 +395,21 @@
             this.bunifuMaterialTextbox1.Text = "Detail Transaksi";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnCari
+            // 
+            this.btnCari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnCari.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCari.Image = global::CRUD.Properties.Resources.Cari;
+            this.btnCari.ImageActive = null;
+            this.btnCari.Location = new System.Drawing.Point(318, 59);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Size = new System.Drawing.Size(36, 26);
+            this.btnCari.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCari.TabIndex = 51;
+            this.btnCari.TabStop = false;
+            this.btnCari.Zoom = 10;
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            // 
             // tableReparasi
             // 
             this.tableReparasi.AllowUserToAddRows = false;
@@ -447,7 +496,7 @@
             this.Column3.HeaderText = "Jenis Alat";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 88;
+            this.Column3.Width = 81;
             // 
             // Column4
             // 
@@ -455,7 +504,7 @@
             this.Column4.HeaderText = "Alat Elektronik";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 115;
+            this.Column4.Width = 105;
             // 
             // Column5
             // 
@@ -544,55 +593,6 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Nama";
             // 
-            // btnBayar
-            // 
-            this.btnBayar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnBayar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnBayar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBayar.BorderRadius = 0;
-            this.btnBayar.ButtonText = "Bayar";
-            this.btnBayar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBayar.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBayar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBayar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBayar.Iconimage")));
-            this.btnBayar.Iconimage_right = null;
-            this.btnBayar.Iconimage_right_Selected = null;
-            this.btnBayar.Iconimage_Selected = null;
-            this.btnBayar.IconMarginLeft = 0;
-            this.btnBayar.IconMarginRight = 0;
-            this.btnBayar.IconRightVisible = true;
-            this.btnBayar.IconRightZoom = 0D;
-            this.btnBayar.IconVisible = true;
-            this.btnBayar.IconZoom = 90D;
-            this.btnBayar.IsTab = false;
-            this.btnBayar.Location = new System.Drawing.Point(870, 208);
-            this.btnBayar.Name = "btnBayar";
-            this.btnBayar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnBayar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnBayar.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBayar.selected = false;
-            this.btnBayar.Size = new System.Drawing.Size(312, 37);
-            this.btnBayar.TabIndex = 55;
-            this.btnBayar.Text = "Bayar";
-            this.btnBayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBayar.Textcolor = System.Drawing.Color.White;
-            this.btnBayar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBayar.Click += new System.EventHandler(this.btnBayar_Click);
-            // 
-            // btnCari
-            // 
-            this.btnCari.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnCari.Image = ((System.Drawing.Image)(resources.GetObject("btnCari.Image")));
-            this.btnCari.ImageActive = null;
-            this.btnCari.Location = new System.Drawing.Point(318, 59);
-            this.btnCari.Name = "btnCari";
-            this.btnCari.Size = new System.Drawing.Size(36, 26);
-            this.btnCari.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCari.TabIndex = 51;
-            this.btnCari.TabStop = false;
-            this.btnCari.Zoom = 10;
-            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
-            // 
             // BayarReparasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,8 +607,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponenBeli)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableReparasi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCari)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableReparasi)).EndInit();
             this.ResumeLayout(false);
 
         }

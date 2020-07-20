@@ -390,7 +390,7 @@ namespace CRUD
 
         private void txtNama_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && (e.KeyChar != '.'))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && (e.KeyChar != '.') && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }

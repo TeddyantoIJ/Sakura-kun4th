@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pemasokan_v2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableKomponen = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,8 +50,6 @@
             this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelTransaksi = new System.Windows.Forms.Panel();
             this.panelDetail = new System.Windows.Forms.Panel();
-            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tulisanTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTotal = new System.Windows.Forms.Label();
@@ -77,8 +74,10 @@
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelSupplier = new System.Windows.Forms.Panel();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tableSupplier = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
             this.panelKomponen.SuspendLayout();
             this.panelTransaksi.SuspendLayout();
@@ -95,36 +94,36 @@
             this.tableKomponen.AllowUserToDeleteRows = false;
             this.tableKomponen.AllowUserToResizeColumns = false;
             this.tableKomponen.AllowUserToResizeRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableKomponen.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableKomponen.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tableKomponen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableKomponen.BackgroundColor = System.Drawing.Color.White;
             this.tableKomponen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableKomponen.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tableKomponen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableKomponen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableKomponen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tableKomponen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableKomponen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.Column7,
             this.Column8,
             this.Column9});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableKomponen.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableKomponen.DefaultCellStyle = dataGridViewCellStyle3;
             this.tableKomponen.DoubleBuffered = true;
             this.tableKomponen.EnableHeadersVisualStyles = false;
             this.tableKomponen.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -293,76 +292,6 @@
             this.panelDetail.Size = new System.Drawing.Size(563, 669);
             this.panelDetail.TabIndex = 34;
             // 
-            // btnTambah
-            // 
-            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTambah.BorderRadius = 0;
-            this.btnTambah.ButtonText = "Tambah";
-            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
-            this.btnTambah.Iconimage_right = null;
-            this.btnTambah.Iconimage_right_Selected = null;
-            this.btnTambah.Iconimage_Selected = null;
-            this.btnTambah.IconMarginLeft = 0;
-            this.btnTambah.IconMarginRight = 0;
-            this.btnTambah.IconRightVisible = true;
-            this.btnTambah.IconRightZoom = 0D;
-            this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 90D;
-            this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(403, 628);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTambah.selected = false;
-            this.btnTambah.Size = new System.Drawing.Size(152, 37);
-            this.btnTambah.TabIndex = 44;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTambah.Textcolor = System.Drawing.Color.White;
-            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReset.BorderRadius = 0;
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
-            this.btnReset.Iconimage_right = null;
-            this.btnReset.Iconimage_right_Selected = null;
-            this.btnReset.Iconimage_Selected = null;
-            this.btnReset.IconMarginLeft = 0;
-            this.btnReset.IconMarginRight = 0;
-            this.btnReset.IconRightVisible = true;
-            this.btnReset.IconRightZoom = 0D;
-            this.btnReset.IconVisible = true;
-            this.btnReset.IconZoom = 90D;
-            this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(448, 8);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnReset.selected = false;
-            this.btnReset.Size = new System.Drawing.Size(99, 39);
-            this.btnReset.TabIndex = 43;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Textcolor = System.Drawing.Color.White;
-            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -499,19 +428,19 @@
             this.tableTransaksi.AllowUserToDeleteRows = false;
             this.tableTransaksi.AllowUserToResizeColumns = false;
             this.tableTransaksi.AllowUserToResizeRows = false;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.tableTransaksi.BackgroundColor = System.Drawing.Color.White;
             this.tableTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.tableTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -690,6 +619,48 @@
             this.bunifuMaterialTextbox2.Text = "Data Pemasok";
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // tableSupplier
+            // 
+            this.tableSupplier.AllowUserToDeleteRows = false;
+            this.tableSupplier.AllowUserToResizeColumns = false;
+            this.tableSupplier.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tableSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.tableSupplier.BackgroundColor = System.Drawing.Color.White;
+            this.tableSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableSupplier.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.tableSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.tableSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableSupplier.DefaultCellStyle = dataGridViewCellStyle6;
+            this.tableSupplier.DoubleBuffered = true;
+            this.tableSupplier.EnableHeadersVisualStyles = false;
+            this.tableSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.tableSupplier.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.tableSupplier.HeaderForeColor = System.Drawing.Color.White;
+            this.tableSupplier.Location = new System.Drawing.Point(11, 57);
+            this.tableSupplier.Name = "tableSupplier";
+            this.tableSupplier.ReadOnly = true;
+            this.tableSupplier.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.tableSupplier.RowHeadersVisible = false;
+            this.tableSupplier.Size = new System.Drawing.Size(599, 126);
+            this.tableSupplier.TabIndex = 33;
+            this.tableSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableSupplier_CellClick);
+            // 
             // btnKeranjang
             // 
             this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -700,7 +671,7 @@
             this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
             this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKeranjang.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKeranjang.Iconimage")));
+            this.btnKeranjang.Iconimage = global::CRUD.Properties.Resources.tambahKeranjang;
             this.btnKeranjang.Iconimage_right = null;
             this.btnKeranjang.Iconimage_right_Selected = null;
             this.btnKeranjang.Iconimage_Selected = null;
@@ -709,7 +680,7 @@
             this.btnKeranjang.IconRightVisible = true;
             this.btnKeranjang.IconRightZoom = 0D;
             this.btnKeranjang.IconVisible = true;
-            this.btnKeranjang.IconZoom = 90D;
+            this.btnKeranjang.IconZoom = 60D;
             this.btnKeranjang.IsTab = false;
             this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
             this.btnKeranjang.Name = "btnKeranjang";
@@ -725,47 +696,75 @@
             this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
             // 
-            // tableSupplier
+            // btnTambah
             // 
-            this.tableSupplier.AllowUserToDeleteRows = false;
-            this.tableSupplier.AllowUserToResizeColumns = false;
-            this.tableSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
-            this.tableSupplier.BackgroundColor = System.Drawing.Color.White;
-            this.tableSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableSupplier.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.tableSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
-            this.tableSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableSupplier.DefaultCellStyle = dataGridViewCellStyle24;
-            this.tableSupplier.DoubleBuffered = true;
-            this.tableSupplier.EnableHeadersVisualStyles = false;
-            this.tableSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.tableSupplier.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.tableSupplier.HeaderForeColor = System.Drawing.Color.White;
-            this.tableSupplier.Location = new System.Drawing.Point(11, 57);
-            this.tableSupplier.Name = "tableSupplier";
-            this.tableSupplier.ReadOnly = true;
-            this.tableSupplier.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.tableSupplier.RowHeadersVisible = false;
-            this.tableSupplier.Size = new System.Drawing.Size(599, 126);
-            this.tableSupplier.TabIndex = 33;
-            this.tableSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableSupplier_CellClick);
+            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTambah.BorderRadius = 0;
+            this.btnTambah.ButtonText = "Tambah";
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTambah.Iconimage = global::CRUD.Properties.Resources.icons8_buying_24;
+            this.btnTambah.Iconimage_right = null;
+            this.btnTambah.Iconimage_right_Selected = null;
+            this.btnTambah.Iconimage_Selected = null;
+            this.btnTambah.IconMarginLeft = 0;
+            this.btnTambah.IconMarginRight = 0;
+            this.btnTambah.IconRightVisible = true;
+            this.btnTambah.IconRightZoom = 0D;
+            this.btnTambah.IconVisible = true;
+            this.btnTambah.IconZoom = 60D;
+            this.btnTambah.IsTab = false;
+            this.btnTambah.Location = new System.Drawing.Point(403, 628);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTambah.selected = false;
+            this.btnTambah.Size = new System.Drawing.Size(152, 37);
+            this.btnTambah.TabIndex = 44;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTambah.Textcolor = System.Drawing.Color.White;
+            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.BorderRadius = 0;
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnReset.Iconimage = global::CRUD.Properties.Resources.icons8_process_24;
+            this.btnReset.Iconimage_right = null;
+            this.btnReset.Iconimage_right_Selected = null;
+            this.btnReset.Iconimage_Selected = null;
+            this.btnReset.IconMarginLeft = 0;
+            this.btnReset.IconMarginRight = 0;
+            this.btnReset.IconRightVisible = true;
+            this.btnReset.IconRightZoom = 0D;
+            this.btnReset.IconVisible = true;
+            this.btnReset.IconZoom = 60D;
+            this.btnReset.IsTab = false;
+            this.btnReset.Location = new System.Drawing.Point(448, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReset.selected = false;
+            this.btnReset.Size = new System.Drawing.Size(99, 39);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Textcolor = System.Drawing.Color.White;
+            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Pemasokan_v2
             // 

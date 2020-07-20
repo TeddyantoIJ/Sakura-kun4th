@@ -204,9 +204,16 @@ namespace CRUD
             {
                 sFileName = choofdlog.FileName;
             }
-            picCustomer.Image = Image.FromFile(sFileName);
-            MessageBox.Show(sFileName);
-            picCustomer.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                picCustomer.Image = Image.FromFile(sFileName);
+                picCustomer.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch(Exception ex)
+            {
+
+            }
+            
         }
     }
 }

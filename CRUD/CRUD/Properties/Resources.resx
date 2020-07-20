@@ -118,13 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Hanyaikon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Gambar\Hanyaikon.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pemasok (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Pemasok (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gagal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Gagal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PemasokAlat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\PemasokAlat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlatKerja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\AlatKerja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PemasokKomp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\PemasokKomp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2020-07-04 at 23.05.12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\WhatsApp Image 2020-07-04 at 23.05.12.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pelanggan (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Pelanggan (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tambah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\tambah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Exit (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Repairmen (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Repairmen (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IkonSakura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Gambar\IkonSakura.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2020-07-04 at 23.05.12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Gambar\WhatsApp Image 2020-07-04 at 23.05.12.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bayar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Bayar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pelayan (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Pelayan (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ceklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Ceklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tambah1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\tambah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hanyaikon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Hanyaikon.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pelanggan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Pelanggan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Laptop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Komponen (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Komponen (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ceklist (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Ceklist (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-process-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\icons8-process-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Cari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tambahKeranjang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\tambahKeranjang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-buying-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\icons8-buying-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashbord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Gambar\Ikon\Dashbord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

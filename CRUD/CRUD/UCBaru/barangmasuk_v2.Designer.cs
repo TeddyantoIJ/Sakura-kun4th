@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(barangmasuk_v2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,10 +36,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnKonfirmasi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSukses = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnGagal = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tableDetail = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbSortir = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,12 +55,8 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSukses = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnGagal = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableDetail)).BeginInit();
             this.panel1.SuspendLayout();
@@ -111,76 +110,6 @@
             this.btnKonfirmasi.Textcolor = System.Drawing.Color.White;
             this.btnKonfirmasi.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKonfirmasi.Click += new System.EventHandler(this.btnKonfirmasi_Click);
-            // 
-            // btnSukses
-            // 
-            this.btnSukses.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSukses.BorderRadius = 0;
-            this.btnSukses.ButtonText = "Sukses";
-            this.btnSukses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSukses.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSukses.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSukses.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSukses.Iconimage")));
-            this.btnSukses.Iconimage_right = null;
-            this.btnSukses.Iconimage_right_Selected = null;
-            this.btnSukses.Iconimage_Selected = null;
-            this.btnSukses.IconMarginLeft = 0;
-            this.btnSukses.IconMarginRight = 0;
-            this.btnSukses.IconRightVisible = true;
-            this.btnSukses.IconRightZoom = 0D;
-            this.btnSukses.IconVisible = true;
-            this.btnSukses.IconZoom = 90D;
-            this.btnSukses.IsTab = false;
-            this.btnSukses.Location = new System.Drawing.Point(601, 256);
-            this.btnSukses.Name = "btnSukses";
-            this.btnSukses.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnSukses.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSukses.selected = false;
-            this.btnSukses.Size = new System.Drawing.Size(591, 37);
-            this.btnSukses.TabIndex = 57;
-            this.btnSukses.Text = "Sukses";
-            this.btnSukses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSukses.Textcolor = System.Drawing.Color.White;
-            this.btnSukses.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSukses.Click += new System.EventHandler(this.btnSukses_Click);
-            // 
-            // btnGagal
-            // 
-            this.btnGagal.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGagal.BorderRadius = 0;
-            this.btnGagal.ButtonText = "Gagal";
-            this.btnGagal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGagal.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGagal.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGagal.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGagal.Iconimage")));
-            this.btnGagal.Iconimage_right = null;
-            this.btnGagal.Iconimage_right_Selected = null;
-            this.btnGagal.Iconimage_Selected = null;
-            this.btnGagal.IconMarginLeft = 0;
-            this.btnGagal.IconMarginRight = 0;
-            this.btnGagal.IconRightVisible = true;
-            this.btnGagal.IconRightZoom = 0D;
-            this.btnGagal.IconVisible = true;
-            this.btnGagal.IconZoom = 90D;
-            this.btnGagal.IsTab = false;
-            this.btnGagal.Location = new System.Drawing.Point(3, 256);
-            this.btnGagal.Name = "btnGagal";
-            this.btnGagal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnGagal.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnGagal.selected = false;
-            this.btnGagal.Size = new System.Drawing.Size(592, 37);
-            this.btnGagal.TabIndex = 56;
-            this.btnGagal.Text = "Gagal";
-            this.btnGagal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGagal.Textcolor = System.Drawing.Color.White;
-            this.btnGagal.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGagal.Click += new System.EventHandler(this.btnGagal_Click);
             // 
             // bunifuMaterialTextbox1
             // 
@@ -256,6 +185,52 @@
             this.tableDetail.Size = new System.Drawing.Size(1189, 211);
             this.tableDetail.TabIndex = 29;
             this.tableDetail.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDetail_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 48;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Komponen";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Penyuplai";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Jumlah barang";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 119;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Total harga";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 98;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Status";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 68;
             // 
             // panel1
             // 
@@ -414,51 +389,75 @@
             this.Column2.ReadOnly = true;
             this.Column2.Width = 78;
             // 
-            // dataGridViewTextBoxColumn1
+            // btnSukses
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn1.HeaderText = "No";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 48;
+            this.btnSukses.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSukses.BorderRadius = 0;
+            this.btnSukses.ButtonText = "Sukses";
+            this.btnSukses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSukses.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSukses.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSukses.Iconimage = global::CRUD.Properties.Resources.Ceklist__2_;
+            this.btnSukses.Iconimage_right = null;
+            this.btnSukses.Iconimage_right_Selected = null;
+            this.btnSukses.Iconimage_Selected = null;
+            this.btnSukses.IconMarginLeft = 0;
+            this.btnSukses.IconMarginRight = 0;
+            this.btnSukses.IconRightVisible = true;
+            this.btnSukses.IconRightZoom = 0D;
+            this.btnSukses.IconVisible = true;
+            this.btnSukses.IconZoom = 85D;
+            this.btnSukses.IsTab = false;
+            this.btnSukses.Location = new System.Drawing.Point(601, 256);
+            this.btnSukses.Name = "btnSukses";
+            this.btnSukses.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnSukses.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSukses.selected = false;
+            this.btnSukses.Size = new System.Drawing.Size(591, 37);
+            this.btnSukses.TabIndex = 57;
+            this.btnSukses.Text = "Sukses";
+            this.btnSukses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSukses.Textcolor = System.Drawing.Color.White;
+            this.btnSukses.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSukses.Click += new System.EventHandler(this.btnSukses_Click);
             // 
-            // dataGridViewTextBoxColumn2
+            // btnGagal
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Komponen";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Penyuplai";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Jumlah barang";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 119;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Total harga";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 98;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Status";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 68;
+            this.btnGagal.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGagal.BorderRadius = 0;
+            this.btnGagal.ButtonText = "Gagal";
+            this.btnGagal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGagal.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGagal.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGagal.Iconimage = global::CRUD.Properties.Resources.Gagal;
+            this.btnGagal.Iconimage_right = null;
+            this.btnGagal.Iconimage_right_Selected = null;
+            this.btnGagal.Iconimage_Selected = null;
+            this.btnGagal.IconMarginLeft = 0;
+            this.btnGagal.IconMarginRight = 0;
+            this.btnGagal.IconRightVisible = true;
+            this.btnGagal.IconRightZoom = 0D;
+            this.btnGagal.IconVisible = true;
+            this.btnGagal.IconZoom = 75D;
+            this.btnGagal.IsTab = false;
+            this.btnGagal.Location = new System.Drawing.Point(3, 256);
+            this.btnGagal.Name = "btnGagal";
+            this.btnGagal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnGagal.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGagal.selected = false;
+            this.btnGagal.Size = new System.Drawing.Size(592, 37);
+            this.btnGagal.TabIndex = 56;
+            this.btnGagal.Text = "Gagal";
+            this.btnGagal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGagal.Textcolor = System.Drawing.Color.White;
+            this.btnGagal.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGagal.Click += new System.EventHandler(this.btnGagal_Click);
             // 
             // barangmasuk_v2
             // 

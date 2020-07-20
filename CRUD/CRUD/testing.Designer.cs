@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.alatMasuk_v21 = new CRUD.AlatMasuk_v2();
+            this.cruD_v21 = new CRUD.CRUD_v2();
             this.SuspendLayout();
             // 
-            // alatMasuk_v21
+            // cruD_v21
             // 
-            this.alatMasuk_v21.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.alatMasuk_v21.Location = new System.Drawing.Point(12, 12);
-            this.alatMasuk_v21.Name = "alatMasuk_v21";
-            this.alatMasuk_v21.Size = new System.Drawing.Size(1201, 675);
-            this.alatMasuk_v21.TabIndex = 0;
+            this.cruD_v21.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cruD_v21.Location = new System.Drawing.Point(12, -34);
+            this.cruD_v21.Name = "cruD_v21";
+            this.cruD_v21.Size = new System.Drawing.Size(1200, 675);
+            this.cruD_v21.TabIndex = 0;
             // 
             // testing
             // 
@@ -45,7 +45,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.alatMasuk_v21);
+            this.Controls.Add(this.cruD_v21);
             this.Name = "testing";
             this.Text = "testing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private AlatMasuk_v2 alatMasuk_v21;
+        private CRUD_v2 cruD_v21;
     }
 }

@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestockAlatKerja_v2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTransaksi = new System.Windows.Forms.Panel();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -44,16 +43,18 @@
             this.panelKomponen = new System.Windows.Forms.Panel();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tbAlatKerja = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSupplier = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tbSupplier = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelDetail = new System.Windows.Forms.Panel();
-            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tulisanTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTotal = new System.Windows.Forms.Label();
@@ -76,11 +77,9 @@
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelTransaksi.SuspendLayout();
             this.panelKomponen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbAlatKerja)).BeginInit();
@@ -194,22 +193,22 @@
             this.tbAlatKerja.AllowUserToDeleteRows = false;
             this.tbAlatKerja.AllowUserToResizeColumns = false;
             this.tbAlatKerja.AllowUserToResizeRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbAlatKerja.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbAlatKerja.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tbAlatKerja.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbAlatKerja.BackgroundColor = System.Drawing.Color.White;
             this.tbAlatKerja.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAlatKerja.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tbAlatKerja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbAlatKerja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbAlatKerja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tbAlatKerja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbAlatKerja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -217,14 +216,14 @@
             this.Column8,
             this.Column9,
             this.Column1});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbAlatKerja.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbAlatKerja.DefaultCellStyle = dataGridViewCellStyle3;
             this.tbAlatKerja.DoubleBuffered = true;
             this.tbAlatKerja.EnableHeadersVisualStyles = false;
             this.tbAlatKerja.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -239,6 +238,43 @@
             this.tbAlatKerja.TabIndex = 27;
             this.tbAlatKerja.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbAlatKerja_CellClick);
             // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column6.HeaderText = "No";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 48;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column7.HeaderText = "Alat Kerja";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column8.HeaderText = "Jumlah";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 73;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column9.HeaderText = "Rusak";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 64;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Bagus";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // panelSupplier
             // 
             this.panelSupplier.BackColor = System.Drawing.Color.White;
@@ -250,97 +286,41 @@
             this.panelSupplier.Size = new System.Drawing.Size(626, 187);
             this.panelSupplier.TabIndex = 36;
             // 
-            // bunifuMaterialTextbox2
-            // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.bunifuMaterialTextbox2.Enabled = false;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(11, 5);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(473, 43);
-            this.bunifuMaterialTextbox2.TabIndex = 32;
-            this.bunifuMaterialTextbox2.Text = "Data Pemasok";
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // btnKeranjang
-            // 
-            this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKeranjang.BorderRadius = 0;
-            this.btnKeranjang.ButtonText = "Masukkan keranjang";
-            this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
-            this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKeranjang.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKeranjang.Iconimage")));
-            this.btnKeranjang.Iconimage_right = null;
-            this.btnKeranjang.Iconimage_right_Selected = null;
-            this.btnKeranjang.Iconimage_Selected = null;
-            this.btnKeranjang.IconMarginLeft = 0;
-            this.btnKeranjang.IconMarginRight = 0;
-            this.btnKeranjang.IconRightVisible = true;
-            this.btnKeranjang.IconRightZoom = 0D;
-            this.btnKeranjang.IconVisible = true;
-            this.btnKeranjang.IconZoom = 90D;
-            this.btnKeranjang.IsTab = false;
-            this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
-            this.btnKeranjang.Name = "btnKeranjang";
-            this.btnKeranjang.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnKeranjang.selected = false;
-            this.btnKeranjang.Size = new System.Drawing.Size(130, 48);
-            this.btnKeranjang.TabIndex = 34;
-            this.btnKeranjang.Text = "Masukkan keranjang";
-            this.btnKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKeranjang.Textcolor = System.Drawing.Color.White;
-            this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
-            // 
             // tbSupplier
             // 
             this.tbSupplier.AllowUserToAddRows = false;
             this.tbSupplier.AllowUserToDeleteRows = false;
             this.tbSupplier.AllowUserToResizeColumns = false;
             this.tbSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.tbSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbSupplier.BackgroundColor = System.Drawing.Color.White;
             this.tbSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSupplier.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tbSupplier.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tbSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 9F);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbSupplier.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbSupplier.DefaultCellStyle = dataGridViewCellStyle6;
             this.tbSupplier.DoubleBuffered = true;
             this.tbSupplier.EnableHeadersVisualStyles = false;
             this.tbSupplier.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
@@ -378,6 +358,27 @@
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 67;
             // 
+            // bunifuMaterialTextbox2
+            // 
+            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bunifuMaterialTextbox2.Enabled = false;
+            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox2.HintText = "";
+            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox2.LineThickness = 4;
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(11, 5);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
+            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(473, 43);
+            this.bunifuMaterialTextbox2.TabIndex = 32;
+            this.bunifuMaterialTextbox2.Text = "Data Pemasok";
+            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // panelDetail
             // 
             this.panelDetail.BackColor = System.Drawing.Color.White;
@@ -397,76 +398,6 @@
             this.panelDetail.Name = "panelDetail";
             this.panelDetail.Size = new System.Drawing.Size(563, 669);
             this.panelDetail.TabIndex = 37;
-            // 
-            // btnTambah
-            // 
-            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTambah.BorderRadius = 0;
-            this.btnTambah.ButtonText = "Tambah";
-            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTambah.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTambah.Iconimage")));
-            this.btnTambah.Iconimage_right = null;
-            this.btnTambah.Iconimage_right_Selected = null;
-            this.btnTambah.Iconimage_Selected = null;
-            this.btnTambah.IconMarginLeft = 0;
-            this.btnTambah.IconMarginRight = 0;
-            this.btnTambah.IconRightVisible = true;
-            this.btnTambah.IconRightZoom = 0D;
-            this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 90D;
-            this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(403, 628);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTambah.selected = false;
-            this.btnTambah.Size = new System.Drawing.Size(152, 37);
-            this.btnTambah.TabIndex = 44;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTambah.Textcolor = System.Drawing.Color.White;
-            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReset.BorderRadius = 0;
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReset.Iconimage")));
-            this.btnReset.Iconimage_right = null;
-            this.btnReset.Iconimage_right_Selected = null;
-            this.btnReset.Iconimage_Selected = null;
-            this.btnReset.IconMarginLeft = 0;
-            this.btnReset.IconMarginRight = 0;
-            this.btnReset.IconRightVisible = true;
-            this.btnReset.IconRightZoom = 0D;
-            this.btnReset.IconVisible = true;
-            this.btnReset.IconZoom = 90D;
-            this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(448, 8);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnReset.selected = false;
-            this.btnReset.Size = new System.Drawing.Size(99, 39);
-            this.btnReset.TabIndex = 43;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Textcolor = System.Drawing.Color.White;
-            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -602,19 +533,19 @@
             this.tbTransaksi.AllowUserToDeleteRows = false;
             this.tbTransaksi.AllowUserToResizeColumns = false;
             this.tbTransaksi.AllowUserToResizeRows = false;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbTransaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.tbTransaksi.BackgroundColor = System.Drawing.Color.White;
             this.tbTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTransaksi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.tbTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
@@ -760,42 +691,110 @@
             this.bunifuMaterialTextbox6.Text = " ";
             this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Column6
+            // btnTambah
             // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column6.HeaderText = "No";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 48;
+            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTambah.BorderRadius = 0;
+            this.btnTambah.ButtonText = "Tambah";
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTambah.Iconimage = global::CRUD.Properties.Resources.icons8_buying_24;
+            this.btnTambah.Iconimage_right = null;
+            this.btnTambah.Iconimage_right_Selected = null;
+            this.btnTambah.Iconimage_Selected = null;
+            this.btnTambah.IconMarginLeft = 0;
+            this.btnTambah.IconMarginRight = 0;
+            this.btnTambah.IconRightVisible = true;
+            this.btnTambah.IconRightZoom = 0D;
+            this.btnTambah.IconVisible = true;
+            this.btnTambah.IconZoom = 70D;
+            this.btnTambah.IsTab = false;
+            this.btnTambah.Location = new System.Drawing.Point(403, 628);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTambah.selected = false;
+            this.btnTambah.Size = new System.Drawing.Size(152, 37);
+            this.btnTambah.TabIndex = 44;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTambah.Textcolor = System.Drawing.Color.White;
+            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
-            // Column7
+            // btnReset
             // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column7.HeaderText = "Alat Kerja";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
+            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.BorderRadius = 0;
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnReset.Iconimage = global::CRUD.Properties.Resources.icons8_process_24;
+            this.btnReset.Iconimage_right = null;
+            this.btnReset.Iconimage_right_Selected = null;
+            this.btnReset.Iconimage_Selected = null;
+            this.btnReset.IconMarginLeft = 0;
+            this.btnReset.IconMarginRight = 0;
+            this.btnReset.IconRightVisible = true;
+            this.btnReset.IconRightZoom = 0D;
+            this.btnReset.IconVisible = true;
+            this.btnReset.IconZoom = 50D;
+            this.btnReset.IsTab = false;
+            this.btnReset.Location = new System.Drawing.Point(448, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReset.selected = false;
+            this.btnReset.Size = new System.Drawing.Size(99, 39);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Textcolor = System.Drawing.Color.White;
+            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // Column8
+            // btnKeranjang
             // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column8.HeaderText = "Jumlah";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 73;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column9.HeaderText = "Rusak";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 64;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Bagus";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKeranjang.BorderRadius = 0;
+            this.btnKeranjang.ButtonText = "Masukkan keranjang";
+            this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
+            this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnKeranjang.Iconimage = global::CRUD.Properties.Resources.tambahKeranjang;
+            this.btnKeranjang.Iconimage_right = null;
+            this.btnKeranjang.Iconimage_right_Selected = null;
+            this.btnKeranjang.Iconimage_Selected = null;
+            this.btnKeranjang.IconMarginLeft = 0;
+            this.btnKeranjang.IconMarginRight = 0;
+            this.btnKeranjang.IconRightVisible = true;
+            this.btnKeranjang.IconRightZoom = 0D;
+            this.btnKeranjang.IconVisible = true;
+            this.btnKeranjang.IconZoom = 60D;
+            this.btnKeranjang.IsTab = false;
+            this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
+            this.btnKeranjang.Name = "btnKeranjang";
+            this.btnKeranjang.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnKeranjang.selected = false;
+            this.btnKeranjang.Size = new System.Drawing.Size(130, 48);
+            this.btnKeranjang.TabIndex = 34;
+            this.btnKeranjang.Text = "Masukkan keranjang";
+            this.btnKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKeranjang.Textcolor = System.Drawing.Color.White;
+            this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
             // 
             // RestockAlatKerja_v2
             // 
