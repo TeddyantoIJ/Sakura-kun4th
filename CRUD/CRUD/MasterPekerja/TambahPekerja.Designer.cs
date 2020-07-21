@@ -61,22 +61,25 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.gbAkun = new System.Windows.Forms.GroupBox();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.epSalah)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epBenar)).BeginInit();
             this.gbAkun.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 33);
+            this.label1.Location = new System.Drawing.Point(171, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 21);
             this.label1.TabIndex = 0;
@@ -85,8 +88,9 @@
             // lblBagian
             // 
             this.lblBagian.AutoSize = true;
+            this.lblBagian.BackColor = System.Drawing.Color.Transparent;
             this.lblBagian.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBagian.Location = new System.Drawing.Point(36, 121);
+            this.lblBagian.Location = new System.Drawing.Point(38, 121);
             this.lblBagian.Name = "lblBagian";
             this.lblBagian.Size = new System.Drawing.Size(59, 15);
             this.lblBagian.TabIndex = 1;
@@ -95,8 +99,9 @@
             // lblNama
             // 
             this.lblNama.AutoSize = true;
+            this.lblNama.BackColor = System.Drawing.Color.Transparent;
             this.lblNama.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNama.Location = new System.Drawing.Point(36, 154);
+            this.lblNama.Location = new System.Drawing.Point(38, 154);
             this.lblNama.Name = "lblNama";
             this.lblNama.Size = new System.Drawing.Size(80, 15);
             this.lblNama.TabIndex = 2;
@@ -105,8 +110,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 186);
+            this.label4.Location = new System.Drawing.Point(38, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 15);
             this.label4.TabIndex = 3;
@@ -115,8 +121,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 214);
+            this.label5.Location = new System.Drawing.Point(38, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 4;
@@ -125,8 +132,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(36, 274);
+            this.label6.Location = new System.Drawing.Point(38, 274);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 15);
             this.label6.TabIndex = 5;
@@ -135,8 +143,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 304);
+            this.label7.Location = new System.Drawing.Point(38, 304);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 6;
@@ -145,8 +154,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(36, 334);
+            this.label8.Location = new System.Drawing.Point(38, 334);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 15);
             this.label8.TabIndex = 7;
@@ -155,8 +165,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(149, 121);
+            this.label9.Location = new System.Drawing.Point(151, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(10, 15);
             this.label9.TabIndex = 8;
@@ -165,8 +176,9 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(149, 154);
+            this.label10.Location = new System.Drawing.Point(151, 154);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(10, 15);
             this.label10.TabIndex = 9;
@@ -175,8 +187,9 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(149, 186);
+            this.label11.Location = new System.Drawing.Point(151, 186);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 15);
             this.label11.TabIndex = 10;
@@ -185,8 +198,9 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(149, 214);
+            this.label12.Location = new System.Drawing.Point(151, 214);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(10, 15);
             this.label12.TabIndex = 11;
@@ -195,8 +209,9 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(149, 274);
+            this.label13.Location = new System.Drawing.Point(151, 274);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(10, 15);
             this.label13.TabIndex = 12;
@@ -205,8 +220,9 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(149, 304);
+            this.label14.Location = new System.Drawing.Point(151, 304);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(10, 15);
             this.label14.TabIndex = 13;
@@ -215,8 +231,9 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(149, 334);
+            this.label15.Location = new System.Drawing.Point(151, 334);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(10, 15);
             this.label15.TabIndex = 14;
@@ -225,8 +242,9 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
+            this.lblId.BackColor = System.Drawing.Color.Transparent;
             this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(169, 121);
+            this.lblId.Location = new System.Drawing.Point(171, 121);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(18, 15);
             this.lblId.TabIndex = 16;
@@ -235,34 +253,37 @@
             // rbLakilaki
             // 
             this.rbLakilaki.AutoSize = true;
+            this.rbLakilaki.BackColor = System.Drawing.Color.Transparent;
             this.rbLakilaki.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbLakilaki.Location = new System.Drawing.Point(169, 184);
+            this.rbLakilaki.Location = new System.Drawing.Point(171, 184);
             this.rbLakilaki.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbLakilaki.Name = "rbLakilaki";
             this.rbLakilaki.Size = new System.Drawing.Size(69, 19);
             this.rbLakilaki.TabIndex = 18;
             this.rbLakilaki.TabStop = true;
             this.rbLakilaki.Text = "Laki-laki";
-            this.rbLakilaki.UseVisualStyleBackColor = true;
+            this.rbLakilaki.UseVisualStyleBackColor = false;
             // 
             // rbPerempuan
             // 
             this.rbPerempuan.AutoSize = true;
+            this.rbPerempuan.BackColor = System.Drawing.Color.Transparent;
             this.rbPerempuan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPerempuan.Location = new System.Drawing.Point(260, 184);
+            this.rbPerempuan.Location = new System.Drawing.Point(262, 184);
             this.rbPerempuan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbPerempuan.Name = "rbPerempuan";
             this.rbPerempuan.Size = new System.Drawing.Size(86, 19);
             this.rbPerempuan.TabIndex = 19;
             this.rbPerempuan.TabStop = true;
             this.rbPerempuan.Text = "Perempuan";
-            this.rbPerempuan.UseVisualStyleBackColor = true;
+            this.rbPerempuan.UseVisualStyleBackColor = false;
             // 
             // txtAlamat
             // 
             this.txtAlamat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlamat.Location = new System.Drawing.Point(169, 214);
+            this.txtAlamat.Location = new System.Drawing.Point(171, 214);
             this.txtAlamat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAlamat.MaxLength = 100;
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.Size = new System.Drawing.Size(248, 56);
@@ -273,8 +294,9 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(169, 274);
+            this.txtEmail.Location = new System.Drawing.Point(171, 274);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.MaxLength = 30;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 23);
             this.txtEmail.TabIndex = 21;
@@ -288,7 +310,7 @@
             this.cmbStatus.Items.AddRange(new object[] {
             "Aktif",
             "Tidak Aktif"});
-            this.cmbStatus.Location = new System.Drawing.Point(169, 334);
+            this.cmbStatus.Location = new System.Drawing.Point(171, 334);
             this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(72, 23);
@@ -297,8 +319,9 @@
             // btnTambah
             // 
             this.btnTambah.AutoSize = true;
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Location = new System.Drawing.Point(109, 499);
+            this.btnTambah.Location = new System.Drawing.Point(111, 499);
             this.btnTambah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(87, 31);
@@ -312,8 +335,9 @@
             // btnBatal
             // 
             this.btnBatal.AutoSize = true;
+            this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBatal.Location = new System.Drawing.Point(274, 499);
+            this.btnBatal.Location = new System.Drawing.Point(276, 499);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 31);
@@ -335,8 +359,9 @@
             // txtNama
             // 
             this.txtNama.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.Location = new System.Drawing.Point(169, 154);
+            this.txtNama.Location = new System.Drawing.Point(171, 154);
             this.txtNama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNama.MaxLength = 50;
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(214, 23);
             this.txtNama.TabIndex = 17;
@@ -347,8 +372,9 @@
             // txtTelepon
             // 
             this.txtTelepon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelepon.Location = new System.Drawing.Point(169, 304);
+            this.txtTelepon.Location = new System.Drawing.Point(171, 304);
             this.txtTelepon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTelepon.MaxLength = 13;
             this.txtTelepon.Name = "txtTelepon";
             this.txtTelepon.Size = new System.Drawing.Size(111, 23);
             this.txtTelepon.TabIndex = 22;
@@ -363,7 +389,7 @@
             this.cmbBagian.Items.AddRange(new object[] {
             "Pelayan",
             "Gudang"});
-            this.cmbBagian.Location = new System.Drawing.Point(169, 86);
+            this.cmbBagian.Location = new System.Drawing.Point(171, 86);
             this.cmbBagian.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbBagian.Name = "cmbBagian";
             this.cmbBagian.Size = new System.Drawing.Size(83, 23);
@@ -374,8 +400,9 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(149, 86);
+            this.label16.Location = new System.Drawing.Point(151, 86);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(10, 15);
             this.label16.TabIndex = 26;
@@ -384,8 +411,9 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(36, 86);
+            this.label17.Location = new System.Drawing.Point(38, 86);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(43, 15);
             this.label17.TabIndex = 25;
@@ -393,6 +421,7 @@
             // 
             // gbAkun
             // 
+            this.gbAkun.BackColor = System.Drawing.Color.Transparent;
             this.gbAkun.Controls.Add(this.txtpassword);
             this.gbAkun.Controls.Add(this.label18);
             this.gbAkun.Controls.Add(this.label19);
@@ -400,47 +429,19 @@
             this.gbAkun.Controls.Add(this.label3);
             this.gbAkun.Controls.Add(this.label2);
             this.gbAkun.Enabled = false;
-            this.gbAkun.Location = new System.Drawing.Point(39, 364);
+            this.gbAkun.Location = new System.Drawing.Point(41, 364);
             this.gbAkun.Name = "gbAkun";
             this.gbAkun.Size = new System.Drawing.Size(378, 117);
             this.gbAkun.TabIndex = 27;
             this.gbAkun.TabStop = false;
             this.gbAkun.Text = "Akun";
             // 
-            // txtusername
-            // 
-            this.txtusername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(139, 31);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(214, 23);
-            this.txtusername.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(10, 15);
-            this.label2.TabIndex = 29;
-            this.label2.Text = ":";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 15);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Username";
-            // 
             // txtpassword
             // 
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(139, 62);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtpassword.MaxLength = 30;
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(214, 23);
             this.txtpassword.TabIndex = 33;
@@ -448,6 +449,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(119, 62);
             this.label18.Name = "label18";
@@ -458,6 +460,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(6, 62);
             this.label19.Name = "label19";
@@ -465,51 +468,100 @@
             this.label19.TabIndex = 31;
             this.label19.Text = "Password";
             // 
+            // txtusername
+            // 
+            this.txtusername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(139, 31);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtusername.MaxLength = 25;
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(214, 23);
+            this.txtusername.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Username";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(119, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 15);
+            this.label2.TabIndex = 29;
+            this.label2.Text = ":";
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.gbAkun);
+            this.bunifuGradientPanel1.Controls.Add(this.btnTambah);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbBagian);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.label16);
+            this.bunifuGradientPanel1.Controls.Add(this.lblBagian);
+            this.bunifuGradientPanel1.Controls.Add(this.label17);
+            this.bunifuGradientPanel1.Controls.Add(this.lblNama);
+            this.bunifuGradientPanel1.Controls.Add(this.txtTelepon);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.txtNama);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Controls.Add(this.label6);
+            this.bunifuGradientPanel1.Controls.Add(this.label7);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbStatus);
+            this.bunifuGradientPanel1.Controls.Add(this.label8);
+            this.bunifuGradientPanel1.Controls.Add(this.txtEmail);
+            this.bunifuGradientPanel1.Controls.Add(this.label9);
+            this.bunifuGradientPanel1.Controls.Add(this.txtAlamat);
+            this.bunifuGradientPanel1.Controls.Add(this.label10);
+            this.bunifuGradientPanel1.Controls.Add(this.rbPerempuan);
+            this.bunifuGradientPanel1.Controls.Add(this.label11);
+            this.bunifuGradientPanel1.Controls.Add(this.rbLakilaki);
+            this.bunifuGradientPanel1.Controls.Add(this.label12);
+            this.bunifuGradientPanel1.Controls.Add(this.lblId);
+            this.bunifuGradientPanel1.Controls.Add(this.label13);
+            this.bunifuGradientPanel1.Controls.Add(this.label15);
+            this.bunifuGradientPanel1.Controls.Add(this.label14);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(470, 543);
+            this.bunifuGradientPanel1.TabIndex = 28;
+            // 
             // TambahPekerja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 543);
-            this.Controls.Add(this.gbAkun);
-            this.Controls.Add(this.cmbBagian);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.txtTelepon);
-            this.Controls.Add(this.txtNama);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnTambah);
-            this.Controls.Add(this.cmbStatus);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtAlamat);
-            this.Controls.Add(this.rbPerempuan);
-            this.Controls.Add(this.rbLakilaki);
-            this.Controls.Add(this.lblId);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblNama);
-            this.Controls.Add(this.lblBagian);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TambahPekerja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tambah Pekerja";
             ((System.ComponentModel.ISupportInitialize)(this.epSalah)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epBenar)).EndInit();
             this.gbAkun.ResumeLayout(false);
             this.gbAkun.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -552,5 +604,6 @@
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

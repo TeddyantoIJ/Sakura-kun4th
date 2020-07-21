@@ -34,7 +34,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter adapter = null;
@@ -121,6 +121,10 @@ namespace CRUD
                     MessageBox.Show("BATAL!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            else
+            {
+                MessageBox.Show("Semua data wajib diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void inputDB()
@@ -130,7 +134,7 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
                 SqlCommand myCommand = null;

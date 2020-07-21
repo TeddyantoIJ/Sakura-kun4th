@@ -176,9 +176,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(544, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 25);
+            this.label1.Size = new System.Drawing.Size(156, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "DATA SUPPLIER";
+            this.label1.Text = "DATA PEMASOK";
             // 
             // btnUpdate
             // 
@@ -403,9 +403,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.Size = new System.Drawing.Size(121, 17);
             this.label4.TabIndex = 44;
-            this.label4.Text = "Contact Person";
+            this.label4.Text = "Penanggung Jawab";
             // 
             // infonama_supplier
             // 
@@ -429,18 +429,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 17);
+            this.label3.Size = new System.Drawing.Size(99, 17);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Nama Supplier";
+            this.label3.Text = "Nama Pemasok";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 40;
-            this.label2.Text = "ID Supplier";
+            this.label2.Text = "ID Pemasok";
             // 
             // updateGrup
             // 
@@ -552,10 +552,10 @@
             this.ClientSize = new System.Drawing.Size(1245, 575);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateSupplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UpdateSupplier";
             this.Load += new System.EventHandler(this.UpdateSupplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mssupplierBindingSource)).EndInit();

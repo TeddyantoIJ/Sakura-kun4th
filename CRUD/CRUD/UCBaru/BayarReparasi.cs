@@ -25,7 +25,7 @@ namespace CRUD
             tableReparasi.Columns.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_viewselesaireparasialat", connection);
@@ -133,7 +133,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -204,7 +204,7 @@ namespace CRUD
             tableKomponenBeli.Rows.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_getDetailReparasi", connection);
@@ -242,6 +242,10 @@ namespace CRUD
 
         private void btnBayar_Click(object sender, EventArgs e)
         {
+            if (txtKode.Text.Equals(""))
+            {
+                return;
+            }
             Pembayaran pembayaran = new Pembayaran(txtTotalBiaya.Text);
 
             pembayaran.ShowDialog(this);
@@ -257,7 +261,7 @@ namespace CRUD
 
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_updateTransaksiCustomer", connection);
@@ -310,7 +314,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariCustomer", connection);

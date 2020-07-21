@@ -21,13 +21,14 @@ namespace CRUD
         }
         public AlatKerjaMaster(string x)
         {
-            txtnama_alat_kerja.Text = x;
+            
             InitializeComponent();
+            txtnama_alat_kerja.Text = x;
             txtid_alat_kerja.Text = "AKRJ-XXXX";
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -235,7 +236,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -308,6 +309,9 @@ namespace CRUD
                 cmbrusak.Text = "";
                 cmbbagus.Text = "";
             }
+            cmbrusak.Items.Clear();
+            cmbbagus.Items.Clear();
+            
         }
 
         private void AlatKerjaMaster_Load(object sender, EventArgs e)
@@ -317,6 +321,15 @@ namespace CRUD
                 txtnama_alat_kerja.Text = Thread.CurrentPrincipal.Identity.Name;
                 infonama_alat_kerja.Text = "Sesuai";
                 infonama_alat_kerja.ForeColor = System.Drawing.Color.Green;
+            }
+        }
+
+        private void txtjumlah_MouseUp(object sender, MouseEventArgs e)
+        {
+            for (int i = 1; i <= (Convert.ToInt32(txtjumlah.Text)); i++)
+            {
+                cmbrusak.Items.Add(i);
+                cmbbagus.Items.Add(i);
             }
         }
     }

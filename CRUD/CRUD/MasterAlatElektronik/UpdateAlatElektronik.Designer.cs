@@ -29,14 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAlatElektronik));
             this.label1 = new System.Windows.Forms.Label();
             this.dgAlatElektronik = new System.Windows.Forms.DataGridView();
-            this.idalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idjenisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.msalatelektronikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataAlatElektronik = new CRUD.DataAlatElektronik();
-            this.msalatelektronikTableAdapter = new CRUD.DataAlatElektronikTableAdapters.msalatelektronikTableAdapter();
             this.cmbPencarian = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSegarkan = new System.Windows.Forms.Button();
@@ -44,7 +39,6 @@
             this.btnPerbarui = new System.Windows.Forms.Button();
             this.gbUpdate = new System.Windows.Forms.GroupBox();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnBaru = new System.Windows.Forms.Button();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.txtJenis = new System.Windows.Forms.TextBox();
@@ -56,17 +50,26 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
             this.txtPencarian = new System.Windows.Forms.TextBox();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.idalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idjenisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.msalatelektronikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataAlatElektronik = new CRUD.DataAlatElektronik();
+            this.msalatelektronikTableAdapter = new CRUD.DataAlatElektronikTableAdapters.msalatelektronikTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgAlatElektronik)).BeginInit();
+            this.gbUpdate.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.msalatelektronikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataAlatElektronik)).BeginInit();
-            this.gbUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(439, 9);
+            this.label1.Location = new System.Drawing.Point(439, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 21);
             this.label1.TabIndex = 0;
@@ -81,45 +84,11 @@
             this.namaalatDataGridViewTextBoxColumn,
             this.idjenisDataGridViewTextBoxColumn});
             this.dgAlatElektronik.DataSource = this.msalatelektronikBindingSource;
-            this.dgAlatElektronik.Location = new System.Drawing.Point(24, 56);
+            this.dgAlatElektronik.Location = new System.Drawing.Point(24, 57);
             this.dgAlatElektronik.Name = "dgAlatElektronik";
             this.dgAlatElektronik.Size = new System.Drawing.Size(542, 224);
             this.dgAlatElektronik.TabIndex = 1;
             this.dgAlatElektronik.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAlatElektronik_CellEnter);
-            // 
-            // idalatDataGridViewTextBoxColumn
-            // 
-            this.idalatDataGridViewTextBoxColumn.DataPropertyName = "id_alat";
-            this.idalatDataGridViewTextBoxColumn.HeaderText = "ID Alat";
-            this.idalatDataGridViewTextBoxColumn.Name = "idalatDataGridViewTextBoxColumn";
-            // 
-            // namaalatDataGridViewTextBoxColumn
-            // 
-            this.namaalatDataGridViewTextBoxColumn.DataPropertyName = "nama_alat";
-            this.namaalatDataGridViewTextBoxColumn.HeaderText = "Nama Alat Elektronik";
-            this.namaalatDataGridViewTextBoxColumn.Name = "namaalatDataGridViewTextBoxColumn";
-            this.namaalatDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // idjenisDataGridViewTextBoxColumn
-            // 
-            this.idjenisDataGridViewTextBoxColumn.DataPropertyName = "id_jenis";
-            this.idjenisDataGridViewTextBoxColumn.HeaderText = "Nama Jenis Elektronik";
-            this.idjenisDataGridViewTextBoxColumn.Name = "idjenisDataGridViewTextBoxColumn";
-            this.idjenisDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // msalatelektronikBindingSource
-            // 
-            this.msalatelektronikBindingSource.DataMember = "msalatelektronik";
-            this.msalatelektronikBindingSource.DataSource = this.dataAlatElektronik;
-            // 
-            // dataAlatElektronik
-            // 
-            this.dataAlatElektronik.DataSetName = "DataAlatElektronik";
-            this.dataAlatElektronik.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // msalatelektronikTableAdapter
-            // 
-            this.msalatelektronikTableAdapter.ClearBeforeFill = true;
             // 
             // cmbPencarian
             // 
@@ -127,9 +96,8 @@
             this.cmbPencarian.FormattingEnabled = true;
             this.cmbPencarian.Items.AddRange(new object[] {
             "ID Alat",
-            "Nama Alat Elektronik",
-            "Nama Jenis Elektronik"});
-            this.cmbPencarian.Location = new System.Drawing.Point(26, 307);
+            "Nama Alat Elektronik"});
+            this.cmbPencarian.Location = new System.Drawing.Point(26, 308);
             this.cmbPencarian.Name = "cmbPencarian";
             this.cmbPencarian.Size = new System.Drawing.Size(150, 23);
             this.cmbPencarian.TabIndex = 9;
@@ -138,7 +106,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 289);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(23, 290);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 8;
@@ -146,7 +115,7 @@
             // 
             // btnSegarkan
             // 
-            this.btnSegarkan.Location = new System.Drawing.Point(572, 122);
+            this.btnSegarkan.Location = new System.Drawing.Point(572, 123);
             this.btnSegarkan.Name = "btnSegarkan";
             this.btnSegarkan.Size = new System.Drawing.Size(75, 23);
             this.btnSegarkan.TabIndex = 13;
@@ -156,7 +125,7 @@
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(572, 89);
+            this.btnBatal.Location = new System.Drawing.Point(572, 90);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(75, 23);
             this.btnBatal.TabIndex = 12;
@@ -166,7 +135,7 @@
             // 
             // btnPerbarui
             // 
-            this.btnPerbarui.Location = new System.Drawing.Point(572, 56);
+            this.btnPerbarui.Location = new System.Drawing.Point(572, 57);
             this.btnPerbarui.Name = "btnPerbarui";
             this.btnPerbarui.Size = new System.Drawing.Size(75, 23);
             this.btnPerbarui.TabIndex = 11;
@@ -176,8 +145,8 @@
             // 
             // gbUpdate
             // 
+            this.gbUpdate.BackColor = System.Drawing.Color.Transparent;
             this.gbUpdate.Controls.Add(this.btnSimpan);
-            this.gbUpdate.Controls.Add(this.btnBaru);
             this.gbUpdate.Controls.Add(this.txtNama);
             this.gbUpdate.Controls.Add(this.lblId);
             this.gbUpdate.Controls.Add(this.txtJenis);
@@ -187,16 +156,16 @@
             this.gbUpdate.Controls.Add(this.label3);
             this.gbUpdate.Controls.Add(this.label6);
             this.gbUpdate.Controls.Add(this.label5);
-            this.gbUpdate.Location = new System.Drawing.Point(653, 56);
+            this.gbUpdate.Location = new System.Drawing.Point(653, 57);
             this.gbUpdate.Name = "gbUpdate";
-            this.gbUpdate.Size = new System.Drawing.Size(387, 150);
+            this.gbUpdate.Size = new System.Drawing.Size(387, 143);
             this.gbUpdate.TabIndex = 14;
             this.gbUpdate.TabStop = false;
             this.gbUpdate.Text = "Perbarui";
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(290, 24);
+            this.btnSimpan.Location = new System.Drawing.Point(290, 111);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 15;
@@ -204,20 +173,11 @@
             this.btnSimpan.UseVisualStyleBackColor = true;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // btnBaru
-            // 
-            this.btnBaru.Location = new System.Drawing.Point(291, 110);
-            this.btnBaru.Name = "btnBaru";
-            this.btnBaru.Size = new System.Drawing.Size(75, 27);
-            this.btnBaru.TabIndex = 21;
-            this.btnBaru.Text = "Baru";
-            this.btnBaru.UseVisualStyleBackColor = true;
-            this.btnBaru.Click += new System.EventHandler(this.btnBaru_Click);
-            // 
             // txtNama
             // 
             this.txtNama.Location = new System.Drawing.Point(192, 52);
             this.txtNama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNama.MaxLength = 30;
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(174, 23);
             this.txtNama.TabIndex = 19;
@@ -233,6 +193,7 @@
             // 
             // txtJenis
             // 
+            this.txtJenis.Enabled = false;
             this.txtJenis.Location = new System.Drawing.Point(191, 81);
             this.txtJenis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtJenis.Name = "txtJenis";
@@ -297,7 +258,7 @@
             // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(24, 342);
+            this.btnKembali.Location = new System.Drawing.Point(24, 343);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(75, 23);
             this.btnKembali.TabIndex = 15;
@@ -307,38 +268,89 @@
             // 
             // txtPencarian
             // 
-            this.txtPencarian.Location = new System.Drawing.Point(182, 307);
+            this.txtPencarian.Location = new System.Drawing.Point(182, 308);
             this.txtPencarian.Name = "txtPencarian";
             this.txtPencarian.Size = new System.Drawing.Size(145, 23);
             this.txtPencarian.TabIndex = 10;
             this.txtPencarian.TextChanged += new System.EventHandler(this.txtPencarian_TextChanged);
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.txtPencarian);
+            this.bunifuGradientPanel1.Controls.Add(this.gbUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.dgAlatElektronik);
+            this.bunifuGradientPanel1.Controls.Add(this.btnSegarkan);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbPencarian);
+            this.bunifuGradientPanel1.Controls.Add(this.btnPerbarui);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1064, 377);
+            this.bunifuGradientPanel1.TabIndex = 16;
+            // 
+            // idalatDataGridViewTextBoxColumn
+            // 
+            this.idalatDataGridViewTextBoxColumn.DataPropertyName = "id_alat";
+            this.idalatDataGridViewTextBoxColumn.HeaderText = "ID Alat";
+            this.idalatDataGridViewTextBoxColumn.Name = "idalatDataGridViewTextBoxColumn";
+            // 
+            // namaalatDataGridViewTextBoxColumn
+            // 
+            this.namaalatDataGridViewTextBoxColumn.DataPropertyName = "nama_alat";
+            this.namaalatDataGridViewTextBoxColumn.HeaderText = "Nama Alat Elektronik";
+            this.namaalatDataGridViewTextBoxColumn.Name = "namaalatDataGridViewTextBoxColumn";
+            this.namaalatDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // idjenisDataGridViewTextBoxColumn
+            // 
+            this.idjenisDataGridViewTextBoxColumn.DataPropertyName = "id_jenis";
+            this.idjenisDataGridViewTextBoxColumn.HeaderText = "Nama Jenis Elektronik";
+            this.idjenisDataGridViewTextBoxColumn.Name = "idjenisDataGridViewTextBoxColumn";
+            this.idjenisDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // msalatelektronikBindingSource
+            // 
+            this.msalatelektronikBindingSource.DataMember = "msalatelektronik";
+            this.msalatelektronikBindingSource.DataSource = this.dataAlatElektronik;
+            // 
+            // dataAlatElektronik
+            // 
+            this.dataAlatElektronik.DataSetName = "DataAlatElektronik";
+            this.dataAlatElektronik.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // msalatelektronikTableAdapter
+            // 
+            this.msalatelektronikTableAdapter.ClearBeforeFill = true;
             // 
             // UpdateAlatElektronik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 377);
-            this.Controls.Add(this.txtPencarian);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.gbUpdate);
-            this.Controls.Add(this.btnSegarkan);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnPerbarui);
-            this.Controls.Add(this.cmbPencarian);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dgAlatElektronik);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateAlatElektronik";
-            this.Text = "Update Alat Elektronik";
             this.Load += new System.EventHandler(this.UpdateAlatElektronik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgAlatElektronik)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.msalatelektronikBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAlatElektronik)).EndInit();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.msalatelektronikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataAlatElektronik)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -358,7 +370,6 @@
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnPerbarui;
         private System.Windows.Forms.GroupBox gbUpdate;
-        private System.Windows.Forms.Button btnBaru;
         private System.Windows.Forms.TextBox txtJenis;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -371,5 +382,6 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnKembali;
         private System.Windows.Forms.TextBox txtPencarian;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

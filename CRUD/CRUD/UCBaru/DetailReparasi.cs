@@ -36,7 +36,7 @@ namespace CRUD
             tableReparasi.Columns.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_viewprosesreparasialat", connection);
@@ -92,7 +92,7 @@ namespace CRUD
             tableReparasi.Columns.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_viewprosesreparasialat1", connection);
@@ -157,7 +157,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariKomponenByIDAlat", connection);
@@ -196,7 +196,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
 
@@ -274,7 +274,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
@@ -315,7 +315,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -367,31 +367,40 @@ namespace CRUD
         }
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            if (id_komponen.Equals(""))
-            {
-                return;
-            }
-            for(int i = 0; i < tableKomponen.RowCount; i++)
-            {
-                if (tableKomponen[1, i].Value.ToString().Equals(id_komponen))
-                {
-                    tableKomponen.Rows.RemoveAt(i);break;
-                }
-            }
             try
             {
-                Object[] data = { tableKomponen.RowCount + 1, id_komponen, txtnama_komponen.Text, txtjumlah.Value, txtharga_total.Text };
-                tableKomponen.Rows.Add(data);
-                for(int i = 0; i < tableKomponen.RowCount; i++)
+                if (id_komponen.Equals(""))
                 {
-                    tableKomponen[0, i].Value = i + 1;
+                    return;
                 }
-                hitungTotalHarga();
-                clear();
-            }catch(Exception ex)
-            {
-                MessageBox.Show("Ex "+ex.ToString());
+                for (int i = 0; i < tableKomponen.RowCount; i++)
+                {
+                    if (tableKomponen[1, i].Value.ToString().Equals(id_komponen))
+                    {
+                        tableKomponen.Rows.RemoveAt(i); break;
+                    }
+                }
+                try
+                {
+                    Object[] data = { tableKomponen.RowCount + 1, id_komponen, txtnama_komponen.Text, txtjumlah.Value, txtharga_total.Text };
+                    tableKomponen.Rows.Add(data);
+                    for (int i = 0; i < tableKomponen.RowCount; i++)
+                    {
+                        tableKomponen[0, i].Value = i + 1;
+                    }
+                    hitungTotalHarga();
+                    clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ex " + ex.ToString());
+                }
             }
+            catch(Exception ex)
+            {
+
+            }
+            
             
         }
         private void clear()
@@ -464,6 +473,10 @@ namespace CRUD
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             string status = rbSelesai.Checked ? "Selesai" : "Gagal";
+            if (txtTotalHarga.Text.Equals("0,00")){
+                MessageBox.Show("Periksa kembali data", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (txtid_gudang.Text.Equals("") || txtkode_transaksi.Text.Equals(""))
             {
                 MessageBox.Show("Periksa kembali data", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -482,7 +495,7 @@ namespace CRUD
             }
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_reparasiselesai", connection);

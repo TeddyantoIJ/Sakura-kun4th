@@ -39,7 +39,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAkunPelayan", connection);
@@ -62,7 +62,7 @@ namespace CRUD
 
 
                 connection.Close();
-                MessageBox.Show(nama);
+                //MessageBox.Show(nama);
                 if (!nama.Equals(""))
                 {
                     return true;

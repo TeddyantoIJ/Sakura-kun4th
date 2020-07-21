@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateJenisElektronik));
             this.label1 = new System.Windows.Forms.Label();
             this.dgAlatElektronik = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namajenisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.msjeniselektronikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataJenisElektronik = new CRUD.DataJenisElektronik();
             this.txtPencarian = new System.Windows.Forms.TextBox();
             this.cmbPencarian = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,22 +51,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
-            this.dataJenisElektronik = new CRUD.DataJenisElektronik();
-            this.msjeniselektronikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.msjeniselektronikTableAdapter = new CRUD.DataJenisElektronikTableAdapters.msjeniselektronikTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namajenisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgAlatElektronik)).BeginInit();
-            this.gbUpdate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataJenisElektronik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.msjeniselektronikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataJenisElektronik)).BeginInit();
+            this.gbUpdate.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(305, 9);
+            this.label1.Location = new System.Drawing.Point(299, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 21);
             this.label1.TabIndex = 0;
@@ -75,15 +79,38 @@
             this.dataGridViewTextBoxColumn1,
             this.namajenisDataGridViewTextBoxColumn});
             this.dgAlatElektronik.DataSource = this.msjeniselektronikBindingSource;
-            this.dgAlatElektronik.Location = new System.Drawing.Point(18, 56);
+            this.dgAlatElektronik.Location = new System.Drawing.Point(12, 56);
             this.dgAlatElektronik.Name = "dgAlatElektronik";
             this.dgAlatElektronik.Size = new System.Drawing.Size(291, 224);
             this.dgAlatElektronik.TabIndex = 1;
             this.dgAlatElektronik.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAlatElektronik_CellEnter);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_jenis";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID Jenis";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // namajenisDataGridViewTextBoxColumn
+            // 
+            this.namajenisDataGridViewTextBoxColumn.DataPropertyName = "nama_jenis";
+            this.namajenisDataGridViewTextBoxColumn.HeaderText = "Nama Jenis";
+            this.namajenisDataGridViewTextBoxColumn.Name = "namajenisDataGridViewTextBoxColumn";
+            this.namajenisDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // msjeniselektronikBindingSource
+            // 
+            this.msjeniselektronikBindingSource.DataMember = "msjeniselektronik";
+            this.msjeniselektronikBindingSource.DataSource = this.dataJenisElektronik;
+            // 
+            // dataJenisElektronik
+            // 
+            this.dataJenisElektronik.DataSetName = "DataJenisElektronik";
+            this.dataJenisElektronik.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtPencarian
             // 
-            this.txtPencarian.Location = new System.Drawing.Point(480, 74);
+            this.txtPencarian.Location = new System.Drawing.Point(474, 74);
             this.txtPencarian.Name = "txtPencarian";
             this.txtPencarian.Size = new System.Drawing.Size(147, 23);
             this.txtPencarian.TabIndex = 10;
@@ -96,7 +123,7 @@
             this.cmbPencarian.Items.AddRange(new object[] {
             "ID Alat",
             "Nama Jenis Elektronik"});
-            this.cmbPencarian.Location = new System.Drawing.Point(324, 74);
+            this.cmbPencarian.Location = new System.Drawing.Point(318, 74);
             this.cmbPencarian.Name = "cmbPencarian";
             this.cmbPencarian.Size = new System.Drawing.Size(150, 23);
             this.cmbPencarian.TabIndex = 9;
@@ -105,7 +132,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(321, 56);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(315, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 8;
@@ -113,7 +141,7 @@
             // 
             // btnSegarkan
             // 
-            this.btnSegarkan.Location = new System.Drawing.Point(321, 197);
+            this.btnSegarkan.Location = new System.Drawing.Point(315, 197);
             this.btnSegarkan.Name = "btnSegarkan";
             this.btnSegarkan.Size = new System.Drawing.Size(75, 23);
             this.btnSegarkan.TabIndex = 13;
@@ -123,7 +151,7 @@
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(321, 164);
+            this.btnBatal.Location = new System.Drawing.Point(315, 164);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(75, 23);
             this.btnBatal.TabIndex = 12;
@@ -133,7 +161,7 @@
             // 
             // btnPerbarui
             // 
-            this.btnPerbarui.Location = new System.Drawing.Point(321, 131);
+            this.btnPerbarui.Location = new System.Drawing.Point(315, 131);
             this.btnPerbarui.Name = "btnPerbarui";
             this.btnPerbarui.Size = new System.Drawing.Size(75, 23);
             this.btnPerbarui.TabIndex = 11;
@@ -143,6 +171,7 @@
             // 
             // gbUpdate
             // 
+            this.gbUpdate.BackColor = System.Drawing.Color.Transparent;
             this.gbUpdate.Controls.Add(this.btnSimpan);
             this.gbUpdate.Controls.Add(this.txtNama);
             this.gbUpdate.Controls.Add(this.lblId);
@@ -150,16 +179,16 @@
             this.gbUpdate.Controls.Add(this.label8);
             this.gbUpdate.Controls.Add(this.label3);
             this.gbUpdate.Controls.Add(this.label5);
-            this.gbUpdate.Location = new System.Drawing.Point(402, 131);
+            this.gbUpdate.Location = new System.Drawing.Point(396, 114);
             this.gbUpdate.Name = "gbUpdate";
-            this.gbUpdate.Size = new System.Drawing.Size(387, 89);
+            this.gbUpdate.Size = new System.Drawing.Size(387, 115);
             this.gbUpdate.TabIndex = 14;
             this.gbUpdate.TabStop = false;
             this.gbUpdate.Text = "Perbarui";
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(290, 24);
+            this.btnSimpan.Location = new System.Drawing.Point(291, 83);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 15;
@@ -223,7 +252,7 @@
             // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(710, 257);
+            this.btnKembali.Location = new System.Drawing.Point(704, 257);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(75, 23);
             this.btnKembali.TabIndex = 15;
@@ -231,60 +260,54 @@
             this.btnKembali.UseVisualStyleBackColor = true;
             this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
             // 
-            // dataJenisElektronik
-            // 
-            this.dataJenisElektronik.DataSetName = "DataJenisElektronik";
-            this.dataJenisElektronik.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // msjeniselektronikBindingSource
-            // 
-            this.msjeniselektronikBindingSource.DataMember = "msjeniselektronik";
-            this.msjeniselektronikBindingSource.DataSource = this.dataJenisElektronik;
-            // 
             // msjeniselektronikTableAdapter
             // 
             this.msjeniselektronikTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // bunifuGradientPanel1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_jenis";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID Jenis";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // namajenisDataGridViewTextBoxColumn
-            // 
-            this.namajenisDataGridViewTextBoxColumn.DataPropertyName = "nama_jenis";
-            this.namajenisDataGridViewTextBoxColumn.HeaderText = "Nama Jenis";
-            this.namajenisDataGridViewTextBoxColumn.Name = "namajenisDataGridViewTextBoxColumn";
-            this.namajenisDataGridViewTextBoxColumn.Width = 150;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Controls.Add(this.dgAlatElektronik);
+            this.bunifuGradientPanel1.Controls.Add(this.gbUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnSegarkan);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbPencarian);
+            this.bunifuGradientPanel1.Controls.Add(this.btnPerbarui);
+            this.bunifuGradientPanel1.Controls.Add(this.txtPencarian);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(803, 292);
+            this.bunifuGradientPanel1.TabIndex = 16;
             // 
             // UpdateJenisElektronik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 292);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.gbUpdate);
-            this.Controls.Add(this.btnSegarkan);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnPerbarui);
-            this.Controls.Add(this.txtPencarian);
-            this.Controls.Add(this.cmbPencarian);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dgAlatElektronik);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateJenisElektronik";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Update Jenis Elektronik";
             this.Load += new System.EventHandler(this.UpdateJenisElektronik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgAlatElektronik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.msjeniselektronikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataJenisElektronik)).EndInit();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataJenisElektronik)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.msjeniselektronikBindingSource)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -315,5 +338,6 @@
         private DataJenisElektronikTableAdapters.msjeniselektronikTableAdapter msjeniselektronikTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn namajenisDataGridViewTextBoxColumn;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

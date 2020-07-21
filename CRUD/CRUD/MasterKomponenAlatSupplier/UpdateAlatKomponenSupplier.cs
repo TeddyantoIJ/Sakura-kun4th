@@ -35,7 +35,7 @@ namespace CRUD
             viewAlatSupplier.Rows.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_getmsAlatKerjaUpdate", connection);
@@ -87,13 +87,21 @@ namespace CRUD
 
         public int toAngka(string rupiah)
         {
-            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            try
+            {
+                return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            }
+            catch(Exception ex)
+            {
+                return 0;
+            }
+            
         }
         private void addSourceViewAlat()
         {
             //try
             //{
-            //    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            //    string connectionString = Program.getConstring();
 
             //    SqlConnection connection = new SqlConnection(connectionString);
             //    SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_alat asc) No, [msalatkerja].nama_alat as [Nama Alat], [mssupplier].nama_supplier as [Nama Supplier], convert(numeric(10,2), harga)  as [Harga(Rp)] from[msalatsupplier] " +
@@ -126,7 +134,7 @@ namespace CRUD
         {
             //try
             //{
-            //    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            //    string connectionString = Program.getConstring();
 
             //    SqlConnection connection = new SqlConnection(connectionString);
             //    SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_komponen asc) No, [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier," +
@@ -158,7 +166,7 @@ namespace CRUD
             viewKomponenSupplier.Rows.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_getmsKomponenUpdate", connection);
@@ -252,7 +260,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatKerja", connection);
@@ -294,7 +302,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariSupplier", connection);
@@ -467,13 +475,18 @@ namespace CRUD
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            
+
             if(cbAlat.Checked == true)
             {
-
+                if (txtharga.Text.Equals(""))
+                {
+                    return;
+                }
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
                     "Nama Alat\t: " + txtnama_alat.Text + "\n" +
                     "Nama Supplier\t: " + txtnama_supplier.Text + "\n" +
-                    "Harga \t\t: Rp " + string.Format(CultureInfo.GetCultureInfo("de-DE"), "{0:n}", Int32.Parse(txtharga.Text))
+                    "Harga \t\t: Rp " + toRupiah(Convert.ToInt32(txtharga.Text))
                     , "Informasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
@@ -489,7 +502,10 @@ namespace CRUD
             }
             else
             {
-
+                if (txtharga1.Text.Equals(""))
+                {
+                    return;
+                }
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
                     "Nama Komponen\t: " + txtnama_komponen.Text + "\n" +
                     "Nama Supplier\t: " + txtnama_supplier1.Text + "\n" +
@@ -516,7 +532,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -542,7 +558,7 @@ namespace CRUD
 
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
-                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
             }
             catch (Exception ex)
@@ -556,7 +572,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -583,7 +599,7 @@ namespace CRUD
 
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
-                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
@@ -597,7 +613,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
@@ -663,6 +679,17 @@ namespace CRUD
             txtnama_alat.Text = viewAlatSupplier[1, i].Value.ToString();
             txtnama_supplier.Text = viewAlatSupplier[2, i].Value.ToString();
             txtharga.Text = viewAlatSupplier[3, i].Value.ToString();
+        }
+
+        private void txtharga_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char n = e.KeyChar;
+            
+            if(!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            
         }
     }
 }

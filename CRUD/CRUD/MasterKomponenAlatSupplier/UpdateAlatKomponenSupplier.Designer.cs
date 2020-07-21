@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAlatKomponenSupplier));
             this.label1 = new System.Windows.Forms.Label();
             this.viewAlatSupplier = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbAlat = new System.Windows.Forms.CheckBox();
             this.cbKomponen = new System.Windows.Forms.CheckBox();
             this.btnKembali = new System.Windows.Forms.Button();
@@ -64,26 +69,25 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewKomponenSupplier = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatSupplier)).BeginInit();
             this.pembaruanAlat.SuspendLayout();
             this.pembaruanKomponen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(319, 12);
+            this.label1.Location = new System.Drawing.Point(316, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 25);
             this.label1.TabIndex = 0;
@@ -95,29 +99,29 @@
             this.viewAlatSupplier.AllowUserToDeleteRows = false;
             this.viewAlatSupplier.AllowUserToResizeColumns = false;
             this.viewAlatSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.viewAlatSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewAlatSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.viewAlatSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewAlatSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewAlatSupplier.DefaultCellStyle = dataGridViewCellStyle6;
-            this.viewAlatSupplier.Location = new System.Drawing.Point(14, 103);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewAlatSupplier.DefaultCellStyle = dataGridViewCellStyle2;
+            this.viewAlatSupplier.Location = new System.Drawing.Point(11, 100);
             this.viewAlatSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewAlatSupplier.Name = "viewAlatSupplier";
             this.viewAlatSupplier.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -125,35 +129,63 @@
             this.viewAlatSupplier.TabIndex = 1;
             this.viewAlatSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAlatSupplier_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 51;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Alat";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Supplier";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column4.HeaderText = "Harga";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 69;
+            // 
             // cbAlat
             // 
             this.cbAlat.AutoSize = true;
+            this.cbAlat.BackColor = System.Drawing.Color.Transparent;
             this.cbAlat.Checked = true;
             this.cbAlat.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbAlat.Location = new System.Drawing.Point(14, 73);
+            this.cbAlat.Location = new System.Drawing.Point(11, 70);
             this.cbAlat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbAlat.Name = "cbAlat";
             this.cbAlat.Size = new System.Drawing.Size(101, 21);
             this.cbAlat.TabIndex = 3;
             this.cbAlat.Text = "Alat Supplier";
-            this.cbAlat.UseVisualStyleBackColor = true;
+            this.cbAlat.UseVisualStyleBackColor = false;
             this.cbAlat.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // cbKomponen
             // 
             this.cbKomponen.AutoSize = true;
-            this.cbKomponen.Location = new System.Drawing.Point(469, 73);
+            this.cbKomponen.BackColor = System.Drawing.Color.Transparent;
+            this.cbKomponen.Location = new System.Drawing.Point(466, 70);
             this.cbKomponen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbKomponen.Name = "cbKomponen";
             this.cbKomponen.Size = new System.Drawing.Size(143, 21);
             this.cbKomponen.TabIndex = 4;
             this.cbKomponen.Text = "Komponen Supplier";
-            this.cbKomponen.UseVisualStyleBackColor = true;
+            this.cbKomponen.UseVisualStyleBackColor = false;
             this.cbKomponen.CheckedChanged += new System.EventHandler(this.cbKomponen_CheckedChanged);
             // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(14, 662);
+            this.btnKembali.Location = new System.Drawing.Point(11, 659);
             this.btnKembali.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(87, 30);
@@ -164,6 +196,7 @@
             // 
             // pembaruanAlat
             // 
+            this.pembaruanAlat.BackColor = System.Drawing.Color.Transparent;
             this.pembaruanAlat.Controls.Add(this.txtnama_alat);
             this.pembaruanAlat.Controls.Add(this.label2);
             this.pembaruanAlat.Controls.Add(this.txtnama_supplier);
@@ -176,7 +209,7 @@
             this.pembaruanAlat.Controls.Add(this.label5);
             this.pembaruanAlat.Controls.Add(this.label8);
             this.pembaruanAlat.Controls.Add(this.label4);
-            this.pembaruanAlat.Location = new System.Drawing.Point(14, 401);
+            this.pembaruanAlat.Location = new System.Drawing.Point(11, 398);
             this.pembaruanAlat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pembaruanAlat.Name = "pembaruanAlat";
             this.pembaruanAlat.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -230,6 +263,8 @@
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 25);
             this.txtharga.TabIndex = 46;
+            this.txtharga.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtharga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtharga_KeyPress);
             this.txtharga.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtharga_KeyUp);
             // 
             // txtid_supplier
@@ -296,6 +331,7 @@
             // 
             // pembaruanKomponen
             // 
+            this.pembaruanKomponen.BackColor = System.Drawing.Color.Transparent;
             this.pembaruanKomponen.Controls.Add(this.txtnama_komponen);
             this.pembaruanKomponen.Controls.Add(this.label14);
             this.pembaruanKomponen.Controls.Add(this.txtnama_supplier1);
@@ -309,7 +345,7 @@
             this.pembaruanKomponen.Controls.Add(this.label11);
             this.pembaruanKomponen.Controls.Add(this.label12);
             this.pembaruanKomponen.Enabled = false;
-            this.pembaruanKomponen.Location = new System.Drawing.Point(469, 401);
+            this.pembaruanKomponen.Location = new System.Drawing.Point(466, 398);
             this.pembaruanKomponen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pembaruanKomponen.Name = "pembaruanKomponen";
             this.pembaruanKomponen.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -364,6 +400,7 @@
             this.txtharga1.Name = "txtharga1";
             this.txtharga1.Size = new System.Drawing.Size(188, 25);
             this.txtharga1.TabIndex = 19;
+            this.txtharga1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtharga1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtharga1_KeyUp);
             // 
             // txtid_komponen
@@ -430,7 +467,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(784, 662);
+            this.btnUpdate.Location = new System.Drawing.Point(781, 659);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 30);
@@ -439,62 +476,36 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 51;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Alat";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Supplier";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column4.HeaderText = "Harga";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 69;
-            // 
             // viewKomponenSupplier
             // 
             this.viewKomponenSupplier.AllowUserToAddRows = false;
             this.viewKomponenSupplier.AllowUserToDeleteRows = false;
             this.viewKomponenSupplier.AllowUserToResizeColumns = false;
             this.viewKomponenSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.viewKomponenSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewKomponenSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.viewKomponenSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewKomponenSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewKomponenSupplier.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewKomponenSupplier.DefaultCellStyle = dataGridViewCellStyle4;
             this.viewKomponenSupplier.Enabled = false;
-            this.viewKomponenSupplier.Location = new System.Drawing.Point(469, 103);
+            this.viewKomponenSupplier.Location = new System.Drawing.Point(466, 100);
             this.viewKomponenSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewKomponenSupplier.Name = "viewKomponenSupplier";
             this.viewKomponenSupplier.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -528,25 +539,41 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 69;
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.viewKomponenSupplier);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.viewAlatSupplier);
+            this.bunifuGradientPanel1.Controls.Add(this.pembaruanKomponen);
+            this.bunifuGradientPanel1.Controls.Add(this.cbAlat);
+            this.bunifuGradientPanel1.Controls.Add(this.pembaruanAlat);
+            this.bunifuGradientPanel1.Controls.Add(this.cbKomponen);
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(885, 696);
+            this.bunifuGradientPanel1.TabIndex = 11;
+            // 
             // UpdateAlatKomponenSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 696);
-            this.Controls.Add(this.viewKomponenSupplier);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.pembaruanKomponen);
-            this.Controls.Add(this.pembaruanAlat);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.cbKomponen);
-            this.Controls.Add(this.cbAlat);
-            this.Controls.Add(this.viewAlatSupplier);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateAlatKomponenSupplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UpdateAlatKomponenSupplier";
             this.Load += new System.EventHandler(this.UpdateAlatKomponenSupplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatSupplier)).EndInit();
             this.pembaruanAlat.ResumeLayout(false);
@@ -554,8 +581,9 @@
             this.pembaruanKomponen.ResumeLayout(false);
             this.pembaruanKomponen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -602,5 +630,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

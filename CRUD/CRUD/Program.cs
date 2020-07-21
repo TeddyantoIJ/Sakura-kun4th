@@ -36,10 +36,14 @@ namespace CRUD
             //Application.Run(new UpdateKomponen());
 
             //Application.Run(new Home());
-            //Application.Run(new Login());
-            Application.Run(new testing());
+            Application.Run(new Login());
+            //Application.Run(new testing());
 
             //Application.Run(new Menu_Utama());
+        }
+        public static string getConstring()
+        {
+            return "integrated security = true; data source = localhost; initial catalog = SakuraData";
         }
     }
 }

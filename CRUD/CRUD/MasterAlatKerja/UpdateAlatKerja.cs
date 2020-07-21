@@ -27,43 +27,39 @@ namespace CRUD
         int selectedRow;
         private void viewAlatKerja_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            Int32 selectedRowCount =
-            viewAlatKerja.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            if (selectedRowCount > 0 && selectedRowCount <= 1)
-            {
-                btnUpdate.Enabled = true;
-                btnBatal.Enabled = false;
-               // clear();
-                //by = 0;
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            //Int32 selectedRowCount =
+            //viewAlatKerja.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            //if (selectedRowCount > 0 && selectedRowCount <= 1)
+            //{
+            //    btnUpdate.Enabled = true;
+            //    btnBatal.Enabled = false;
+            //   // clear();
+            //    //by = 0;
+            //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
-                for (int i = 0; i < selectedRowCount; i++)
-                {
-                    selectedRow = Int32.Parse(viewAlatKerja.SelectedRows[i].Index.ToString());
-                }
-                DataGridViewRow row = viewAlatKerja.Rows[selectedRow];
-                txtid_alat_kerja.Text = row.Cells[0].Value.ToString();
-                txtnama_alat_kerja.Text = row.Cells[1].Value.ToString();
-                txtjumlah.Text = row.Cells[2].Value.ToString();
-                cmbbagus.Text = row.Cells[3].Value.ToString();
-                cmbrusak.Text = row.Cells[4].Value.ToString();
-            }
-            else if(btnUpdate.Enabled == true)
-            {
-                btnUpdate.Enabled = false;
-                btnBatal.Enabled = true;
-            }
-            else
-            {
-                btnUpdate.Enabled = false;
-            }
+            //    for (int i = 0; i < selectedRowCount; i++)
+            //    {
+            //        selectedRow = Int32.Parse(viewAlatKerja.SelectedRows[i].Index.ToString());
+            //    }
+            //    DataGridViewRow row = viewAlatKerja.Rows[selectedRow];
+                
+            //}
+            //else if(btnUpdate.Enabled == true)
+            //{
+            //    btnUpdate.Enabled = false;
+            //    btnBatal.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnUpdate.Enabled = false;
+            //}
         }
         private void addSource()
         {
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -308,7 +304,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -338,7 +334,7 @@ namespace CRUD
 
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
-                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             }
@@ -382,7 +378,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatKerja", connection);
@@ -439,6 +435,27 @@ namespace CRUD
         private void txtnama_alat_kerja_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void viewAlatKerja_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdate.Enabled = false;
+            btnBatal.Enabled = false;
+            int i = e.RowIndex;
+            if(i == -1)
+            {
+                return;
+            }
+            viewAlatKerja.Rows[i].Selected = true;
+
+            txtid_alat_kerja.Text = viewAlatKerja.Rows[i].Cells[0].Value.ToString();
+            txtnama_alat_kerja.Text = viewAlatKerja.Rows[i].Cells[1].Value.ToString();
+            txtjumlah.Text = viewAlatKerja.Rows[i].Cells[2].Value.ToString();
+            cmbbagus.Text = viewAlatKerja.Rows[i].Cells[3].Value.ToString();
+            cmbrusak.Text = viewAlatKerja.Rows[i].Cells[4].Value.ToString();
+
+            btnUpdate.Enabled = true;
+            btnBatal.Enabled = true;
         }
     }
 }

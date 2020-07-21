@@ -46,7 +46,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -104,7 +104,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -173,7 +173,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -268,7 +268,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_setTotalTransaksiKomponen", connection);
@@ -302,7 +302,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariSupplier", connection);
@@ -341,12 +341,20 @@ namespace CRUD
         }
         private void btnGagal_Click(object sender, EventArgs e)
         {
-            if (!tableDetail[5, tableDetail.CurrentRow.Index].Value.ToString().Equals("Proses"))
+            try
             {
-                return;
+                if (!tableDetail[5, tableDetail.CurrentRow.Index].Value.ToString().Equals("Proses"))
+                {
+                    return;
+                }
+                MessageBox.Show("Gagal transaksi dipilih", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                enabledBtn(btnGagal);
             }
-            MessageBox.Show("Gagal transaksi dipilih", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            enabledBtn(btnGagal);
+            catch(Exception ex)
+            {
+
+            }
+            
         }
 
         private void tableDetail_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -375,7 +383,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -411,7 +419,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -440,7 +448,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariKomponenByNamaSupplier", connection);

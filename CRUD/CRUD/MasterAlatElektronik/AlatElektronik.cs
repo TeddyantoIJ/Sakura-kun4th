@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CRUD
 {
     public partial class AlatElektronik : Form
@@ -33,7 +34,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -69,7 +70,7 @@ namespace CRUD
         {
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
 
             SqlConnection connection = new SqlConnection(connectionString);
@@ -109,8 +110,9 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
-
+                //string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -156,7 +158,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
 
                 SqlConnection connection = new SqlConnection(connectionString);

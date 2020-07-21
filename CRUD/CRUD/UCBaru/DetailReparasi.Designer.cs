@@ -503,6 +503,7 @@
             this.txtTotalHarga.ReadOnly = true;
             this.txtTotalHarga.Size = new System.Drawing.Size(187, 26);
             this.txtTotalHarga.TabIndex = 54;
+            this.txtTotalHarga.Text = "0,00";
             this.txtTotalHarga.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3

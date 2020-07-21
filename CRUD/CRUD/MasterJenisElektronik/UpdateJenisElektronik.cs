@@ -89,7 +89,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -123,7 +123,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
 
@@ -138,7 +138,7 @@ namespace CRUD
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
                 DataTable data = new DataTable();
                 adapter.Fill(data);
-                MessageBox.Show(data.Rows[0][1].ToString());
+                //MessageBox.Show(data.Rows[0][1].ToString());
                 lblId.Text = data.Rows[0][0].ToString();
                 txtNama.Text = data.Rows[0][1].ToString();
 
@@ -183,7 +183,7 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 

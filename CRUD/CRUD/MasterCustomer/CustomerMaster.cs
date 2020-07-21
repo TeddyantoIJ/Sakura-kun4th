@@ -88,13 +88,17 @@ namespace CRUD
                     MessageBox.Show("BATAL!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+            else
+            {
+                MessageBox.Show("Semua data harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void updateDB()
         {
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -123,6 +127,7 @@ namespace CRUD
                 addSource();
                 txtid_customer.Text = "CUST-XXXX";
                 txtnama_customer.Text = "";
+                picCustomer.Image = null;
             }
             catch (Exception ex)
             {
@@ -132,7 +137,7 @@ namespace CRUD
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -172,7 +177,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 

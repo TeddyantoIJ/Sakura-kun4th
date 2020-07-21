@@ -49,7 +49,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
 
             SqlConnection connection = new SqlConnection(connectionString);
@@ -77,7 +77,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariJenisElektronik", connection);
@@ -161,7 +161,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
 
             SqlConnection connection = new SqlConnection(connectionString);
@@ -235,7 +235,7 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
@@ -268,6 +268,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom alat elektronik harap diisi\n";
+                return;
             }
             else
             {
@@ -277,7 +278,7 @@ namespace CRUD
             if (txtJenis.Text == "")
             {
                 cek = false;
-                checker += "Kolom jenis alat elektronik harap diisi\n";
+                checker += "Kolom jenis alat elektronik harap diisi\n"; return;
             }
             else
             {
@@ -314,7 +315,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariJenisElektronik", connection);
@@ -348,7 +349,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
 

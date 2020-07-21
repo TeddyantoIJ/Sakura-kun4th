@@ -97,7 +97,15 @@ namespace CRUD
 
         public int toAngka(string rupiah)
         {
-            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            try
+            {
+                return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            }
+            catch(Exception ex)
+            {
+                return 0;
+            }
+            
         }
 
         private void txtUang_KeyUp(object sender, KeyEventArgs e)

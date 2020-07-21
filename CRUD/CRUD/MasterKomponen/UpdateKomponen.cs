@@ -40,7 +40,7 @@ namespace CRUD
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
             ////punya saya
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             //SqlConnection connection = new SqlConnection(connectionString);
 
@@ -110,7 +110,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -163,9 +163,9 @@ namespace CRUD
         private void clear()
         {
             cek = false;
-            cmbPencarian.SelectedItem = null;
-            cmbPencarian.Text = "--Pilih--";
-            txtPencarian.Text = "";
+            //cmbPencarian.SelectedItem = null;
+            //cmbPencarian.Text = "--Pilih--";
+            //txtPencarian.Text = "";
             lblId.Text = "";
             txtNama.Text = "";
             txtJumlah.Text = "";
@@ -197,7 +197,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
@@ -237,7 +237,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
@@ -275,8 +275,9 @@ namespace CRUD
             {
                 e.Handled = true;
             }
-        }
 
+        }
+        
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             string checker = null;
@@ -285,6 +286,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom nama komponen harap diisi\n";
+                return;
             }
             else
             {
@@ -294,7 +296,7 @@ namespace CRUD
             if (txtJumlah.Text == "")
             {
                 cek = false;
-                checker += "Kolom jumlah harap diisi\n";
+                checker += "Kolom jumlah harap diisi\n"; return;
             }
             else
             {
@@ -304,7 +306,7 @@ namespace CRUD
             if (txtHarga.Text == "")
             {
                 checker += "Kolom harga jual harap diisi\n";
-                cek = false;
+                cek = false; return;
             }
             else
             {
@@ -314,7 +316,7 @@ namespace CRUD
             if (txtAlat.Text == "")
             {
                 checker += "Kolom alat elektronik harap diisi\n";
-                cek = false;
+                cek = false; return;
             }
             else
             {
@@ -324,7 +326,7 @@ namespace CRUD
             if (txtTempat.Text == "")
             {
                 checker += "Kolom tempat harap diisi\n";
-                cek = false;
+                cek = false; return;
             }
             else
             {
@@ -363,7 +365,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -395,15 +397,15 @@ namespace CRUD
 
         private void cmbPencarian_TextChanged(object sender, EventArgs e)
         {
-            switch (cmbPencarian.Text)
-            {
-                case "ID Komponen": sourceFilter("id_komponen"); break;
-                case "Nama Komponen": sourceFilter("nama_komponen"); break;
-                case "Jumlah": sourceFilter("jumlah"); break;
-                case "Harga Jual": sourceFilter("harga_jual"); break;
-                case "Alat Elektronik": sourceFilter("id_alat"); break;
-                case "Tempat": sourceFilter("tempat"); break;
-            }
+            //switch (cmbPencarian.Text)
+            //{
+            //    case "ID Komponen": sourceFilter("id_komponen"); break;
+            //    case "Nama Komponen": sourceFilter("nama_komponen"); break;
+            //    case "Jumlah": sourceFilter("jumlah"); break;
+            //    case "Harga Jual": sourceFilter("harga_jual"); break;
+            //    case "Alat Elektronik": sourceFilter("id_alat"); break;
+            //    case "Tempat": sourceFilter("tempat"); break;
+            //}
         }
 
         private void sourceFilter(string filter)
@@ -413,7 +415,7 @@ namespace CRUD
             //punya fio
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -427,9 +429,9 @@ namespace CRUD
             {
                 collection.Add(msalat.Tables[0].Rows[i][0].ToString());
             }
-            txtPencarian.AutoCompleteCustomSource = collection;
-            txtPencarian.AutoCompleteMode = AutoCompleteMode.Suggest;
-            txtPencarian.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //txtPencarian.AutoCompleteCustomSource = collection;
+            //txtPencarian.AutoCompleteMode = AutoCompleteMode.Suggest;
+            //txtPencarian.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
         private void txtPencarian_TextChanged(object sender, EventArgs e)
@@ -438,7 +440,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
 
@@ -447,7 +449,7 @@ namespace CRUD
                 SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
                 myCommand.CommandType = CommandType.StoredProcedure;
 
-                string pencarian = txtPencarian.Text;
+                string pencarian = "";
 
                 myCommand.Parameters.AddWithValue("id_komponen", pencarian);
                 myCommand.Parameters.AddWithValue("nama_komponen", pencarian);
@@ -500,7 +502,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);

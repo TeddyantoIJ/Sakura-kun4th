@@ -41,7 +41,7 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "CRUD.FIO.ReparasiAlatElektronik.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "CRUD.Laporan.ReparasiAlatElektronik.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(29, 140);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;

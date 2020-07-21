@@ -32,7 +32,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -57,7 +57,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -83,7 +83,7 @@ namespace CRUD
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -131,7 +131,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariCustomer", connection);
@@ -172,7 +172,7 @@ namespace CRUD
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -206,7 +206,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariCustomer", connection);
@@ -243,7 +243,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariJenisElektronik", connection);
@@ -280,7 +280,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
@@ -317,6 +317,23 @@ namespace CRUD
         }
         private void btnProses_Click(object sender, EventArgs e)
         {
+            if (txtAlat.Text.Equals(""))
+            {
+                return;
+            }
+            if (txtJenis_alat.Text.Equals(""))
+            {
+                return;
+            }
+            if (txtKeluhan.Text.Equals(""))
+            {
+                return;
+            }
+            if (nama_pelanggan.Text.Equals(""))
+            {
+                return;
+            }
+            
             DialogResult n = MessageBox.Show("Proses transaksi?", "Pertanyaan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if(n == DialogResult.OK)
             {
@@ -329,7 +346,7 @@ namespace CRUD
             }
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_inputTransaksiReparasiAlat", connection);

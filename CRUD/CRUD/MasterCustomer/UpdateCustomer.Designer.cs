@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCustomer));
             this.label1 = new System.Windows.Forms.Label();
             this.viewcustomer = new System.Windows.Forms.DataGridView();
-            this.idcustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namacustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totaltransaksiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mscustomerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sakuraDataDataSet1 = new CRUD.SakuraDataDataSet1();
             this.sakuraDataDataSet = new CRUD.SakuraDataDataSet();
@@ -59,19 +57,25 @@
             this.cmbTriger = new System.Windows.Forms.ComboBox();
             this.txtCari = new System.Windows.Forms.TextBox();
             this.btnKembali = new System.Windows.Forms.Button();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.idcustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namacustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totaltransaksiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.viewcustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mscustomerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSetBindingSource)).BeginInit();
             this.updateGrup.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(394, 24);
+            this.label1.Location = new System.Drawing.Point(392, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 25);
             this.label1.TabIndex = 0;
@@ -82,54 +86,27 @@
             this.viewcustomer.AllowUserToAddRows = false;
             this.viewcustomer.AllowUserToDeleteRows = false;
             this.viewcustomer.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.viewcustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewcustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.viewcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewcustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idcustomerDataGridViewTextBoxColumn,
             this.namacustomerDataGridViewTextBoxColumn,
             this.totaltransaksiDataGridViewTextBoxColumn});
             this.viewcustomer.DataSource = this.mscustomerBindingSource;
-            this.viewcustomer.Location = new System.Drawing.Point(14, 95);
+            this.viewcustomer.Location = new System.Drawing.Point(12, 91);
             this.viewcustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewcustomer.Name = "viewcustomer";
             this.viewcustomer.ReadOnly = true;
             this.viewcustomer.Size = new System.Drawing.Size(372, 345);
             this.viewcustomer.TabIndex = 1;
             this.viewcustomer.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
-            // 
-            // idcustomerDataGridViewTextBoxColumn
-            // 
-            this.idcustomerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.idcustomerDataGridViewTextBoxColumn.DataPropertyName = "id_customer";
-            this.idcustomerDataGridViewTextBoxColumn.HeaderText = "ID Customer";
-            this.idcustomerDataGridViewTextBoxColumn.Name = "idcustomerDataGridViewTextBoxColumn";
-            this.idcustomerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idcustomerDataGridViewTextBoxColumn.Width = 96;
-            // 
-            // namacustomerDataGridViewTextBoxColumn
-            // 
-            this.namacustomerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.namacustomerDataGridViewTextBoxColumn.DataPropertyName = "nama_customer";
-            this.namacustomerDataGridViewTextBoxColumn.HeaderText = "Nama Customer";
-            this.namacustomerDataGridViewTextBoxColumn.Name = "namacustomerDataGridViewTextBoxColumn";
-            this.namacustomerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.namacustomerDataGridViewTextBoxColumn.Width = 117;
-            // 
-            // totaltransaksiDataGridViewTextBoxColumn
-            // 
-            this.totaltransaksiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.totaltransaksiDataGridViewTextBoxColumn.DataPropertyName = "total_transaksi";
-            this.totaltransaksiDataGridViewTextBoxColumn.HeaderText = "Total Transaksi";
-            this.totaltransaksiDataGridViewTextBoxColumn.Name = "totaltransaksiDataGridViewTextBoxColumn";
-            this.totaltransaksiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.totaltransaksiDataGridViewTextBoxColumn.Width = 108;
             // 
             // mscustomerBindingSource
             // 
@@ -159,7 +136,7 @@
             // 
             this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBatal.Enabled = false;
-            this.btnBatal.Location = new System.Drawing.Point(533, 95);
+            this.btnBatal.Location = new System.Drawing.Point(531, 91);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 30);
@@ -171,7 +148,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Location = new System.Drawing.Point(415, 95);
+            this.btnRefresh.Location = new System.Drawing.Point(413, 91);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(87, 30);
@@ -184,7 +161,7 @@
             // 
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(651, 95);
+            this.btnUpdate.Location = new System.Drawing.Point(649, 91);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 30);
@@ -195,6 +172,7 @@
             // 
             // updateGrup
             // 
+            this.updateGrup.BackColor = System.Drawing.Color.Transparent;
             this.updateGrup.Controls.Add(this.btnSimpan);
             this.updateGrup.Controls.Add(this.txtnama_customer);
             this.updateGrup.Controls.Add(this.infonama_customer);
@@ -207,7 +185,7 @@
             this.updateGrup.Controls.Add(this.label4);
             this.updateGrup.Controls.Add(this.label3);
             this.updateGrup.Enabled = false;
-            this.updateGrup.Location = new System.Drawing.Point(400, 133);
+            this.updateGrup.Location = new System.Drawing.Point(398, 129);
             this.updateGrup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.updateGrup.Name = "updateGrup";
             this.updateGrup.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -218,7 +196,7 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(271, 25);
+            this.btnSimpan.Location = new System.Drawing.Point(406, 126);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(87, 30);
@@ -320,7 +298,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(407, 336);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(405, 332);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 17;
@@ -336,7 +315,7 @@
             this.cmbTriger.Items.AddRange(new object[] {
             "ID Customer",
             "Nama Customer"});
-            this.cmbTriger.Location = new System.Drawing.Point(411, 358);
+            this.cmbTriger.Location = new System.Drawing.Point(409, 354);
             this.cmbTriger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbTriger.Name = "cmbTriger";
             this.cmbTriger.Size = new System.Drawing.Size(140, 25);
@@ -347,7 +326,7 @@
             // 
             // txtCari
             // 
-            this.txtCari.Location = new System.Drawing.Point(560, 358);
+            this.txtCari.Location = new System.Drawing.Point(558, 354);
             this.txtCari.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCari.MaxLength = 50;
             this.txtCari.Name = "txtCari";
@@ -358,7 +337,7 @@
             // btnKembali
             // 
             this.btnKembali.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKembali.Location = new System.Drawing.Point(411, 411);
+            this.btnKembali.Location = new System.Drawing.Point(409, 407);
             this.btnKembali.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(87, 30);
@@ -367,26 +346,68 @@
             this.btnKembali.UseVisualStyleBackColor = true;
             this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Controls.Add(this.viewcustomer);
+            this.bunifuGradientPanel1.Controls.Add(this.txtCari);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbTriger);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.label7);
+            this.bunifuGradientPanel1.Controls.Add(this.btnRefresh);
+            this.bunifuGradientPanel1.Controls.Add(this.updateGrup);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(933, 467);
+            this.bunifuGradientPanel1.TabIndex = 21;
+            // 
+            // idcustomerDataGridViewTextBoxColumn
+            // 
+            this.idcustomerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.idcustomerDataGridViewTextBoxColumn.DataPropertyName = "id_customer";
+            this.idcustomerDataGridViewTextBoxColumn.HeaderText = "ID Customer";
+            this.idcustomerDataGridViewTextBoxColumn.Name = "idcustomerDataGridViewTextBoxColumn";
+            this.idcustomerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idcustomerDataGridViewTextBoxColumn.Width = 105;
+            // 
+            // namacustomerDataGridViewTextBoxColumn
+            // 
+            this.namacustomerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.namacustomerDataGridViewTextBoxColumn.DataPropertyName = "nama_customer";
+            this.namacustomerDataGridViewTextBoxColumn.HeaderText = "Nama Customer";
+            this.namacustomerDataGridViewTextBoxColumn.Name = "namacustomerDataGridViewTextBoxColumn";
+            this.namacustomerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totaltransaksiDataGridViewTextBoxColumn
+            // 
+            this.totaltransaksiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.totaltransaksiDataGridViewTextBoxColumn.DataPropertyName = "total_transaksi";
+            this.totaltransaksiDataGridViewTextBoxColumn.HeaderText = "Total Transaksi";
+            this.totaltransaksiDataGridViewTextBoxColumn.Name = "totaltransaksiDataGridViewTextBoxColumn";
+            this.totaltransaksiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totaltransaksiDataGridViewTextBoxColumn.Width = 118;
+            // 
             // UpdateCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 467);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.txtCari);
-            this.Controls.Add(this.cmbTriger);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.updateGrup);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.viewcustomer);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UpdateCustomer";
             this.Load += new System.EventHandler(this.UpdateCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewcustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mscustomerBindingSource)).EndInit();
@@ -395,8 +416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSetBindingSource)).EndInit();
             this.updateGrup.ResumeLayout(false);
             this.updateGrup.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -409,9 +431,6 @@
         private SakuraDataDataSet1 sakuraDataDataSet1;
         private System.Windows.Forms.BindingSource mscustomerBindingSource;
         private SakuraDataDataSet1TableAdapters.mscustomerTableAdapter mscustomerTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcustomerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namacustomerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totaltransaksiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnUpdate;
@@ -431,5 +450,9 @@
         private System.Windows.Forms.ComboBox cmbTriger;
         private System.Windows.Forms.TextBox txtCari;
         private System.Windows.Forms.Button btnKembali;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcustomerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namacustomerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totaltransaksiDataGridViewTextBoxColumn;
     }
 }

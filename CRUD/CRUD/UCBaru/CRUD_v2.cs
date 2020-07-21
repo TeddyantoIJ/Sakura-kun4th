@@ -22,7 +22,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand;
@@ -221,7 +221,7 @@ namespace CRUD
 
         private void btnJenisAlatElektronik_Click(object sender, EventArgs e)
         {
-            go("Jenis alat");
+            go("Jenis Alat");
         }
 
         private void CRUD_v2_VisibleChanged(object sender, EventArgs e)

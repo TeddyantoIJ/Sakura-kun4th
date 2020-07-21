@@ -17,7 +17,7 @@ namespace CRUD
         public SupplierMaster()
         {
             InitializeComponent();
-
+            addSource();
             txtid_supplier.Text = "SUPP-XXXX";
         }
         public SupplierMaster(string x)
@@ -111,12 +111,40 @@ namespace CRUD
                 {
                     MessageBox.Show("BATAL!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
+
             }
+            else
+            {
+                MessageBox.Show("Semua data harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void addSource()
+        {
+            txtnama_supplier.AutoCompleteCustomSource = null;
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+
+            string connectionString = Program.getConstring();
+
+            SqlConnection connection = new SqlConnection(connectionString);
+
+            //membuat table dengan jumlah data saja
+            SqlDataAdapter adapter = new SqlDataAdapter("select nama_supplier from mssupplier", connection);
+            //memasukkan ke dataset
+            DataSet mscustomer = new DataSet();
+            adapter.Fill(mscustomer);
+
+            for (int i = 0; i < mscustomer.Tables[0].Rows.Count; i++)
+            {
+
+                collection.Add(mscustomer.Tables[0].Rows[i][0].ToString());
+            }
+            txtnama_supplier.AutoCompleteCustomSource = collection;
+            txtnama_supplier.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txtnama_supplier.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -152,7 +180,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -273,7 +301,7 @@ namespace CRUD
         }
         private void clear()
         {
-            txtid_supplier.Text = "SUPP-" + getLastID();
+            txtid_supplier.Text = "SUPP-XXXX";
             txtalamat.Text = "";
             txtcontact_person.Text = "";
             txtketerangan.Text = "";

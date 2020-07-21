@@ -41,7 +41,7 @@ namespace CRUD
             {
                 //String connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlDataAdapter dataAdapter = new SqlDataAdapter();
                 dataAdapter = new SqlDataAdapter(command, connectionString);
@@ -128,7 +128,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
@@ -337,7 +337,7 @@ namespace CRUD
 
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -389,7 +389,7 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
                 SqlCommand myCommand = null;
@@ -407,6 +407,8 @@ namespace CRUD
                     myCommand.Parameters.AddWithValue("alamat", txtAlamat.Text);
                     myCommand.Parameters.AddWithValue("email", txtEmail.Text);
                     myCommand.Parameters.AddWithValue("no_telepon", txtTelepon.Text);
+                    myCommand.Parameters.AddWithValue("username", txtusername.Text);
+                    myCommand.Parameters.AddWithValue("password", txtpassword.Text);
                     myCommand.Parameters.AddWithValue("status", cmbStatus.SelectedItem);
                 }
                 else if (cmbPekerja.Text == "Gudang")
@@ -444,7 +446,7 @@ namespace CRUD
 
         private void txtNama_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && (e.KeyChar != '.'))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && (e.KeyChar != '.') && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -473,6 +475,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom nama harap diisi\n";
+                return;
             }
             else
             {
@@ -482,7 +485,7 @@ namespace CRUD
             if (txtAlamat.Text == "")
             {
                 cek = false;
-                checker += "Kolom alamat harap diisi\n";
+                checker += "Kolom alamat harap diisi\n"; return;
             }
             else
             {
@@ -492,7 +495,7 @@ namespace CRUD
             if (txtEmail.Text == "")
             {
                 cek = false;
-                checker += "Kolom email harap diisi\n";
+                checker += "Kolom email harap diisi\n"; return;
             }
             else if (Regex.IsMatch(txtEmail.Text, @"^^[^@\s]+@[^@\s]+(\.[^@\s]+)+$"))
             {
@@ -501,13 +504,13 @@ namespace CRUD
             else
             {
                 cek = false;
-                checker += "Format email salah (aaa@bbb.ccc)\n";
+                checker += "Format email salah (aaa@bbb.ccc)\n"; return;
             }
 
             if (txtTelepon.Text == "")
             {
                 cek = false;
-                checker += "Kolom nomor telepon harap diisi\n";
+                checker += "Kolom nomor telepon harap diisi\n"; return;
             }
             else
             {
@@ -592,6 +595,8 @@ namespace CRUD
             txtEmail.Text = dgPekerja.Rows[i].Cells[4].Value.ToString();
             txtTelepon.Text = dgPekerja.Rows[i].Cells[5].Value.ToString();
             cmbStatus.Text = dgPekerja.Rows[i].Cells[6].Value.ToString();
+            txtusername.Text = dgPekerja.Rows[i].Cells[7].Value.ToString();
+            txtpassword.Text = dgPekerja.Rows[i].Cells[8].Value.ToString();
             if (jenis_kelamin == "Laki-laki")
             {
                 rbLakilaki.Checked = true;

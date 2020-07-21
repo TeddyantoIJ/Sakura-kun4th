@@ -5,9 +5,11 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,7 +48,7 @@ namespace CRUD
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
 
             //Punya teddy
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
 
             SqlConnection connection = new SqlConnection(connectionString);
@@ -92,7 +94,7 @@ namespace CRUD
             //punya fio
             //string connectionString = ConfigurationSettings.AppSettings["constring1"];
             //punya saya
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
 
             SqlConnection connection = new SqlConnection(connectionString);
@@ -134,7 +136,7 @@ namespace CRUD
 
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -150,7 +152,7 @@ namespace CRUD
                 myCommand.Parameters.AddWithValue("id_komponen", "KMP-" + getLastID());
                 myCommand.Parameters.AddWithValue("nama_komponen", txtNama.Text);
                 myCommand.Parameters.AddWithValue("jumlah", int.Parse(txtJumlah.Text));
-                myCommand.Parameters.AddWithValue("harga_jual", int.Parse(txtHarga.Text));
+                myCommand.Parameters.AddWithValue("harga_jual", toAngka(txtHarga.Text));
                 myCommand.Parameters.AddWithValue("id_alat", idAlat);
                 myCommand.Parameters.AddWithValue("tempat", txtTempat.Text);
 
@@ -231,7 +233,7 @@ namespace CRUD
             {
                 //string connectionString = ConfigurationSettings.AppSettings["constring1"];
                 //punya teddy
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatElektronik", connection);
@@ -291,8 +293,31 @@ namespace CRUD
             {
                 e.Handled = true;
             }
+            int uang = toAngka(txtHarga.Text);
+            txtHarga.Text = toRupiah(uang);
+        }
+        public string toRupiah(int angka)
+
+        {
+
+            return String.Format(CultureInfo.CreateSpecificCulture("id-id"), "{0:N}", angka);
+
         }
 
+        public int toAngka(string rupiah)
+
+        {
+            try
+            {
+                return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+            }
+            catch(Exception ex)
+            {
+                return 0;
+            }
+            
+
+        }
         private void btnBatal_Click(object sender, EventArgs e)
         {
             clear();
@@ -301,6 +326,23 @@ namespace CRUD
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
+            if (txtAlat.Text.Equals(""))
+            {
+                return;
+            }
+            if (txtHarga.Text.Equals(""))
+            {
+                return;
+            }
+            if (txtNama.Text.Equals(""))
+            {
+                return;
+            }
+            if (txtTempat.Text.Equals(""))
+            {
+                return;
+            }
+
             if (cek)
             {
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +

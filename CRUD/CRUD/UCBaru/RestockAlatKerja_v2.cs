@@ -190,7 +190,7 @@ namespace CRUD
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
             SqlConnection connection = new SqlConnection(connectionString);
 
             SqlDataAdapter adapter = new SqlDataAdapter("select count (no_transaksi_pembelian) from trestockalatkerja", connection);
@@ -233,7 +233,7 @@ namespace CRUD
             {
                 try
                 {
-                    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                    string connectionString = Program.getConstring();
                     SqlConnection connection = new SqlConnection(connectionString);
                     SqlCommand myCommand = new SqlCommand("sp_inputTRestockAlatKerja", connection);
 
@@ -272,7 +272,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariSupplier", connection);
@@ -306,7 +306,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatKerja", connection);
 
@@ -340,7 +340,7 @@ namespace CRUD
             {
                 try
                 {
-                    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                    string connectionString = Program.getConstring();
                     SqlConnection connection = new SqlConnection(connectionString);
                     SqlCommand myCommand = new SqlCommand("sp_inputTDRestockAlatKerja", connection);
 
@@ -374,7 +374,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariAlatKerja", connection);
 
@@ -407,7 +407,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_updateAlatKerja", connection);
 
@@ -438,7 +438,7 @@ namespace CRUD
             tbSupplier.Rows.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_getSupplierAlatKerja", connection);
@@ -484,7 +484,7 @@ namespace CRUD
             tbAlatKerja.Rows.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
                 SqlConnection connection = new SqlConnection(connectionString);
 
                 SqlCommand myCommand = new SqlCommand("sp_getAllAlatKerja", connection);

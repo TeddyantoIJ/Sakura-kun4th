@@ -211,6 +211,10 @@ namespace CRUD
                 }
 
             }
+            else
+            {
+                MessageBox.Show("Semua data wajib diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             this.mssupplierTableAdapter.Fill(this.sakuraDataDataSet.mssupplier);
 
         }
@@ -220,7 +224,7 @@ namespace CRUD
             try
             {
 
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
@@ -251,8 +255,8 @@ namespace CRUD
 
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
-                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clear();
             }
             catch (Exception ex)
             {
@@ -297,7 +301,7 @@ namespace CRUD
             txtCari.AutoCompleteCustomSource = null;
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
             
@@ -326,7 +330,7 @@ namespace CRUD
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariSupplier", connection);

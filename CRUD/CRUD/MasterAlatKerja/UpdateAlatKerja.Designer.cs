@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAlatKerja));
             this.viewAlatKerja = new System.Windows.Forms.DataGridView();
             this.idalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,10 +76,12 @@
             this.txtCari = new System.Windows.Forms.TextBox();
             this.btnKembali = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.CheckBox();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatKerja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.msalatkerjaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet2)).BeginInit();
             this.updateGrup.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // viewAlatKerja
@@ -102,12 +105,13 @@
             this.bagusDataGridViewTextBoxColumn,
             this.rusakDataGridViewTextBoxColumn});
             this.viewAlatKerja.DataSource = this.msalatkerjaBindingSource;
-            this.viewAlatKerja.Location = new System.Drawing.Point(14, 89);
+            this.viewAlatKerja.Location = new System.Drawing.Point(22, 90);
             this.viewAlatKerja.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewAlatKerja.Name = "viewAlatKerja";
             this.viewAlatKerja.ReadOnly = true;
             this.viewAlatKerja.Size = new System.Drawing.Size(542, 288);
             this.viewAlatKerja.TabIndex = 0;
+            this.viewAlatKerja.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAlatKerja_CellClick);
             this.viewAlatKerja.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAlatKerja_CellEnter);
             // 
             // idalatDataGridViewTextBoxColumn
@@ -158,8 +162,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(498, 26);
+            this.label1.Location = new System.Drawing.Point(506, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 1;
@@ -171,6 +176,7 @@
             // 
             // updateGrup
             // 
+            this.updateGrup.BackColor = System.Drawing.Color.Transparent;
             this.updateGrup.Controls.Add(this.button1);
             this.updateGrup.Controls.Add(this.button2);
             this.updateGrup.Controls.Add(this.btnMinus1);
@@ -199,11 +205,11 @@
             this.updateGrup.Controls.Add(this.infocmb2);
             this.updateGrup.Controls.Add(this.label10);
             this.updateGrup.Enabled = false;
-            this.updateGrup.Location = new System.Drawing.Point(596, 139);
+            this.updateGrup.Location = new System.Drawing.Point(604, 140);
             this.updateGrup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.updateGrup.Name = "updateGrup";
             this.updateGrup.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.updateGrup.Size = new System.Drawing.Size(439, 238);
+            this.updateGrup.Size = new System.Drawing.Size(439, 265);
             this.updateGrup.TabIndex = 2;
             this.updateGrup.TabStop = false;
             this.updateGrup.Text = "Perbarui";
@@ -284,7 +290,7 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(241, 26);
+            this.btnSimpan.Location = new System.Drawing.Point(339, 227);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(87, 30);
@@ -471,7 +477,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(596, 89);
+            this.btnRefresh.Location = new System.Drawing.Point(604, 90);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(87, 30);
@@ -483,7 +489,7 @@
             // btnBatal
             // 
             this.btnBatal.Enabled = false;
-            this.btnBatal.Location = new System.Drawing.Point(706, 89);
+            this.btnBatal.Location = new System.Drawing.Point(714, 90);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 30);
@@ -495,7 +501,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(816, 89);
+            this.btnUpdate.Location = new System.Drawing.Point(824, 90);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 30);
@@ -507,7 +513,8 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 412);
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(22, 413);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 17);
             this.label13.TabIndex = 6;
@@ -516,7 +523,7 @@
             // txtCari
             // 
             this.txtCari.Enabled = false;
-            this.txtCari.Location = new System.Drawing.Point(14, 433);
+            this.txtCari.Location = new System.Drawing.Point(22, 434);
             this.txtCari.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCari.Name = "txtCari";
             this.txtCari.Size = new System.Drawing.Size(219, 25);
@@ -525,7 +532,7 @@
             // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(19, 511);
+            this.btnKembali.Location = new System.Drawing.Point(27, 512);
             this.btnKembali.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(87, 30);
@@ -537,7 +544,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(240, 435);
+            this.radioButton1.Location = new System.Drawing.Point(248, 436);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(15, 14);
@@ -545,34 +552,51 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.radioButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.viewAlatKerja);
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.txtCari);
+            this.bunifuGradientPanel1.Controls.Add(this.updateGrup);
+            this.bunifuGradientPanel1.Controls.Add(this.label13);
+            this.bunifuGradientPanel1.Controls.Add(this.btnRefresh);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1077, 557);
+            this.bunifuGradientPanel1.TabIndex = 11;
+            // 
             // UpdateAlatKerja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 557);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.txtCari);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.updateGrup);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.viewAlatKerja);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateAlatKerja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UpdateAlatKerja";
             this.Load += new System.EventHandler(this.UpdateAlatKerja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatKerja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.msalatkerjaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet2)).EndInit();
             this.updateGrup.ResumeLayout(false);
             this.updateGrup.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -623,5 +647,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn jumlahDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bagusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rusakDataGridViewTextBoxColumn;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

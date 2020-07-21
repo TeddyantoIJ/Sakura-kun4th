@@ -66,9 +66,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(250, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 25);
+            this.label1.Size = new System.Drawing.Size(196, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Menambah Supplier";
+            this.label1.Text = "Menambah Pemasok";
             // 
             // label2
             // 
@@ -77,9 +77,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(114, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "ID Supplier";
+            this.label2.Text = "ID Pemasok";
             // 
             // label3
             // 
@@ -88,9 +88,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(114, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 17);
+            this.label3.Size = new System.Drawing.Size(99, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Nama Supplier";
+            this.label3.Text = "Nama Pemasok";
             // 
             // label4
             // 
@@ -99,9 +99,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(114, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.Size = new System.Drawing.Size(121, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Contact Person";
+            this.label4.Text = "Penanggung Jawab";
             // 
             // label5
             // 
@@ -384,12 +384,12 @@
             this.ClientSize = new System.Drawing.Size(630, 588);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SupplierMaster";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Supplier";
             this.Load += new System.EventHandler(this.SupplierMaster_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

@@ -257,6 +257,7 @@
             // 
             // txtBiaya
             // 
+            this.txtBiaya.Enabled = false;
             this.txtBiaya.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBiaya.Location = new System.Drawing.Point(596, 46);
             this.txtBiaya.Name = "txtBiaya";
@@ -308,6 +309,7 @@
             // 
             // txtKeluhan
             // 
+            this.txtKeluhan.Enabled = false;
             this.txtKeluhan.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKeluhan.Location = new System.Drawing.Point(146, 146);
             this.txtKeluhan.Multiline = true;
@@ -328,6 +330,7 @@
             // 
             // txtAlat_elektronik
             // 
+            this.txtAlat_elektronik.Enabled = false;
             this.txtAlat_elektronik.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlat_elektronik.Location = new System.Drawing.Point(146, 114);
             this.txtAlat_elektronik.Name = "txtAlat_elektronik";
@@ -347,6 +350,7 @@
             // 
             // txtJenis
             // 
+            this.txtJenis.Enabled = false;
             this.txtJenis.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJenis.Location = new System.Drawing.Point(146, 82);
             this.txtJenis.Name = "txtJenis";
@@ -366,6 +370,7 @@
             // 
             // txtKode
             // 
+            this.txtKode.Enabled = false;
             this.txtKode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKode.Location = new System.Drawing.Point(146, 50);
             this.txtKode.Name = "txtKode";

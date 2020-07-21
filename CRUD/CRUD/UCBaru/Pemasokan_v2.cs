@@ -46,7 +46,7 @@ namespace CRUD.UCBaru
             tableKomponen.Columns.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_getAllKomponen", connection);
@@ -117,7 +117,7 @@ namespace CRUD.UCBaru
             tableSupplier.Columns.Clear();
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlDataAdapter adapter = new SqlDataAdapter("select distinct ROW_NUMBER() over(order by harga asc) No, [mssupplier].nama_supplier Supplier, " +
@@ -401,7 +401,7 @@ namespace CRUD.UCBaru
         }
         private string getLastID()
         {
-            string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+            string connectionString = Program.getConstring();
 
             SqlConnection connection = new SqlConnection(connectionString);
 
@@ -439,7 +439,7 @@ namespace CRUD.UCBaru
             }
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_inputTRestockKomponen", connection);
@@ -481,7 +481,7 @@ namespace CRUD.UCBaru
             {
                 try
                 {
-                    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                    string connectionString = Program.getConstring();
 
                     SqlConnection connection = new SqlConnection(connectionString);
                     SqlCommand myCommand = new SqlCommand("sp_inputTDetailStock", connection);
@@ -531,7 +531,7 @@ namespace CRUD.UCBaru
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariKomponen", connection);
@@ -572,7 +572,7 @@ namespace CRUD.UCBaru
         {
             try
             {
-                string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+                string connectionString = Program.getConstring();
 
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand myCommand = new SqlCommand("sp_cariSupplier", connection);
