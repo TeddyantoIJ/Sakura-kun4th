@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePekerja));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,15 +65,18 @@
             this.lblNama = new System.Windows.Forms.Label();
             this.lblBagian = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgPekerja)).BeginInit();
             this.gbUpdate.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(503, 28);
+            this.label1.Location = new System.Drawing.Point(497, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 21);
             this.label1.TabIndex = 0;
@@ -81,7 +85,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 73);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(18, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 1;
@@ -90,7 +95,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 73);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(109, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(10, 15);
             this.label3.TabIndex = 2;
@@ -98,12 +104,13 @@
             // 
             // cmbPekerja
             // 
+            this.cmbPekerja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbPekerja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPekerja.FormattingEnabled = true;
             this.cmbPekerja.Items.AddRange(new object[] {
             "Pelayan",
             "Gudang"});
-            this.cmbPekerja.Location = new System.Drawing.Point(131, 70);
+            this.cmbPekerja.Location = new System.Drawing.Point(125, 65);
             this.cmbPekerja.Name = "cmbPekerja";
             this.cmbPekerja.Size = new System.Drawing.Size(85, 23);
             this.cmbPekerja.TabIndex = 3;
@@ -112,16 +119,18 @@
             // dgPekerja
             // 
             this.dgPekerja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgPekerja.Location = new System.Drawing.Point(27, 99);
+            this.dgPekerja.Location = new System.Drawing.Point(21, 94);
             this.dgPekerja.Name = "dgPekerja";
             this.dgPekerja.Size = new System.Drawing.Size(587, 229);
             this.dgPekerja.TabIndex = 4;
+            this.dgPekerja.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPekerja_CellClick);
             this.dgPekerja.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPekerja_CellEnter);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 334);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(18, 329);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 5;
@@ -129,6 +138,7 @@
             // 
             // cmbPencarian
             // 
+            this.cmbPencarian.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbPencarian.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPencarian.FormattingEnabled = true;
             this.cmbPencarian.Items.AddRange(new object[] {
@@ -139,7 +149,7 @@
             "Email",
             "No Telepon",
             "Status"});
-            this.cmbPencarian.Location = new System.Drawing.Point(27, 355);
+            this.cmbPencarian.Location = new System.Drawing.Point(21, 350);
             this.cmbPencarian.Name = "cmbPencarian";
             this.cmbPencarian.Size = new System.Drawing.Size(109, 23);
             this.cmbPencarian.TabIndex = 6;
@@ -147,7 +157,7 @@
             // 
             // txtPencarian
             // 
-            this.txtPencarian.Location = new System.Drawing.Point(142, 355);
+            this.txtPencarian.Location = new System.Drawing.Point(136, 350);
             this.txtPencarian.Name = "txtPencarian";
             this.txtPencarian.Size = new System.Drawing.Size(147, 23);
             this.txtPencarian.TabIndex = 7;
@@ -155,7 +165,8 @@
             // 
             // btnPerbarui
             // 
-            this.btnPerbarui.Location = new System.Drawing.Point(620, 93);
+            this.btnPerbarui.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerbarui.Location = new System.Drawing.Point(614, 88);
             this.btnPerbarui.Name = "btnPerbarui";
             this.btnPerbarui.Size = new System.Drawing.Size(75, 23);
             this.btnPerbarui.TabIndex = 8;
@@ -165,7 +176,8 @@
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(620, 126);
+            this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBatal.Location = new System.Drawing.Point(614, 121);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(75, 23);
             this.btnBatal.TabIndex = 9;
@@ -175,7 +187,8 @@
             // 
             // btnSegarkan
             // 
-            this.btnSegarkan.Location = new System.Drawing.Point(620, 159);
+            this.btnSegarkan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSegarkan.Location = new System.Drawing.Point(614, 154);
             this.btnSegarkan.Name = "btnSegarkan";
             this.btnSegarkan.Size = new System.Drawing.Size(75, 23);
             this.btnSegarkan.TabIndex = 10;
@@ -185,6 +198,7 @@
             // 
             // gbUpdate
             // 
+            this.gbUpdate.BackColor = System.Drawing.Color.Transparent;
             this.gbUpdate.Controls.Add(this.btnSimpan);
             this.gbUpdate.Controls.Add(this.txtTelepon);
             this.gbUpdate.Controls.Add(this.txtNama);
@@ -208,18 +222,19 @@
             this.gbUpdate.Controls.Add(this.label16);
             this.gbUpdate.Controls.Add(this.lblNama);
             this.gbUpdate.Controls.Add(this.lblBagian);
-            this.gbUpdate.Location = new System.Drawing.Point(701, 93);
+            this.gbUpdate.Location = new System.Drawing.Point(695, 79);
             this.gbUpdate.Name = "gbUpdate";
-            this.gbUpdate.Size = new System.Drawing.Size(420, 294);
+            this.gbUpdate.Size = new System.Drawing.Size(426, 294);
             this.gbUpdate.TabIndex = 11;
             this.gbUpdate.TabStop = false;
             this.gbUpdate.Text = "Perbarui";
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(325, 28);
+            this.btnSimpan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSimpan.Location = new System.Drawing.Point(327, 265);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btnSimpan.Size = new System.Drawing.Size(96, 23);
             this.btnSimpan.TabIndex = 46;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
@@ -228,7 +243,7 @@
             // txtTelepon
             // 
             this.txtTelepon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelepon.Location = new System.Drawing.Point(152, 215);
+            this.txtTelepon.Location = new System.Drawing.Point(161, 215);
             this.txtTelepon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelepon.Name = "txtTelepon";
             this.txtTelepon.Size = new System.Drawing.Size(111, 23);
@@ -238,7 +253,7 @@
             // txtNama
             // 
             this.txtNama.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.Location = new System.Drawing.Point(152, 65);
+            this.txtNama.Location = new System.Drawing.Point(161, 65);
             this.txtNama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(214, 23);
@@ -253,7 +268,7 @@
             this.cmbStatus.Items.AddRange(new object[] {
             "Aktif",
             "Tidak Aktif"});
-            this.cmbStatus.Location = new System.Drawing.Point(152, 245);
+            this.cmbStatus.Location = new System.Drawing.Point(161, 245);
             this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(85, 23);
@@ -262,7 +277,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(152, 185);
+            this.txtEmail.Location = new System.Drawing.Point(161, 185);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 23);
@@ -271,7 +286,7 @@
             // txtAlamat
             // 
             this.txtAlamat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlamat.Location = new System.Drawing.Point(152, 125);
+            this.txtAlamat.Location = new System.Drawing.Point(161, 125);
             this.txtAlamat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
@@ -282,7 +297,7 @@
             // 
             this.rbPerempuan.AutoSize = true;
             this.rbPerempuan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPerempuan.Location = new System.Drawing.Point(243, 95);
+            this.rbPerempuan.Location = new System.Drawing.Point(252, 95);
             this.rbPerempuan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbPerempuan.Name = "rbPerempuan";
             this.rbPerempuan.Size = new System.Drawing.Size(86, 19);
@@ -295,7 +310,7 @@
             // 
             this.rbLakilaki.AutoSize = true;
             this.rbLakilaki.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbLakilaki.Location = new System.Drawing.Point(152, 95);
+            this.rbLakilaki.Location = new System.Drawing.Point(161, 95);
             this.rbLakilaki.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbLakilaki.Name = "rbLakilaki";
             this.rbLakilaki.Size = new System.Drawing.Size(69, 19);
@@ -308,7 +323,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(152, 32);
+            this.lblId.Location = new System.Drawing.Point(161, 32);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(18, 15);
             this.lblId.TabIndex = 38;
@@ -318,7 +333,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(132, 245);
+            this.label15.Location = new System.Drawing.Point(141, 245);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(10, 15);
             this.label15.TabIndex = 37;
@@ -328,7 +343,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(132, 215);
+            this.label14.Location = new System.Drawing.Point(141, 215);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(10, 15);
             this.label14.TabIndex = 36;
@@ -338,7 +353,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(132, 185);
+            this.label13.Location = new System.Drawing.Point(141, 185);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(10, 15);
             this.label13.TabIndex = 35;
@@ -348,7 +363,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(132, 125);
+            this.label12.Location = new System.Drawing.Point(141, 125);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(10, 15);
             this.label12.TabIndex = 34;
@@ -358,7 +373,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(132, 97);
+            this.label11.Location = new System.Drawing.Point(141, 97);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 15);
             this.label11.TabIndex = 33;
@@ -368,7 +383,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(132, 65);
+            this.label10.Location = new System.Drawing.Point(141, 65);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(10, 15);
             this.label10.TabIndex = 32;
@@ -378,7 +393,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(132, 32);
+            this.label9.Location = new System.Drawing.Point(141, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(10, 15);
             this.label9.TabIndex = 31;
@@ -388,7 +403,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 245);
+            this.label8.Location = new System.Drawing.Point(28, 245);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 15);
             this.label8.TabIndex = 30;
@@ -398,9 +413,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 215);
+            this.label7.Location = new System.Drawing.Point(28, 215);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 29;
             this.label7.Text = "No Telepon";
             // 
@@ -408,7 +423,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 185);
+            this.label6.Location = new System.Drawing.Point(28, 185);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 15);
             this.label6.TabIndex = 28;
@@ -418,7 +433,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 125);
+            this.label5.Location = new System.Drawing.Point(28, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 27;
@@ -428,7 +443,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(19, 97);
+            this.label16.Location = new System.Drawing.Point(28, 97);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(78, 15);
             this.label16.TabIndex = 26;
@@ -438,7 +453,7 @@
             // 
             this.lblNama.AutoSize = true;
             this.lblNama.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNama.Location = new System.Drawing.Point(19, 65);
+            this.lblNama.Location = new System.Drawing.Point(28, 65);
             this.lblNama.Name = "lblNama";
             this.lblNama.Size = new System.Drawing.Size(80, 15);
             this.lblNama.TabIndex = 25;
@@ -448,7 +463,7 @@
             // 
             this.lblBagian.AutoSize = true;
             this.lblBagian.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBagian.Location = new System.Drawing.Point(19, 32);
+            this.lblBagian.Location = new System.Drawing.Point(28, 32);
             this.lblBagian.Name = "lblBagian";
             this.lblBagian.Size = new System.Drawing.Size(59, 15);
             this.lblBagian.TabIndex = 24;
@@ -456,7 +471,8 @@
             // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(27, 384);
+            this.btnKembali.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKembali.Location = new System.Drawing.Point(21, 379);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(75, 23);
             this.btnKembali.TabIndex = 12;
@@ -464,24 +480,40 @@
             this.btnKembali.UseVisualStyleBackColor = true;
             this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnKembali);
+            this.bunifuGradientPanel1.Controls.Add(this.dgPekerja);
+            this.bunifuGradientPanel1.Controls.Add(this.gbUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnSegarkan);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.btnPerbarui);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbPekerja);
+            this.bunifuGradientPanel1.Controls.Add(this.txtPencarian);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.cmbPencarian);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1133, 411);
+            this.bunifuGradientPanel1.TabIndex = 13;
+            // 
             // UpdatePekerja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1133, 411);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.gbUpdate);
-            this.Controls.Add(this.btnSegarkan);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnPerbarui);
-            this.Controls.Add(this.txtPencarian);
-            this.Controls.Add(this.cmbPencarian);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dgPekerja);
-            this.Controls.Add(this.cmbPekerja);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UpdatePekerja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -490,8 +522,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgPekerja)).EndInit();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -533,5 +566,6 @@
         private System.Windows.Forms.Label lblNama;
         private System.Windows.Forms.Label lblBagian;
         private System.Windows.Forms.Button btnKembali;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

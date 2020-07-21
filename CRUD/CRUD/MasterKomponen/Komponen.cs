@@ -69,7 +69,7 @@ namespace CRUD
 
         private void clear()
         {
-            lblId.Text = "KMP-" + getLastID();
+            lblId.Text = "KMP-XXXX";
             txtNama.Text = "";
             txtJumlah.Text = "";
             txtHarga.Text = "";
@@ -147,7 +147,7 @@ namespace CRUD
                 myCommand = new SqlCommand("sp_inputKomponen", myConnection);
                 myCommand.CommandType = CommandType.StoredProcedure;
 
-                myCommand.Parameters.AddWithValue("id_komponen", lblId.Text);
+                myCommand.Parameters.AddWithValue("id_komponen", "KMP-" + getLastID());
                 myCommand.Parameters.AddWithValue("nama_komponen", txtNama.Text);
                 myCommand.Parameters.AddWithValue("jumlah", int.Parse(txtJumlah.Text));
                 myCommand.Parameters.AddWithValue("harga_jual", int.Parse(txtHarga.Text));

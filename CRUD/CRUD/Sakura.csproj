@@ -69,10 +69,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Reportna.cs">
+    <Compile Include="Laporan\LaporanPenjualanKomponen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Reportna.Designer.cs">
+    <Compile Include="Laporan\LaporanPenjualanKomponen.designer.cs">
+      <DependentUpon>LaporanPenjualanKomponen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LaporanReparasiAlatElektronik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Laporan\LaporanReparasiAlatElektronik.designer.cs">
+      <DependentUpon>LaporanReparasiAlatElektronik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LaporanRestockAlatKerja.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Laporan\LaporanRestockAlatKerja.designer.cs">
+      <DependentUpon>LaporanRestockAlatKerja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LaporanRestockKomponen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Laporan\LaporanRestockKomponen.designer.cs">
+      <DependentUpon>LaporanRestockKomponen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Report.cs">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Report.designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Report2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UCBaru\Reportna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaru\Reportna.Designer.cs">
       <DependentUpon>Reportna.cs</DependentUpon>
     </Compile>
     <Compile Include="UCBaru\CreateOrUpdate.cs">
@@ -129,11 +164,6 @@
     <Compile Include="UCBaru\Reparasi.Designer.cs">
       <DependentUpon>Reparasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report.xsd</DependentUpon>
-    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UCBaru\BKomponen.cs">
       <SubType>UserControl</SubType>
@@ -153,10 +183,10 @@
     <Compile Include="UCBaru\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCMasuk.cs">
+    <Compile Include="UCBaru\UCMasuk.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCMasuk.Designer.cs">
+    <Compile Include="UCBaru\UCMasuk.Designer.cs">
       <DependentUpon>UCMasuk.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UCTransaksi.cs">
@@ -361,7 +391,26 @@
     <Compile Include="testing.Designer.cs">
       <DependentUpon>testing.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reportna.resx">
+    <EmbeddedResource Include="Laporan\LaporanPenjualanKomponen.resx">
+      <DependentUpon>LaporanPenjualanKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LaporanReparasiAlatElektronik.resx">
+      <DependentUpon>LaporanReparasiAlatElektronik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LaporanRestockAlatKerja.resx">
+      <DependentUpon>LaporanRestockAlatKerja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\LaporanRestockKomponen.resx">
+      <DependentUpon>LaporanRestockKomponen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\PenjualanKomponen.rdlc" />
+    <EmbeddedResource Include="Laporan\ReparasiAlatElektronik.rdlc" />
+    <EmbeddedResource Include="Laporan\RestockAlat.rdlc" />
+    <EmbeddedResource Include="Laporan\RestockKomponen.rdlc" />
+    <EmbeddedResource Include="MasterPekerja\UpdatePekerja.resx">
+      <DependentUpon>UpdatePekerja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBaru\Reportna.resx">
       <DependentUpon>Reportna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCBaru\CreateOrUpdate.resx">
@@ -388,11 +437,6 @@
     <EmbeddedResource Include="UCBaru\BayarReparasi.resx">
       <DependentUpon>BayarReparasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FIO\rwRestockAlatKerja.rdlc" />
-    <EmbeddedResource Include="Report\reportReparasi.rdlc" />
-    <EmbeddedResource Include="Report\ReportBeliKomponen.rdlc" />
-    <EmbeddedResource Include="Report\ReportRestock1.rdlc" />
-    <EmbeddedResource Include="Report\RestockAlat.rdlc" />
     <EmbeddedResource Include="UCBaru\BKomponen.resx">
       <DependentUpon>BKomponen.cs</DependentUpon>
     </EmbeddedResource>
@@ -405,7 +449,7 @@
     <EmbeddedResource Include="UCBaru\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCMasuk.resx">
+    <EmbeddedResource Include="UCBaru\UCMasuk.resx">
       <DependentUpon>UCMasuk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UCTransaksi.resx">
@@ -496,6 +540,17 @@
     <EmbeddedResource Include="testing.resx">
       <DependentUpon>testing.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Laporan\Report.xsc">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Laporan\Report.xss">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
     <None Include="MasterAlatElektronik\DataAlatElektronik.xsc">
       <DependentUpon>DataAlatElektronik.xsd</DependentUpon>
     </None>
@@ -550,17 +605,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Report.xsc">
-      <DependentUpon>Report.xsd</DependentUpon>
-    </None>
-    <None Include="Report.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Report.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Report.xss">
-      <DependentUpon>Report.xsd</DependentUpon>
-    </None>
     <None Include="SakuraDataDataSet.xsc">
       <DependentUpon>SakuraDataDataSet.xsd</DependentUpon>
     </None>

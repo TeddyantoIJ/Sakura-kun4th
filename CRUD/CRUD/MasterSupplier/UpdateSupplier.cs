@@ -95,30 +95,30 @@ namespace CRUD
             
             Int32 selectedRowCount =
         viewSupplier.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            if (selectedRowCount > 0 && selectedRowCount  <= 1)
-            {
-                btnUpdate.Enabled = true;
-                clear();
-                by = 0;
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            //if (selectedRowCount > 0 && selectedRowCount  <= 1)
+            //{
+            //    btnUpdate.Enabled = true;
+            //    clear();
+            //    by = 0;
+            //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
-                for (int i = 0; i < selectedRowCount; i++)
-                {
-                    selectedRow = Int32.Parse(viewSupplier.SelectedRows[i].Index.ToString());  
-                }
-                DataGridViewRow row = viewSupplier.Rows[selectedRow];
-                txtid_supplier.Text = row.Cells[0].Value.ToString();
-                txtnama_supplier.Text = row.Cells[1].Value.ToString();
-                txtcontact_person.Text = row.Cells[2].Value.ToString();
-                txtno_telepon.Text = row.Cells[3].Value.ToString();
-                txtalamat.Text = row.Cells[4].Value.ToString();
-                txtketerangan.Text = row.Cells[5].Value.ToString();
+            //    for (int i = 0; i < selectedRowCount; i++)
+            //    {
+            //        selectedRow = Int32.Parse(viewSupplier.SelectedRows[i].Index.ToString());  
+            //    }
+            //    DataGridViewRow row = viewSupplier.Rows[selectedRow];
+            //    txtid_supplier.Text = row.Cells[0].Value.ToString();
+            //    txtnama_supplier.Text = row.Cells[1].Value.ToString();
+            //    txtcontact_person.Text = row.Cells[2].Value.ToString();
+            //    txtno_telepon.Text = row.Cells[3].Value.ToString();
+            //    txtalamat.Text = row.Cells[4].Value.ToString();
+            //    txtketerangan.Text = row.Cells[5].Value.ToString();
 
-            }
-            else
-            {
-                btnUpdate.Enabled = false;
-            }
+            //}
+            //else
+            //{
+            //    btnUpdate.Enabled = false;
+            //}
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -274,7 +274,7 @@ namespace CRUD
         {
             updateGrup.Enabled = false;
             btnBatal.Enabled = false;
-
+            btnUpdate.Enabled = false;
             txtid_supplier.Text = "";
             txtalamat.Text = "";
             txtcontact_person.Text = "";
@@ -294,7 +294,7 @@ namespace CRUD
         }
         private void addSource(string comein)
         {
-            
+            txtCari.AutoCompleteCustomSource = null;
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
             string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
@@ -319,14 +319,7 @@ namespace CRUD
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            switch (cmbTriger.Text){
-                case "ID Supplier": addSource("id_supplier");break;
-                case "Nama Supplier": addSource("nama_supplier"); break;
-                case "Contact Person": addSource("contact_person"); break;
-                case "No Telepon": addSource("no_telepon"); break;
-                case "Alamat": addSource("alamat"); break;
-                case "Keterangan": addSource("keterangan"); break;
-            }
+            
         }
 
         private void txtCari_TextChanged(object sender, EventArgs e)
@@ -372,6 +365,41 @@ namespace CRUD
                 btnUpdate.Enabled = false;
                 this.mssupplierTableAdapter.Fill(this.sakuraDataDataSet.mssupplier);
                 clear();
+            }
+        }
+
+        private void viewSupplier_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdate.Enabled = false;
+            btnBatal.Enabled = false;
+            int i = e.RowIndex;
+            if(i == -1)
+            {
+                return;
+            }
+            viewSupplier.Rows[i].Selected = true;
+            btnUpdate.Enabled = true;
+            btnBatal.Enabled = true;
+
+
+            txtid_supplier.Text = viewSupplier.Rows[i].Cells[0].Value.ToString();
+            txtnama_supplier.Text = viewSupplier.Rows[i].Cells[1].Value.ToString();
+            txtcontact_person.Text = viewSupplier.Rows[i].Cells[2].Value.ToString();
+            txtno_telepon.Text = viewSupplier.Rows[i].Cells[3].Value.ToString();
+            txtalamat.Text = viewSupplier.Rows[i].Cells[4].Value.ToString();
+            txtketerangan.Text = viewSupplier.Rows[i].Cells[5].Value.ToString();
+        }
+
+        private void cmbTriger_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cmbTriger.Text)
+            {
+                case "ID Supplier": addSource("id_supplier"); break;
+                case "Nama Supplier": addSource("nama_supplier"); break;
+                case "Contact Person": addSource("contact_person"); break;
+                case "No Telepon": addSource("no_telepon"); break;
+                case "Alamat": addSource("alamat"); break;
+                case "Keterangan": addSource("keterangan"); break;
             }
         }
     }

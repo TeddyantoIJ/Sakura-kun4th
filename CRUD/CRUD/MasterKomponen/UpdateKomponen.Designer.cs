@@ -28,18 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dgKomponen = new System.Windows.Forms.DataGridView();
-            this.idkomponenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namakomponenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jumlahDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hargajualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tempatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mskomponenBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataKomponen = new CRUD.DataKomponen();
-            this.mskomponenTableAdapter = new CRUD.DataKomponenTableAdapters.mskomponenTableAdapter();
             this.txtPencarian = new System.Windows.Forms.TextBox();
             this.cmbPencarian = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,7 +43,6 @@
             this.txtAlat = new System.Windows.Forms.TextBox();
             this.txtHarga = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtJumlah = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -69,10 +58,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idkomponenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namakomponenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jumlahDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hargajualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idalatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tempatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtJumlah = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dgKomponen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mskomponenBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataKomponen)).BeginInit();
             this.gbUpdate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJumlah)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,79 +85,22 @@
             // 
             this.dgKomponen.AllowUserToAddRows = false;
             this.dgKomponen.AllowUserToDeleteRows = false;
-            this.dgKomponen.AutoGenerateColumns = false;
             this.dgKomponen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgKomponen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.idkomponenDataGridViewTextBoxColumn,
             this.namakomponenDataGridViewTextBoxColumn,
             this.jumlahDataGridViewTextBoxColumn,
             this.hargajualDataGridViewTextBoxColumn,
             this.idalatDataGridViewTextBoxColumn,
             this.tempatDataGridViewTextBoxColumn});
-            this.dgKomponen.DataSource = this.mskomponenBindingSource;
             this.dgKomponen.Location = new System.Drawing.Point(12, 77);
             this.dgKomponen.Name = "dgKomponen";
             this.dgKomponen.ReadOnly = true;
             this.dgKomponen.Size = new System.Drawing.Size(544, 243);
             this.dgKomponen.TabIndex = 1;
-            
+            this.dgKomponen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgKomponen_CellClick);
             this.dgKomponen.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgKomponen_CellEnter);
-            // 
-            // idkomponenDataGridViewTextBoxColumn
-            // 
-            this.idkomponenDataGridViewTextBoxColumn.DataPropertyName = "id_komponen";
-            this.idkomponenDataGridViewTextBoxColumn.HeaderText = "ID Komponen";
-            this.idkomponenDataGridViewTextBoxColumn.Name = "idkomponenDataGridViewTextBoxColumn";
-            this.idkomponenDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namakomponenDataGridViewTextBoxColumn
-            // 
-            this.namakomponenDataGridViewTextBoxColumn.DataPropertyName = "nama_komponen";
-            this.namakomponenDataGridViewTextBoxColumn.HeaderText = "Nama Komponen";
-            this.namakomponenDataGridViewTextBoxColumn.Name = "namakomponenDataGridViewTextBoxColumn";
-            this.namakomponenDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // jumlahDataGridViewTextBoxColumn
-            // 
-            this.jumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah";
-            this.jumlahDataGridViewTextBoxColumn.HeaderText = "Jumlah";
-            this.jumlahDataGridViewTextBoxColumn.Name = "jumlahDataGridViewTextBoxColumn";
-            this.jumlahDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hargajualDataGridViewTextBoxColumn
-            // 
-            this.hargajualDataGridViewTextBoxColumn.DataPropertyName = "harga_jual";
-            this.hargajualDataGridViewTextBoxColumn.HeaderText = "Harga Jual";
-            this.hargajualDataGridViewTextBoxColumn.Name = "hargajualDataGridViewTextBoxColumn";
-            this.hargajualDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idalatDataGridViewTextBoxColumn
-            // 
-            this.idalatDataGridViewTextBoxColumn.DataPropertyName = "id_alat";
-            this.idalatDataGridViewTextBoxColumn.HeaderText = "Alat Elektronik";
-            this.idalatDataGridViewTextBoxColumn.Name = "idalatDataGridViewTextBoxColumn";
-            this.idalatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tempatDataGridViewTextBoxColumn
-            // 
-            this.tempatDataGridViewTextBoxColumn.DataPropertyName = "tempat";
-            this.tempatDataGridViewTextBoxColumn.HeaderText = "Tempat";
-            this.tempatDataGridViewTextBoxColumn.Name = "tempatDataGridViewTextBoxColumn";
-            this.tempatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // mskomponenBindingSource
-            // 
-            this.mskomponenBindingSource.DataMember = "mskomponen";
-            this.mskomponenBindingSource.DataSource = this.dataKomponen;
-            // 
-            // dataKomponen
-            // 
-            this.dataKomponen.DataSetName = "DataKomponen";
-            this.dataKomponen.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mskomponenTableAdapter
-            // 
-            this.mskomponenTableAdapter.ClearBeforeFill = true;
             // 
             // txtPencarian
             // 
@@ -229,13 +168,12 @@
             // 
             // gbUpdate
             // 
+            this.gbUpdate.Controls.Add(this.txtJumlah);
             this.gbUpdate.Controls.Add(this.btnBaru);
-            this.gbUpdate.Controls.Add(this.btnSimpan);
             this.gbUpdate.Controls.Add(this.txtTempat);
             this.gbUpdate.Controls.Add(this.txtAlat);
             this.gbUpdate.Controls.Add(this.txtHarga);
             this.gbUpdate.Controls.Add(this.label14);
-            this.gbUpdate.Controls.Add(this.txtJumlah);
             this.gbUpdate.Controls.Add(this.txtNama);
             this.gbUpdate.Controls.Add(this.lblId);
             this.gbUpdate.Controls.Add(this.label13);
@@ -250,7 +188,7 @@
             this.gbUpdate.Controls.Add(this.label2);
             this.gbUpdate.Controls.Add(this.label3);
             this.gbUpdate.Controls.Add(this.label15);
-            this.gbUpdate.Location = new System.Drawing.Point(645, 135);
+            this.gbUpdate.Location = new System.Drawing.Point(645, 121);
             this.gbUpdate.Name = "gbUpdate";
             this.gbUpdate.Size = new System.Drawing.Size(367, 230);
             this.gbUpdate.TabIndex = 17;
@@ -269,7 +207,7 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(267, 22);
+            this.btnSimpan.Location = new System.Drawing.Point(931, 355);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 18;
@@ -308,14 +246,6 @@
             this.label14.Size = new System.Drawing.Size(21, 15);
             this.label14.TabIndex = 35;
             this.label14.Text = "Rp";
-            // 
-            // txtJumlah
-            // 
-            this.txtJumlah.Location = new System.Drawing.Point(206, 80);
-            this.txtJumlah.Name = "txtJumlah";
-            this.txtJumlah.Size = new System.Drawing.Size(51, 23);
-            this.txtJumlah.TabIndex = 34;
-            this.txtJumlah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJumlah_KeyPress);
             // 
             // txtNama
             // 
@@ -451,6 +381,83 @@
             this.btnKembali.UseVisualStyleBackColor = true;
             this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 48;
+            // 
+            // idkomponenDataGridViewTextBoxColumn
+            // 
+            this.idkomponenDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.idkomponenDataGridViewTextBoxColumn.DataPropertyName = "id_komponen";
+            this.idkomponenDataGridViewTextBoxColumn.HeaderText = "ID Komponen";
+            this.idkomponenDataGridViewTextBoxColumn.Name = "idkomponenDataGridViewTextBoxColumn";
+            this.idkomponenDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idkomponenDataGridViewTextBoxColumn.Width = 96;
+            // 
+            // namakomponenDataGridViewTextBoxColumn
+            // 
+            this.namakomponenDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.namakomponenDataGridViewTextBoxColumn.DataPropertyName = "nama_komponen";
+            this.namakomponenDataGridViewTextBoxColumn.HeaderText = "Nama Komponen";
+            this.namakomponenDataGridViewTextBoxColumn.Name = "namakomponenDataGridViewTextBoxColumn";
+            this.namakomponenDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // jumlahDataGridViewTextBoxColumn
+            // 
+            this.jumlahDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.jumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah";
+            this.jumlahDataGridViewTextBoxColumn.HeaderText = "Jumlah";
+            this.jumlahDataGridViewTextBoxColumn.Name = "jumlahDataGridViewTextBoxColumn";
+            this.jumlahDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jumlahDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // hargajualDataGridViewTextBoxColumn
+            // 
+            this.hargajualDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.hargajualDataGridViewTextBoxColumn.DataPropertyName = "harga_jual";
+            this.hargajualDataGridViewTextBoxColumn.HeaderText = "Harga Jual";
+            this.hargajualDataGridViewTextBoxColumn.Name = "hargajualDataGridViewTextBoxColumn";
+            this.hargajualDataGridViewTextBoxColumn.ReadOnly = true;
+            this.hargajualDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // idalatDataGridViewTextBoxColumn
+            // 
+            this.idalatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idalatDataGridViewTextBoxColumn.DataPropertyName = "id_alat";
+            this.idalatDataGridViewTextBoxColumn.HeaderText = "Alat Elektronik";
+            this.idalatDataGridViewTextBoxColumn.Name = "idalatDataGridViewTextBoxColumn";
+            this.idalatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tempatDataGridViewTextBoxColumn
+            // 
+            this.tempatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.tempatDataGridViewTextBoxColumn.DataPropertyName = "tempat";
+            this.tempatDataGridViewTextBoxColumn.HeaderText = "Tempat";
+            this.tempatDataGridViewTextBoxColumn.Name = "tempatDataGridViewTextBoxColumn";
+            this.tempatDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tempatDataGridViewTextBoxColumn.Width = 72;
+            // 
+            // txtJumlah
+            // 
+            this.txtJumlah.Location = new System.Drawing.Point(206, 80);
+            this.txtJumlah.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtJumlah.Name = "txtJumlah";
+            this.txtJumlah.Size = new System.Drawing.Size(136, 23);
+            this.txtJumlah.TabIndex = 39;
+            this.txtJumlah.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // UpdateKomponen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -458,6 +465,7 @@
             this.ClientSize = new System.Drawing.Size(1025, 390);
             this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.gbUpdate);
+            this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.btnSegarkan);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnPerbarui);
@@ -473,10 +481,9 @@
             this.Text = "UpdateJenisElektronik";
             this.Load += new System.EventHandler(this.UpdateAlatElektronik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgKomponen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mskomponenBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataKomponen)).EndInit();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJumlah)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,9 +493,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgKomponen;
-        private DataKomponen dataKomponen;
-        private System.Windows.Forms.BindingSource mskomponenBindingSource;
-        private DataKomponenTableAdapters.mskomponenTableAdapter mskomponenTableAdapter;
         private System.Windows.Forms.TextBox txtPencarian;
         private System.Windows.Forms.ComboBox cmbPencarian;
         private System.Windows.Forms.Label label4;
@@ -500,7 +504,6 @@
         private System.Windows.Forms.TextBox txtAlat;
         private System.Windows.Forms.TextBox txtHarga;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtJumlah;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label13;
@@ -517,12 +520,14 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnKembali;
+        private System.Windows.Forms.Button btnBaru;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idkomponenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namakomponenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn jumlahDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hargajualDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idalatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tempatDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnBaru;
+        private System.Windows.Forms.NumericUpDown txtJumlah;
     }
 }

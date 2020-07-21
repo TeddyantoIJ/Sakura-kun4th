@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,9 +18,9 @@ namespace CRUD
         public UpdateAlatKomponenSupplier()
         {
             InitializeComponent();
-            addSourceViewAlat();
+            //addSourceViewAlat();
             addSourceViewKomponen();
-            
+            addDataAlat();
         }
 
         private void UpdateAlatKomponenSupplier_Load(object sender, EventArgs e)
@@ -28,63 +29,170 @@ namespace CRUD
             //this.mskomponensupplierTableAdapter.Fill(this.komponenSupplier.mskomponensupplier);
 
         }
-        private void addSourceViewAlat()
+        public void addDataAlat()
         {
+            //viewAlatSupplier.DataSource = null;
+            viewAlatSupplier.Rows.Clear();
             try
             {
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_alat asc) No, [msalatkerja].nama_alat as [Nama Alat], [mssupplier].nama_supplier as [Nama Supplier], convert(numeric(10,2), harga)  as [Harga(Rp)] from[msalatsupplier] " +
-                    "inner join[msalatkerja] on[msalatkerja].id_alat = [msalatsupplier].id_alat " +
-                    "inner join[mssupplier] on [mssupplier].id_supplier = [msalatsupplier].id_supplier", connection);
-                
+                SqlCommand myCommand = new SqlCommand("sp_getmsAlatKerjaUpdate", connection);
+                myCommand.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+
                 DataTable data = new DataTable();
+                adapter.SelectCommand = myCommand;
                 adapter.Fill(data);
 
-                viewAlatSupplier.DataSource = data;
+                
+                //viewAlatSupplier.DataSource = dtCloned;
 
-                this.viewAlatSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.viewAlatSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.viewAlatSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.viewAlatSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                foreach (DataGridViewColumn col in viewAlatSupplier.Columns)
+                {
+                    col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    //    col.HeaderCell.Style.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Pixel);
+                    col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                }
+
+                for(int i = 0; i < data.Rows.Count; i++)
+                {
+                    string uang = toRupiah(Convert.ToInt32(data.Rows[i][2].ToString().Substring(0, data.Rows[i][2].ToString().Length - 5)));
+                    Object[] n = { (i + 1) + ".", data.Rows[i][0].ToString(), data.Rows[i][1].ToString(), uang };
+                    viewAlatSupplier.Rows.Add(n);
+                }
+               
 
                 this.viewAlatSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                
                 //by = 1;
+
                 connection.Close();
-               
+
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 //btnUpdate.Enabled = false;
                 //this.msalatkerjaTableAdapter.Fill(this.sakuraDataDataSet2.msalatkerja);
                 //clear();
             }
         }
+        public string toRupiah(Int32 angka)
+        {
+            return String.Format(CultureInfo.CreateSpecificCulture("id-id"), "{0:N}", angka);
+        }
+
+        public int toAngka(string rupiah)
+        {
+            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+        }
+        private void addSourceViewAlat()
+        {
+            //try
+            //{
+            //    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+
+            //    SqlConnection connection = new SqlConnection(connectionString);
+            //    SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_alat asc) No, [msalatkerja].nama_alat as [Nama Alat], [mssupplier].nama_supplier as [Nama Supplier], convert(numeric(10,2), harga)  as [Harga(Rp)] from[msalatsupplier] " +
+            //        "inner join[msalatkerja] on[msalatkerja].id_alat = [msalatsupplier].id_alat " +
+            //        "inner join[mssupplier] on [mssupplier].id_supplier = [msalatsupplier].id_supplier", connection);
+                
+            //    DataTable data = new DataTable();
+            //    adapter.Fill(data);
+
+            //    viewAlatSupplier.DataSource = data;
+
+            //    this.viewAlatSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            //    this.viewAlatSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //    this.viewAlatSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //    this.viewAlatSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //    this.viewAlatSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            //    //by = 1;
+            //    connection.Close();
+               
+            //}
+            //catch (Exception)
+            //{
+            //    //btnUpdate.Enabled = false;
+            //    //this.msalatkerjaTableAdapter.Fill(this.sakuraDataDataSet2.msalatkerja);
+            //    //clear();
+            //}
+        }
         private void addSourceViewKomponen()
         {
+            //try
+            //{
+            //    string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
+
+            //    SqlConnection connection = new SqlConnection(connectionString);
+            //    SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_komponen asc) No, [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier," +
+            //        " convert(numeric(10,2), harga)  as [Harga(Rp)] from[mskomponensupplier] inner join[mskomponen]"+
+            //        " on [mskomponensupplier].id_komponen = [mskomponen].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
+
+            //    DataTable data = new DataTable();
+            //    adapter.Fill(data);
+
+            //    viewKomponenSupplier.DataSource = data;
+
+            //    this.viewKomponenSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            //    this.viewKomponenSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //    this.viewKomponenSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //    this.viewKomponenSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //    this.viewKomponenSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            //    //by = 1;
+            //    connection.Close();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //    //btnUpdate.Enabled = false;
+            //    //this.msalatkerjaTableAdapter.Fill(this.sakuraDataDataSet2.msalatkerja);
+            //    //clear();
+            //}
+            viewKomponenSupplier.Rows.Clear();
             try
             {
                 string connectionString = "integrated security = true; data source = localhost; initial catalog = SakuraData";
 
                 SqlConnection connection = new SqlConnection(connectionString);
-                SqlDataAdapter adapter = new SqlDataAdapter("select ROW_NUMBER() over(order by nama_komponen asc) No, [mskomponen].nama_komponen as [Nama Komponen], [mssupplier].nama_supplier," +
-                    " convert(numeric(10,2), harga)  as [Harga(Rp)] from[mskomponensupplier] inner join[mskomponen]"+
-                    " on [mskomponensupplier].id_komponen = [mskomponen].id_komponen inner join[mssupplier] on[mssupplier].id_supplier = [mskomponensupplier].id_supplier", connection);
+                SqlCommand myCommand = new SqlCommand("sp_getmsKomponenUpdate", connection);
+                myCommand.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adapter = new SqlDataAdapter();
 
                 DataTable data = new DataTable();
+                adapter.SelectCommand = myCommand;
                 adapter.Fill(data);
 
-                viewKomponenSupplier.DataSource = data;
 
-                this.viewKomponenSupplier.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.viewKomponenSupplier.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.viewKomponenSupplier.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.viewKomponenSupplier.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                //viewAlatSupplier.DataSource = dtCloned;
+
+                foreach (DataGridViewColumn col in viewKomponenSupplier.Columns)
+                {
+                    col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    //    col.HeaderCell.Style.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Pixel);
+                    col.SortMode = DataGridViewColumnSortMode.NotSortable;
+                }
+
+                for (int i = 0; i < data.Rows.Count; i++)
+                {
+                    string uang = toRupiah(Convert.ToInt32(data.Rows[i][2].ToString().Substring(0, data.Rows[i][2].ToString().Length - 5)));
+                    Object[] n = { (i + 1) + ".", data.Rows[i][0].ToString(), data.Rows[i][1].ToString(), uang };
+                    viewKomponenSupplier.Rows.Add(n);
+                }
+
 
                 this.viewKomponenSupplier.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
                 //by = 1;
+
                 connection.Close();
+
 
             }
             catch (Exception ex)
@@ -138,38 +246,7 @@ namespace CRUD
         int selectedRow;
         private void viewAlatSupplier_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            
-            Int32 selectedRowCount =
-            viewAlatSupplier.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            
-            if (selectedRowCount > 0 && selectedRowCount <= 1)
-            {
-                btnUpdate.Enabled = true;
-                btnBatal.Enabled = true;
-                // clear();
-                //by = 0;
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
-                for (int i = 0; i < selectedRowCount; i++)
-                {
-                    selectedRow = Int32.Parse(viewAlatSupplier.SelectedRows[i].Index.ToString());
-                }
-                DataGridViewRow row = viewAlatSupplier.Rows[selectedRow];
-                txtnama_alat.Text = row.Cells[1].Value.ToString();
-                txtnama_supplier.Text = row.Cells[2].Value.ToString();
-                int harga = (row.Cells[3].Value.ToString()).Length;
-
-                txtharga.Text = (row.Cells[3].Value.ToString()).Substring(0,(harga-3));
-            }
-            else if (btnUpdate.Enabled == true)
-            {
-                btnUpdate.Enabled = false;
-                btnBatal.Enabled = true;
-            }
-            else
-            {
-                btnUpdate.Enabled = false;
-            }
         }
         private void getid_alat()
         {
@@ -292,7 +369,7 @@ namespace CRUD
             if (selectedRowCount > 0 && selectedRowCount <= 1)
             {
                 btnUpdate.Enabled = true;
-                btnBatal.Enabled = true;
+                
                 // clear();
                 //by = 0;
                 System.Text.StringBuilder sb = new System.Text.StringBuilder();
@@ -312,7 +389,7 @@ namespace CRUD
             else if (btnUpdate.Enabled == true)
             {
                 btnUpdate.Enabled = false;
-                btnBatal.Enabled = true;
+                
             }
             else
             {
@@ -430,6 +507,9 @@ namespace CRUD
                     MessageBox.Show("BATAL!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+            btnUpdate.Enabled = false;
+            addDataAlat();
+            addSourceViewKomponen();
         }
         private void updateDBAlat()
         {
@@ -453,7 +533,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_alat", id_alat);
                 myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
-                myCommand.Parameters.AddWithValue("harga", harga);
+                myCommand.Parameters.AddWithValue("harga", toAngka(harga));
                 
 
                 //myCommand.Connection = myConnection;
@@ -494,7 +574,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_komponen", id_komponen);
                 myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
-                myCommand.Parameters.AddWithValue("harga", harga);
+                myCommand.Parameters.AddWithValue("harga", toAngka(harga));
                 
 
                 //myCommand.Connection = myConnection;
@@ -553,6 +633,36 @@ namespace CRUD
                 //btnUpdate.Enabled = false;
                 //clear();
             }
+        }
+
+        private void viewKomponenSupplier_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdate.Enabled = false;
+            int i = e.RowIndex;
+            if(i == -1)
+            {
+                return;
+            }
+            btnUpdate.Enabled = true;
+            viewKomponenSupplier.Rows[i].Selected = true;
+            txtnama_komponen.Text = viewKomponenSupplier[1, i].Value.ToString();
+            txtnama_supplier1.Text = viewKomponenSupplier[2, i].Value.ToString();
+            txtharga1.Text = viewKomponenSupplier[3, i].Value.ToString();
+        }
+
+        private void viewAlatSupplier_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnUpdate.Enabled = false;
+            int i = e.RowIndex;
+            if (i == -1)
+            {
+                return;
+            }
+            btnUpdate.Enabled = true;
+            viewAlatSupplier.Rows[i].Selected = true;
+            txtnama_alat.Text = viewAlatSupplier[1, i].Value.ToString();
+            txtnama_supplier.Text = viewAlatSupplier[2, i].Value.ToString();
+            txtharga.Text = viewAlatSupplier[3, i].Value.ToString();
         }
     }
 }

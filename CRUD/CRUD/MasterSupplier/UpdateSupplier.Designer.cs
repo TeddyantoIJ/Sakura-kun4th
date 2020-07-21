@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateSupplier));
             this.viewSupplier = new System.Windows.Forms.DataGridView();
             this.idsupplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namasupplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,10 +73,12 @@
             this.txtCari = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbTriger = new System.Windows.Forms.ComboBox();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.viewSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mssupplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet)).BeginInit();
             this.updateGrup.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // viewSupplier
@@ -101,12 +104,13 @@
             this.keteranganDataGridViewTextBoxColumn});
             this.viewSupplier.DataSource = this.mssupplierBindingSource;
             this.viewSupplier.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.viewSupplier.Location = new System.Drawing.Point(14, 112);
+            this.viewSupplier.Location = new System.Drawing.Point(12, 117);
             this.viewSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewSupplier.Name = "viewSupplier";
             this.viewSupplier.ReadOnly = true;
             this.viewSupplier.Size = new System.Drawing.Size(598, 276);
             this.viewSupplier.TabIndex = 0;
+            this.viewSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewSupplier_CellClick);
             this.viewSupplier.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewSupplier_CellEnter);
             // 
             // idsupplierDataGridViewTextBoxColumn
@@ -168,8 +172,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(546, 33);
+            this.label1.Location = new System.Drawing.Point(544, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 25);
             this.label1.TabIndex = 1;
@@ -179,7 +184,7 @@
             // 
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(639, 112);
+            this.btnUpdate.Location = new System.Drawing.Point(637, 117);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 30);
@@ -191,7 +196,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Location = new System.Drawing.Point(639, 188);
+            this.btnRefresh.Location = new System.Drawing.Point(637, 193);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(87, 30);
@@ -204,7 +209,7 @@
             // 
             this.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBatal.Enabled = false;
-            this.btnBatal.Location = new System.Drawing.Point(639, 150);
+            this.btnBatal.Location = new System.Drawing.Point(637, 155);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 30);
@@ -216,7 +221,7 @@
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(14, 530);
+            this.button4.Location = new System.Drawing.Point(12, 535);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 30);
@@ -228,7 +233,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSimpan.Location = new System.Drawing.Point(316, 26);
+            this.btnSimpan.Location = new System.Drawing.Point(393, 409);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(87, 30);
@@ -439,6 +444,7 @@
             // 
             // updateGrup
             // 
+            this.updateGrup.BackColor = System.Drawing.Color.Transparent;
             this.updateGrup.Controls.Add(this.label2);
             this.updateGrup.Controls.Add(this.btnSimpan);
             this.updateGrup.Controls.Add(this.label3);
@@ -463,7 +469,7 @@
             this.updateGrup.Controls.Add(this.label11);
             this.updateGrup.Controls.Add(this.infoalamat);
             this.updateGrup.Enabled = false;
-            this.updateGrup.Location = new System.Drawing.Point(744, 112);
+            this.updateGrup.Location = new System.Drawing.Point(742, 117);
             this.updateGrup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.updateGrup.Name = "updateGrup";
             this.updateGrup.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -476,7 +482,7 @@
             // 
             this.txtCari.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCari.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtCari.Location = new System.Drawing.Point(163, 434);
+            this.txtCari.Location = new System.Drawing.Point(161, 439);
             this.txtCari.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCari.Name = "txtCari";
             this.txtCari.Size = new System.Drawing.Size(249, 25);
@@ -487,7 +493,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(14, 407);
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(12, 412);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 17);
             this.label14.TabIndex = 64;
@@ -504,29 +511,46 @@
             "No Telepon",
             "Alamat",
             "Keterangan"});
-            this.cmbTriger.Location = new System.Drawing.Point(15, 434);
+            this.cmbTriger.Location = new System.Drawing.Point(13, 439);
             this.cmbTriger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbTriger.Name = "cmbTriger";
             this.cmbTriger.Size = new System.Drawing.Size(140, 25);
             this.cmbTriger.TabIndex = 65;
             this.cmbTriger.Text = "- Pilih Pencarian -";
+            this.cmbTriger.SelectedIndexChanged += new System.EventHandler(this.cmbTriger_SelectedIndexChanged);
             this.cmbTriger.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.cmbTriger);
+            this.bunifuGradientPanel1.Controls.Add(this.viewSupplier);
+            this.bunifuGradientPanel1.Controls.Add(this.label14);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.txtCari);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.updateGrup);
+            this.bunifuGradientPanel1.Controls.Add(this.btnRefresh);
+            this.bunifuGradientPanel1.Controls.Add(this.button4);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBatal);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1245, 575);
+            this.bunifuGradientPanel1.TabIndex = 66;
             // 
             // UpdateSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1245, 575);
-            this.Controls.Add(this.cmbTriger);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.txtCari);
-            this.Controls.Add(this.updateGrup);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.btnBatal);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.viewSupplier);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateSupplier";
@@ -538,8 +562,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.sakuraDataDataSet)).EndInit();
             this.updateGrup.ResumeLayout(false);
             this.updateGrup.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -587,5 +612,6 @@
         private System.Windows.Forms.TextBox txtCari;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbTriger;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

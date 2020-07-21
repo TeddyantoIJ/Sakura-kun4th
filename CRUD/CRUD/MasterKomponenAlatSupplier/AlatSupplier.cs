@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -396,7 +397,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_alat", id_alat);
                 myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
-                MessageBox.Show(id_alat.ToString() + id_supplier.ToString());
+                //MessageBox.Show(id_alat.ToString() + id_supplier.ToString());
 
                 SqlDataAdapter adapter = new SqlDataAdapter(myCommand);
                 DataSet data = new DataSet();
@@ -440,7 +441,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_alat", id_komponen);
                 myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
-                myCommand.Parameters.AddWithValue("harga", harga);
+                myCommand.Parameters.AddWithValue("harga", toAngka(harga));
                 myCommand.Parameters.AddWithValue("total_transaksi", total_transaksi);
 
 
@@ -451,7 +452,15 @@ namespace CRUD
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
                 MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                txtnama_alat.Text = "";
+                txtid_alat.Text = "";
+                txtnama_supplier.Text = "";
+                txtid_supplier.Text = "";
+                txtharga.Text = "";
+                infonamakomponen.Text = "";
+                infonama_supplier.Text = "";
+                info_harga.Text = "";
+                benar = false;
             }
             catch (Exception ex)
             {
@@ -459,7 +468,10 @@ namespace CRUD
             }
 
         }
-
+        public int toAngka(string rupiah)
+        {
+            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             if (benar)

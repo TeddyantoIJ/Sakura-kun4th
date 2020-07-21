@@ -26,7 +26,7 @@ namespace CRUD
 
         private void clear()
         {
-            lblId.Text = "JAL-" + getLastID();
+            lblId.Text = "JAL-XXXX";
             txtNama.Text = "";
             epSalah.SetError(txtNama, "");
             epBenar.SetError(txtNama, "");
@@ -108,7 +108,7 @@ namespace CRUD
                 myCommand = new SqlCommand("sp_inputJenisElektronik", myConnection);
                 myCommand.CommandType = CommandType.StoredProcedure;
 
-                myCommand.Parameters.AddWithValue("id_jenis", lblId.Text);
+                myCommand.Parameters.AddWithValue("id_jenis", "JAL-" + getLastID());
                 myCommand.Parameters.AddWithValue("nama_jenis", txtNama.Text);
 
                 myCommand.ExecuteNonQuery();

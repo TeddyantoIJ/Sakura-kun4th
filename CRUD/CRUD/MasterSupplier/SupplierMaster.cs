@@ -18,13 +18,13 @@ namespace CRUD
         {
             InitializeComponent();
 
-            txtid_supplier.Text = "SUPP-"+getLastID();
+            txtid_supplier.Text = "SUPP-XXXX";
         }
         public SupplierMaster(string x)
         {
             InitializeComponent();
             txtnama_supplier.Text = x;
-            txtid_supplier.Text = "SUPP-" + getLastID();
+            txtid_supplier.Text = "SUPP-XXXX";
         }
         private void txtcontact_person_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -161,7 +161,7 @@ namespace CRUD
                 SqlCommand myCommand = new SqlCommand("sp_inputSupplier", myConnection);
                 myCommand.CommandType = CommandType.StoredProcedure;
 
-                string id_supplier = txtid_supplier.Text;
+                string id_supplier = "SUPP-" + getLastID();
                 string nama_supplier = txtnama_supplier.Text;
                 string contact_person = txtcontact_person.Text;
                 string no_telepon = txtno_telepon.Text;
@@ -184,7 +184,7 @@ namespace CRUD
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
                 MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                clear();
             }
             catch (Exception ex)
             {

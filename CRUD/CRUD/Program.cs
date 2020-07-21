@@ -24,15 +24,20 @@ namespace CRUD
             //Application.Run(new KomponenSupplier());
             //Application.Run(new AlatSupplier());
             //Application.Run(new Komponen());
+            //Application.Run(new AlatElektronik());
+
+            //Application.Run(new TambahPekerja());
+            //Application.Run(new UpdatePekerja());
 
             //Application.Run(new UpdateSupplier());
             //Application.Run(new UpdateCustomer());
             //Application.Run(new UpdateAlatKerja());
             //Application.Run(new UpdateAlatKomponenSupplier());
+            //Application.Run(new UpdateKomponen());
 
             //Application.Run(new Home());
-            Application.Run(new Login());
-            //Application.Run(new testing());
+            //Application.Run(new Login());
+            Application.Run(new testing());
 
             //Application.Run(new Menu_Utama());
         }

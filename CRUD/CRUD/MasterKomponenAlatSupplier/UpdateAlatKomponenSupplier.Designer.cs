@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.viewAlatSupplier = new System.Windows.Forms.DataGridView();
-            this.viewKomponenSupplier = new System.Windows.Forms.DataGridView();
-            this.komponenSupplier = new CRUD.komponenSupplier();
-            this.mskomponensupplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mskomponensupplierTableAdapter = new CRUD.komponenSupplierTableAdapters.mskomponensupplierTableAdapter();
             this.cbAlat = new System.Windows.Forms.CheckBox();
             this.cbKomponen = new System.Windows.Forms.CheckBox();
             this.btnKembali = new System.Windows.Forms.Button();
@@ -67,13 +64,19 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnBatal = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viewKomponenSupplier = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.komponenSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mskomponensupplierBindingSource)).BeginInit();
             this.pembaruanAlat.SuspendLayout();
             this.pembaruanKomponen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,59 +95,35 @@
             this.viewAlatSupplier.AllowUserToDeleteRows = false;
             this.viewAlatSupplier.AllowUserToResizeColumns = false;
             this.viewAlatSupplier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.viewAlatSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewAlatSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.viewAlatSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.viewAlatSupplier.DefaultCellStyle = dataGridViewCellStyle2;
+            this.viewAlatSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewAlatSupplier.DefaultCellStyle = dataGridViewCellStyle6;
             this.viewAlatSupplier.Location = new System.Drawing.Point(14, 103);
             this.viewAlatSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.viewAlatSupplier.Name = "viewAlatSupplier";
             this.viewAlatSupplier.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.viewAlatSupplier.Size = new System.Drawing.Size(401, 290);
             this.viewAlatSupplier.TabIndex = 1;
-            this.viewAlatSupplier.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAlatSupplier_CellEnter);
-            // 
-            // viewKomponenSupplier
-            // 
-            this.viewKomponenSupplier.AllowUserToAddRows = false;
-            this.viewKomponenSupplier.AllowUserToDeleteRows = false;
-            this.viewKomponenSupplier.AllowUserToResizeColumns = false;
-            this.viewKomponenSupplier.AllowUserToResizeRows = false;
-            this.viewKomponenSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewKomponenSupplier.Enabled = false;
-            this.viewKomponenSupplier.Location = new System.Drawing.Point(469, 103);
-            this.viewKomponenSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.viewKomponenSupplier.Name = "viewKomponenSupplier";
-            this.viewKomponenSupplier.Size = new System.Drawing.Size(401, 290);
-            this.viewKomponenSupplier.TabIndex = 2;
-            this.viewKomponenSupplier.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewKomponenSupplier_CellEnter);
-            // 
-            // komponenSupplier
-            // 
-            this.komponenSupplier.DataSetName = "komponenSupplier";
-            this.komponenSupplier.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mskomponensupplierBindingSource
-            // 
-            this.mskomponensupplierBindingSource.DataMember = "mskomponensupplier";
-            this.mskomponensupplierBindingSource.DataSource = this.komponenSupplier;
-            // 
-            // mskomponensupplierTableAdapter
-            // 
-            this.mskomponensupplierTableAdapter.ClearBeforeFill = true;
+            this.viewAlatSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAlatSupplier_CellClick);
             // 
             // cbAlat
             // 
@@ -460,31 +439,107 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnBatal
+            // Column1
             // 
-            this.btnBatal.Enabled = false;
-            this.btnBatal.Location = new System.Drawing.Point(689, 662);
-            this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(87, 30);
-            this.btnBatal.TabIndex = 9;
-            this.btnBatal.Text = "&Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
-            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 51;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Alat";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Supplier";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column4.HeaderText = "Harga";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 69;
+            // 
+            // viewKomponenSupplier
+            // 
+            this.viewKomponenSupplier.AllowUserToAddRows = false;
+            this.viewKomponenSupplier.AllowUserToDeleteRows = false;
+            this.viewKomponenSupplier.AllowUserToResizeColumns = false;
+            this.viewKomponenSupplier.AllowUserToResizeRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewKomponenSupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.viewKomponenSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewKomponenSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.viewKomponenSupplier.DefaultCellStyle = dataGridViewCellStyle8;
+            this.viewKomponenSupplier.Enabled = false;
+            this.viewKomponenSupplier.Location = new System.Drawing.Point(469, 103);
+            this.viewKomponenSupplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.viewKomponenSupplier.Name = "viewKomponenSupplier";
+            this.viewKomponenSupplier.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.viewKomponenSupplier.Size = new System.Drawing.Size(401, 290);
+            this.viewKomponenSupplier.TabIndex = 10;
+            this.viewKomponenSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewKomponenSupplier_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 51;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Komponen";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Supplier";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Harga";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 69;
             // 
             // UpdateAlatKomponenSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 696);
-            this.Controls.Add(this.btnBatal);
+            this.Controls.Add(this.viewKomponenSupplier);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.pembaruanKomponen);
             this.Controls.Add(this.pembaruanAlat);
             this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.cbKomponen);
             this.Controls.Add(this.cbAlat);
-            this.Controls.Add(this.viewKomponenSupplier);
             this.Controls.Add(this.viewAlatSupplier);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -494,13 +549,11 @@
             this.Text = "UpdateAlatKomponenSupplier";
             this.Load += new System.EventHandler(this.UpdateAlatKomponenSupplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewAlatSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.komponenSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mskomponensupplierBindingSource)).EndInit();
             this.pembaruanAlat.ResumeLayout(false);
             this.pembaruanAlat.PerformLayout();
             this.pembaruanKomponen.ResumeLayout(false);
             this.pembaruanKomponen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewKomponenSupplier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,10 +563,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView viewAlatSupplier;
-        private System.Windows.Forms.DataGridView viewKomponenSupplier;
-        private komponenSupplier komponenSupplier;
-        private System.Windows.Forms.BindingSource mskomponensupplierBindingSource;
-        private komponenSupplierTableAdapters.mskomponensupplierTableAdapter mskomponensupplierTableAdapter;
         private System.Windows.Forms.CheckBox cbAlat;
         private System.Windows.Forms.CheckBox cbKomponen;
         private System.Windows.Forms.Button btnKembali;
@@ -544,6 +593,14 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnBatal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridView viewKomponenSupplier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

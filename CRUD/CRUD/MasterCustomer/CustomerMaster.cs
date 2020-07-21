@@ -18,14 +18,14 @@ namespace CRUD
         {
             InitializeComponent();
 
-            txtid_customer.Text = "CUST-" + getLastID();
+            txtid_customer.Text = "CUST-XXXX";
             addSource();
         }
         public CustomerMaster(string inn)
         {
             InitializeComponent();
 
-            txtid_customer.Text = "CUST-" + getLastID();
+            txtid_customer.Text = "CUST-XXXX";
             txtnama_customer.Text = inn;
             addSource();
         }
@@ -108,7 +108,7 @@ namespace CRUD
                 
                 SqlParameter param = new SqlParameter();
 
-                myCommand.Parameters.AddWithValue("id_customer", id_customer);
+                myCommand.Parameters.AddWithValue("id_customer", "CUST-" + getLastID());
                 myCommand.Parameters.AddWithValue("nama_customer", nama_customer);
                 myCommand.Parameters.AddWithValue("path", sFileName);
 
@@ -121,7 +121,7 @@ namespace CRUD
                 myConnection.Close();
                 MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 addSource();
-                txtid_customer.Text = "CUST-" + getLastID();
+                txtid_customer.Text = "CUST-XXXX";
                 txtnama_customer.Text = "";
             }
             catch (Exception ex)

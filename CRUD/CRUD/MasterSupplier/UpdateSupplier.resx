@@ -126,4 +126,14 @@
   <metadata name="mssupplierTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVChTY2iave1/39K9/2evP/J/+c4z/7ccvvz/wNlb
+        /89ef/T/5sOX/5+9/vD/09fv/xlKJ677j6r4NJLih3DFDJnty/+XTlyPphjTZIaY2gX/IYrRTUZW/PA/
+        Q0DxzP8IxcgmH0VRzOCcNfF/QAlQcR1QcQdQ8SSgyXMwTWYwT+j6D1E8A1UxmgcZtMKa/yMUI5mM5kEG
+        OZ/q/6iKoSajeZBB0Knkv5xPDZpidA9u+w8AXjkaBNQIO1MAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

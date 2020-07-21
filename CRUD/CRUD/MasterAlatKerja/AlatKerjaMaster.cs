@@ -17,13 +17,13 @@ namespace CRUD
         public AlatKerjaMaster()
         {
             InitializeComponent();
-            txtid_alat_kerja.Text = "AKRJ-" + getLastID();
+            txtid_alat_kerja.Text = "AKRJ-XXXX";
         }
         public AlatKerjaMaster(string x)
         {
             txtnama_alat_kerja.Text = x;
             InitializeComponent();
-            txtid_alat_kerja.Text = "AKRJ-" + getLastID();
+            txtid_alat_kerja.Text = "AKRJ-XXXX";
         }
         private string getLastID()
         {
@@ -252,7 +252,7 @@ namespace CRUD
 
                 SqlParameter param = new SqlParameter();
 
-                myCommand.Parameters.AddWithValue("id_alat", id_alat);
+                myCommand.Parameters.AddWithValue("id_alat", "AKRJ-" + getLastID());
                 myCommand.Parameters.AddWithValue("nama_alat", nama_alat);
                 myCommand.Parameters.AddWithValue("jumlah", jumlah);
                 myCommand.Parameters.AddWithValue("rusak", rusak);
@@ -277,7 +277,7 @@ namespace CRUD
         }
         private void clear()
         {
-            txtid_alat_kerja.Text = "AKRJ-" + getLastID();
+            txtid_alat_kerja.Text = "AKRJ-XXXX";
             infonama_alat_kerja.Text = "";
             info_jumlah.Text = "";
             txtnama_alat_kerja.Text = "";

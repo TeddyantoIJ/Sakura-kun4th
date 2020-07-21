@@ -16,6 +16,7 @@ namespace CRUD
     {
         private String nama;
         private String id;
+        public bool login;
         public UCMasuk()
         {
             InitializeComponent();
@@ -27,10 +28,11 @@ namespace CRUD
                 MessageBox.Show("Username atau password tidak dapat ditemukan","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
+            login = true;
             Menu_Utama home = new Menu_Utama(nama, id);
             this.Visible = false;
-            home.ShowDialog(this);
-            this.Visible = true;
+            
+            home.Visible = true;
 
         }
         private bool getAkun()
@@ -57,6 +59,9 @@ namespace CRUD
 
                 nama = data.Rows[0][1].ToString();
                 id = data.Rows[0][0].ToString();
+
+
+                connection.Close();
                 MessageBox.Show(nama);
                 if (!nama.Equals(""))
                 {
@@ -81,6 +86,11 @@ namespace CRUD
         private void btnLupa_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Fungsi belum tersedia!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void bunifuGradientPanel1_VisibleChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

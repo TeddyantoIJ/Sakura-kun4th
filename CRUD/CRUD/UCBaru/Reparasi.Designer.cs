@@ -147,17 +147,17 @@
             // 
             this.lblFoto.BackColor = System.Drawing.Color.Transparent;
             this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoto.Location = new System.Drawing.Point(396, 97);
+            this.lblFoto.Location = new System.Drawing.Point(396, 129);
             this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(152, 171);
+            this.lblFoto.Size = new System.Drawing.Size(152, 139);
             this.lblFoto.TabIndex = 50;
             this.lblFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // foto_pelanggan
             // 
-            this.foto_pelanggan.Location = new System.Drawing.Point(396, 97);
+            this.foto_pelanggan.Location = new System.Drawing.Point(396, 117);
             this.foto_pelanggan.Name = "foto_pelanggan";
-            this.foto_pelanggan.Size = new System.Drawing.Size(152, 171);
+            this.foto_pelanggan.Size = new System.Drawing.Size(152, 151);
             this.foto_pelanggan.TabIndex = 49;
             this.foto_pelanggan.TabStop = false;
             // 
@@ -180,15 +180,15 @@
             this.btnNewPelanggan.IconRightVisible = true;
             this.btnNewPelanggan.IconRightZoom = 0D;
             this.btnNewPelanggan.IconVisible = true;
-            this.btnNewPelanggan.IconZoom = 90D;
+            this.btnNewPelanggan.IconZoom = 60D;
             this.btnNewPelanggan.IsTab = false;
-            this.btnNewPelanggan.Location = new System.Drawing.Point(396, 65);
+            this.btnNewPelanggan.Location = new System.Drawing.Point(396, 61);
             this.btnNewPelanggan.Name = "btnNewPelanggan";
             this.btnNewPelanggan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
             this.btnNewPelanggan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
             this.btnNewPelanggan.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnNewPelanggan.selected = false;
-            this.btnNewPelanggan.Size = new System.Drawing.Size(152, 27);
+            this.btnNewPelanggan.Size = new System.Drawing.Size(152, 54);
             this.btnNewPelanggan.TabIndex = 48;
             this.btnNewPelanggan.Text = "Baru";
             this.btnNewPelanggan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

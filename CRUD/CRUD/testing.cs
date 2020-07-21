@@ -57,5 +57,10 @@ namespace CRUD
         {
 
         }
+
+        private void btnCari_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

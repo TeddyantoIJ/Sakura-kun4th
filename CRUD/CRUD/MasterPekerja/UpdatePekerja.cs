@@ -274,53 +274,53 @@ namespace CRUD
 
         private void dgPekerja_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                gbUpdate.Enabled = false;
-                btnBatal.Enabled = false;
-                int selectedRow = 0;
-                Int32 selectedRowCount = dgPekerja.Rows.GetRowCount(DataGridViewElementStates.Selected);
-                if (selectedRowCount > 0 && selectedRowCount <= 1)
-                {
-                    btnPerbarui.Enabled = true;
-                    clear2();
+            //try
+            //{
+            //    gbUpdate.Enabled = false;
+            //    btnBatal.Enabled = false;
+            //    int selectedRow = 0;
+            //    Int32 selectedRowCount = dgPekerja.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            //    if (selectedRowCount > 0 && selectedRowCount <= 1)
+            //    {
+            //        btnPerbarui.Enabled = true;
+            //        clear2();
 
-                    for (int i = 0; i < selectedRowCount; i++)
-                    {
-                        selectedRow = Int32.Parse(dgPekerja.SelectedRows[i].Index.ToString());
-                    }
-                    DataGridViewRow row = dgPekerja.Rows[selectedRow];
+            //        for (int i = 0; i < selectedRowCount; i++)
+            //        {
+            //            selectedRow = Int32.Parse(dgPekerja.SelectedRows[i].Index.ToString());
+            //        }
+            //        DataGridViewRow row = dgPekerja.Rows[selectedRow];
 
-                    lblId.Text = row.Cells[0].Value.ToString();
-                    txtNama.Text = row.Cells[1].Value.ToString();
-                    jenis_kelamin = row.Cells[2].Value.ToString();
-                    txtAlamat.Text = row.Cells[3].Value.ToString();
-                    txtEmail.Text = row.Cells[4].Value.ToString();
-                    txtTelepon.Text = row.Cells[5].Value.ToString();
-                    cmbStatus.Text = row.Cells[6].Value.ToString();
+            //        lblId.Text = row.Cells[0].Value.ToString();
+            //        txtNama.Text = row.Cells[1].Value.ToString();
+            //        jenis_kelamin = row.Cells[2].Value.ToString();
+            //        txtAlamat.Text = row.Cells[3].Value.ToString();
+            //        txtEmail.Text = row.Cells[4].Value.ToString();
+            //        txtTelepon.Text = row.Cells[5].Value.ToString();
+            //        cmbStatus.Text = row.Cells[6].Value.ToString();
 
-                    if (jenis_kelamin == "Laki-laki")
-                    {
-                        rbLakilaki.Checked = true;
-                        rbPerempuan.Checked = false;
-                    }
-                    else if (jenis_kelamin == "Perempuan")
-                    {
-                        rbLakilaki.Checked = false;
-                        rbPerempuan.Checked = true;
-                    }
-                    btnPerbarui.Enabled = true;
-                }
-                else
-                {
-                    btnPerbarui.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Data tidak valid", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                btnPerbarui.Enabled = false;
-            }
+            //        if (jenis_kelamin == "Laki-laki")
+            //        {
+            //            rbLakilaki.Checked = true;
+            //            rbPerempuan.Checked = false;
+            //        }
+            //        else if (jenis_kelamin == "Perempuan")
+            //        {
+            //            rbLakilaki.Checked = false;
+            //            rbPerempuan.Checked = true;
+            //        }
+            //        btnPerbarui.Enabled = true;
+            //    }
+            //    else
+            //    {
+            //        btnPerbarui.Enabled = false;
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Data tidak valid", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    btnPerbarui.Enabled = false;
+            //}
         }
 
         private void btnPerbarui_Click(object sender, EventArgs e)
@@ -571,6 +571,38 @@ namespace CRUD
             {
                 MessageBox.Show(checker, "Data tidak valid!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void dgPekerja_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnPerbarui.Enabled = false;
+            btnBatal.Enabled = false;
+            int i = e.RowIndex;
+            if(i == -1)
+            {
+                return;
+            }
+            dgPekerja.Rows[i].Selected = true;
+            btnPerbarui.Enabled = true;
+            btnBatal.Enabled = true;
+            lblId.Text = dgPekerja.Rows[i].Cells[0].Value.ToString();
+            txtNama.Text = dgPekerja.Rows[i].Cells[1].Value.ToString();
+            jenis_kelamin = dgPekerja.Rows[i].Cells[2].Value.ToString();
+            txtAlamat.Text = dgPekerja.Rows[i].Cells[3].Value.ToString();
+            txtEmail.Text = dgPekerja.Rows[i].Cells[4].Value.ToString();
+            txtTelepon.Text = dgPekerja.Rows[i].Cells[5].Value.ToString();
+            cmbStatus.Text = dgPekerja.Rows[i].Cells[6].Value.ToString();
+            if (jenis_kelamin == "Laki-laki")
+            {
+                rbLakilaki.Checked = true;
+                rbPerempuan.Checked = false;
+            }
+            else if (jenis_kelamin == "Perempuan")
+            {
+                rbLakilaki.Checked = false;
+                rbPerempuan.Checked = true;
+            }
+
         }
     }
 }

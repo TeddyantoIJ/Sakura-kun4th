@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -545,6 +546,10 @@ namespace CRUD
 
 
         }
+        public int toAngka(string rupiah)
+        {
+            return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             cekAll();
@@ -639,7 +644,7 @@ namespace CRUD
 
                 myCommand.Parameters.AddWithValue("id_komponen", id_komponen);
                 myCommand.Parameters.AddWithValue("id_supplier", id_supplier);
-                myCommand.Parameters.AddWithValue("harga", harga);
+                myCommand.Parameters.AddWithValue("harga", toAngka(harga));
                 myCommand.Parameters.AddWithValue("total_transaksi", total_transaksi);
 
                 
@@ -650,7 +655,7 @@ namespace CRUD
                 myCommand.ExecuteNonQuery();
                 myConnection.Close();
                 MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                clear();
             }
             catch (Exception ex)
             {

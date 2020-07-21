@@ -43,7 +43,9 @@ namespace CRUD
         }
         private void mutiara()
         {
+            txtmutiara.Visible = false;
             txtmutiara.Text = kata[index].ToString();
+            bunifuTransition1.ShowSync(txtmutiara, true, BunifuAnimatorNS.Animation.Mosaic);
             if (index == kata.Count)
             {
                 index = 0;

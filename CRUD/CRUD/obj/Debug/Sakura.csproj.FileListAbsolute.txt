@@ -121,8 +121,6 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.exe.config
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.cache
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.compiled
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csprojAssemblyReference.cache
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Reparasi.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.BayarReparasi.resources
@@ -134,3 +132,10 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.CreateOrUpdate.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Reportna.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UCMasuk.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.LaporanPenjualanKomponen.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.LaporanReparasiAlatElektronik.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.LaporanRestockAlatKerja.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.LaporanRestockKomponen.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.cache
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.compiled
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdatePekerja.resources

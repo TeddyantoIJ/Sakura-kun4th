@@ -122,6 +122,7 @@
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(188, 25);
             this.txtharga.TabIndex = 22;
+            this.txtharga.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtharga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtharga_KeyPress);
             this.txtharga.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtharga_KeyUp);
             // 

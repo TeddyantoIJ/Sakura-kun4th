@@ -144,7 +144,7 @@ namespace CRUD
                     myCommand = new SqlCommand("sp_inputPelayan", myConnection);
                     myCommand.CommandType = CommandType.StoredProcedure;
 
-                    myCommand.Parameters.AddWithValue("id_pelayan", lblId.Text);
+                    myCommand.Parameters.AddWithValue("id_pelayan", "PLY-" + getLastID());
                     myCommand.Parameters.AddWithValue("nama_pelayan", txtNama.Text);
                     myCommand.Parameters.AddWithValue("jenis_kelamin", jenis_kelamin);
                     myCommand.Parameters.AddWithValue("alamat", txtAlamat.Text);
@@ -159,7 +159,7 @@ namespace CRUD
                     myCommand = new SqlCommand("sp_inputGudang", myConnection);
                     myCommand.CommandType = CommandType.StoredProcedure;
 
-                    myCommand.Parameters.AddWithValue("id_gudang", lblId.Text);
+                    myCommand.Parameters.AddWithValue("id_gudang", "GDG-" + getLastID());
                     myCommand.Parameters.AddWithValue("nama_gudang", txtNama.Text);
                     myCommand.Parameters.AddWithValue("jenis_kelamin", jenis_kelamin);
                     myCommand.Parameters.AddWithValue("alamat", txtAlamat.Text);
@@ -336,14 +336,14 @@ namespace CRUD
                 enabler();
                 lblBagian.Text = "ID Pelayan";
                 lblNama.Text = "Nama Pelayan";
-                lblId.Text = "PLY-" + getLastID();
+                lblId.Text = "PLY-XXXX";
             }
             else if (cmbBagian.Text == "Gudang")
             {
                 enabler();
                 lblBagian.Text = "ID Gudang";
                 lblNama.Text = "Nama Gudang";
-                lblId.Text = "GDG-" + getLastID();
+                lblId.Text = "GDG-XXXX";
             }
         }
 
@@ -370,13 +370,13 @@ namespace CRUD
             {
                 enabler();
                 lblBagian.Text = "ID Pelayan";
-                lblId.Text = "PLY-" + getLastID();
+                lblId.Text = "PLY-XXXX";
             }
             else if (cmbBagian.Text == "Gudang")
             {
                 enabler();
                 lblBagian.Text = "ID Gudang";
-                lblId.Text = "GDG-" + getLastID();
+                lblId.Text = "GDG-XXXX";
             }
             else
             {
