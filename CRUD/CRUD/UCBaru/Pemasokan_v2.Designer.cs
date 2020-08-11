@@ -50,6 +50,8 @@
             this.txtTanggal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelTransaksi = new System.Windows.Forms.Panel();
             this.panelDetail = new System.Windows.Forms.Panel();
+            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tulisanTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTotal = new System.Windows.Forms.Label();
@@ -74,10 +76,8 @@
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelSupplier = new System.Windows.Forms.Panel();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.tableSupplier = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnKeranjang = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTambah = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReset = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tableSupplier = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).BeginInit();
             this.panelKomponen.SuspendLayout();
             this.panelTransaksi.SuspendLayout();
@@ -291,6 +291,76 @@
             this.panelDetail.Name = "panelDetail";
             this.panelDetail.Size = new System.Drawing.Size(563, 669);
             this.panelDetail.TabIndex = 34;
+            // 
+            // btnTambah
+            // 
+            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTambah.BorderRadius = 0;
+            this.btnTambah.ButtonText = "Tambah";
+            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTambah.Iconimage = global::CRUD.Properties.Resources.icons8_buying_24;
+            this.btnTambah.Iconimage_right = null;
+            this.btnTambah.Iconimage_right_Selected = null;
+            this.btnTambah.Iconimage_Selected = null;
+            this.btnTambah.IconMarginLeft = 0;
+            this.btnTambah.IconMarginRight = 0;
+            this.btnTambah.IconRightVisible = true;
+            this.btnTambah.IconRightZoom = 0D;
+            this.btnTambah.IconVisible = true;
+            this.btnTambah.IconZoom = 60D;
+            this.btnTambah.IsTab = false;
+            this.btnTambah.Location = new System.Drawing.Point(403, 628);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
+            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTambah.selected = false;
+            this.btnTambah.Size = new System.Drawing.Size(152, 37);
+            this.btnTambah.TabIndex = 44;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTambah.Textcolor = System.Drawing.Color.White;
+            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.BorderRadius = 0;
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnReset.Iconimage = global::CRUD.Properties.Resources.icons8_process_24;
+            this.btnReset.Iconimage_right = null;
+            this.btnReset.Iconimage_right_Selected = null;
+            this.btnReset.Iconimage_Selected = null;
+            this.btnReset.IconMarginLeft = 0;
+            this.btnReset.IconMarginRight = 0;
+            this.btnReset.IconRightVisible = true;
+            this.btnReset.IconRightZoom = 0D;
+            this.btnReset.IconVisible = true;
+            this.btnReset.IconZoom = 60D;
+            this.btnReset.IsTab = false;
+            this.btnReset.Location = new System.Drawing.Point(448, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReset.selected = false;
+            this.btnReset.Size = new System.Drawing.Size(99, 39);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Textcolor = System.Drawing.Color.White;
+            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -619,6 +689,41 @@
             this.bunifuMaterialTextbox2.Text = "Data Pemasok";
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // btnKeranjang
+            // 
+            this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKeranjang.BorderRadius = 0;
+            this.btnKeranjang.ButtonText = "Masukkan keranjang";
+            this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
+            this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnKeranjang.Iconimage = global::CRUD.Properties.Resources.tambahKeranjang;
+            this.btnKeranjang.Iconimage_right = null;
+            this.btnKeranjang.Iconimage_right_Selected = null;
+            this.btnKeranjang.Iconimage_Selected = null;
+            this.btnKeranjang.IconMarginLeft = 0;
+            this.btnKeranjang.IconMarginRight = 0;
+            this.btnKeranjang.IconRightVisible = true;
+            this.btnKeranjang.IconRightZoom = 0D;
+            this.btnKeranjang.IconVisible = true;
+            this.btnKeranjang.IconZoom = 60D;
+            this.btnKeranjang.IsTab = false;
+            this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
+            this.btnKeranjang.Name = "btnKeranjang";
+            this.btnKeranjang.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
+            this.btnKeranjang.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnKeranjang.selected = false;
+            this.btnKeranjang.Size = new System.Drawing.Size(130, 48);
+            this.btnKeranjang.TabIndex = 34;
+            this.btnKeranjang.Text = "Masukkan keranjang";
+            this.btnKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKeranjang.Textcolor = System.Drawing.Color.White;
+            this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
+            // 
             // tableSupplier
             // 
             this.tableSupplier.AllowUserToDeleteRows = false;
@@ -661,111 +766,6 @@
             this.tableSupplier.TabIndex = 33;
             this.tableSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableSupplier_CellClick);
             // 
-            // btnKeranjang
-            // 
-            this.btnKeranjang.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKeranjang.BorderRadius = 0;
-            this.btnKeranjang.ButtonText = "Masukkan keranjang";
-            this.btnKeranjang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKeranjang.DisabledColor = System.Drawing.Color.Gray;
-            this.btnKeranjang.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKeranjang.Iconimage = global::CRUD.Properties.Resources.tambahKeranjang;
-            this.btnKeranjang.Iconimage_right = null;
-            this.btnKeranjang.Iconimage_right_Selected = null;
-            this.btnKeranjang.Iconimage_Selected = null;
-            this.btnKeranjang.IconMarginLeft = 0;
-            this.btnKeranjang.IconMarginRight = 0;
-            this.btnKeranjang.IconRightVisible = true;
-            this.btnKeranjang.IconRightZoom = 0D;
-            this.btnKeranjang.IconVisible = true;
-            this.btnKeranjang.IconZoom = 60D;
-            this.btnKeranjang.IsTab = false;
-            this.btnKeranjang.Location = new System.Drawing.Point(491, 4);
-            this.btnKeranjang.Name = "btnKeranjang";
-            this.btnKeranjang.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnKeranjang.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnKeranjang.selected = false;
-            this.btnKeranjang.Size = new System.Drawing.Size(130, 48);
-            this.btnKeranjang.TabIndex = 34;
-            this.btnKeranjang.Text = "Masukkan keranjang";
-            this.btnKeranjang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKeranjang.Textcolor = System.Drawing.Color.White;
-            this.btnKeranjang.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeranjang.Click += new System.EventHandler(this.btnKeranjang_Click);
-            // 
-            // btnTambah
-            // 
-            this.btnTambah.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTambah.BorderRadius = 0;
-            this.btnTambah.ButtonText = "Tambah";
-            this.btnTambah.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTambah.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTambah.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTambah.Iconimage = global::CRUD.Properties.Resources.icons8_buying_24;
-            this.btnTambah.Iconimage_right = null;
-            this.btnTambah.Iconimage_right_Selected = null;
-            this.btnTambah.Iconimage_Selected = null;
-            this.btnTambah.IconMarginLeft = 0;
-            this.btnTambah.IconMarginRight = 0;
-            this.btnTambah.IconRightVisible = true;
-            this.btnTambah.IconRightZoom = 0D;
-            this.btnTambah.IconVisible = true;
-            this.btnTambah.IconZoom = 60D;
-            this.btnTambah.IsTab = false;
-            this.btnTambah.Location = new System.Drawing.Point(403, 628);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(56)))), ((int)(((byte)(109)))));
-            this.btnTambah.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTambah.selected = false;
-            this.btnTambah.Size = new System.Drawing.Size(152, 37);
-            this.btnTambah.TabIndex = 44;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTambah.Textcolor = System.Drawing.Color.White;
-            this.btnTambah.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReset.BorderRadius = 0;
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReset.Iconimage = global::CRUD.Properties.Resources.icons8_process_24;
-            this.btnReset.Iconimage_right = null;
-            this.btnReset.Iconimage_right_Selected = null;
-            this.btnReset.Iconimage_Selected = null;
-            this.btnReset.IconMarginLeft = 0;
-            this.btnReset.IconMarginRight = 0;
-            this.btnReset.IconRightVisible = true;
-            this.btnReset.IconRightZoom = 0D;
-            this.btnReset.IconVisible = true;
-            this.btnReset.IconZoom = 60D;
-            this.btnReset.IsTab = false;
-            this.btnReset.Location = new System.Drawing.Point(448, 8);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(149)))), ((int)(((byte)(131)))));
-            this.btnReset.OnHoverTextColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnReset.selected = false;
-            this.btnReset.Size = new System.Drawing.Size(99, 39);
-            this.btnReset.TabIndex = 43;
-            this.btnReset.Text = "Reset";
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Textcolor = System.Drawing.Color.White;
-            this.btnReset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // Pemasokan_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -778,6 +778,7 @@
             this.Controls.Add(this.panelKomponen);
             this.Name = "Pemasokan_v2";
             this.Size = new System.Drawing.Size(1201, 675);
+            this.VisibleChanged += new System.EventHandler(this.Pemasokan_v2_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.tableKomponen)).EndInit();
             this.panelKomponen.ResumeLayout(false);
             this.panelTransaksi.ResumeLayout(false);

@@ -326,20 +326,29 @@ namespace CRUD
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
+            string checker = null;
             if (txtAlat.Text.Equals(""))
             {
+                checker += "Isi nama alat dengan benar";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (txtHarga.Text.Equals(""))
             {
+                checker += "Isi harga dengan benar";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (txtNama.Text.Equals(""))
             {
+                checker += "Isi nama dengan benar";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (txtTempat.Text.Equals(""))
             {
+                checker += "Isi tempat dengan benar";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

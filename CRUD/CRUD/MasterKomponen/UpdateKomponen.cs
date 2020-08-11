@@ -286,6 +286,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom nama komponen harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -296,7 +297,7 @@ namespace CRUD
             if (txtJumlah.Text == "")
             {
                 cek = false;
-                checker += "Kolom jumlah harap diisi\n"; return;
+                checker += "Kolom jumlah harap diisi\n"; MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
             }
             else
             {
@@ -306,6 +307,7 @@ namespace CRUD
             if (txtHarga.Text == "")
             {
                 checker += "Kolom harga jual harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cek = false; return;
             }
             else
@@ -316,6 +318,7 @@ namespace CRUD
             if (txtAlat.Text == "")
             {
                 checker += "Kolom alat elektronik harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cek = false; return;
             }
             else
@@ -325,7 +328,7 @@ namespace CRUD
 
             if (txtTempat.Text == "")
             {
-                checker += "Kolom tempat harap diisi\n";
+                checker += "Kolom tempat harap diisi\n"; MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cek = false; return;
             }
             else

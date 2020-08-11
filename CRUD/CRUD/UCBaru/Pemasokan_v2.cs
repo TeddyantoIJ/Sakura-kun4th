@@ -29,13 +29,13 @@ namespace CRUD.UCBaru
         {
             InitializeComponent();
             addDataKomponen();
-            bunifuElipse.ApplyElipse(panelDetail,15);
-            bunifuElipse.ApplyElipse(panelTransaksi, 15);
-            bunifuElipse.ApplyElipse(panelKomponen, 15);
-            bunifuElipse.ApplyElipse(panelSupplier, 15);
-            bunifuElipse.ApplyElipse(btnTambah, 15);
-            bunifuElipse.ApplyElipse(btnKeranjang, 15);
-            bunifuElipse.ApplyElipse(btnReset, 15);
+            //bunifuElipse.ApplyElipse(panelDetail,15);
+            //bunifuElipse.ApplyElipse(panelTransaksi, 15);
+            //bunifuElipse.ApplyElipse(panelKomponen, 15);
+            //bunifuElipse.ApplyElipse(panelSupplier, 15);
+            //bunifuElipse.ApplyElipse(btnTambah, 15);
+            //bunifuElipse.ApplyElipse(btnKeranjang, 15);
+            //bunifuElipse.ApplyElipse(btnReset, 15);
 
             tulisanTotal.ForeColor = Color.White;
             txtTanggal.Text = DateTime.Now.ToString("dd-MM-yyyy");
@@ -157,8 +157,16 @@ namespace CRUD.UCBaru
                     //MessageBox.Show((tableSupplier[2, i].Value.ToString().Substring(0, tableSupplier[2, i].Value.ToString().Length - 3)).ToString());
                     tableSupplier[2, i].Value = toRupiah(Convert.ToInt32(tableSupplier[2, i].Value.ToString().Substring(0, tableSupplier[2, i].Value.ToString().Length - 3)));
                 }
-                tableSupplier.Rows[0].Selected = true;
-                txtSupplier = tableSupplier[1,0].Value.ToString();
+                try
+                {
+                    txtSupplier = tableSupplier[1, 0].Value.ToString();
+                    tableSupplier.Rows[0].Selected = true;
+                }
+                catch(Exception ex)
+                {
+
+                }
+                
             }
             catch (Exception ex)
             {
@@ -191,6 +199,18 @@ namespace CRUD.UCBaru
         }
         private void insertDataTransaksi()
         {
+            try
+            {
+                if (tableSupplier.CurrentRow.Index == -1)
+                {
+                    return;
+                }
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
+            
             DataGridViewRow row = tableSupplier.Rows[selected];
             int no = Convert.ToInt32(tableTransaksi.Rows.Count.ToString());
             string komponen = txtKomponen;
@@ -279,7 +299,13 @@ namespace CRUD.UCBaru
                 return;
             }
             insertDataTransaksi();
-            tableTransaksi[5,tableTransaksi.RowCount-1].Value = toRupiah(Convert.ToInt32(toAngka((tableTransaksi[3, tableTransaksi.RowCount - 1].Value).ToString())) * Convert.ToInt32(toAngka((tableTransaksi[4, tableTransaksi.RowCount - 1].Value).ToString()))).ToString();
+            try
+            {
+
+            }catch(Exception ex)
+            {
+                tableTransaksi[5, tableTransaksi.RowCount - 1].Value = toRupiah(Convert.ToInt32(toAngka((tableTransaksi[3, tableTransaksi.RowCount - 1].Value).ToString())) * Convert.ToInt32(toAngka((tableTransaksi[4, tableTransaksi.RowCount - 1].Value).ToString()))).ToString();
+            }
             countTotal();
             countBarang();
             countJenis();
@@ -435,6 +461,7 @@ namespace CRUD.UCBaru
         {
             if (tableTransaksi.Rows.Count == 0)
             {
+                MessageBox.Show("Tidak ada data transaksi!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             try
@@ -610,5 +637,9 @@ namespace CRUD.UCBaru
             }
         }
 
+        private void Pemasokan_v2_VisibleChanged(object sender, EventArgs e)
+        {
+            addDataKomponen();
+        }
     }
 }

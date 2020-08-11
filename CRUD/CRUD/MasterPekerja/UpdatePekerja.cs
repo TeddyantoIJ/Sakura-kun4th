@@ -475,6 +475,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom nama harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -485,7 +486,10 @@ namespace CRUD
             if (txtAlamat.Text == "")
             {
                 cek = false;
-                checker += "Kolom alamat harap diisi\n"; return;
+                checker += "Kolom alamat harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+
             }
             else
             {
@@ -495,7 +499,9 @@ namespace CRUD
             if (txtEmail.Text == "")
             {
                 cek = false;
-                checker += "Kolom email harap diisi\n"; return;
+                checker += "Kolom email harap diisi\n";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else if (Regex.IsMatch(txtEmail.Text, @"^^[^@\s]+@[^@\s]+(\.[^@\s]+)+$"))
             {
@@ -504,13 +510,13 @@ namespace CRUD
             else
             {
                 cek = false;
-                checker += "Format email salah (aaa@bbb.ccc)\n"; return;
+                checker += "Format email salah (aaa@bbb.ccc)\n"; MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);  return;
             }
 
             if (txtTelepon.Text == "")
             {
                 cek = false;
-                checker += "Kolom nomor telepon harap diisi\n"; return;
+                checker += "Kolom nomor telepon harap diisi\n"; MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
             }
             else
             {

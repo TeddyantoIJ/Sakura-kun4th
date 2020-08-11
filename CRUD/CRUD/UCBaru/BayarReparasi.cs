@@ -244,7 +244,9 @@ namespace CRUD
         {
             if (txtKode.Text.Equals(""))
             {
+                MessageBox.Show("Pilih data transaksi terlebih dahulu!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+                
             }
             Pembayaran pembayaran = new Pembayaran(txtTotalBiaya.Text);
 

@@ -481,6 +481,7 @@ namespace CRUD
             {
                 if (txtharga.Text.Equals(""))
                 {
+                    MessageBox.Show("Harga tidak sesuai!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +
@@ -504,6 +505,7 @@ namespace CRUD
             {
                 if (txtharga1.Text.Equals(""))
                 {
+                    MessageBox.Show("Harga tidak sesuai!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 DialogResult result = MessageBox.Show("Periksa data sebelum disimpan\n" +

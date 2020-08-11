@@ -284,10 +284,16 @@ namespace CRUD
                 {
                     MessageBox.Show("BATAL!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }else if (!cekJumlah())
+            }
+            else if(!benar)
+            {
+                MessageBox.Show("Nama tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (!cekJumlah())
             {
                 MessageBox.Show("Jumlah tidak sesuai!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
         private void clear()
         {

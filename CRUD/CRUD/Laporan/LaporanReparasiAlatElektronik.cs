@@ -20,6 +20,11 @@ namespace CRUD
 
         private void dtFrom_ValueChanged(object sender, EventArgs e)
         {
+            if (DateTime.Compare(dtFrom.Value, dtTo.Value) > 0)
+            {
+                dtFrom.Value = DateTime.Today;
+            }
+            
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("startDate", dtFrom.Value.ToString()));
             reportParameters.Add(new ReportParameter("endDate", dtTo.Value.ToString()));
@@ -39,7 +44,10 @@ namespace CRUD
         }
 
         private void dtTo_ValueChanged(object sender, EventArgs e)
-        {
+        {if (DateTime.Compare(dtTo.Value, dtFrom.Value) < 0)
+            {
+                dtTo.Value = DateTime.Today;
+            }
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("startDate", dtFrom.Value.ToString()));
             reportParameters.Add(new ReportParameter("endDate", dtTo.Value.ToString()));

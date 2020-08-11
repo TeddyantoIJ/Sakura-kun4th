@@ -424,7 +424,7 @@ namespace CRUD
                 SqlConnection myConnection = new SqlConnection(connectionString);
 
                 myConnection.Open();
-                MessageBox.Show(tableDetail[1, selectedDetail].Value.ToString() + "  " + tableDetail[2, selectedDetail].Value.ToString());
+                //MessageBox.Show(tableDetail[1, selectedDetail].Value.ToString() + "  " + tableDetail[2, selectedDetail].Value.ToString());
                 SqlCommand myCommand = new SqlCommand("sp_setJumlahKomponen", myConnection);
                 myCommand.Parameters.Add(new SqlParameter("id_komponen", getIDKomponenByNamadanSupplier(tableDetail[1, selectedDetail].Value.ToString(), tableDetail[2, selectedDetail].Value.ToString())));
                 myCommand.Parameters.Add(new SqlParameter("jumlah", tableDetail[3, selectedDetail].Value.ToString()));

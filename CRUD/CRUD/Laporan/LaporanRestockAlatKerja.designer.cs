@@ -42,10 +42,10 @@
             // reportViewer1
             // 
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "CRUD.Laporan.RestockAlat.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(29, 140);
+            this.reportViewer1.Location = new System.Drawing.Point(3, 140);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1156, 408);
+            this.reportViewer1.Size = new System.Drawing.Size(1208, 408);
             this.reportViewer1.TabIndex = 0;
             // 
             // label1

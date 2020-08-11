@@ -317,22 +317,32 @@ namespace CRUD
         }
         private void btnProses_Click(object sender, EventArgs e)
         {
+            string checker = null;
+            if (nama_pelanggan.Text.Equals(""))
+            {
+                checker += "Nama pelanggan harus diisi terlebih dahulu!";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (txtAlat.Text.Equals(""))
             {
+                checker += "Alat harus diisi terlebih dahulu!";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (txtJenis_alat.Text.Equals(""))
             {
+                checker += "Jenis alat harus diisi terlebih dahulu!";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (txtKeluhan.Text.Equals(""))
             {
+                checker += "Keluhan harus diisi terlebih dahulu!";
+                MessageBox.Show(checker, "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (nama_pelanggan.Text.Equals(""))
-            {
-                return;
-            }
+            
             
             DialogResult n = MessageBox.Show("Proses transaksi?", "Pertanyaan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if(n == DialogResult.OK)

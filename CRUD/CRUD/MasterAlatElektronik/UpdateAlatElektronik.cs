@@ -268,6 +268,7 @@ namespace CRUD
             {
                 cek = false;
                 checker += "Kolom alat elektronik harap diisi\n";
+                MessageBox.Show(checker, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -278,7 +279,7 @@ namespace CRUD
             if (txtJenis.Text == "")
             {
                 cek = false;
-                checker += "Kolom jenis alat elektronik harap diisi\n"; return;
+                checker += "Kolom jenis alat elektronik harap diisi\n"; MessageBox.Show(checker, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning); return;
             }
             else
             {

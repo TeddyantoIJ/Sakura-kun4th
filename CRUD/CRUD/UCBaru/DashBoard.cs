@@ -17,6 +17,7 @@ namespace CRUD
         List<string> kata = new List<string>();
         private int index = 0;
         private int ganti = 0;
+
         public DashBoard()
         {
             InitializeComponent();
@@ -24,7 +25,11 @@ namespace CRUD
             isiDiagram(null);
             tambahMutiara();
             mutiara();
+            dateSampai.Value = DateTime.Today;
+            dateSejak.Value = DateTime.Today;
+            
         }
+
         private void tambahMutiara()
         {
             kata.Add("'Jangan membenci mereka yang mengatakan hal buruk tuk menjatuhkanmu, karena merekalah yang buatmu semakin kuat setiap hari.'");
@@ -221,25 +226,46 @@ namespace CRUD
 
             chart1.Series.Add("Diagram1");
             chart1.Series.Add("Diagram");
-            
 
-            chart1.Series["Diagram"].ChartType = SeriesChartType.FastLine;
+            if (rb1.Checked)
+            {
+                chart1.Series["Diagram"].ChartType = SeriesChartType.FastLine;
+                chart1.Series["Diagram1"].ChartType = SeriesChartType.Column;
+            }
+            if (rb2.Checked)
+            {
+                chart1.Series["Diagram"].ChartType = SeriesChartType.FastLine;
+                chart1.Series["Diagram1"].ChartType = SeriesChartType.FastLine;
+            }
+            if (rb3.Checked)
+            {
+                chart1.Series["Diagram"].ChartType = SeriesChartType.Pie;
+                chart1.Series["Diagram1"].ChartType = SeriesChartType.Pie;
+            }
+            
             chart1.Series["Diagram"].Color = Color.Black;
             chart1.Series["Diagram"].BorderWidth = 3;
 
 
-            chart1.Series["Diagram1"].ChartType = SeriesChartType.Column;
-            chart1.Series["Diagram1"].Color = Color.FromArgb(56, 149, 131);
-            chart1.Series[0].IsVisibleInLegend = false;
-            chart1.Series[1].IsVisibleInLegend = false;
+            if (!rb3.Checked)
+            {
+                chart1.Series["Diagram1"].Color = Color.FromArgb(56, 149, 131);
+                chart1.Series[0].IsVisibleInLegend = false;
+                chart1.Series[1].IsVisibleInLegend = false;
+                chart1.Series["Diagram1"].Points.AddXY("", 0);
+            }
+                
 
             chart1.Series["Diagram"].Points.AddXY("", 0);
-            chart1.Series["Diagram1"].Points.AddXY("", 0);
+            
             for (int i = 1; i <= tanggal.Count; i++)
             {
                 //MessageBox.Show(Strike[i - 1].ToString());
                 chart1.Series["Diagram"].Points.AddXY(tanggal[i - 1].ToString("dd MMM yyyy"), nilai[i - 1]);
-                chart1.Series["Diagram1"].Points.AddXY(tanggal[i - 1].ToString("dd MMM yyyy"), nilai[i - 1]);
+                if (!rb3.Checked)
+                {
+                    chart1.Series["Diagram1"].Points.AddXY(tanggal[i - 1].ToString("dd MMM yyyy"), nilai[i - 1]);
+                }
             }
             
         }
@@ -274,6 +300,7 @@ namespace CRUD
             if (DateTime.Compare(dateSampai.Value, dateSejak.Value) < 0)
             {
                 dateSampai.Value = dateSejak.Value;
+                MessageBox.Show("Tanggal tidak valid! \n(tanggal sejak harus lebih besar dari tanggal sampai)", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
            
@@ -380,6 +407,7 @@ namespace CRUD
             if (DateTime.Compare(dateSampai.Value, dateSejak.Value) < 0)
             {
                 dateSejak.Value = DateTime.Today;
+                MessageBox.Show("Tanggal tidak valid! \n(tanggal sejak harus lebih besar dari tanggal sampai)", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
         }
@@ -424,6 +452,21 @@ namespace CRUD
                 ganti = 0;
                 mutiara();
             }
+        }
+
+        private void rb1_CheckedChanged(object sender, EventArgs e)
+        {
+            isiDiagram(null);
+        }
+
+        private void rb2_CheckedChanged(object sender, EventArgs e)
+        {
+            isiDiagram(null);
+        }
+
+        private void rb3_CheckedChanged(object sender, EventArgs e)
+        {
+            isiDiagram(null);
         }
     }
 }

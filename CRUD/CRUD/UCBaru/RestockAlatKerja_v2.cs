@@ -222,6 +222,7 @@ namespace CRUD
         {
             if (tbTransaksi.Rows.Count == 0)
             {
+                MessageBox.Show("Tidak ada data transaksi!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -433,6 +434,12 @@ namespace CRUD
                 MessageBox.Show("Error : " + ex.ToString());
             }
         }
+
+        private void RestockAlatKerja_v2_VisibleChanged(object sender, EventArgs e)
+        {
+            addDataAlatKerja();
+        }
+
         private void addDataSupplier(String alatKerja)
         {
             tbSupplier.Rows.Clear();
