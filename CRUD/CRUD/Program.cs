@@ -37,10 +37,10 @@ namespace CRUD
             //Application.Run(new UpdateKomponen());
 
             //Application.Run(new Home());
-            //Application.Run(new Login());
+            Application.Run(new Login());
             //Application.Run(new testing());
 
-            Application.Run(new Menu_Utama());
+            //Application.Run(new Menu_Utama());
         }
         public static string getConstring()
         {

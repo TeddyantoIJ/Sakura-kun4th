@@ -1,19 +1,10 @@
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.exe.config
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.exe
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\CRUD.pdb
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.DashBoard.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UCTransaksi.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.ReparasiAlatElektronik.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.RestockAlatKerja.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Pembayaran.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.beliKomponen.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.barangmasuk.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.AlatElektronik.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateAlatElektronik.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.AlatKerjaMaster.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.AlatSupplier.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.CustomerMaster.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Home.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.JenisAlatElektronik.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateJenisElektronik.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.KomponenSupplier.resources
@@ -27,12 +18,9 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateAlatKomponenSupplier.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateCustomer.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdateSupplier.resources
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.restockKomponen.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.testing.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csproj.GenerateResource.cache
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csproj.CoreCompileInputs.cache
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.exe
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.pdb
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csproj.CopyComplete
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Baru.Menu_Utama.resources
@@ -120,7 +108,6 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.exe.config
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura.csprojAssemblyReference.cache
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.Reparasi.resources
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.BayarReparasi.resources
@@ -139,3 +126,13 @@ C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\C
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.cache
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\RdlCompile.compiled
 C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\CRUD.UpdatePekerja.resources
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Sakura Reparation V.1.exe.config
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Sakura Reparation V.1.exe.manifest
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Sakura Reparation V.1.application
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Sakura Reparation V.1.exe
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\bin\Debug\Sakura Reparation V.1.pdb
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura Reparation V.1.exe.config
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura Reparation V.1.exe.manifest
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura Reparation V.1.application
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura Reparation V.1.exe
+C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\Windows\CRUD\CRUD\obj\Debug\Sakura Reparation V.1.pdb

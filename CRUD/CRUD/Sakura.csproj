@@ -7,11 +7,27 @@
     <ProjectGuid>{9E726D8E-2C84-4E01-8E66-E7FF1ECD6A86}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CRUD</RootNamespace>
-    <AssemblyName>CRUD</AssemblyName>
+    <AssemblyName>Sakura Reparation V.1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Polman\Documents\Teddy-san\Semester 2\Tugas\PRG2\Project\DOKUMENTASI SAKURA REPARATION\Installer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +47,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7698FC9642FBFECADE2AF0749462F65F90E17A66</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sakura_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -190,41 +218,11 @@
     <Compile Include="UCBaru\UCMasuk.Designer.cs">
       <DependentUpon>UCMasuk.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCTransaksi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UCTransaksi.Designer.cs">
-      <DependentUpon>UCTransaksi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ReparasiAlatElektronik.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ReparasiAlatElektronik.designer.cs">
-      <DependentUpon>ReparasiAlatElektronik.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\RestockAlatkerja.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\RestockAlatkerja.designer.cs">
-      <DependentUpon>RestockAlatkerja.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Pembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserControl\Pembayaran.Designer.cs">
       <DependentUpon>Pembayaran.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\beliKomponen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\beliKomponen.Designer.cs">
-      <DependentUpon>beliKomponen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\barangmasuk.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\barangmasuk.Designer.cs">
-      <DependentUpon>barangmasuk.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterAlatElektronik\AlatElektronik.cs">
       <SubType>Form</SubType>
@@ -261,12 +259,6 @@
     </Compile>
     <Compile Include="MasterCustomer\CustomerMaster.Designer.cs">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMain\Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMain\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterJenisElektronik\DataJenisElektronik.Designer.cs" />
     <Compile Include="MasterJenisElektronik\DataJenisElektronik1.Designer.cs">
@@ -332,12 +324,6 @@
     </Compile>
     <Compile Include="MasterPekerja\UpdatePekerja.Designer.cs">
       <DependentUpon>UpdatePekerja.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\restockKomponen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\restockKomponen.Designer.cs">
-      <DependentUpon>restockKomponen.cs</DependentUpon>
     </Compile>
     <Compile Include="SakuraDataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -453,23 +439,8 @@
     <EmbeddedResource Include="UCBaru\UCMasuk.resx">
       <DependentUpon>UCMasuk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCTransaksi.resx">
-      <DependentUpon>UCTransaksi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ReparasiAlatElektronik.resx">
-      <DependentUpon>ReparasiAlatElektronik.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\RestockAlatkerja.resx">
-      <DependentUpon>RestockAlatkerja.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Pembayaran.resx">
       <DependentUpon>Pembayaran.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\beliKomponen.resx">
-      <DependentUpon>beliKomponen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\barangmasuk.resx">
-      <DependentUpon>barangmasuk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterAlatElektronik\AlatElektronik.resx">
       <DependentUpon>AlatElektronik.cs</DependentUpon>
@@ -485,9 +456,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterCustomer\CustomerMaster.resx">
       <DependentUpon>CustomerMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMain\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterJenisElektronik\JenisAlatElektronik.resx">
       <DependentUpon>JenisAlatElektronik.cs</DependentUpon>
@@ -534,9 +502,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSupplier\UpdateSupplier.resx">
       <DependentUpon>UpdateSupplier.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\restockKomponen.resx">
-      <DependentUpon>restockKomponen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testing.resx">
       <DependentUpon>testing.cs</DependentUpon>
@@ -639,6 +604,7 @@
     <None Include="SakuraDataDataSet2.xss">
       <DependentUpon>SakuraDataDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="Sakura_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -694,6 +660,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MasterMain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
